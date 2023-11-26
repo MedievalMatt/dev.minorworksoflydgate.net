@@ -1,0 +1,376 @@
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml" xmlns:functx="http://www.functx.com" xmlns:idhmc="http://idhmc.tamu.edu/" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="preload" href="http://www.minorworksoflydgate.net/Fonts/Cardo-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/Images/Lydgate_interior.jpg" as="image">
+      <link rel="preload" href="../..///Thumbnails/http://i.creativecommons.org/l/by-nc-sa/4.0/88x31-thumbnail.jpg" as="image">
+      <link rel="preload" href="../../styles/googlecode.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" id="responsive" href="../../responsive.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" id="custom" href="custom.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" id="decoToggle" href="../../decoration_suppress.css" as="style" onload="this.rel='stylesheet'" disabled="disabled"><script src="https://www.minorworksoflydgate.net/javascript/custom-functions.js"></script><script src="../../javascript/jquery-2.1.4.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-W1QFH1GHNF"></script><script> window.dataLayer = window.dataLayer || []; function
+                gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config',
+                'G-W1QFH1GHNF'); </script><meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>How do you create the line comparisons?</title>
+      <meta name="author" content="">
+      <meta name="editor" content="Matthew Evan Davis">
+      <meta generator="Custom Stylesheet based on Text Encoding Initiative Consortium XSLT stylesheets">
+      <meta DC.Title="How do you create the line comparisons?">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script><script src="../../javascript/custom-functions.js"></script><script>hljs.initHighlightingOnLoad();</script><style>
+                .annotation-header__timestamp {
+                    display: none !important;
+                }</style>
+   </head>
+   <body class="simple" id="TOP">
+      <div id="wrapper">
+         <div class="header col-10 col-s-10">
+            <h1 id="mainTitle" class="paratext"><img src="Images/Lydgate_interior.jpg" id="interiorBanner" class="col-1 col-s-1" alt="a picture of John Lydgate with the initials of the&#xA;                        website"><div class="titleText largeText col-12 col-s-12" id="noSubtitle">How do you create the line comparisons?</div>
+            </h1>
+            <h1 id="siteHeader" class="col-12 col-s-12"><span class="siteitem"><a class="nav_link" id="home" href="../../index.html">Home</a></span><span class="siteitem"><a class="nav_link" id="archive" href="../../archive.html">About the Archive</a></span><span class="siteitem"><a class="nav_link" id="lydgate" href="../../lydgate.html">About John Lydgate</a></span><span class="siteitem"><a class="nav_link" id="works" href="../../works.html">Works</a></span><span class="siteitem"><a class="nav_link" id="manuscripts" href="../../manuscripts.html">Manuscripts</a></span><span class="siteitem"><a class="nav_link" id="contact" href="../../contact.html">Contact</a></span><span class="siteitem"><a class="nav_link" id="visualization" href="../../visualization.html">Visualization</a></span></h1>
+         </div>
+         <div class="administrative paratext">
+            <h3 class="subheader">Preparing the XQuery</h3>
+            <p>The TEI files for this site use the <code class="xml">&lt;sourceDoc&gt;</code> based schema from
+               the Text Encoding Initiative, rather than the more common default
+               <code class="xml">&lt;text&gt;</code> based schema. So my code for a single stanza of a poem
+               will look like this:</p>
+            <pre><code class="xml"> 
+&lt;surfaceGrp xml:id=“f.75” n=“folio”&gt; 
+  &lt;surface n=“recto”&gt; 
+      &lt;label&gt;Folio 75 Recto&lt;/label&gt; 
+      &lt;graphic url=“St_John_56_75r.jpg”/&gt;
+      &lt;zone n=“EETS.QD.16”&gt;
+          &lt;line n=“l.1”&gt; He myght be called / eleazar the secunde ؛ &lt;/line&gt; 
+          &lt;line n=“l.2”&gt; The chamnpyoun / moost myghty and notable ؛ &lt;/line&gt; 
+          &lt;line n=“l.3”&gt; That yaff the olyfaunt / hy laste his laste mortall wounde ؛ &lt;/line&gt; 
+          &lt;line n=“l.4”&gt; Machabeo&lt;ex&gt;rum&lt;/ex&gt; / this story ys no fablee ؛ &lt;/line&gt;
+          &lt;line n=“l.5”&gt; And hercules / in his conquest stable ؛ &lt;/line&gt;
+          &lt;line n=“l.6”&gt; Bar vp the heuenys / in his humanytee ؛ &lt;/line&gt;
+          &lt;line n=“l.7”&gt; Ffor whom ony sorowes / wer maad moost lamentable ؛ &lt;/line&gt; 
+          &lt;line n=“l.8”&gt; Whan I be hylde hym / þus nayled to atree ؛ &lt;/line&gt; 
+      &lt;/zone&gt; 
+      […]
+  &lt;/surface&gt; 
+&lt;/surfaceGrp&gt;
+                </code></pre>
+            <p>One of my concerns about markup of text is that it can get so busy describing the
+               text so machines can read it that it ceases to be readable by people. So I have
+               tried to have the minimum amount of markup necessary to fit the rules of TEI while
+               recording the structure and features of the poem as it exists in the witness. That’s
+               what the <code class="xml">@xml:id</code> and <code class="xml">@n</code> attributes are doing above.
+               They’re letting the machine know that this is folio 75 of the book in question. The
+               <code class="xml">&lt;surfaceGrp&gt;</code> is a single page of the book, front and back.
+               The <code class="xml">&lt;surface&gt;</code> is the particular side of the page in
+               question—recto or verso. From there, we label the particular surface in a
+               people-friendly way that’ll display on the site and provide the link to the
+               image.</p>
+            <p>This begs the question of why <code class="xml">&lt;zone&gt;</code> and <code class="xml">
+                  &lt;line&gt;</code> are necessary. <code class="xml">&lt;line&gt;</code>, I suspect, is
+               relatively self-evident, and <code class="xml">&lt;zone&gt;</code> is the actual stanza in
+               question. Unlike some poems that have extensive critical histories, there’s not a
+               canonical numbering system for many of these poems, so what I’ve done here is
+               provide a two-part system. The first part, the zone, is the actual stanza in
+               question based on what’s considered the critical edition of the work – in this case
+               <i>The Minor Poems of John Lydgate</i> (Early English Text
+               Society early series 107). That gets abbreviated to EETS e.s. 107, and which is
+               where I get the EETS in the <code class="xml">@n</code> attribute under
+               <code class="xml">&lt;zone&gt;</code>. The “QD” refers to the the initials of the title of
+               the poem as it appears in that book, and the number is the number of the stanza in
+               the poem. So what the <code class="xml">@n</code> attribute in <code class="xml">&lt;zone&gt;</code> is
+               doing is explaining where the actual stanza is in relation to the poem in the EETS
+               volume. That doesn’t mean it’s necessarily where it is in the actual book the
+               witness is taken from. That’s handled by the folio reference in the
+               <code class="xml">&lt;surfaceGrp&gt;</code> element. Also, once I have finalized images for
+               all the texts, I’ll include code to give the dimensions of the zone on the image,
+               so
+               it can be highlighted, but that’s for the future.</p>
+            <p>&lt;line&gt; functions in much the same way. There are eight lines per zone, just as
+               there are eight lines per stanza in this poem, so the <code class="xml">@n</code> there refers
+               to the particular line of the eight – again using the EETS edition as a signpost
+               (it’s “l.x” rather than just “x” because of a limitation of TEI – you can’t have
+               solely numeric <code class="xml">@n</code> attributes in the <code class="xml">&lt;line&gt;</code> element).</p>
+            <h3 class="subheader">XQuery Part I: the Comparison Feature</h3>
+            <p> The underlying structure mentioned above is what makes the line comparison
+               relatively simple. Because of the <code class="xml">@n</code> attributes identifying both the
+               verse and the line in question, a  
+               <a href="/XML/XQuery/test.xq" rel="">script</a> can be written using <a href="https://en.wikipedia.org/wiki/XQuery" rel="">XQuery</a> that will easily grab
+               the appropriate analogues whenever they exist:</p>
+            <pre><code class="xquery"> 
+let $q:=collection(‘file:/users/matt/Documents/tei/Lydgate/Quis_Dabit?select=*.xml’)
+
+  for $y in $q 
+  let $s := $y//tei:surface 
+  let $t := $y//tei:titleStmt/@xml:id 
+  let $m := $y//tei:msDesc/@xml:id 
+  let $z := $s/tei:zone[@n=“EETS.QD.4”] 
+  let $l := $z/tei:line[@n=“l.1”] 
+  let $w := concat($y//tei:msDesc/tei:msIdentifier/tei:settlement/text(),',',$y//tei:msDesc/tei:msIdentifier/tei:institution/text(),' ',$y//tei:msDesc/tei:msIdentifier/tei:idno/text()) 
+  let $g := concat($t, “/” ,$m, “/”, substring-before($l/../../tei:graphic/@url,“.”),“.html”) 
+  let $o := local:remove-elements($l, $remove-list) 
+    where ($z//tei:line/@n = “l.1”) 
+      return
+        &lt;item&gt; 
+          &lt;ref target=“{$g}”&gt;{$o}&lt;/ref&gt; 
+        &lt;/item&gt; 
+                </code></pre>
+            <p>I realize that to the uninitiated this may appear to be gibberish, but it's actually
+               quite simple:</p>
+            <pre><code class="xquery"> 
+let $q:=collection('file:/users/matt/Documents/tei/Lydgate/Quis_Dabit?select=*.xml’)
+                </code></pre>
+            <p>This is a variable that invokes XQuery’s collection function. In this case, it is
+               pointing to a folder on my desktop, but in the live version it points to the folder
+               where the xml for particular texts are located. The *.xml at the end tells it to
+               grab everything with the filename extension “xml” in that folder.</p>
+            <p><code class="xquery">collection()</code> basically puts all the documents together one after the
+               other, so that what was a series of small seperate tree structures now has an
+               overarching root connecting them. I need to be able to walk through that root to
+               grab the individual items.</p>
+            <p><code class="xquery">for $y in $q</code> lets me do that. The code is stating that for each of the
+               items(<code class="xquery">$y</code>) that have been connected in the collection
+               (<code class="xquery">$q</code>), return some information. That information is identified via
+               the series of <code class="xquery">$let</code> declarations. These mean exactly what they sound
+               like: let whatever variable (<code class="xquery">$x</code><code class="xquery">$y</code>, etc.) = whatever is after the := symbol. So in this case
+               <code class="xquery">$s</code> invokes all the surfaces in question, <code class="">$w</code> grabs the
+               holding institution and shelfmark of the volume by combining a number of elements
+               in
+               the TEI, <code class="xquery">$g</code> grabs the url information from the graphic and generates a
+               hyperlink so that the result can link back to the original item (this time by
+               combining the element with static text), <code class="xquery">$z</code> is the zone information
+               with the limitation of a particular stanza, and <code class="xquery">$l</code> is the particular
+               line. <code class="xquery">$o</code> is the actual text from the particular witnesses, run through
+               another function that I will explain the reason for shortly.</p>
+            <p>Once all the information is defined via the <code class="xquery">let</code> statements, the text
+               needs to be filtered from the entire poem to the single line the viewer wishes to
+               compare. This is handed by the <code class="xquery">where</code> clause, which is saying that out
+               of all the <code class="xml">&lt;line&gt;</code>s in the <code class="xml">&lt;zone&gt;</code> (which is
+               already constrained by the <code class="xml">@n</code> attribute) we want only the information
+               for line l.1.</p>
+            <h3 class="subheader">XQuery Part II: Functions</h3>
+            <p>Before getting to what is actually returned by this code, a moment to talk about what
+               the <code class="xquery">local:remove-elements</code> above means. XQuery is what is called a <a href="https://en.wikipedia.org/wiki/Functional_programming" rel="">functional
+                  programming language</a>. While the link will go into depth on what precisely
+               that means, for practical purposes a function is a piece of code written once,
+               encapsulating multiple lines of code into a single reference that can be called to
+               again and again. This can be useful for a number of reasons that you can find more
+               information about <a href="https://www.cs.utah.edu/~germain/PPS/Topics/functions.html" rel="">here</a>,
+               but in the case of this project the reason the function was written was primarily
+               for recursion. The full code of the <code class="xquery">local:remove-elements</code> function is
+               as follows:</p>
+            <pre><code class="xquery"> 
+declare function local:remove-elements($input as element(), $remove-names as xs:string*) as element() { 
+  element {node-name($input) } 
+    {$input/@*,
+     for $child in $input/node()[not(name(.)=$remove-names)] 
+       return 
+         if ($child instance of element()) 
+           then local:remove-elements($child, $remove-names) 
+         else $child 
+    } 
+}; 
+            </code></pre>
+            <p>The function is first defined through the <code class="xquery">declare</code> statement. This lets
+               the engine that's running the xquery know that this is a function rather than a
+               piece of code to be run immediately. the <code class="xquery">local</code> that prefaces the
+               <code class="xquery">remove-elements</code> references the local <a href="https://en.wikipedia.org/wiki/Namespace" rel="">namespace</a>, while
+               remove-elements is the name of the function. You'll note that the function takes two
+               variables (the items in paranthesis): an XML <a href="https://www.w3schools.com/xml/xml_elements.asp" rel="">element</a> and a <a href="https://en.wikipedia.org/wiki/String_(computer_science)" rel="">string</a>.
+               The <code class="xquery">xs</code> prefacing string is another reference to a namespace -- in this
+               case the namespace for the XML data model.</p>
+            <p>So far, all of this has simply been defining the function. The actual code generated
+               begins on the next line. <code class="xquery">element</code>, here, is what is referred to as a
+               <a href="http://blog.davidcassel.net/2011/10/element-constructors-computed-and-direct/" rel="">computed constructor</a>. All this means is that it's creating the element to
+               be returned computationally, rather than through a direct declaration of the
+               element. <code class="xquery">node-name($input)</code> lets the Saxon engine know that we're only
+               interested in the name of the element at this point, rather than the element and its
+               contents. Now that the new element is declared, the block of code in the curly
+               brackets is executed. <code class="xquery">$input/@*</code> says to grab everything in the old
+               element, go through each child of that element and return it as a child element
+               <i>except</i> for those items including in the list above
+               (<code class="xquery">for $child in $input/node()[not(name(.)=$remove-names)]</code>). The
+               comma simply serves as a way to indicate what is the input and what's to be
+               executed.</p>
+            <p>After it's gone through all the child elements in the orignal inputted element, the
+               <code class="xquery">return</code> statement indicates that the children are to be added to the
+               newly created element, but there's a condition in place. The if/then statement
+               serves as a check to make sure that there are no children of those child
+               elements. <code class="xquery">if ($child instance of element())</code> tells the Saxon engine
+               to check if there are children of this child node. <code class="xquery">then
+                  local:remove-elements($child, $remove-names)</code> tells it to run the function
+               again for that child if there are. This is the primary reason this bit of code needs
+               to be written as a function—so it can recurse through the various children of an
+               element, catch them all, and apply itself to each until it reaches a child element
+               that has no children in turn. Once it's done that, it attaches that child element
+               to
+               the newly-created element and the whole package is returned to us. This is useful,
+               for example, if I have multiple <code class="xml">note</code> elements attached to a single
+               <code class="xml">line</code> element, as the code will go through and remove each of them
+               in turn.</p>
+            <h3 class="subheader">Getting the results</h3>
+            <p>Much like with the function, the information after <code class="xquery">return</code> in the larger
+               code sample shows the format of what this code will spit out: a set of tei-formatted
+               lines, each stating the particular book in question’s location and shelfmark, a
+               hyperlink back to the original page the line can be found on, and the actual text
+               in
+               question. Altogether, running it will look like this:</p>
+            <pre><code class="xml"> 
+&lt;item&gt; London, British Library Harley 2251: 
+  &lt;ref target=“.html”&gt;O alle ye doughtres · of Jerusalem&lt;/ref&gt; 
+&lt;/item&gt;
+&lt;item&gt; London, British Library Harley 2255: 
+  &lt;ref target=“.html”&gt; &lt;hi rend=“blue_pilcrow”&gt;¶&lt;/hi&gt;O alle ye douħtren of &lt;hi rend=“underline”&gt;ierusaleem&lt;/hi&gt;&lt;/ref&gt;
+&lt;/item&gt;
+&lt;item&gt; Long Melford, Holy Trinity Church Clopton Chantry Chapel: 
+  &lt;ref target=“.html”&gt; &lt;hi&gt;O&lt;/hi&gt; alle ye &lt;gap quantity=“8” unit=“chars” reason=“illegible”/&gt;s of ierusaleem&lt;/ref&gt; 
+&lt;/item&gt;
+&lt;item&gt; Cambridge, Jesus College Q.G.8: 
+  &lt;ref target=“.html”&gt; &lt;hi&gt;A&lt;/hi&gt;ll the &lt;hi rend=“underline”&gt;doughtren &lt;/hi&gt;of &lt;hi rend=“underline”&gt; Ierusalem&lt;/hi&gt; . &lt;/ref&gt; 
+&lt;/item&gt;
+&lt;item&gt; Oxford, Bodleian Library Laud 683: 
+  &lt;ref target=“.html”&gt;O alle ẏe douhtren of jerusaleem&lt;/ref&gt; 
+&lt;/item&gt; 
+&lt;item&gt; Oxford, St. John’s College 56: 
+  &lt;ref target=“.html”&gt;O alle the doughtren / of Jerusalem ؛&lt;/ref&gt; 
+&lt;/item&gt; 
+                </code></pre>
+            <p>Which is ready to be styled by <a href="https://en.wikipedia.org/wiki/XSLT" rel="">XSLT</a> as soon as it’s either embedded in an existing page or has the rest
+               of the TEI wrapper built around it.</p>
+            <h3 class="subheader">Running the XQuery</h3>
+            <p>The actual running of this XQuery has to be done by the <a href="http://saxon.sourceforge.net" rel="">Saxon</a> XSLT/XQuery processor. That
+               process needs to be called either on the server or locally on the viewer's machine.
+               Since the viewer may not have the Saxon processor installed, it occurs on the server
+               using a piece of PHP code. Unfortunately, the necessary files to connect that PHP
+               code with the Saxon installation natively are not available due to a corrupt
+               installation file on the Saxon site. A command line version of the program is
+               available, however, and runs with the following command:</p>
+            <pre><code class="shell"> 
+java -cp saxon9he.jar net.sf.saxon.Query -t -q:test.xq
+                </code></pre>
+            <p>This means that a call to the external program from a php page has to be made,
+               requiring this piece of code:</p>
+            <pre><code class="php"> 
+$text = exec (“java -cp saxon9he.jar net.sf.saxon.Query -t -q:test.xq -line=$line zone=$zone collection=file:$collection”);
+                </code></pre>
+            <p>This works fine, and the results are stored as <code class="">$text</code>. But they’re still
+               formatted as the xml string shown above, not as html that can be understood by the
+               web without a lot of extra work. What needs to happen to make it easily readable by
+               a web server is that it needs to be styled either with XQuery or with XSLT. Of the
+               two, XSLT makes a whole lot more sense – that’s what it’s designed for, whereas
+               XQuery is really designed as a query langauge to use xml files as a database.</p>
+            <p>PHP has its own XSLT parser, which can be invoked like this:</p>
+            <pre><code class="php"> 
+$xml = new DOMDocument; 
+$xml-&gt;loadXML($text); 
+$xsl = new DOMDocument; 
+$xsl-&gt;load(‘comparison.xsl’); // Configure the transformer 
+$proc = new XSLTProcessor; 
+$proc-&gt;importStyleSheet($xsl); // attach the xsl rules 
+echo $proc-&gt;transformToXML($xml); 
+                </code></pre>
+            <p>What this does is create a new object within php, load it with the xml we just
+               finished creating, load a <a href="/XML/XQuery/comparison.xsl" rel="">stylesheet</a>
+               to style said xml, and then attach the stylesheet to the xml. Finally, the result
+               of
+               the transformation is returned to the screen via the echo command. It works really
+               well in most cases. The problem is that my xsl stylesheet has this piece of code in
+               it:</p>
+            <pre><code class="xml"> 
+&lt;xsl:variable name=“max” select=“@quantity”/&gt;
+&lt;xsl:for-each select=“1 to $max”&gt; 
+  &lt;xsl:text&gt;.&lt;/xsl:text&gt;
+&lt;/xsl:for-each&gt; 
+            </code></pre>
+            <p>That code makes sure that any time there’s a gap due to damage, the likely number
+               of
+               characters (taken either from what’s left of the letters or from the critical text,
+               EETS e.s. 107) is reduced to a number of dots, indicating that it’s not just a blank
+               space. The way I do that is through an xml attribute called <code class="xml">@quantity</code>
+               and a <code class="xml">for-each</code> loop that prints dots until the the system's internal
+               counter matches <code class="xml">@quantity</code>. That functionality with a
+               <code class="xml">for-each</code> loop is an XSLT 2.0 bit of code, since philosophically
+               XSLT generally eschews such loops in favor of their native
+               <code class="xml">&lt;xsl:apply-templates&gt;</code> function. The native php XSLT parser is
+               1.0. It will not handle this code.</p>
+            <p>But!</p>
+            <p>Good old Saxon <span class="ex">will</span> handle XSLT 2.0, but we have no php-native XSLT parser
+               for Saxon. So a second external call to the command line is made:</p>
+            <pre><code class="php"> 
+$transform = exec (“java -jar saxon9he.jar -s:$filename -xsl:comparison.xsl -o:$html”);
+                </code></pre>
+            <p>Notice, though, that that command has a <code class="php">$filename</code> variable. The parser
+               won’t easily just take the string we had before, so now instead of keeping the
+               result in memory it needs to be written to a file, which is then read by the Saxon
+               XSLT 2.0 parser in the command above. Once it does so it transforms the xml into
+               html, which should be able to be displayed via a php <code class="php">echo</code> statement.
+               However, that doesn’t work, so it’s written to another file named by the variable
+               <code class="php">$html</code>.</p>
+            <p>Now, to actually display the information, we need to go back to the command line and
+               grab that html file:</p>
+            <pre><code class="php"> 
+$test = file_get_contents($html);
+                </code></pre>
+            <p>and then display the results:</p>
+            <pre><code class="php"> 
+echo $test;
+                </code></pre>
+            <p>This is what you actually see when you click on the blue dot to the right of the line
+               and the box opens up – the contents of <code class="php">$test</code>. It’s not as simple as
+               just clicking on the dot, though. Clicking on that dot calls some javascript.
+               Javascript has to be used because you’re changing something locally when you click
+               on the dot and javascript is a client-side scripting language.</p>
+            <p>The javascript passes the line, zone (here represented as <code class="javascript">id</code>), and
+               collection characteristics to the php code via this function:</p>
+            <pre><code class="javascript"> 
+function compare_toggle_visibility(id, line, collection) { 
+  var e = document.getElementById(id); 
+  e.style.display = ((e.style.display!='none’) ? 'none’ : 'block’ ); 
+  $(e).html(“Loading Comparison…”);
+  $.get(’/XML/XQuery/test_command_line.php’+ ’?collection=’ + collection + ’&amp;zone=’ + id + ’&amp;line=’ + line, 
+    function(responseTxt){$(e).html(responseTxt); }); 
+} </code></pre>
+            <p>What this does is first check to see which element in the html code has the
+               <code class="javascript">@id</code> attribute. It then checks to see if it has the style attribute
+               ‘<code class="css">display:none</code>’ (indicating it should not be displayed) and switches
+               it to ‘<code class="css">display:block</code>’ if it does. That’s what allows the box to “open
+               up” and become visible. Having done that, it then puts some text into that box so
+               that you know that work is being done, and finally it loads the php page and sends
+               the results of that php page to the box. Clicking on the dot again will close the
+               box back up (and at this point re-runs the code pointlessly – that’s something I
+               need to fix). </p>
+            <p>On the php side, the three variables are passed to the php through a
+               <code class="php">[$_get]</code> statement (which grabs the appropriate value from the uri
+               passed to php)</p>
+            <pre><code class="php"> 
+$line=htmlspecialchars($_GET[“line”]);
+$zone=htmlspecialchars($_GET[“zone”]);
+$collection=htmlspecialchars($_GET[“collection”]); 
+                </code></pre>
+            <p>and the code is processed as explained above. However, since there’s the possiblity
+               of multiple people accessing the same lines at similar times we can’t have filenames
+               that stay the same – they’d be overwritten. Instead, dynamic filenames need to be
+               created. I do this by generating a random number and attaching it to the machine’s
+               timestamp, then creating two variables based on that number with the extensions
+               <code class="shell">.html</code> and <code class="shell">.xml</code>.</p>
+            <pre><code class="php"> 
+$unique=microtime(true) . mt_rand(1,5000000000);
+$filename=$unique . “.xml”; $html=$unique . “.html”; 
+            </code></pre>
+            <p>After the code has executed, I then clean up these files so there isn’t a bunch of
+               randomly named files cluttering up my machine:</p>
+            <pre><code class="php"> 
+unlink($filename); 
+unlink($html); 
+            </code></pre>
+            <p>The unforunate effect of this constant call back and forth to the command line is
+               a
+               lag on the display of the comparison items, but my hope is that the Saxon php
+               installer will be repaired and I can streamline it with the more integrated
+               code.</p>
+         </div>
+         <div class="footer col-10 col-s-10">
+            <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>Except where otherwise noted, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                  License</a>.</p>
+         </div>
+      </div>
+   </body>
+   <!--body--><script>adjustPageHeight();</script></html>

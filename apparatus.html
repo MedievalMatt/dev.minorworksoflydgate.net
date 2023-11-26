@@ -1,0 +1,119 @@
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml" xmlns:functx="http://www.functx.com" xmlns:idhmc="http://idhmc.tamu.edu/" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="preload" href="http://www.minorworksoflydgate.net/Fonts/Cardo-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/Images/Lydgate_interior.jpg" as="image">
+      <link rel="preload" id="responsive" href="../../responsive.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" id="custom" href="custom.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" id="decoToggle" href="../../decoration_suppress.css" as="style" onload="this.rel='stylesheet'" disabled="disabled"><script src="https://www.minorworksoflydgate.net/javascript/custom-functions.js"></script><script src="../../javascript/jquery-2.1.4.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-W1QFH1GHNF"></script><script> window.dataLayer = window.dataLayer || []; function
+                gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config',
+                'G-W1QFH1GHNF'); </script><meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <meta name="author" content="Matthew Evan Davis">
+      <meta name="editor" content="">
+      <meta generator="Custom Stylesheet based on Text Encoding Initiative Consortium XSLT stylesheets">
+      <meta DC.Title="">
+      <meta name="DC.Type" content="Text">
+      <meta name="DC.Format" content="text/html"><script src="../../javascript/custom-functions.js"></script><style>
+                .annotation-header__timestamp {
+                    display: none !important;
+                }</style>
+   </head>
+   <body class="simple" id="TOP">
+      <div id="wrapper">
+         <div class="header col-10 col-s-10">
+            <h1 id="mainTitle" class="paratext"><img src="Images/Lydgate_interior.jpg" id="interiorBanner" class="col-1 col-s-1" alt="a picture of John Lydgate with the initials of the&#xA;                        website"><div class="titleText largeText col-12 col-s-12" id="noSubtitle">Editorial Apparatus</div>
+            </h1>
+            <h1 id="siteHeader" class="col-12 col-s-12"><span class="siteitem"><a class="nav_link" id="home" href="../../index.html">Home</a></span><span class="siteitem"><a class="nav_link" id="archive" href="../../archive.html">About the Archive</a></span><span class="siteitem"><a class="nav_link" id="lydgate" href="../../lydgate.html">About John Lydgate</a></span><span class="siteitem"><a class="nav_link" id="works" href="../../works.html">Works</a></span><span class="siteitem"><a class="nav_link" id="manuscripts" href="../../manuscripts.html">Manuscripts</a></span><span class="siteitem"><a class="nav_link" id="description" href="_Testament_description.html">About this Manuscript</a></span><span class="siteitem"><a class="nav_link" id="return" onclick="history.go(-1)" onmouseover="this.style.cursor='pointer'">Return to Text</a></span><span class="siteitem"><a class="nav_link" id="contact" href="../../contact.html">Contact</a></span><span class="siteitem"><a class="nav_link" id="visualization" href="../../visualization.html">Visualization</a></span></h1>
+         </div>
+         <div class="administrative paratext">
+            <p>I utilize the system described by Michelle P. Brown in her <i>Guide
+                  to Western Historical Scripts from Antiquity to 1600</i> (Toronto, 1993), but
+               modified for the purposes of presentation on the web. This is especially evident in
+               the case of painted items like the Clopton Chapel. Generally speaking, though:</p>
+            <ul>
+               <li>Capitals, whether rubricated or illuminated, are given the most prominent
+                  color of the glyph proper. They are also set to the line height they appear to have
+                  in the text.
+                  So, for example, a two-line capital W that is predominantly red will appear
+                  thusly:
+                  
+                  <p><span class="capital_2 red">W</span>han that Aprille with his shoures soote.</p>
+                  <p>The droghte of Marche hath perced to the roote</p>
+               </li>
+               <li>Missing capitals will have a blank space provided, mimicking their appearance
+                  in the text. The letter will be included in the XML, though, with a <code class="">@rend</code> attribute of "hidden." Any guide letters will be indicated via note.
+                  </li>
+               <li>Underlined text will be rendered thusly: <span class="underline">text</span>. It will be modfied still further should the underlining be in a different color
+                  than the main body of the text.  For example, a red underline will appear as follows:
+                  <span class="underline red">text</span>.
+                  </li>
+               <li>Paraph marks will mimic their color and line height in the text. So, for
+                  example, a single-line blue paraph mark will appear thusly: 
+                  
+                  <p>
+                     <div class="pilcrow blue">¶</div>Heere bigineeth the miller his tale</p>
+               </li>
+               <li>Letters touched by rubrication will be rendered thusly: <span class="touched">T</span>.
+                  </li>
+               <li>Expanded abbreviations in the text are indicated thusly: ex<i>am</i>ple.
+                  </li>
+               <li>Damaged but legible material is indicated thusly:
+                  
+                  <damage xmlns="http://www.tei-c.org/ns/1.0">example</damage>.
+                  </li>
+               <li>A gap in the text through damage is indicated thusly:......., where the number of dots indicate the
+                  likely number of missing letters based on the other witnesses.
+                  </li>
+               <li>Insertions will be rendered inline with the text as though they were on the
+                  same line, and will appear thusly: [insertion]. Any unusual
+                  characteristics regarding the insertion will be mentioned via note.
+                  </li>
+               <li>Deletions will be rendered thusly: <del xmlns="http://www.tei-c.org/ns/1.0" instant="false" status="unremarkable">deletion</del></li>
+               <li>Substitutions will be rendered inline with the text, and will appear thusly: <del xmlns="http://www.tei-c.org/ns/1.0" instant="false" status="unremarkable">inertion</del>[insertion]. Any unusual characteristics regarding the substitution will be
+                  mentioned via note.
+                  </li>
+               <li>Specific issues regarding the text will be indicated via a footnote either
+                  immediately after the item referenced or at the end of the line. They have
+                  been color-coded to indicate the type of note they are: 
+                  <ul>
+                     <li>Explanatory notes provide the reasoning for the editorial choices
+                        made, with reference to the image provided. They are indicated
+                        thusly:<span class="footnote explanatory"><sup><a href="#fn1" id="fn1-ref" title="link to footnote 1">1</a></sup></span>.</li>
+                     <li>Informational notes provide non-editorial contextual information
+                        such as particular scribal renderings or relationships between the
+                        witnesses. They are indicated thusly:<span class="footnote informational"><sup><a href="#fn2" id="fn2-ref" title="link to footnote 2">2</a></sup></span>.</li>
+                     <li>Notes unrelated either to the specifics of the text or containing
+                        both explanatory and informational elements are indicated
+                        thusly:<span class="footnote other"><sup><a href="#fn3" id="fn3-ref" title="link to footnote 3">3</a></sup></span>.</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="notes col-10 col-s-10">
+            <div class="noteHeading paratext"> Notes </div>
+            <ol>
+               <div class="note" id="paratext">
+                  <li id="fn1" class="explanatory footnote">
+                     <div class="noteBody">The text for the explanatory note will appear like this<a href="#fn1-ref" title="return to&#xA;                                                  text"> ↩ </a></div>
+                  </li>
+               </div>
+               <div class="note" id="paratext">
+                  <li id="fn2" class="informational footnote">
+                     <div class="noteBody">The text for the informational note will appear like this<a href="#fn2-ref" title="return to&#xA;                                                  text"> ↩ </a></div>
+                  </li>
+               </div>
+               <div class="note" id="paratext">
+                  <li id="fn3" class="other footnote">
+                     <div class="noteBody">The text for all other notes will appear like this<a href="#fn3-ref" title="return to&#xA;                                                  text"> ↩ </a></div>
+                  </li>
+               </div>
+            </ol>
+         </div>
+         <div class="footer col-10 col-s-10">
+            <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>Except where otherwise noted, this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                  License</a>.</p>
+         </div>
+      </div>
+   </body>
+   <!--body--><script>adjustPageHeight();</script></html>

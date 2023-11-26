@@ -1,0 +1,1725 @@
+@layer mirador, responsive, custom;
+
+@layer responsive {
+
+    /*loading the default @font-face */
+    @font-face {
+        font-family: 'junicode';
+        src: url('http://www.minorworksoflydgate.net/Fonts/junicode-regular-webfont.eot');
+        src: url('http://www.minorworksoflydgate.net/Fonts/junicode-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('http://www.minorworksoflydgate.net/Fonts/junicode-regular-webfont.woff2') format('woff2'),
+            url('http://www.minorworksoflydgate.net/Fonts/junicode-regular-webfont.woff') format('woff'),
+            url('http://www.minorworksoflydgate.net/Fonts/junicode-regular-webfont.ttf') format('truetype'),
+            url('http://www.minorworksoflydgate.net/Fonts/junicode-regular-webfont.svg#junicoderegular') format('svg');
+        font-style: normal;
+        font-display: block;
+
+        font-family: 'cardo';
+        src: url('http://www.minorworksoflydgate.net/Fonts/Cardo-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-display: block;
+
+        /*font-family: 'baskerville';
+        src: url('http://www.minorworksoflydgate.net/Fonts/Cardo-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-display: block;*/
+
+    }
+
+    @import url("http://www.minorworksoflydgate.net/datadictionary.css");
+
+    /*variable declarations */
+
+    :root {
+        /*div background colors */
+        --bodyBackground: #084c8d;
+        --titleBackground: #EEFFFF;
+        --contentBackground: #EFF;
+        --siteHeaderBackground: #434370;
+        --preBackground: #d3d3d3;
+        --siteitemBackground: #434370;
+        --siteitemBackgroundHover: #d3d3d3;
+        --menuHeaderBackground: #454595;
+        --surfaceBackground: #D5D5E5;
+	--decoBackground: #EEFFFF;
+        --xmlBackground: #EEFFFF;
+        --dictBackground: #EEFFFF;
+        --lineBackground: #EFF;
+        --comparisonBackground: #454595;
+        --notesBackground: #D5D5E5;
+        --footerBackground: #454595;
+        --navBackground: #454595;
+
+        /*text colors*/
+        --contentColor: black;
+        --linkColor: #004e9c;
+        --mastheadMainColor: black;
+        --mastheadSubColor: #004e9c;
+        --siteitemLink: #EEFFFF;
+        --siteitemLinkHover: #434370;
+        --menuitemColor: #EEFFFF;
+        --titleTextColor: black;
+        --manuscriptTextColor: black;
+        --editorTextColor: black;
+	--decoLinkColor: black;
+        --XMLLinkColor: black;
+        --dictLinkColor: black;
+        --comparisonColor: #EEFFFF;
+        --itemRefColor: #D5D5E5;
+        --informationalColor: blue;
+        --explanatoryColor: red;
+        --otherNoteColor: green;
+        --noteBodyColor: black;
+        --damageColor: #1e8449;
+        --capitalColor: red;
+
+        /* should classes that only confer color be here or hard coded below? */
+
+    }
+
+    /*eliminate all browser default stylings and unintentionally-inherited css from mirador */
+
+    html {
+        padding: 0px;
+        margin: 0px;
+        -webkit-text-size-adjust: 0%;
+    }
+
+    h1 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 0px;
+        font-weight: normal;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    h2,
+    h3 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 0px;
+        font-weight: normal;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-size: 0px;
+        font-weight: normal;
+    }
+
+    div {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    img {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+    }
+
+    p {
+        padding: 0px;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    ol {
+        padding: 0px;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    iframe {
+        border-width: 0px;
+        border-style: none;
+    }
+
+    canvas {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    /*setting up a responsive twelve-column layout as the default. This can be overriden for individual items as needed. */
+
+    #wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Header information */
+    .header {
+        width: 100%;
+        background-color: #9933cc;
+        color: #ffffff;
+        padding: 0px;
+    }
+
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+
+    [class *="col-"] {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    *:before,
+    *:after {
+        box-sizing: content-box;
+    }
+
+    /* information with responsive breakpoints for phones and tablets */
+
+    /*header info*/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Cardo", georgia, serif;
+        font-size: 4vw;
+        /*font-size: calc(4vw + 4vh + 2vmin);*/
+        background: var(--bodyBackground);
+        color: var(--contentColor);
+    }
+
+	/*correcting issues that came up with mirador's css */
+    a.hud-control {
+	color: var(--lineBackground);
+    }
+
+
+    a {
+        color: var(--linkColor);
+        text-decoration: none;
+    }
+
+    pre {
+        width: 83.33%;
+        background: var(--preBackground);
+        ;
+        font-family: courier;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-size: 1.474vw;
+    }
+
+    /* works for large screen h1#mainTitle {
+        overflow:hidden;
+        font-size:4vw;
+        background:var(--titleBackground);
+        display:flex;
+    }*/
+
+    h1#mainTitle.mainPage {
+        overflow: hidden;
+        font-size: 4vw;
+        background: var(--titleBackground);
+        display: block;
+    }
+
+    h1#mainTitle.paratext {
+        overflow: hidden;
+        font-size: 4vw;
+        background: var(--titleBackground);
+        display: flex;
+    }
+
+    h1#mainTitle {
+        overflow: hidden;
+        font-size: 4vw;
+        background: var(--titleBackground);
+        display: block;
+    }
+
+    img#banner {
+        width: 35%;
+        float: left;
+    }
+
+    img#interiorBanner {
+        width: 25%;
+        float: left;
+    }
+
+    div#mastheadMain {
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 1%;
+        font-size: 3.5vw;
+        color: var(--mastheadMainColor);
+    }
+
+    div#mastheadSub {
+        font-style: italic;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 500;
+        margin-top: -1.5%;
+        margin-left: 24.5%;
+        color: var(--mastheadSubColor);
+    }
+
+    div#editorName {
+        text-align: center;
+        font-size: 3vw;
+        padding-top: 3.75%;
+        padding-left: 63%;
+        color: var(--editorTextColor);
+    }
+
+    div#noSubtitle {
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 900;
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    /*h1#siteHeader {
+            font-size: 2.25vw;
+            text-align: center;
+            background: var(--siteHeaderBackground);
+    }*/
+
+    h1#siteHeader {
+        font-size: 2.25vw;
+        text-align: center;
+        background: var(--siteHeaderBackground);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2#paratext_title {
+        font-size: 2.75vw;
+        font-weight: 700;
+        padding-top: 2%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.administrative.paratext h3.subheader {
+        font-size: 1.5vw;
+        font-weight: 700;
+        padding-top: 1%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3.subheader {
+        font-size: 3vw;
+        font-weight: 700;
+        padding-top: 2%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.administrative.paratext h3.status {
+        font-size: 2 vw;
+    }
+
+    div.administrative.paratext h3.shelfmark {
+        font-size: 2 vw;
+    }
+
+
+    /*.siteitem {
+        padding-left: .5%;
+        padding-right: .5%;
+    }*/
+
+    .siteitem {
+        background: var(--siteitemBackground:#434370);
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        font-size: 3vw;
+    }
+
+    /*.siteitem  a {
+        color:var(--siteitemLink);
+        background:var(--siteitemBackground);
+        text-decoration:none;
+        padding-left: .5%;
+        padding-right: .5%;
+    }*/
+
+
+    .siteitem a {
+        color: var(--siteitemLink);
+        background: var(--siteitemBackground);
+        text-decoration: none;
+    }
+
+    a.nav_link {
+        display: inline-block;
+    }
+
+    .siteitem a:hover {
+        border-radius: 0.25rem;
+        background: var(--siteitemBackgroundHover);
+        color: var(--siteitemLinkHover);
+        drop-shadow(.05% .05% .031% yellow);
+    }
+
+    /*
+    .menuitem{
+        width: 25%; 
+        color: var(--menuitemColor);
+        padding-left: .5%;
+        padding-right: .5%;
+    } */
+
+    .menuitem {
+        /* padding: 15px; */
+        padding: 0% 1%;
+        color: var(--menuitemColor);
+        font-size: 3vw;
+        /* margin: 5px; */
+        /* height: auto; */
+    }
+
+    .menuitem a {}
+
+
+    #gathering {
+        width: 55%;
+        ;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    img.thumbnail {
+        width: 100%
+    }
+
+    .groupLabel {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    div.titleText#noSubtitle {
+        width: 83.33%;
+        text-align: center;
+        padding-top: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 900;
+        text-align: center;
+        font-size: 3.5vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    /* works at full size 
+    div.titleText
+    {
+        width: 45%;
+        font-size: 2vw;
+        color: var(--titleTextColor);
+        text-align: right;
+        font-weight:700;
+        padding-top:2%;
+    }
+
+
+
+    div.manuscriptText
+    {
+        font-size: 2vw;
+        color: var(--manuscriptTextColor);
+        text-align: left;
+        width:35%;
+        padding-left: 0.5vw;
+        padding-top: 2%;
+        font-weight:700;        
+    }
+
+    */
+
+    div.titleText {
+        width: 100%;
+        font-size: 4vw;
+        color: var(--titleTextColor);
+        text-align: center;
+        font-weight: 900;
+        display: block;
+    }
+
+    div.manuscriptText {
+        font-size: 4vw;
+        color: var(--manuscriptTextColor);
+        text-align: center;
+        width: 100%;
+        padding-left: 0.5vw;
+        font-weight: 700;
+    }
+
+
+    .largeText {}
+
+    .smallText {
+        font-size: 3.25vw;
+    }
+
+
+    /*.gathering_layout {
+        width: 64%;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+
+    .gathering_layout {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*internal item header*/
+
+    /*h1#menuHeader {
+            font-size: 1.25vw;
+            text-align: center;
+            background: var(--menuHeaderBackground);
+            padding-top: .5%;
+    }*/
+
+    h1#menuHeader {
+        font-size: 1.25vw;
+        text-align: center;
+        background: var(--menuHeaderBackground);
+        display: flex;
+        padding-top: 1%;
+    }
+
+
+    /*div#leftMenu {
+        width:16.66%;
+        display: inline-block;
+        margin-top:auto;
+        margin-left:auto;
+    }*/
+
+    div#leftMenu {
+        width: 35%;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    #modelViewer a {
+        color: var(--menuitemColor);
+        padding-left: 5%;
+    }
+
+    /*div#rightMenu {
+        width: 10%;
+        display: inline-block;
+        margin-top:auto;
+        margin-left:auto;
+
+    }*/
+
+    div#rightMenu {
+        width: 10%;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    /*#rightMenu .menuitem {
+        padding: 0%
+    }*/
+
+    #rightMenu .menuitem {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    #previousItem a {
+        background: var(--navBackground);
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-top: 1%;
+        margin-bottom: .5%;
+        color: var(--menuitemColor);
+
+    }
+
+    #nextItem a {
+        background: var(--navBackground);
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-top: .5%;
+        margin-bottom: 1%;
+        color: var(--menuitemColor);
+
+    }
+
+    /*.image_thumbnail {
+        width:25%;
+        font-size:1vw;
+    }*/
+
+    .image_thumbnail {
+        width: 25%;
+    }
+
+    /*div.surface{
+        height: auto;
+        clear: both;
+        background: var(--surfaceBackground);
+        display: flex;
+        flex-direction: row;
+    }*/
+
+    div.surface {
+        height: auto;
+        clear: both;
+        background: var(--surfaceBackground);
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*div.facsimage#panel {
+        flex:50%;
+        display: inline-block;
+        height: 728px;
+    }*/
+
+    div.facsimage#panel {
+        flex: 100%;
+        height: 728px;
+    }
+
+    /*div.facsimage#page {
+        flex:50%;
+        display: inline-block;
+    }*/
+
+    div.facsimage#page {
+        flex: 100%;
+    }
+
+    div.image img {
+        width: 100%;
+    }
+
+    div#canvas {
+        overflow-y: hidden; // hide vertical
+        overflow-x: hidden; // hide horizontal
+    }
+
+    /*#viewer {
+        display: block;
+        height: 300px;
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }*/
+
+    #viewer {
+        display: block;
+        height: 300px;
+        position: relative;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*.text {
+        flex: 50%;
+        display: inline-block;
+        font-size: 1.65vw;
+    }*/
+
+    .text {
+        flex: 50%;
+        font-size: 1.65vw;
+    }
+
+    /*.breakout_bar {
+        font-size: 1vw;
+        text-align: right;
+    }*/
+
+    .breakout_bar {
+        font-size: 3vw;
+    }
+
+    #breakout_wrapper {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*.XMLFile {
+        width: 16.66%;
+        display: inline-block;
+        text-align: center;
+        margin: 0% 4.16%;
+        background: var(--xmlBackground);
+    }*/
+
+    .decoFile {
+        flex: fit-content;
+        display: inline-block;
+        text-align: center;
+        margin: 0% 4.16%;
+        background: var(--decoBackground);
+    }
+
+    .decoFileSelected {
+        flex: fit-content;
+        display: inline-block;
+        text-align: center;
+        margin: 0% 4.16%;
+        background: var(--decoLinkColor);
+    }
+
+    .XMLFile {
+        flex: fit-content;
+        display: inline-block;
+        text-align: center;
+        margin: 0% 4.16%;
+        background: var(--xmlBackground);
+    }
+
+
+    /*.XMLLink {
+        color: var(--xmlLinkColor);
+        text-decoration: none;
+    }*/
+
+    .decoLink {
+        color: var(--decoLinkColor);
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .decoLinkSelected {
+        color: var(--decoBackground);
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+
+    .XMLLink {
+        color: var(--xmlLinkColor);
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    /*.dictLink {
+        color: var(--dictLinkColor);
+        text-decoration: none;
+    }*/
+
+    .dictLink {
+        color: var(--dictLinkColor);
+        text-decoration: none;
+        display: inline-block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    /*.dictFile {
+        width: 16.66%;
+        display: inline-block;
+        text-align: center;
+        margin: 0% 4.16%; 
+        background: var(--dictBackground);
+    }*/
+
+    .dictFile {
+        flex: 50%;
+        display: inline-block;
+        text-align: center;
+        margin: 0% 4.16%;
+        background: var(--dictBackground);
+    }
+
+    span.name {
+        font-weight: 600;
+    }
+
+    span.label {
+        font-weight: 600;
+    }
+
+    span.usage_label {
+        font-weight: 600;
+    }
+
+    /*div.label {
+        font-weight: bold;
+        width: 100%;
+        font-size: 2vw;
+        display: inline-block;
+        margin-left: 1%;
+    }*/
+
+    div.label {
+        font-weight: 900;
+        width: 100%;
+        font-size: 2.75vw;
+        display: inline-block;
+        margin-left: 1%;
+    }
+
+    /*.compare_dot {
+        font-size: 1vw;
+        line-height: 100%;
+        padding-left: 1%;
+    }*/
+
+    .compare_dot {
+        font-size: 2.5vw;
+        line-height: 100%;
+        padding-left: 1%;
+    }
+
+    /*span.compare {
+        text-align: right;
+        float: right;
+        padding-right: 1%;
+        font-size: 1.5vw;
+    }*/
+
+    span.compare {
+        text-align: right;
+        float: right;
+        padding-right: 1%;
+        font-size: 2.5vw;
+    }
+
+    div.zone {
+        padding-bottom: 1%;
+    }
+
+    div.comparison {
+        margin-bottom: 1%;
+    }
+
+    /*div.line {
+        background: var(--lineBackground);
+        padding-left: 1%;
+    }*/
+
+    div.line {
+        background: var(--lineBackground);
+        padding-left: 1%;
+        font-size: 4.5vw;
+    }
+
+    div.comparison {
+        height: auto;
+        width: 100%;
+        margin-top: -1%;
+        padding-left: 1%;
+        background: var(--comparisonBackground);
+        color: var(--comparisonColor);
+        display: none;
+    }
+
+    /*div.compare_item{
+        font-size: 1vw;
+        display: inline-block;
+        width: 100%;
+        margin-top: -1%;
+    }*/
+
+    div.compare_item {
+        font-size: 2.5vw;
+        display: inline-block;
+        width: 100%;
+        margin-top: -1%;
+    }
+
+    /*div.item_text{
+        font-size: 1vw;
+        display: inline-block;
+        width: 50%;
+    }*/
+
+    div.item_text {
+        font-size: 2.5vw;
+        display: inline-block;
+        width: 50%;
+    }
+
+    a.item_ref {
+        color: var(--itemRefColor);
+    }
+
+    /* Body elements */
+
+    .administrative.paratext {
+        background: var(--contentBackground);
+    }
+
+    .administrative.paratext p {
+        font-family: "junicode", georgia, serif;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .administrative.paratext ol {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-inline-start: 10%;
+    }
+
+    .administrative.paratext ul {
+      /*  width: 90%; */
+        margin-left: auto;
+        margin-right: auto;
+        padding-inline-start: 10%;
+    }
+
+    .administrative.paratext .description_category ul {
+        padding-inline-start: 5%;
+    }
+
+    .administrative.paratext .description_category ul li ul {
+        padding-inline-start: 2%;
+    }
+
+    .administrative.paratext ol li {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .administrative.paratext ol li p {
+        margin-left: 0%;
+    }
+
+    .administrative.paratext ul li {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .administrative.paratext ul li p {
+        margin-left: 0%;
+    }
+
+    .administrative ul.nodisplay li {
+        list-style-type: none;
+    }
+
+    div.description_category ul {
+        padding-inline-start: 0%;
+    }
+
+    div.description_category ul li {
+        list-style-type: none;
+        font-weight: 600;
+    }
+
+    div.description_category ul li ul li {
+        list-style-type: initial;
+        font-weight: 500;
+    }
+
+    .iframe-container {
+        display: flex;
+        width: 100%;
+        height: 300px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .illustration {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .poem {
+        width: 90%;
+        padding-left: 8.33%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .verse {
+        font-style: italic;
+    }
+
+
+    /*footnote info */
+
+    .notes {
+        background: var(--notesBackground);
+    }
+
+    .noteHeading {
+        font-size: 2.75vw;
+        font-weight: 700;
+        /* padding-top: 2%; */
+        width: 90%;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        margin-left: 2%;
+    }
+
+    .notes ol {
+        font-size: 4vw;
+    }
+
+    .note {
+        padding-left: 7%;
+        padding-bottom: 1%;
+    }
+
+    .noteHeading .note li.footnote {
+        width: 83.33%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    span.footnote sup {
+        font-size: 3.5vw;
+        text-decoration: none;
+    }
+
+    .informational sup {
+        color: var(--informationalColor);
+    }
+
+    .explanatory sup {
+        color: var(--explanatoryColor);
+    }
+
+    .other sup {
+        color: var(--otherNoteColor);
+    }
+
+    li.informational {
+        color: var(--informationalColor);
+    }
+
+    li.explanatory {
+        color: var(--explanatoryColor);
+    }
+
+    li.other {
+        color: var(--otherNoteColor);
+    }
+
+    li div.noteBody {
+        color: var(--noteBodyColor);
+        width: 90%;
+    }
+
+    .informational a[title~="return"] {
+        color: var(--informationalColor);
+    }
+
+    .explanatory a[title~="return"] {
+        color: var(--explanatoryColor);
+    }
+
+    .other a[title~="return"] {
+        color: var(--otherNoteColor);
+    }
+
+    .informational a[title~="link"] {
+        color: var(--informationalColor);
+    }
+
+    .explanatory a[title~="link"] {
+        color: var(--explanatoryColor);
+    }
+
+    .other a[title~="link"] {
+        color: var(--otherNoteColor);
+    }
+
+    /*footer information**/
+
+    div.footer {
+        background: var(--footerBackground);
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+    }
+
+    div.footer > div.sponsors p {
+	width: 90%;
+    }
+
+    div.footer > div.license p {
+	width: 75%;
+    }
+
+    div.footer p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: var(--menuitemColor);
+    }
+
+    div.footer p a {
+        color: var(--menuitemColor);
+    }
+
+    /*styling info intended to mimic manuscripts */
+    div.pilcrow {
+        display: inline-block;
+        font-style: normal;
+        margin-right: .5%;
+    }
+
+    span.capital {
+        /* should this always be the same color? */
+        font-style: normal;
+        color: var(--capitalColor);
+    }
+
+    span.ex {
+        font-style: italic;
+    }
+
+    span.damage {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: var(--damageColor);
+    }
+
+    /* while these are colors they're related to the manuscripts, not arbitrary site decisions, and so will be hard coded in here*/
+
+    .red {
+        color: red;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .gold {
+        color: gold;
+    }
+
+    .missing {
+        visibility: hidden;
+    }
+
+    span.capital_2 {
+        float: left;
+        font-size: 4vw;
+        line-height: 1.0;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-right: 1%;
+    }
+
+    span.capital_3 {
+        float: left;
+        font-size: 7vw;
+        line-height: 1.0;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-right: 1%;
+    }
+
+    span.capital_4 {
+        float: left;
+        font-size: 9vw;
+        line-height: 1.0;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-right: 1%;
+    }
+
+
+    span.underline {
+        text-decoration: underline;
+    }
+
+    span.underline.red {
+        text-decoration: underline red;
+        color: var(--contentColor);
+    }
+
+    span.underline.blue {
+        text-decoration: underline blue;
+        color: var(--contentColor);
+    }
+
+    span.underline.green {
+        text-decoration: underline green;
+        color: var(--contentColor);
+    }
+
+    span.underline.gold {
+        text-decoration: underline gold;
+        color: var(--contentColor);
+    }
+
+
+    span.touched {
+        text-shadow: 1px 1px red;
+    }
+
+    span.touched.underline.red {
+        text-shadow: 1px 1px red;
+        text-decoration: underline red;
+        color: var(--contentColor);
+    }
+
+    span.touched.underline.blue {
+        text-shadow: 1px 1px red;
+        text-decoration: underline blue;
+        color: var(--contentColor);
+    }
+
+    span.touched.underline.green {
+        text-shadow: 1px 1px red;
+        text-decoration: underline green;
+        color: var(--contentColor);
+    }
+
+    span.touched.underline.gold {
+        text-shadow: 1px 1px red;
+        text-decoration: underline gold;
+        color: var(--contentColor);
+    }
+
+    /* breakpoints */
+
+    @media only screen and (min-width : 640px) {
+
+        img#banner {
+            width: 25%;
+        }
+
+        div#editorName {
+            text-align: center;
+            font-size: 2vw;
+            padding-top: 0%;
+            padding-left: 75%;
+        }
+
+        h1#siteHeader {
+            text-align: unset;
+            align-item: unset;
+        }
+
+        div#leftMenu {
+            width: 25%;
+            margin-top: 10%;
+        }
+
+        #gathering {
+            width: 65%;
+        }
+
+        span.siteitem {
+            margin-left: .5%;
+            margin-right: .5%;
+            padding-top: .5%;
+            padding-bottom: .5%;
+            padding-left: .5%;
+            padding-right: .5%;
+            margin-bottom: .5%;
+            margin-top: .5%;
+        }
+
+        .iframe-container {
+            display: flex;
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+
+    @media only screen and (min-width : 740px) {
+
+
+        [class *="col-s-"] {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .iframe-container {
+            display: flex;
+            width: 100%;
+            height: 400px;
+        }
+
+        #viewer {
+            height: 400px;
+        }
+    }
+
+
+    @media only screen and (min-width : 1024px) {
+
+        h1#siteHeader {
+            font-size: 1.75vw;
+            display: block;
+            align-items: unset;
+            flex-flow: unset;
+            justify-content: unset;
+            text-align: center;
+        }
+
+        h3.description_category {
+            font-size: 1.25vw;
+        }
+
+        .administrative.paratext p {
+            font-size: 3vw;
+        }
+
+        .poem {
+            font-size: 3vw;
+        }
+
+        .administrative.paratext ol {
+            font-size: 3vw;
+        }
+
+        .administrative.paratext ul {
+            font-size: 3vw;
+        }
+
+        span.siteitem {
+            padding-top: 0%;
+            padding-bottom: 0%;
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            font-size: unset;
+        }
+
+        div#leftMenu {
+            width: 18%;
+            margin-top: auto;
+        }
+
+        #gathering {
+            width: 75%;
+            display: inline-block;
+            margin-top: auto;
+        }
+
+        .menuitem {
+            font-size: unset;
+        }
+
+        #rightMenu .menuitem {
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        div#rightMenu {
+            display: inline-block;
+            margin-left: unset;
+            align-content: unset;
+            justify-content: unset;
+            flex-flow: unset;
+        }
+
+        #previousItem a {
+            display: inline-block;
+            width: 45%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        #nextItem a {
+            display: inline-block;
+            width: 45%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        .image_thumbnail {
+            width: unset;
+            padding: .5%;
+        }
+
+        img.thumbnail {
+            width: 13%;
+        }
+
+        a.nav_link {
+            display: unset;
+        }
+
+        div.surface {
+            flex-direction: row;
+        }
+
+        div.surface#paratext {
+            flex-direction: column;
+        }
+
+        div.facsimage#page {
+            flex: 50%;
+        }
+
+        div.facsimage#panel {
+            flex: 50%;
+        }
+
+        #viewer {
+            width: 100%;
+            height: 100%;
+        }
+
+        span.footnote sup {
+            font-size: 1.75vw;
+            text-decoration: none;
+        }
+
+
+        div.note li {
+            font-size: 2vw;
+        }
+
+        .noteBody {
+            font-size: 2vw;
+        }
+
+        .footer p {
+            font-size: 2vw;
+        }
+
+        .iframe-container {
+            display: flex;
+            width: 100%;
+            height: 700px;
+        }
+
+        div.line {
+            font-size: 2vw;
+        }
+
+        span.compare {
+            font-size: 2vw;
+        }
+
+        .compare_dot {
+            font-size: 2vw;
+        }
+
+        .breakout_bar {
+            font-size: 1.5vw;
+            width: 85%;
+            display: inline-block;
+            text-align: center;
+            float: right;
+        }
+    }
+
+    .decoFile {
+        flex: fit-content;
+    }
+
+    .XMLFile {
+        flex: fit-content;
+    }
+
+    .dictFile {
+        flex: fit-content;
+    }
+
+    .decoLink {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .XMLLink {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .dictLink {
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    div.compare_item {
+        font-size: 1.5vw;
+    }
+
+    div.item_text {
+        font-size: 1.5vw;
+    }
+
+
+    @media only screen and (min-width : 1280px) {
+
+        div#editorName {
+            font-size: 1vw;
+            padding-top: .95%;
+        }
+
+        h1#siteHeader {
+            font-size: 1.75vw;
+            display: flex;
+        }
+
+        span.siteitem {
+            flex: fit-content;
+            font-size: 1.25vw;
+        }
+
+        .administrative.paratext p {
+            font-size: 1.75vw;
+            line-height: 5vh;
+        }
+
+        .poem {
+            font-size: 2vw;
+        }
+
+
+        .administrative.paratext ol {
+            font-size: 2vw;
+        }
+
+        .administrative.paratext ul {
+            font-size: 1.2vw;
+        }
+
+        .administrative.paratext ol li {
+            padding-top: .5%;
+            padding-bottom: .5%;
+        }
+
+        .administrative.paratext ul li {
+            padding-top: .5%;
+            padding-bottom: .5%;
+        }
+
+
+        span.footnote sup {
+            font-size: 1vw;
+            text-decoration: none;
+        }
+
+
+        div.note li {
+            font-size: 1.75vw;
+        }
+
+        .noteBody {
+            font-size: 1.75vw;
+        }
+
+        .footer p {
+            font-size: 1.75vw;
+        }
+
+        .iframe-container {
+            display: flex;
+            width: 100%;
+            height: 800px;
+        }
+
+    }
+
+    div.compare_item {
+        font-size: 1.75vw;
+    }
+
+    div.item_text {
+        font-size: 1.75vw;
+    }
+
+    span.capital_2 {
+        font-size: 4.7vw;
+    }
+
+    span.capital_4 {
+        font-size: 9.4vw;
+    }
+
+
+    /*everything larger than 1366px assumes that you will not use the whole screen for readability's sake */
+
+    @media only screen and (min-width : 1366px) {
+
+        #wrapper {
+            width: 83.33%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        H1#menuHeader {
+            font-size: 1vw;
+            display: flex;
+        }
+
+        div.titleText {
+            font-size: 3vw;
+        }
+
+        div.manuscriptText {
+            font-size: 2.75vw;
+        }
+
+        #gathering {
+            width: 70%;
+        }
+
+        .breakout_bar {
+            font-size: 1.25vw;
+        }
+
+        div#leftMenu {
+            width: 17%;
+        }
+
+        div#rightMenu {
+            width: 15%;
+        }
+
+        div.line {
+            font-size: 1.75vw;
+        }
+
+        span.compare {
+            font-size: 1.75vw;
+        }
+
+        .compare_dot {
+            font-size: 1.75vw;
+        }
+
+        .footer p {
+            font-size: 1.25vw;
+        }
+
+        div.compare_item {
+            font-size: 1vw;
+        }
+
+        div.item_text {
+            font-size: 1vw;
+        }
+
+    }
+}
