@@ -1,0 +1,1270 @@
+{
+    "nodes": {
+        "0": {
+            "id": "person1",
+            "name": "John Lydgate",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "cyan",
+            "link": "http://dx.doi.org/10.1093/ref:odnb/17238"
+        },
+        "1": {
+            "id": "work4",
+            "name": "Balade in Commendation of Our Lady",
+            "type": "work",
+            "color": "midnightblue",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "2": {
+            "id": "work83",
+            "name": "The Testament of John Lydgate",
+            "type": "work",
+            "color": "midnightblue",
+            "url_color": "red",
+            "link": "http://www.minorworksoflydgate.net/works.html#Proofed3937"
+        },
+        "3": {
+            "id": "work142",
+            "name": "A lamentacioun of our lady Maria",
+            "type": "work",
+            "color": "midnightblue",
+            "url_color": "red",
+            "link": "http://www.minorworksoflydgate.net/works.html#Proofed6561"
+        },
+        "4": {
+            "id": "witness1",
+            "name": "Clopton Chantry Chapel",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "5": {
+            "id": "witness2",
+            "name": "Q.G.8",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "6": {
+            "id": "witness3",
+            "name": "Harley 2251",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "7": {
+            "id": "witness4",
+            "name": "Harley 2255",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "8": {
+            "id": "witness5",
+            "name": "Laud misc. 683",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "9": {
+            "id": "witness6",
+            "name": "Rawlinson C.86",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "10": {
+            "id": "witness7",
+            "name": "R.3.19",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "11": {
+            "id": "witness8",
+            "name": "Addit. 29729",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "12": {
+            "id": "witness9",
+            "name": "Addit. 34193",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "13": {
+            "id": "witness10",
+            "name": "Arundel 285",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "14": {
+            "id": "witness11",
+            "name": "Harley 218",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "15": {
+            "id": "witness12",
+            "name": "Hm 140",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "16": {
+            "id": "witness14",
+            "name": "Harley 2382",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "17": {
+            "id": "witness15",
+            "name": "Royal 18 D.II",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "18": {
+            "id": "witness16",
+            "name": "56",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "19": {
+            "id": "witness17",
+            "name": "Vossius Germ. Gall. Q.9",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "20": {
+            "id": "witness20",
+            "name": "Ashmole 59",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "21": {
+            "id": "witness22",
+            "name": "Sloane 1212",
+            "type": "witness",
+            "color": "green",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "22": {
+            "id": "location1",
+            "name": "Great Church of the Holy Trinity",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "23": {
+            "id": "location2",
+            "name": "Jesus College",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "24": {
+            "id": "location3",
+            "name": "British Library",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "25": {
+            "id": "location4",
+            "name": "Bodleian Library",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "26": {
+            "id": "location5",
+            "name": "Trinity College",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "27": {
+            "id": "location6",
+            "name": "St. John's College",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "28": {
+            "id": "location7",
+            "name": "Leiden University",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "29": {
+            "id": "location10",
+            "name": "Huntington Library",
+            "type": "location",
+            "color": "gold",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "30": {
+            "id": "city1",
+            "name": "London",
+            "type": "city",
+            "color": "darkslategrey",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "31": {
+            "id": "city2",
+            "name": "Long Melford",
+            "type": "city",
+            "color": "darkslategrey",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "32": {
+            "id": "city3",
+            "name": "Cambridge",
+            "type": "city",
+            "color": "darkslategrey",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "33": {
+            "id": "city4",
+            "name": "Oxford",
+            "type": "city",
+            "color": "darkslategrey",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "34": {
+            "id": "city5",
+            "name": "San Marino",
+            "type": "city",
+            "color": "darkslategrey",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "35": {
+            "id": "city6",
+            "name": "Leiden",
+            "type": "city",
+            "color": "darkslategrey",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "36": {
+            "id": "region1",
+            "name": "Suffolk",
+            "type": "region",
+            "color": "magenta",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "37": {
+            "id": "region2",
+            "name": "California",
+            "type": "region",
+            "color": "magenta",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "38": {
+            "id": "region3",
+            "name": "Greater London",
+            "type": "region",
+            "color": "magenta",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "39": {
+            "id": "region4",
+            "name": "Cambridgeshire",
+            "type": "region",
+            "color": "magenta",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "40": {
+            "id": "region5",
+            "name": "Oxfordshire",
+            "type": "region",
+            "color": "magenta",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "41": {
+            "id": "region6",
+            "name": "South Holland",
+            "type": "region",
+            "color": "magenta",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "42": {
+            "id": "country1",
+            "name": "United Kingdom",
+            "type": "country",
+            "color": "orange",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "43": {
+            "id": "country2",
+            "name": "United States",
+            "type": "country",
+            "color": "orange",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "44": {
+            "id": "country4",
+            "name": "Netherlands",
+            "type": "country",
+            "color": "orange",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "45": {
+            "id": "edition5",
+            "name": "A Selection from the Minor Poems of Don John Lydgate. Percy Society 2",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "46": {
+            "id": "edition7",
+            "name": "Der Stil in Lydgates religiöser Dichtung, Kleine Schriften.",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "47": {
+            "id": "edition8",
+            "name": "John Lydgate: The Minor Poems, Vol. I: Religious Poems. EETS e.s. 107",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "48": {
+            "id": "edition14",
+            "name": "The Bannatyne Manuscript. 4 parts in 4 vols. Scottish Text Society 3rd ser. 5 (1928); n.s. 22 (1928); n.s. 23 (1930); n.s. 26 (1934)",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "49": {
+            "id": "edition109",
+            "name": "Devotional Pieces in Verse and Prose from Ms. Arundel 285 and Ms. Harleian 6919. Scottish Text Society 3rd ser. 23",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "50": {
+            "id": "edition110",
+            "name": "Lydgate's Testament",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "51": {
+            "id": "edition111",
+            "name": "\"Observations On Recent Discoveries of Mural Paintings in Churches, Particularly those of Battel, Sussex.\" Journal of the British Archaelogical Association 2",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "52": {
+            "id": "edition112",
+            "name": "The History of Long Melford",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "53": {
+            "id": "edition113",
+            "name": "The Church of the Holy Trinity, Long Melford, Suffolk",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "54": {
+            "id": "edition114",
+            "name": "\"Verses by Lydgate at Long Melford.\" Review of English Studies n.s. 6",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "55": {
+            "id": "edition175",
+            "name": "Liebe des Vokes: eine Festschrift zum sechzijährigen Jubiläum der...Franz Joseph I",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "56": {
+            "id": "edition185",
+            "name": "\"Lydgate at Long Melford: Reassessing the Testament and 'Quis Dabit Meo Capiti Fontem Lacrimarum' in Their Local Context. Journal of Medieval Religious Cultures 43.1",
+            "type": "edition",
+            "color": "indigo",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "57": {
+            "id": "person4",
+            "name": "An anchoress of Maunsfield",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "59": {
+            "id": "person5",
+            "name": "Anonymous",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "73": {
+            "id": "person7",
+            "name": "Benedict Burgh",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "82": {
+            "id": "other_work195",
+            "name": "As I me lened unto a joyful place",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "83": {
+            "id": "other_work197",
+            "name": "Worldly worship is Joy transitory",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "93": {
+            "id": "person3",
+            "name": "Geoffrey Chaucer",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "94": {
+            "id": "other_work213",
+            "name": "Look well about ye that lovers be",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "95": {
+            "id": "person8",
+            "name": "John Walton",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "98": {
+            "id": "other_work220",
+            "name": "Parvus Cato",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "99": {
+            "id": "other_work221",
+            "name": "Complaynt to his Empty Purse",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "100": {
+            "id": "other_work222",
+            "name": "Complaint of a Prisoner against Fortune",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "101": {
+            "id": "other_work230",
+            "name": "Benedicta sit sancta Trinitas",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "102": {
+            "id": "other_work231",
+            "name": "My fair lady so fresh of hue",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "103": {
+            "id": "other_work181",
+            "name": "Early on morrow and toward night also",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "104": {
+            "id": "other_work182",
+            "name": "A babe is born our bliss to bring",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "105": {
+            "id": "other_work171",
+            "name": "When John Bochas considered had and sought",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "106": {
+            "id": "other_work210",
+            "name": "Of the Four Complexions",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "107": {
+            "id": "other_work162",
+            "name": "Hail glorious Virgin ground of all our grace",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "108": {
+            "id": "other_work183",
+            "name": "Upon the cross nailed was I for thee",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "109": {
+            "id": "other_work186",
+            "name": "Cato Major",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "110": {
+            "id": "other_work198",
+            "name": "Balade of Fortune",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "111": {
+            "id": "person6",
+            "name": "Sheryngham",
+            "type": "person",
+            "color": "darkred",
+            "url_color": "aliceblue",
+            "link": null
+        },
+        "112": {
+            "id": "other_work185",
+            "name": "Katherine with glorious Margaret",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "113": {
+            "id": "other_work188",
+            "name": "Jesu Christ keep our lips from pollution",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "114": {
+            "id": "other_work189",
+            "name": "All hail Mary full of grace",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "115": {
+            "id": "other_work193",
+            "name": "O man thou marrest in thy mind",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "116": {
+            "id": "other_work194",
+            "name": "Regina celi Queen of thy soth",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "117": {
+            "id": "other_work199",
+            "name": "Complaint of Venus",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "118": {
+            "id": "other_work200",
+            "name": "Gentilesse",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "119": {
+            "id": "other_work201",
+            "name": "ABC hymn to the Virgin",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "120": {
+            "id": "other_work202",
+            "name": "The Craft of Lovers",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "121": {
+            "id": "other_work203",
+            "name": "Prioress's Prologue",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "122": {
+            "id": "other_work204",
+            "name": "Prioress's Tale",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "123": {
+            "id": "other_work206",
+            "name": "The Monk of Paris",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "124": {
+            "id": "other_work207",
+            "name": "Legend of Wulfryk the priest ",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "125": {
+            "id": "other_work212",
+            "name": "Devoute & vertuos wordes",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "126": {
+            "id": "other_work215",
+            "name": "On the Evils of Prosperity",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "127": {
+            "id": "other_work216",
+            "name": "The Abuses of the Age",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "128": {
+            "id": "other_work217",
+            "name": "Moral Balade",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "129": {
+            "id": "other_work218",
+            "name": "Liber Prouerbium",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        },
+        "130": {
+            "id": "other_work184",
+            "name": "Hail blessed Mary",
+            "type": "other_work",
+            "color": "khaki",
+            "url_color": "aliceblue",
+            "link": ""
+        }
+    },
+    "links": [
+        {
+            "color": "darkred",
+            "source": "work4",
+            "target": "person1",
+            "value": 1
+        },
+        {
+            "color": "darkred",
+            "source": "work83",
+            "target": "person1",
+            "value": 1
+        },
+        {
+            "color": "darkred",
+            "source": "work142",
+            "target": "person1",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work4",
+            "target": "witness20",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work4",
+            "target": "witness22",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work4",
+            "target": "witness1",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness1",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness2",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness3",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness4",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness5",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness6",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness7",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness8",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness9",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness10",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness11",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness14",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness15",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness17",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work83",
+            "target": "witness12",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work142",
+            "target": "witness1",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work142",
+            "target": "witness2",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work142",
+            "target": "witness3",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work142",
+            "target": "witness4",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work142",
+            "target": "witness5",
+            "value": 1
+        },
+        {
+            "color": "green",
+            "source": "work142",
+            "target": "witness16",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness20",
+            "target": "location4",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness22",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness1",
+            "target": "location1",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness2",
+            "target": "location2",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness3",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness4",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness5",
+            "target": "location4",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness6",
+            "target": "location4",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness7",
+            "target": "location5",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness8",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness9",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness10",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness11",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness14",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness15",
+            "target": "location3",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness17",
+            "target": "location7",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness12",
+            "target": "location10",
+            "value": 1
+        },
+        {
+            "color": "gold",
+            "source": "witness16",
+            "target": "location6",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location4",
+            "target": "city4",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location3",
+            "target": "city1",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location1",
+            "target": "city2",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location2",
+            "target": "city3",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location5",
+            "target": "city3",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location7",
+            "target": "city6",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location10",
+            "target": "city5",
+            "value": 1
+        },
+        {
+            "color": "darkslategrey",
+            "source": "location6",
+            "target": "city4",
+            "value": 1
+        },
+        {
+            "color": "magenta",
+            "source": "city4",
+            "target": "region5",
+            "value": 1
+        },
+        {
+            "color": "magenta",
+            "source": "city1",
+            "target": "region3",
+            "value": 1
+        },
+        {
+            "color": "magenta",
+            "source": "city2",
+            "target": "region1",
+            "value": 1
+        },
+        {
+            "color": "magenta",
+            "source": "city3",
+            "target": "region4",
+            "value": 1
+        },
+        {
+            "color": "magenta",
+            "source": "city6",
+            "target": "region6",
+            "value": 1
+        },
+        {
+            "color": "magenta",
+            "source": "city5",
+            "target": "region2",
+            "value": 1
+        },
+        {
+            "color": "orange",
+            "source": "region5",
+            "target": "country1",
+            "value": 1
+        },
+        {
+            "color": "orange",
+            "source": "region3",
+            "target": "country1",
+            "value": 1
+        },
+        {
+            "color": "orange",
+            "source": "region1",
+            "target": "country1",
+            "value": 1
+        },
+        {
+            "color": "orange",
+            "source": "region4",
+            "target": "country1",
+            "value": 1
+        },
+        {
+            "color": "orange",
+            "source": "region6",
+            "target": "country4",
+            "value": 1
+        },
+        {
+            "color": "orange",
+            "source": "region2",
+            "target": "country2",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work4",
+            "target": "edition7",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work4",
+            "target": "edition8",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition111",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition112",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition113",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition114",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition185",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition5",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition109",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition8",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work83",
+            "target": "edition110",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work142",
+            "target": "edition14",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work142",
+            "target": "edition185",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work142",
+            "target": "edition175",
+            "value": 1
+        },
+        {
+            "color": "indigo",
+            "source": "work142",
+            "target": "edition8",
+            "value": 1
+        }
+    ]
+}

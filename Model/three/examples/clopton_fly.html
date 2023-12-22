@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-60066712-1"></script><script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                
+                    gtag('config', 'UA-60066712-1');
+                </script>
+		<title>Model of the Clopton Chantry Chapel, Holy Trinity Long Melford</title>
+		<meta charset="utf-8">
+		<style>
+		.spinner {
+  position: relative;
+        padding-top:50%;
+    }
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+			}
+
+			#instructions {
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+
+				-webkit-box-orient: horizontal;
+				-moz-box-orient: horizontal;
+				box-orient: horizontal;
+
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+
+				color: #ffffff;
+				text-align: center;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 24px;
+
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="blocker">
+
+		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - earth [fly controls]<br/>
+		<b>WASD</b> move, <b>R|F</b> up | down, <b>Q|E</b> roll, <b>up|down</b> pitch, <b>left|right</b> yaw
+		</div>
+
+	</div>
+
+			<div id="canvas"></div>
+
+		<script>
+				console.log("initialized");
+			</script>
+
+			<script src="js/Detector.js"></script>
+		  <script src="//minorworksoflydgate.net/3d_graph/spin.min.js"></script>
+
+
+
+		<script type="module">
+
+import * as THREE from '../build/three.module.js';
+
+			import { DDSLoader } from './jsm/loaders/DDSLoader.js';
+			import { MTLLoader } from './jsm/loaders/MTLLoader.js';
+			import { OBJLoader } from './jsm/loaders/OBJLoader.js';
+
+			//import { OrbitControls } from './jsm/controls/OrbitControls.js';
+
+				console.log("all loaded");
+			    var opts = {
+			      lines: 11, // The number of lines to draw
+			      length: 15, // The length of each line
+			      width: 10, // The line thickness
+			      radius: 30, // The radius of the inner circle
+			      corners: 1, // Corner roundness (0..1)
+			      rotate: 0, // The rotation offset
+			      direction: 1, // 1: clockwise, -1: counterclockwise
+			      color: '#FFF', // #rgb or #rrggbb
+			      speed: 0.6, // Rounds per second
+			      trail: 60, // Afterglow percentage
+			      shadow: false, // Whether to render a shadow
+			      hwaccel: false, // Whether to use hardware acceleration
+			      className: 'spinner', // The CSS class to assign to the spinner
+			      zIndex: 2e9, // The z-index (defaults to 2000000000)
+			    };
+
+				var target = document.getElementById('model')
+				var spinner = new Spinner(opts).spin(target);
+
+			var OBJFile = "test/clopton_chapel.obj";
+			var MTLFIle = "test/clopton_chapel.mtl";
+			var JPGFile = "test/clopton_chapel.jpg";
+
+			import { FlyControls } from './jsm/controls/FlyControls.js';
+			import { EffectComposer } from './jsm/postprocessing/EffectComposer.js';
+			import { RenderPass } from './jsm/postprocessing/RenderPass.js';
+			import { FilmPass } from './jsm/postprocessing/FilmPass.js';
+
+			var radius = 6371;
+			var tilt = 0.41;
+			var rotationSpeed = 0.02;
+
+			var cloudsScale = 1.005;
+			var moonScale = 0.23;
+
+			var MARGIN = 0;
+			var SCREEN_HEIGHT = window.innerHeight - MARGIN * 2;
+			var SCREEN_WIDTH = window.innerWidth;
+
+			var camera, scene, renderer, controls, crosshair, geometry;
+
+			var canvas = document.getElementById('canvas');
+			var scene = new THREE.Scene();
+			var geometry, meshPlanet, meshClouds, meshMoon;
+			var dirLight;
+
+			var composer;
+
+			var textureLoader = new THREE.TextureLoader();
+
+			var d, dPlanet, dMoon, dMoonVec = new THREE.Vector3();
+
+			var clock = new THREE.Clock();
+
+			init();
+			animate();
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 25, SCREEN_WIDTH / SCREEN_HEIGHT, 50, 1e7 );
+				camera.position.z = radius * 5;
+
+				scene = new THREE.Scene();
+				camera.lookAt(scene.position);
+
+// Add a crosshair to the camera
+// Credits: http://stackoverflow.com/questions/31655888/how-to-cast-a-visible-ray-threejs
+var material = new THREE.LineBasicMaterial({ color: 0xAAFFAA });
+
+// crosshair size
+var x = 0.005, y = 0.005;
+var geometry = new THREE.Geometry();
+
+// crosshair
+geometry.vertices.push(new THREE.Vector3(0, y, 0));
+geometry.vertices.push(new THREE.Vector3(0, -y, 0));
+geometry.vertices.push(new THREE.Vector3(0, 0, 0));
+geometry.vertices.push(new THREE.Vector3(x, 0, 0));    
+geometry.vertices.push(new THREE.Vector3(-x, 0, 0));
+
+var crosshair = new THREE.Line( geometry, material );
+
+var circleGeometry = new THREE.CircleGeometry( x, 32 );
+// circleGeometry.vertices.shift();
+var crosshair_circle = new THREE.Line( circleGeometry, material );
+crosshair_circle.position.z = -0.5;
+
+// place it in the center
+var crosshairPercentX = 50;
+var crosshairPercentY = 50;
+var crosshairPositionX = (crosshairPercentX / 100) * 2 - 1;
+var crosshairPositionY = (crosshairPercentY / 100) * 2 - 1;
+
+crosshair.position.x = crosshairPositionX * camera.aspect;
+crosshair.position.y = crosshairPositionY;
+crosshair.position.z = -0.3;
+
+camera.add( crosshair );
+camera.add( crosshair_circle );
+scene.add(camera);
+				
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+				document.body.appendChild( renderer.domElement );
+
+				//
+
+				controls = new FlyControls( camera, renderer.domElement );
+
+				controls.movementSpeed = 1000;
+				controls.domElement = renderer.domElement;
+				controls.rollSpeed = Math.PI / 24;
+				controls.autoForward = false;
+				controls.dragToLook = false;
+
+
+				// postprocessing
+
+				var renderModel = new RenderPass( scene, camera );
+				var effectFilm = new FilmPass( 0.35, 0.75, 2048, false );
+
+				composer = new EffectComposer( renderer );
+
+				composer.addPass( renderModel );
+				composer.addPass( effectFilm );
+
+			}
+
+			function onWindowResize() {
+
+				SCREEN_HEIGHT = window.innerHeight;
+				SCREEN_WIDTH = window.innerWidth;
+
+				camera.aspect = SCREEN_WIDTH / SCREEN_HEIGHT;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+				composer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+
+			}
+
+			function render() {
+
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+	</body>
+</html>

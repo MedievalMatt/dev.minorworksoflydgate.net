@@ -1,0 +1,92 @@
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/qwest/4.4.5/qwest.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.4/papaparse.min.js"></script>
+    <script src="//unpkg.com/3d-force-graph"></script>
+    
+    <script src="//unpkg.com/d3-octree"></script>
+    <script src="//unpkg.com/d3-force-3d"></script>
+    <script src="//unpkg.com/three"></script>
+    <script src="//unpkg.com/three-spritetext"></script>
+    
+    <script src="data-set-loader.js"></script>
+    <script src="spin.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="spinner" class="spinner">
+    <div id="3d-graph"></div>
+    <script>
+        var opts = {
+        lines: 11, // The number of lines to draw
+        length: 15, // The length of each line
+        width: 10, // The line thickness
+        radius: 30, // The radius of the inner circle
+        corners: 1, // Corner roundness (0..1)
+        rotate: 0, // The rotation offset
+        direction: 1, // 1: clockwise, -1: counterclockwise
+        color: '#FFF', // #rgb or #rrggbb
+        speed: 0.6, // Rounds per second
+        trail: 60, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: true, // Whether to use hardware acceleration
+        className: 'spinner', // The CSS class to assign to the spinner
+        zIndex: 2e9, // The z-index (defaults to 2000000000)
+        top: 'auto', // Top position relative to parent in px
+        left: 'auto' // Left position relative to parent in px
+        };
+        
+        var spinner = null;
+        var spinner_div = document.getElementById('spinner');
+        
+        window.addEventListener("load",loader(),false)
+        
+        
+        function loader() {
+        if(spinner == null) {
+        spinner = new Spinner(opts).spin(spinner_div);
+        } else {
+        spinner.spin(spinner_div);
+        }
+        }
+        
+        
+        function nearest(number, floor, increment, offset) {
+        var num = Math.ceil((number - offset) / increment ) * increment + offset;
+        
+        if (num < floor) {
+        
+        return floor;
+        }
+        else {
+        return Math.ceil((number - offset) / increment ) * increment + offset;
+        }
+        }
+        
+        const elem = document.getElementById('3d-graph');
+        
+        const Graph = ForceGraph3D()
+        (elem)
+        .jsonUrl('http://www.minorworksoflydgate.net/json_1.php?string=7')
+        .nodeLabel('name')
+        .nodeOpacity('0.9')
+        .nodeResolution('100')
+        .nodeRelSize(function (d) {return nearest(Math.log(d.weight) * 10,5,5,5) || 10;})
+        .onNodeClick(node => {
+        // Aim at node from outside it
+        const distance = 40;
+        const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+        Graph.cameraPosition(
+        { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, // new position
+        node, // lookAt ({ x, y, z })
+        3000  // ms transition duration
+        );
+        });
+        
+        // Add collisionforces
+        Graph.d3Force('collide', d3.forceCollide(Graph.nodeRelSize()))
+        .d3Force('charge').strength(-150);
+        
+    </script>
+</body>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-60066712-1"></script><script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                
+                    gtag('config', 'UA-60066712-1');
+                </script>
+		<title>Model of the Clopton Chantry Chapel, Holy Trinity Long Melford</title>
+		<meta charset="utf-8">
+		<style>
+		.spinner {
+  position: relative;
+        padding-top:50%;
+    }
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+			}
+
+			#instructions {
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+
+				-webkit-box-orient: horizontal;
+				-moz-box-orient: horizontal;
+				box-orient: horizontal;
+
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+
+				color: #ffffff;
+				text-align: center;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 24px;
+
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="blocker">
+
+			<div id="instructions">
+				<span style="font-size:36px">Click to play</span>
+				<br /><br />
+				Move: WASD<br/>
+				Jump: SPACE<br/>
+				Look: MOUSE
+			</div>
+
+		</div>
+
+		<div id="canvas"></div>
+
+		<script>
+				console.log("initialized");
+			</script>
+
+			<script src="js/Detector.js"></script>
+		    <script src="//minorworksoflydgate.net/3d_graph/spin.min.js"></script>
+
+		<script type="module">
+
+import * as THREE from '../build/three.module.js';
+
+			import { DDSLoader } from './jsm/loaders/DDSLoader.js';
+			import { MTLLoader } from './jsm/loaders/MTLLoader.js';
+			import { OBJLoader } from './jsm/loaders/OBJLoader.js';
+
+			//import { OrbitControls } from './jsm/controls/OrbitControls.js';
+
+				console.log("all loaded");
+			    var opts = {
+			      lines: 11, // The number of lines to draw
+			      length: 15, // The length of each line
+			      width: 10, // The line thickness
+			      radius: 30, // The radius of the inner circle
+			      corners: 1, // Corner roundness (0..1)
+			      rotate: 0, // The rotation offset
+			      direction: 1, // 1: clockwise, -1: counterclockwise
+			      color: '#FFF', // #rgb or #rrggbb
+			      speed: 0.6, // Rounds per second
+			      trail: 60, // Afterglow percentage
+			      shadow: false, // Whether to render a shadow
+			      hwaccel: false, // Whether to use hardware acceleration
+			      className: 'spinner', // The CSS class to assign to the spinner
+			      zIndex: 2e9, // The z-index (defaults to 2000000000)
+			    };
+
+				var target = document.getElementById('model')
+				var spinner = new Spinner(opts).spin(target);
+
+			var OBJFile = "test/clopton_chapel.obj";
+			var MTLFIle = "test/clopton_chapel.mtl";
+			var JPGFile = "test/clopton_chapel.jpg";
+
+
+			import { PointerLockControls } from './jsm/controls/PointerLockControls.js';
+
+			var camera, scene, renderer, controls, crosshair, geometry;
+
+			var canvas = document.getElementById('canvas');
+			var scene = new THREE.Scene();
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setClearColor(0xFFFFFF); // white background colour
+			canvas.appendChild(renderer.domElement);
+
+			var objects = [];
+
+			var raycaster;
+
+			var moveForward = false;
+			var moveBackward = false;
+			var moveLeft = false;
+			var moveRight = false;
+			var canJump = false;
+			var cameraPosition =false;
+
+			var prevTime = performance.now();
+			var velocity = new THREE.Vector3();
+			var mouse = new THREE.Vector2();
+			var direction = new THREE.Vector3();
+			var vertex = new THREE.Vector3();
+			var color = new THREE.Color();
+
+			document.addEventListener('mousemove', onDocumentMouseMove, false);
+
+
+
+			const urlParams = new URLSearchParams(window.location.search);
+			var initialX = parseFloat(urlParams.get('initialX'));
+			var initialY = parseFloat(urlParams.get('initialY'));
+			var initialZ = parseFloat(urlParams.get('initialZ'));
+
+			var cameraX = parseFloat(urlParams.get('cameraX'));
+			var cameraY = parseFloat(urlParams.get('cameraY'));
+			var cameraZ = parseFloat(urlParams.get('cameraZ'));
+
+			if (!initialX) 
+			{
+				initialX = -9.75779240110512;
+			}
+
+			if (!initialY) 
+			{
+				initialY = 7.32498851472298;
+			}
+
+			if (!initialZ) 
+			{
+				initialZ = -8.314002090008476;
+			}
+
+			if (!cameraX) 
+			{
+				cameraX = -3;
+			}
+
+			if (!cameraY) 
+			{
+				cameraY = -1;
+			}
+
+			if (!cameraZ) 
+			{
+				cameraZ = -3;
+			}
+
+			console.log(initialX);
+			console.log(initialY);
+			console.log(initialZ);
+
+			console.log(cameraX);
+			console.log(cameraY);
+			console.log(cameraZ);
+
+			init();
+			animate();
+
+			function init() {
+
+
+				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1000 );
+				camera.position.set = (cameraX, cameraY, cameraZ);
+				scene = new THREE.Scene();
+				camera.lookAt(scene.position);
+
+// Add a crosshair to the camera
+// Credits: http://stackoverflow.com/questions/31655888/how-to-cast-a-visible-ray-threejs
+var material = new THREE.LineBasicMaterial({ color: 0xAAFFAA });
+
+// crosshair size
+var x = 0.005, y = 0.005;
+var geometry = new THREE.Geometry();
+
+// crosshair
+geometry.vertices.push(new THREE.Vector3(0, y, 0));
+geometry.vertices.push(new THREE.Vector3(0, -y, 0));
+geometry.vertices.push(new THREE.Vector3(0, 0, 0));
+geometry.vertices.push(new THREE.Vector3(x, 0, 0));    
+geometry.vertices.push(new THREE.Vector3(-x, 0, 0));
+
+var crosshair = new THREE.Line( geometry, material );
+
+var circleGeometry = new THREE.CircleGeometry( x, 32 );
+// circleGeometry.vertices.shift();
+var crosshair_circle = new THREE.Line( circleGeometry, material );
+crosshair_circle.position.z = -0.5;
+
+// place it in the center
+var crosshairPercentX = 50;
+var crosshairPercentY = 50;
+var crosshairPositionX = (crosshairPercentX / 100) * 2 - 1;
+var crosshairPositionY = (crosshairPercentY / 100) * 2 - 1;
+
+crosshair.position.x = crosshairPositionX * camera.aspect;
+crosshair.position.y = crosshairPositionY;
+crosshair.position.z = -0.3;
+
+camera.add( crosshair );
+camera.add( crosshair_circle );
+scene.add(camera);
+
+
+				//camera.position.y = 10;
+				var onProgress = function ( xhr ) {
+
+					if ( xhr.lengthComputable ) {
+
+						var percentComplete = xhr.loaded / xhr.total * 100;
+						console.log( Math.round( percentComplete, 2 ) + '% downloaded' );
+						if (percentComplete != 100 ) {}
+						else {
+											spinner.stop();
+							//	console.log(counter);
+								//if (counter != 0) {
+							//	}
+								
+							//	counter = 1;
+						}
+
+					}
+
+				};
+
+
+				var onError = function () { };
+
+				var manager = new THREE.LoadingManager();
+				manager.addHandler( /\.dds$/i, new DDSLoader() );
+
+				// comment in the following line and import TGALoader if your asset uses TGA textures
+				// manager.addHandler( /\.tga$/i, new TGALoader() );
+
+				new MTLLoader( manager )
+					//.setPath( 'test/' )
+					.load( MTLFIle, function ( materials ) {
+
+						materials.preload();
+
+						new OBJLoader( manager )
+							.setMaterials( materials )
+							//.setPath( 'test/' )
+							.load( OBJFile, function ( object ) {
+
+								//object.position.x = object.position.y = - 95;
+
+								var texture = new THREE.TextureLoader().load(JPGFile);
+								texture.minFilter = THREE.NearestFilter;
+
+					            object.traverse(function (child) {   // aka setTexture
+					                if (child instanceof THREE.Mesh) {
+					                    child.material.map = texture;
+
+					           				       
+					                }
+					            });
+								scene.add( object );
+
+							}, onProgress, onError );
+
+					} );
+
+
+				//scene.background = new THREE.Color( 0xffffff );
+				//scene.fog = new THREE.Fog( 0xffffff, 0, 750 );
+
+				//var light = new THREE.HemisphereLight( 0xeeeeff, 0x777788, 0.75 );
+				//light.position.set( 0.5, 1, 0.75 );
+				//scene.add( light );
+				var ambient = new THREE.AmbientLight( 0xFFFFFF );
+				scene.add( ambient );
+
+				/*var directionalLight = new THREE.DirectionalLight( 0xffffff );
+				directionalLight.position.set( 1, 1, 0 ).normalize();
+				scene.add( directionalLight );*/
+
+				var hemisphereLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, .70);
+				scene.add( hemisphereLight );
+				controls = new PointerLockControls( camera );
+				scene.add( controls.getObject() );
+
+				var blocker = document.getElementById( 'blocker' );
+				var instructions = document.getElementById( 'instructions' );
+
+				instructions.addEventListener( 'click', function () {
+
+					controls.lock();
+
+				}, false );
+
+				controls.addEventListener( 'lock', function () {
+
+					instructions.style.display = 'none';
+					blocker.style.display = 'none';
+
+				} );
+
+				controls.addEventListener( 'unlock', function () {
+
+					blocker.style.display = 'block';
+					instructions.style.display = '';
+
+				} );
+
+
+				var onKeyDown = function ( event ) {
+
+					switch ( event.keyCode ) {
+
+						case 38: // up
+						case 87: // w
+							moveForward = true;
+							break;
+
+						case 37: // left
+						case 65: // a
+							moveLeft = true;
+							break;
+
+						case 40: // down
+						case 83: // s
+							moveBackward = true;
+							break;
+
+						case 39: // right
+						case 68: // d
+							moveRight = true;
+							break;
+
+						case 85: // position
+							cameraPosition = true;
+							break;
+
+						case 32: // space
+							if ( canJump === true ) velocity.y += 350;
+							canJump = false;
+							break;
+
+					}
+
+				};
+
+				var onKeyUp = function ( event ) {
+
+					switch ( event.keyCode ) {
+
+						case 38: // up
+						case 87: // w
+							moveForward = false;
+							break;
+
+						case 37: // left
+						case 65: // a
+							moveLeft = false;
+							break;
+
+						case 40: // down
+						case 83: // s
+							moveBackward = false;
+							break;
+
+						case 85: // position
+							cameraPosition = false;
+							break;
+
+						case 39: // right
+						case 68: // d
+							moveRight = false;
+							break;
+
+					}
+
+				};
+
+				document.addEventListener( 'keydown', onKeyDown, false );
+				document.addEventListener( 'keyup', onKeyUp, false );
+
+				raycaster = new THREE.Raycaster( new THREE.Vector3(), new THREE.Vector3( 0, - 1, 0 ), 0, 10 );
+
+				// floor
+
+				var floorGeometry = new THREE.PlaneBufferGeometry( 2000, 2000, 100, 100 );
+				floorGeometry.rotateX( - Math.PI);
+
+				// vertex displacement
+
+				var position = floorGeometry.attributes.position;
+
+				for ( var i = 0, l = position.count; i < l; i ++ ) {
+
+					vertex.fromBufferAttribute( position, i );
+
+					vertex.x += Math.random() * 20 - 10;
+					vertex.y += Math.random() * 2;
+					vertex.z += Math.random() * 20 - 10;
+
+					position.setXYZ( i, vertex.x, vertex.y, vertex.z );
+
+				}
+
+
+
+/*				floorGeometry = floorGeometry.toNonIndexed(); // ensure each face has unique vertices
+
+				position = floorGeometry.attributes.position;
+				var colors = [];
+
+				for ( var i = 0, l = position.count; i < l; i ++ ) {
+
+					color.setHSL( Math.random() * 0.3 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
+					colors.push( color.r, color.g, color.b );
+
+				}
+
+				floorGeometry.setAttribute( 'color', new THREE.Float32BufferAttribute( colors, 3 ) );
+
+				var floorMaterial = new THREE.MeshBasicMaterial( { vertexColors: true } );
+
+				var floor = new THREE.Mesh( floorGeometry, floorMaterial );
+				scene.add( floor );*/
+
+				// objects
+
+/*				var boxGeometry = new THREE.BoxBufferGeometry( 20, 20, 20 );
+				boxGeometry = boxGeometry.toNonIndexed(); // ensure each face has unique vertices
+
+				position = boxGeometry.attributes.position;
+				colors = [];
+
+				for ( var i = 0, l = position.count; i < l; i ++ ) {
+
+					color.setHSL( Math.random() * 0.3 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
+					colors.push( color.r, color.g, color.b );
+
+				}
+
+				boxGeometry.setAttribute( 'color', new THREE.Float32BufferAttribute( colors, 3 ) );
+
+				for ( var i = 0; i < 500; i ++ ) {
+
+					var boxMaterial = new THREE.MeshPhongMaterial( { specular: 0xffffff, flatShading: true, vertexColors: true } );
+					boxMaterial.color.setHSL( Math.random() * 0.2 + 0.5, 0.75, Math.random() * 0.25 + 0.75 );
+
+					var box = new THREE.Mesh( boxGeometry, boxMaterial );
+					box.position.x = Math.floor( Math.random() * 20 - 10 ) * 20;
+					box.position.y = Math.floor( Math.random() * 20 ) * 20 + 10;
+					box.position.z = Math.floor( Math.random() * 20 - 10 ) * 20;
+
+					scene.add( box );
+					objects.push( box );
+
+				}*/
+
+				
+
+
+				//renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				//renderer.domElement.addEventListener( 'click', raycast, false );
+
+				//document.body.appendChild( renderer.domElement );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+
+			console.log(camera);
+			console.log(crosshair);
+
+
+
+			function raycast () {
+
+				//console.log("mouse position: (" + mouse.x + ", "+ mouse.y + ")");
+
+			    //1. sets the mouse position with a coordinate system where the center
+			    //   of the screen is the origin
+
+			    //2. set the picking ray from the camera position and mouse coordinates
+			    raycaster.setFromCamera( mouse, camera );   
+
+			    //console.log(raycaster); 
+
+			    //3. compute intersections
+			    var intersects = raycaster.intersectObjects( scene.children, true );
+
+			    //console.log(intersects);
+
+			    for ( var i = 0; i < intersects.length; i++ ) {
+			    	if (i = intersects.length - 1) {
+					console.log('I');
+			    	console.log(i);
+			    	console.log('INTERSECTS');
+			        console.log( intersects[ i ] );
+			        console.log('CAMERA POSITION') 
+			        console.log(camera.position);
+			    }
+			        //console.log(camera.position);
+			        //console.log(camera.getWorldPosition());
+			        /*
+			            An intersection has the following properties :
+			                - object : intersected object (THREE.Mesh)
+			                - distance : distance from camera to intersection (number)
+			                - face : intersected face (THREE.Face3)
+			                - faceIndex : intersected face index (number)
+			                - point : intersection point (THREE.Vector3)
+			                - uv : intersection point in the object's UV coordinates (THREE.Vector2)
+			        */
+			    }
+
+			}
+
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+
+function onDocumentMouseMove(event) {
+    event.preventDefault();
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+
+				if ( controls.isLocked === true ) {
+
+					raycaster.ray.origin.copy( controls.getObject().position );
+					//raycaster.ray.origin.y -= 10;  
+
+					//var intersections = raycaster.intersectObjects( objects );
+					//console.log(intersections);
+					var intersections = raycaster.intersectObjects( scene.children, true );
+
+					var onObject = intersections.length > 0;
+
+					var time = performance.now();
+					var delta = ( time - prevTime ) / 1000;
+
+					velocity.x -= velocity.x * 10.0 * delta;
+					velocity.z -= velocity.z * 10.0 * delta;
+
+					velocity.y -= 9.8 * 100.0 * delta; // 100.0 = mass
+
+					direction.z = Number( moveForward ) - Number( moveBackward );
+					direction.x = Number( moveRight ) - Number( moveLeft );
+					direction.normalize(); // this ensures consistent movements in all directions
+
+					if ( moveForward || moveBackward ) velocity.z -= direction.z * 400.0 * delta;
+					if ( moveLeft || moveRight ) velocity.x -= direction.x * 400.0 * delta;
+
+					if ( onObject === true ) {
+
+						velocity.y = Math.max( 0, velocity.y );
+						canJump = true;
+
+					}
+
+					controls.moveRight( - velocity.x * delta );
+					controls.moveForward( - velocity.z * delta );
+
+					controls.getObject().position.y += ( velocity.y * delta ); // new behavior
+
+					if ( controls.getObject().position.y < 0 ) {
+
+						velocity.y = 0;
+						controls.getObject().position.y = 0;
+
+						canJump = true;
+
+					}
+
+					if (cameraPosition === true) {
+						raycast();
+			        	}
+
+					prevTime = time;
+
+				}
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+	</body>
+</html>

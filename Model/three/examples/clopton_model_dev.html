@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-60066712-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+                
+            gtag('config', 'UA-60066712-1');
+        </script>
+        <title>Model of the Clopton Chantry Chapel, Holy Trinity Long Melford</title>
+		<meta charset="utf-8">
+		
+        <style>
+		  .spinner {
+            position: relative;
+            }
+        </style>
+        
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link href="../../../tei-modified.css" rel="stylesheet" type="text/css"></link>
+	</head>
+
+	<body id="model">
+    <script>
+        console.log("initialized");
+    </script>
+			
+    <script src="../build/three.js">
+        console.log("three.js loaded");
+    </script>
+    <script src="js/loaders/DDSLoader.js"></script>
+    <script src="js/loaders/MTLLoader.js"></script>
+    <script src="js/loaders/OBJLoader.js"></script>
+    <script src="js/loaders/OBJMTLLoader.js"></script>
+    <script src="js/controls/TrackballControls.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/libs/stats.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+    <script>
+        console.log("all javascripts loaded");
+        
+        window.parent.addEventListener('keypress', function() { console.log('iFrame keypress function fired!');});
+        
+        var opts = {
+            lines: 10, // The number of lines to draw
+            length: 15, // The length of each line
+            width: 10, // The line thickness
+            radius: 30, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            direction: 1, // 1: clockwise, -1: counterclockwise
+            color: '#FFF', // #rgb or #rrggbb
+            speed: 0.6, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: 'spinner', // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            },
+            target = document.getElementById('model'),
+            spinner = new Spinner(opts).spin(target),
+            raycaster = new THREE.Raycaster(),
+            mouse = new THREE.Vector2(),
+            onClickPosition = new THREE.Vector2(),
+            container,
+            stats,
+            targetList = [],
+            projector,
+            object,
+            counter = 0,
+            camera,
+            scene,
+            renderer,
+            mouseX = 0,
+            mouseY = 0,
+            windowHalfX = window.innerWidth / 2,
+            windowHalfY = window.innerHeight / 2,
+            collidableMeshList = [],
+            isTweening = false,
+            initialX = -8.641993547045265, 
+            initialY = 7.163096247315863, 
+            initialZ = -8.398586763125584,
+            downloadPercentage = window.parent.document.getElementById('downloadPercentage'),
+            hemisphereLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, .70),
+            ambient = new THREE.AmbientLight( 0xFFFFFF ),
+            manager = new THREE.LoadingManager(),
+            texture = new THREE.Texture(),
+            onProgress = function ( xhr ) {
+				if ( xhr.lengthComputable ) {
+				    var percentComplete = xhr.loaded / xhr.total * 100;
+				    console.log( Math.round(percentComplete, 2) + '% downloaded' );
+						if (percentComplete != 100 ) {}
+						else {
+								spinner.stop();
+							//	console.log(counter);
+								//if (counter != 0) {
+							//	}
+								
+							//	counter = 1;
+						}
+						//downloadPercentage.innerHTML=( Math.round(percentComplete, 2) + '% downloaded' );
+					}
+				},
+            onError = function ( xhr ) {
+				},
+            imgLoader = new THREE.ImageLoader( manager ),
+            mtlLoader = new THREE.MTLLoader(),
+            objLoader = new THREE.OBJLoader(),
+            renderer = new THREE.WebGLRenderer({ alpha: true }),
+            projector = new THREE.Projector(),
+            mouseVector = new THREE.Vector3(),
+            raycaster = new THREE.Raycaster(),
+            mouseVector = new THREE.Vector2(),
+            panel = [
+                {'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_1.html',   'x':[-9.38, -7.47],
+                  'y':[6.80, 7.49],
+                  'z':[-8.18, -8.98]
+                },
+                {'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_2.html',  'x':[-7.62, -5.82],
+                 'y':[6.75, 7.45],
+                 'z':[-8.10, -8.90]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_3.html',  'x':[-5.81, -4.01],
+                 'y':[6.69, 7.36],
+                 'z':[-8.12, -8.80]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_4.html',  'x':[-4.01, -2.18],
+                 'y':[6.61, 7.35],
+                 'z':[-8.03, -8.69]
+                },
+                {'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_5.html',  'x':[-2.28, -0.40],
+                 'y':[6.53, 7.27],
+                 'z':[-8.02, -8.69]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_6.html',  'x':[-0.53, 1.32],
+                 'y':[6.50, 7.24],
+                 'z':[-8.03, -8.65]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/sw_test_7.html',  'x':[1.24, 3.07],
+                 'y':[6.45, 7.15],
+                 'z':[-8.01, -8.67]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/ww_test_1.html',  'x':[3.13, 3.55],
+                 'y':[6.79, 7.69],
+                 'z':[6.19, 8.19]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/ww_test_2.html',  'x':[3.39, 3.66],
+                 'y':[6.66, 7.65],
+                 'z':[-4.65, -6.58]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/ww_test_3.html',  'x':[3.03, 3.65],
+                 'y':[6.85, 7.67],
+                 'z':[-3.04, -4.89]
+                },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/ww_test_4.html',  'x':[3.45, 3.84],
+                 'y':[6.39, 7.89],
+                 'z':[-1.29, -2.91]
+                },
+	           {'url':'http://www.minorworksoflydgate.net/Testament/Clopton/ww_test_5.html',   'x':[3.46, 3.70],
+                 'y':[6.73, 7.59],
+                 'z':[-1.23, 0.34]
+               },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/ww_test_6.html',   'x':[3.47, 3.71],
+                 'y':[6.55, 7.42],
+                 'z':[0.43, 1.98]
+               },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/nw_test_1.html', 
+   		         'x':[3.63, 3.53],
+                 'y':[6.58, 7.26],
+                 'z':[2.05, 2.85]
+               },{'url':'http://www.minorworksoflydgate.net/Testament/Clopton/nw_test_2.html',   'x':[-0.17, 1.67],
+                 'y':[6.57, 7.31],
+                 'z':[2.06, 2.80]
+               }];
+        
+        //initialize the model
+        
+        init();
+        containerWidth = container.clientWidth;
+        containerHeight = container.clientHeight;
+        console.log ("containerWidth: " + containerWidth);
+        console.log ("containerHeight: " + containerHeight);
+        animate();
+        
+        function init(){
+            container = document.createElement( 'div' ); 
+				
+            document.body.appendChild( container );
+
+            camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+            camera.position.set( -1, 0, 1);
+            //camera.position.x = -1;
+            //camera.position.z = 1;
+            camera.lookAt( new THREE.Vector3( initialX, initialY, initialZ ) );
+            //camera.target.position(0,0,0);
+				
+            camera.rotation.z = Math.sin(camera.rotation.y)/3.5   
+            
+            //controls
+            
+           /* controls = new THREE.TrackballControls( camera );
+
+            controls.rotateSpeed = 1.0;
+            controls.zoomSpeed = 1.2;
+            controls.panSpeed = 0.8;
+
+            controls.noZoom = false;
+            controls.noPan = false;
+            controls.noRotate = true;
+
+            controls.staticMoving = true;
+            controls.dynamicDampingFactor = 0.3;
+
+            //controls.keys = [ 37, 38, 39 ];
+
+            controls.addEventListener( render ); */
+        
+            
+            controls = new THREE.OrbitControls( camera);
+            controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+            controls.dampingFactor = 0.25;
+            controls.panningMode = THREE.HorizontalPanning; // default is THREE.ScreenSpacePanning
+            controls.minDistance = 100;
+            controls.maxDistance = 500
+            controls.maxPolarAngle = Math.PI / 2;
+            controls.addEventListener( render );
+            
+            //scene
+            
+            scene = new THREE.Scene();
+            scene.add( ambient );            
+            scene.add( hemisphereLight );
+            
+            //loading progress indicator
+            
+            manager.onProgress = function ( item, loaded, total ) {
+				console.log( item, loaded, total );
+            };
+            
+            //image loading
+            imgLoader.load( 'obj/test/clopton_chapel.jpg', function ( image ) {
+				texture.image = image;
+				texture.needsUpdate = true;
+            } );   
+            
+            //mtl loading
+            mtlLoader.setPath( 'obj/test/' );
+            mtlLoader.load( 'clopton_chapel.mtl', function( materials ) {
+				materials.preload();
+
+                //obj loading
+                objLoader.setMaterials( materials );
+                objLoader.setPath( 'obj/test/' );
+                objLoader.load( 'clopton_chapel.obj', function ( object )  {
+                    object.traverse( function ( child ) {
+				        if ( child instanceof THREE.Mesh ) {
+				            //console.log (child.geometry.faces);
+				            child.material.map = texture;
+                        }  
+                    });
+                
+                    document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+                
+                    scene.add( object );
+                }, onProgress, onError );
+            });
+            
+            //Render the object
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            container.appendChild( renderer.domElement );
+            
+            window.addEventListener( 'resize', onWindowResize, false );
+            document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+            
+            //functions
+            function onWindowResize() {
+				windowHalfX = window.innerWidth / 2;
+				windowHalfY = window.innerHeight / 2;
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				controls.handleResize();
+			}
+            
+            function onDocumentMouseMove( event ) {
+//				mouseX = ( event.clientX - windowHalfX ) / 2;
+//				mouseY = ( event.clientY - windowHalfY ) / 2;
+			}
+            
+            function onMouseMove( e ) {
+                mouseVector.x = 2 * (e.clientX / containerWidth) - 1;
+                mouseVector.y = 1 - 2 * ( e.clientY / containerHeight );
+            }
+            
+            function clickURL (intersects, x1, x2, y1, y2, z1, z2, URL) { 
+                if (intersects[0].point.x > Math.min(x1,x2) && intersects[0].point.x < Math.max(x1,x2)) {
+                    console.log ("if statement one condition met.");
+                    if (intersects[0].point.y > Math.min(y1,y2) && intersects[0].point.y < Math.max(y1,y2)) {
+                        console.log ("if statement two condition met.");
+                        if (intersects[0].point.z > Math.min(z1,z2) && intersects[0].point.z < Math.max(z1,z2)) {
+                            console.log ("if statement three condition met.");
+                            window.parent.location.href = URL;
+                        }
+                    }
+                }
+            }
+            
+            for (i = 0; i < panel.length; i++) {
+
+clickURL(intersects, panel[i].x[0], panel[i].x[1], panel[i].y[0], panel[i].y[1], panel[i].z[0], panel[i].z[1],panel[i].url);
+
+}
+   		
+//   console.log(panel);
+//   console.log(panel[1].x[1]);
+    
+   if (intersects.length>0){
+ console.log(intersects[0].point);
+
+ //clickURL(intersects, panel.x[0], panel.x[1], panel.y[0], panel.y[1], panel.z[0], panel.z[1],panel.url);
+ 		  			
+//        intersects[ 0 ].face.color.setHex( Math.random() * 0xffffff );
+
+//        intersects[ 0 ].object.materials[ 0 ].color.setHex( Math.random() * 0xffffff );
+
+ //       var particle = new THREE.Particle( particleMaterial );
+ //       particle.position = intersects[ 0 ].point;
+ //       particle.scale.x = particle.scale.y = 8;
+ //       scene.add( particle );
+   //     console.log(particle.position);
+    }
+
+			}
+	
+	
+/*	function onDocumentMouseDown( event ) {                
+        var mouse3D = new THREE.Vector3( ( event.clientX / window.innerWidth ) * 2 - 1,   //x
+                                        -( event.clientY / window.innerHeight ) * 2 + 1,  //y
+                                        0.5 );                                            //z
+        vector.unproject( camera );   
+        var raycaster = new THREE.Raycaster( camera.position, mouse3D );
+        var intersects = raycaster.intersectObjects( scene.children);
+        console.log (raycaster);
+        console.log (intersects);
+        // Change color if hit block
+        if ( intersects.length > 0 ) {
+            intersects[ 0 ].object.material.color.setHex( Math.random() * 0xffffff );
+        }
+    }
+	
+	
+/*	function onDocumentMouseDown (e ) {
+	
+		mouseVector.x = 2 * (e.clientX / containerWidth) - 1;
+		mouseVector.y = 1 - 2 * ( e.clientY / containerHeight );
+		
+		//mouse.x = ( e.clientX / containerWidth ) * 2 - 1;
+		//mouse.y = - ( e.clientY / containerHeight ) * 2 + 1;
+		
+		var vector = new THREE.Vector3( mouseVector.x, mouseVector.y, 1 );
+		
+		cameraLocation = vector.project(camera);
+		
+//		vector.x = Math.round( (   vector.x + 1 ) * containerWidth  / 2 );
+//		vector.y = Math.round( ( - vector.y + 1 ) * containerHeight / 2 );
+//		vector.z = 0;
+		
+//		console.log (vector.x + ", " + vector.y + " is the 2d space for this point."); 
+		
+		console.log (cameraLocation);
+	//	projector.unprojectVector( vector, camera );
+		var ray = new THREE.Raycaster( camera.position, vector.sub( camera.position ).normalize() );
+		
+		console.log (ray);
+		// create an array containing all objects in the scene with which the ray intersects
+		var intersects = ray.intersectObjects( targetList );
+		
+		console.log (intersects);
+	
+		// if there is one (or more) intersections
+		if ( intersects.length > 0 )
+		{
+			console.log("Hit @ " + toString( intersects[0].point ) );
+		// change the color of the closest face.
+		//intersects[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 ); 
+		//intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
+		}
+		//console.log (mouseVector.x + " is the x MouseVector coordinate");
+		//console.log (mouseVector.y + " is the y MouseVector coordinate");
+		
+		}
+*/	
+	
+	
+//	function onMouseClick( e ) {
+	
+	
+//		mouseVector.x = 2 * (e.clientX / containerWidth) - 1;
+//		mouseVector.y = 1 - 2 * ( e.clientY / containerHeight );
+
+		//console.log (mouseVector.x + " is the x coordinate");
+		//console.log (mouseVector.y + " is the y coordinate");
+		
+//		}
+
+            var rotationX = 0;
+            var rotationY = 0;
+            var rotationZ = 0;
+            var radian = 90 * Math.PI / 180
+			function animate() {
+
+				requestAnimationFrame( animate );
+                if (window.isShiftDown) {
+                    console.log("shift pressed");
+                  if (window.isLeftDown) {
+                      console.log("shift left pressed");
+                    camera.rotation.x = rotationX + radian;
+  }
+  				  if (window.isRightDown) {
+				  	                    camera.rotation.x = rotationX - radian;
+  }
+  				  if (window.isBDown) {
+				  	                    camera.rotation.y = rotationY + radian;
+  }
+  				  if (window.isFDown) {
+				  	camera.rotation.y = rotationY - radian;
+  }
+
+				  if (window.isForwardDown) {
+				  	camera.rotation.z = rotationZ + radian;
+  }
+  				  if (window.isBackDown) {
+				  	camera.rotation.z = rotationZ - radian;
+  }
+                }
+                else{ 
+                    
+                    if (window.isLeftDown) {
+                        console.log("left pressed");
+				  	camera.position.x = camera.position.x +.1;
+  }
+  				  if (window.isRightDown) {
+				  	camera.position.x = camera.position.x -.1;
+  }
+  				  if (window.isBDown) {
+				  	camera.position.y = camera.position.y +.1;
+  }
+  				  if (window.isFDown) {
+				  	camera.position.y = camera.position.y -.1;
+  }
+
+				  if (window.isForwardDown) {
+				  	camera.position.z = camera.position.z +.1;
+  }
+  				  if (window.isBackDown) {
+				  	camera.position.z = camera.position.z -.1;
+  }}
+				controls.update();
+				render();
+				
+
+			}
+            
+
+
+			function render() {
+
+				//camera.position.x += ( mouseX - camera.position.x ) * .05;
+				//camera.position.y += ( - mouseY - camera.position.y ) * .05;
+				//camera.position.set( -15, 10, 15 );
+				//camera.lookAt( scene.position );
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+	</body>
+</html>
+
+            
+            
+        
+        
+    
