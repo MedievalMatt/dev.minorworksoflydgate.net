@@ -1,0 +1,24 @@
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <xi:include href="Quis_Dabit/Clopton_Testament.xml" xpointer="HeaderInfo" parse="xml">
+            <xi:fallback>
+                <para>
+                    <emphasis>The header information was not collected.  Please check the xml wrapper to ensure it is pointing to the right location.<br/></emphasis>
+                </para>
+            </xi:fallback>
+        </xi:include>
+        <xi:include href="Quis_Dabit/Clopton_Editorial.xml" xpointer="EditNotes" parse="xml">
+            <xi:fallback>
+                <para>
+                    <emphasis>The editorial notes were not collected.  Please check the xml wrapper to ensure it is pointing to the right location.<br/></emphasis>
+                </para>
+            </xi:fallback>
+        </xi:include>
+        <xi:include href="Quis_Dabit/Clopton_Testament.xml" xpointer="TextContent" parse="xml">
+            <xi:fallback>
+                <para>
+                    <emphasis>The content of the text was not collected.  Please check the xml wrapper to ensure it is pointing to the right location.<br/></emphasis>
+                </para>
+            </xi:fallback>
+        </xi:include>
+
+</TEI>

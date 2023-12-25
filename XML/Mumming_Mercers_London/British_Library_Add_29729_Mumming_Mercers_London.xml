@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Mercers_London">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming for the Mercers of London</emph>
+                    </title>
+                    <title type="sub">British Library Additional 29729 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Add_29729">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library Additional MS 29729) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Additional_29729">
+                <!-- use L`IDO here to build out space? -->
+                <msDesc xml:id="British_Library_Additional_29729">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Additional 29729</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+                                <p n="hand_intro"/>
+                                <p n="hand_otiose"/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20221101" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.132" n="folio">
+                <surface n="verso">
+                    <label>Folio 132 Verso</label>
+                    <graphic url="Add_29729_f132v.jpg"/>
+                    <zone n="EETS.MML.I">
+                        <zone n="notes">
+                            <line n="l.1">william estfeld</line>
+                            <line n="l.2">meresar mayre</line>
+                            <line n="l.3">anno domini</line>
+                            <line n="l.4">1430 also þ<ex>e</ex></line>
+                            <line n="l.5">second tyme</line>
+                            <line n="l.6">mayre anno</line>
+                            <line n="l.7">1438<note place="bottom" anchored="true" n="informational"
+                                    >ODNB reference:
+                                    https://www-oxforddnb-com.ezphost.dur.ac.uk/view/10.1093/ref:odnb/9780198614128.001.0001/odnb-9780198614128-e-52172<!--can this be used to date the MS, since no mention of his being an NP is here?--></note></line>
+                        </zone>
+                        <zone n="text">
+                            <line n="l.1">here folowythe A letar made in wyse of balad by
+                                daun</line>
+                            <line n="l.2">John lydgat, brought by a pursyvaunt in wyse of</line>
+                            <line n="l.3">momers dysguysyd to fore þ<ex>e</ex> mayre of london
+                                estfeld</line>
+                            <line n="l.4">vpon the twelffthe nyght of cristmasse ordeyned Ry<note
+                                    place="bottom" anchored="true" n="informational">Word continues
+                                    below. There are no marks indicating the split</note></line>
+                            <line n="l.5">ally by the worthy merciers citesens of london.</line>
+                        </zone></zone>
+                    <zone n="EETS.MML.1">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="capital_guide">m</hi><note place="bottom"
+                                    anchored="true" n="informational">Space for an initial "M" was
+                                    left but the illuminator never added the initial. The guide
+                                    letter is still visible,
+                                however.</note><!--add guide letter but never rendered in hi rend in data dictionary -->ost
+                                mighty lord Iubyter the gret<note place="bottom" anchored="true"
+                                    n="informational">Unlike Trinity R.3.20, the other extant
+                                    witness of this work, "Jubyter" has not been underlined here.
+                                    The associated note still exists in the right-hand margine,
+                                    however. </note></line>
+                            <line n="l.2">whos mansion is over the sonnes beme</line>
+                            <line n="l.3">from thens that <hi rend="underline">phebus</hi>
+                                    w<ex>ith</ex> his fervent heat</line>
+                            <line n="l.4">Refletythe his lyght vpon þ<ex>e</ex> swyfte
+                                streme<!--consider ligatures for ft and st, respectively--></line>
+                            <line n="l.5">of <hi rend="underline">efrates</hi> towardes
+                                Jerusaleme</line>
+                            <line n="l.6">downe costynge as bokes makyn mynde</line>
+                            <line n="l.7">by lubyes londes / thrughe <hi rend="underline"
+                                    >ethiope</hi><ex>and</ex>
+                                <hi rend="underline">ynde</hi></line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1">Iubit<ex>er</ex> .i. o<ex>mn</ex>ia iubens</line>
+                            <line n="l.2"/>
+                            <line n="l.3">phebus .i. sol </line>
+                            <line n="l.4"/>
+                            <line n="l.5">efrates is one of þ<ex>e</ex> four</line>
+                            <line n="l.6">fludes of paradise</line>
+                            <line n="l.7"/>
+                        </zone></zone>
+                    <zone n="EETS.MML.2">
+                        <zone n="text">
+                            <line n="l.1">Conveyed downe / wher <hi rend="underline">mars</hi> in
+                                    <hi rend="underline">cyria</hi></line>
+                            <line n="l.2">hathe bylt his <hi rend="underline">palays</hi> / vpon
+                                    þ<ex>e</ex>sondes rede</line>
+                            <line n="l.3">And she <hi rend="underline">venus</hi> / callid <hi
+                                    rend="underline">cithera</hi></line>
+                            <line n="l.4">on <hi rend="underline">parnaso</hi> / w<ex>ith</ex>
+                                <hi rend="underline">pallas</hi> full of drede</line>
+                            <line n="l.5">and <hi rend="underline">percius</hi> w<ex>ith</ex> his
+                                furious stede</line>
+                            <line n="l.6">smot
+                                <del>a</del><!--check actual document for what the initial might be -->
+                                on the roche / wher þ<ex>e</ex> musis dwell</line>
+                            <line n="l.7">tyll ther sprange vp / sodenly a well</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"><hi rend="underline">mars</hi> is god of batayal</line>
+                            <line n="l.2"/>
+                            <line n="l.3"><hi rend="underline">venus</hi> is callyd þ<ex>e</ex>godes
+                                of</line>
+                            <line n="l.4">love <ex>and</ex> she is callyd cithera</line>
+                            <line n="l.5">aftar cithera þ<ex>e</ex> hyll wher</line>
+                            <line n="l.6">she is worshipyd</line>
+                            <line n="1.7"><hi rend="underline">percius</hi> is a knyght
+                                who<!--check actual manuscript for rendering of "who"--></line>
+                            <line n="l.8">rode vpon a hors that was</line>
+                            <line n="l.9">callyd <hi rend="underline"
+                                >pegacies</hi><!--"pegacies" or "pegacie"? Check manuscript--></line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.133" n="folio">
+                <surface n="recto">
+                    <label>Folio 133 Recto</label>
+                    <graphic url="Add_29729_f133r.jpg"/>
+                    <zone n="EETS.MML.3">
+                        <zone n="text">
+                            <line n="l.1">Callid <!--appears to have been erased and rewritten-->
+                                the welle of <hi rend="underline">calyope</hi></line>
+                            <line n="l.2">moste auctorysyd amonges this <hi rend="underline"
+                                    >cyryens</hi></line>
+                            <line n="l.3">of whiche the <hi rend="underline">poetes</hi> that dwell
+                                in þ<ex>at</ex> cuntre</line>
+                            <line n="l.4">and othar famous <hi rend="underline"
+                                >Rhethoryciens</hi></line>
+                            <line n="l.5">and they that caled be <hi rend="underline"
+                                >musycyens</hi></line>
+                            <line n="l.6">ar wont to drynke of that holsome welle</line>
+                            <line n="l.7">which þ<ex>at</ex> all othar / in vertu doth exsell</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1">þ<ex>e</ex> nyne muses dwell bysyd elycon</line>
+                            <line n="l.2">þ<ex>e</ex> welle / whiche bene þ<ex>e</ex> ix
+                                sustars</line>
+                            <line n="l.3">of musyke <ex>and</ex> of eloquence / <ex>and</ex>
+                                caliope</line>
+                            <line n="l.4">is one of them</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MML.4"><zone n="text">
+                            <line n="l.1">where <hi rend="underline">bacus</hi> dwellethe / besydes
+                                    þ<ex>e</ex> Ryver</line>
+                            <line n="l.2"> of ryche <hi rend="underline">thagus</hi> / þ<ex>e</ex>
+                                gravylles all of gold</line>
+                            <line n="l.3">which gyvethe a lyght / agaynst þ<ex>e</ex> sonne
+                                clere</line>
+                            <line n="l.4">so freshe so shyne / þ<ex>at</ex> it may not be
+                                told</line>
+                            <line n="l.5">wher <hi rend="underline">bellona</hi> hathe bylt a statly
+                                holde</line>
+                            <line n="l.6">In all this world / I trowe ther is none lyche</line>
+                            <line n="l.7">of hard <hi rend="underline">magnetis</hi>
+                                <ex>and</ex> dyamandes ryche</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"><hi rend="underline">bacus</hi> is clyped god of wyne. <hi
+                                    rend="underline">thagus</hi></line>
+                            <line n="l.2">is a ryver of which þ<ex>e</ex> gravelles <ex>and</ex>
+                                    þ<ex>e</ex> sands</line>
+                            <line n="l.3">bene of of gold</line>
+                        </zone></zone>
+                    <zone n="EETS.MML.5"><zone n="text">
+                            <line n="l.1">And of that welle drank somtyme <hi rend="underline"
+                                    >tulius</hi></line>
+                            <line n="l.2">and <hi rend="underline">macrobye</hi> full famous of
+                                prudence</line>
+                            <line n="l.3"><hi rend="underline">ovide</hi> also / and eke <hi
+                                    rend="underline">virgilius</hi></line>
+                            <line n="l.4">and <hi rend="underline">fraunceys petrark</hi> myrrour of
+                                    elloque<ex>n</ex>ce</line>
+                            <line n="l.5"><hi rend="underline">Ioh<ex>a</ex>n bocas</hi> also
+                                flouryng in sapyence</line>
+                            <line n="l.6">thoroughe that sugred bawme, aureate</line>
+                            <line n="l.7">they callyd weren <hi rend="underline">poetes</hi>
+                                laureat</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"><hi rend="underline">Tulius</hi> a poet <ex>and</ex>
+                                rethorysyan of <hi rend="underline">Rome</hi></line>
+                            <line n="l.2"><hi rend="underline">macroby</hi> an olde philosofre /
+                                ovid <ex>and</ex>
+                                <hi rend="underline">virgi</hi></line>
+                            <line n="l.3">lius wer old poets þ<ex>at</ex> one of <hi
+                                    rend="underline">rome</hi> that</line>
+                            <line n="l.4">othar of <hi rend="underline">naplis</hi> a fore
+                                    þ<ex>e</ex> tyme of <hi rend="underline">christ</hi></line>
+                            <line n="l.5"><hi rend="underline">fraunceys petrarke</hi> was a poet of
+                                fra<!--cut off. Check manuscript--></line>
+                            <line n="l.6">so was <hi rend="underline">bochas</hi>
+                                <ex>and</ex>
+                                <hi rend="underline">damit</hi><!--check manuscript--> w<ex>ith</ex>
+                                in this hun<!--cut off. Check manuscript--></line>
+                            <line n="l.7">ryd yere / <ex>and</ex> they were callyd lawryat</line>
+                            <line n="l.8">for they wer crownyd w<ex>ith</ex> lawrelle in</line>
+                            <line n="l.9">token that they exsellyd othar in
+                                poetr<!--cut off. check manuscript--></line>
+                        </zone></zone>
+                    <zone n="EETS.MML.6">
+                        <zone n="text">
+                            <line n="l.1">Owte of <hi rend="underline">surreye</hi> by many strange
+                                strond</line>
+                            <line n="l.2">this <hi rend="underline">Iubiter</hi> / hathe his letters
+                                sent</line>
+                            <line n="l.3">thoroughe owt <hi rend="underline">erope</hi> wher he dyd
+                                land</line>
+                            <line n="l.4">and frome þ<ex>e</ex> heven / cam doune of entent</line>
+                            <line n="l.5">to ravyshe shortly in sente<del>n</del>ment</line>
+                            <line n="l.6">fayre <hi rend="underline">erope</hi> most renommed of
+                                fame</line>
+                            <line n="l.7">afftar whan yet all <hi rend="underline">erope</hi>
+                                berethe þ<ex>e</ex> name</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1">poetes feyne þ<ex>at</ex> þ<ex>e</ex> gret god
+                                    Iubit<ex>er</ex> came</line>
+                            <line n="l.2">downe frome heven for to ravishe a
+                                kyng<!--cut off, check manuscript--></line>
+                            <line n="l.3">dawghtar caled <hi rend="underline">eropa</hi> of whom all
+                                    þ<ex>e</ex>
+                                <del/><!--struck through, check manuscript--></line>
+                            <line n="l.4">cuntris of <hi rend="underline">erope</hi> berythe the
+                                name</line>
+                        </zone></zone>
+                    <zone n="EETS.MML.7">
+                        <zone n="text">
+                            <line n="l.1">And thorughe <hi rend="underline">Egypte</hi> his
+                                    pursiva<ex>u</ex>nt is come</line>
+                            <line n="l.2">downe defendyd by þ<ex>e</ex>
+                                <hi rend="underline">rede see</hi></line>
+                            <line n="l.3">and hathe also hys ryght wey nome</line>
+                            <line n="l.4">thoroughe valeye of þ<ex>e</ex>
+                                drye<!--Take a look at this in the actual manuscript--> tree</line>
+                            <line n="l.5">by <hi rend="underline">flome Iordan</hi> coostynge the
+                                cuntryee</line>
+                            <line n="l.6">where Iacobe passed wilom w<ex>ith</ex> his staffe</line>
+                            <line n="l.7">takyng his shype to seylen at <hi rend="underline">port
+                                    Iaff</hi></line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3"/>
+                            <line n="l.4"/>
+                            <line n="l.5"/>
+                            <line n="l.6">in bacnulo isto
+                                transiui<!--final glyph could be struck through, could be t (although unlikely). Check actual manuscript-->
+                                Iordanem istu<!--cut off, check manuscript--></line>
+                        </zone></zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 133 Verso</label>
+                    <graphic url="Add_29729_f133v.jpg"/>
+                    <zone n="EETS.MML.8">
+                        <zone n="text">
+                            <line n="l.1">And so forthe downe / his Iourney can devyse</line>
+                            <line n="l.2">In <hi rend="underline">Aquarye</hi> / whan <hi
+                                    rend="underline">phebus</hi> shon full shene</line>
+                            <line n="l.3">forthe by passyng þ<ex>e</ex> gret <hi rend="underline"
+                                    >gulffe</hi> of <hi rend="underline">venyse</hi></line>
+                            <line n="l.4">and sayled forthe soo / all þ<ex>e</ex>
+                                <hi rend="underline">ryver</hi> of <hi rend="underline"
+                                >gene</hi></line>
+                            <line n="l.5">In which see regnythe þ<ex>e</ex> myghty quene</line>
+                            <line n="l.6">callyd <hi rend="underline">cyrces</hi> goddesse / of
+                                naturs salte</line>
+                            <line n="l.7">wher nymphes syng / her honor to exalte</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"/>
+                            <line n="l.2">•• phebus in aquatio is in</line>
+                            <line n="l.3">myche to say as than the</line>
+                            <line n="l.4">sonne is in that signe</line>
+                            <line n="l.5"/>
+                            <line n="l.6">cyrces is a goddes of the</line>
+                            <line n="l.7">see which turnethe men</line>
+                            <line n="l.8">in to lyknese of bestes and</line>
+                            <line n="l.9">nymphes ben goddesses of</line>
+                            <line n="l.10">small ryvers</line>
+                        </zone></zone>
+                    <zone n="EETS.MML.9">
+                        <zone n="text"><line n="l.1">And ther he saughe / as he gan approche</line>
+                            <line n="l.2">w<ex>ith</ex> in a boke / a fissher drewe his nette</line>
+                            <line n="l.3">on the ryght syde / of a srystall Rooche</line>
+                            <line n="l.4">fyshe was ther none / for þ<ex>e</ex> drawght was
+                                lette</line>
+                            <line n="l.5">and on the one syde / ther were letters sette</line>
+                            <line n="l.6">that sayd <del>this</del> in frenche / this rayson grade
+                                travayle</line>
+                            <line n="l.7">this annswer next in order <hi rend="underline">nulle
+                                    avayle</hi><note place="bottom" anchored="true"
+                                    n="informational">Unlike Trinity R.3.20, here only the final bit
+                                    of French is bracketed off and underlined</note></line></zone>
+                    </zone>
+                    <zone n="EETS.MML.10">
+                        <zone n="text"><line n="l.1">Than saylyng forthe / bysyd many a rokk</line>
+                            <line n="l.2">he gane full fast for to haste hym downe</line>
+                            <line n="l.3">thorou<!--possibly w?--> þ<ex>e</ex> daunger /
+                                    <ex>and</ex> streytes of <hi rend="underline">marokk</hi></line>
+                            <line n="l.4">passyng þ<ex>e</ex> parrylous /
+                                curraat<!--again, it's aat.  that's both manuscripts --> of
+                                arragon</line>
+                            <line n="l.5">so forthe by <hi rend="underline">spaygne</hi> / goyng
+                                envyron</line>
+                            <line n="l.6">thoroughe owt the reas and rokes of <hi rend="underline"
+                                    >brytaynge</hi></line>
+                            <line n="l.7">the brettyshe / tyll þ<ex>at</ex> he dyd
+                            attayne</line></zone>
+                    </zone>
+                    <zone n="EETS.MML.11">
+                        <zone n="text">
+                            <line n="l.1">Thorughe that lakk<note place="bottom" anchored="true"
+                                    n="informational">Trinity R.3.20 has þilk sakk</note> / callyd
+                                of <hi rend="underline">portland</hi></line>
+                            <line n="l.2">and toward <hi rend="underline">calys</hi> / holdyng his
+                                passage</line>
+                            <line n="l.3">lest <hi rend="underline">godwyn sandes / by grace of gods
+                                    hand</hi></line>
+                            <line n="l.4">havyng his wynd to his avantage</line>
+                            <line n="l.5">the weder clere / þ<ex>e</ex> stormes lefft ther
+                                rage</line>
+                            <line n="l.6">entryng the see / of <hi rend="underline">brutes
+                                    albyon</hi></line>
+                            <line n="l.7">now cawlyd <hi rend="underline">themse</hi> / thourghe all
+                                this regyon</line></zone>
+                    </zone>
+                    <zone n="EETS.MML.12">
+                        <zone n="text"><line n="l.1">And in a ffeeld / that drughe in to the
+                                este</line>
+                            <line n="l.2">besyd an yland / he sawght a shyp unlade</line>
+                            <line n="l.3">whiche had sayled / full fer toward the weste</line>
+                            <line n="l.4">the cabon peyntyd / withe floures freshe <ex>and</ex>
+                                glade</line>
+                            <line n="l.5">and lettars frenche / þ<ex>at</ex> feynt wyll ne
+                                faade</line>
+                            <line n="l.6">taunt haute bas / que hom<ex>m</ex>e soyt</line>
+                            <line n="l.7">touz Ioures regracyer dieux doyt</line></zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.134" n="folio">
+                <surface n="recto">
+                    <label>Folio 134 Recto</label>
+                    <graphic url="Add_29729_f134r.jpg"/>
+                    <zone n="EETS.MML.13">
+                        <zone n="text"><line n="l.1">And in a boote / on that other syde</line>
+                            <line n="l.2">a nother fisher / drughe his nette also</line>
+                            <line n="l.3">full of grey fysshe / <hi rend="underline">neptunus</hi>
+                                was his guyde</line>
+                            <line n="l.4">w<ex>ith</ex> so gret plentie / he nyst not what to
+                                do</line>
+                            <line n="l.5">and ther were lettars enbroded not fer free</line>
+                            <line n="l.6">full freshly wryten / this worde / <hi rend="underline"
+                                    >grand peyne</hi></line>
+                            <line n="l.7">A cloos accordyng / w<ex>ith</ex> this reson / <hi
+                                    rend="underline">grand gayne</hi></line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3">• neptunus is also a goddes</line>
+                            <line n="l.4">of the see</line></zone>
+                    </zone>
+                    <zone n="EETS.MML.14">
+                        <zone n="text"><line n="l.1">The noble illand / where he saughe this
+                                sight</line>
+                            <line n="l.2">gave vn<!--check letter form for "v" here in manuscript-->
+                                to hym a demonstracion</line>
+                            <line n="l.3">taught<!--possibly w--> hym also / by þ<ex>e</ex>
+                                <hi rend="underline">pooles</hi> lyght</line>
+                            <line n="l.4">he was not fer from londones toune</line>
+                            <line n="l.5">and w<ex>ith</ex> a flood the pursyvaunt came downe</line>
+                            <line n="l.6">lefft the watar / and at <hi rend="underline">thems</hi>
+                                stronde</line>
+                            <line n="l.7">w<ex>ith</ex> owt a b<add>o</add>ode / ion haste / he came
+                                to londe</line></zone>
+                    </zone>
+                    <zone n="EETS.MML.15">
+                        <zone n="text"><line n="l.1">Where certayne vessyles / nowe by þ<ex>e</ex>
+                                anker ryde</line>
+                            <line n="l.2"><del>hyme</del> them to refreshe <ex>and</ex> to takyn
+                                ayre</line>
+                            <line n="l.3">certayn estates / whiche purvey and provyd</line>
+                            <line n="l.4">for to vysyte / and sene the noble mayr</line>
+                            <line n="l.5">of this citie / and maken theyr repayr</line>
+                            <line n="l.6">to his presence or þ<ex>at</ex> they furder flyte</line>
+                            <line n="l.7">vnder soport / that he woll them admyt /
+                            finis</line></zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

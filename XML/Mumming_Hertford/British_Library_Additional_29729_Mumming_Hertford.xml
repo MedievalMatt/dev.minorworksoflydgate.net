@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Hertford">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at Hertford</emph>
+                    </title>
+                    <title type="sub">British Library Additional 29729 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Add_29729">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> NEED TO INCLUDE COPYRIGHT BLOCK FOR ADDITIONAL 29729</p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Mumming_Hertford">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Additional_29729">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Additional 29729</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+                                <p n="hand_intro"/>
+                                <p n="hand_otiose"/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220802" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.136" n="folio"> 
+                <surface n="verso">
+                    <label>Folio 136 Verso</label>
+                    <graphic url="Add_29729_f136v.jpg"/>
+                    <zone n="EETS.MH.I">
+                        <line n="l.1">Nowe feloweth here the maner of a bille by weye</line>
+                        <line n="l.2">of supplycation put to the kynge holding his noble</line>
+                        <line n="l.3">fest of crystmasse in the castell of hartford as in</line>
+                        <line n="l.4">dysguysinge of þe rude vpplandishe people complayninge</line>
+                        <line n="l.5">on hir wyues / w<ex>ith</ex> the boystrus answere of thiyr<!-- check MS - odd spelling, odd terminal r, iy construction? --></line>
+                        <line n="l.6">wyues / deuysed by lidgate / at þ<ex>e</ex> requeste of the</line>
+                        <line n="l.7">count rouolore / Brys slayn at louiers</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.137" n="folio">
+                <surface n="recto">
+                    <label>Folio 137 Recto</label>
+                    <graphic url="Add_29729_f137r.jpg"/>
+                    <zone n="EETS.MH.1">
+                        <line n="l.1">Most noble prynce with support of y<ex>our</ex> grace</line>
+                        <line n="l.2">ther bene entred in to your royall place</line>
+                        <line n="l.3">and lett<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "late" here.</note> comen in to your castell</line>
+                        <line n="l.4">your pore leges which like nothinge well</line>
+                        <line n="l.5">now in the begyninge of this newe yeare</line>
+                        <line n="l.6">certayne swaynes full froward of ther chere</line>
+                        <line n="l.7">of entent comen fallen on ther kne<note>There is an "a" next to "of" in the left hand margin of this line. Based on other examples, in particular the Add. 29729 edition of the Mumming at Eltham, this would indicate a mistake that the scribe is correcting for, but no mistake is actually present.</note><!--is there anything under the a on this line - check the manuscript--></line>
+                    </zone>
+                    <zone n="EETS.MH.2">
+                        <line n="l.1">ffor to compleyne vnto your magestie<note place="bottom" anchored="true" n="informational">The letter "b" is struck through in the left hand margin of this paragraph.  This may be an indicator of a nota mark, as occurs in Trinity R.3.20 and later in this witness, or a carryover from the exemplar since the Trinity nota mark is also different from other examples in that witness.</note></line>
+                        <line n="l.2">vpon the mescheffe of great aduersyte</line>
+                        <line n="l.3">vpon the trouble and the cruellte</line>
+                        <line n="l.4">whych that they haue endued in there lyves</line>
+                        <line n="l.5">by the felnesse of ther ferce wyves</line>
+                        <line n="l.6">whych is a turmente very inportable</line>
+                        <line n="l.7">A bond of sorowe / a knott vnneuiable</line>
+                        <line n="l.8">ffor who is bound / or loked in maryage</line>
+                        <line n="l.9">yff he be ould / he falleth in dotage</line>
+                        <line n="l.10">and yonge folkes of ther lymes skender<!-- check MS and make sure there is no l in there--></line>
+                        <line n="l.11">grene and lusty / and of braune but tender</line>
+                        <line n="l.12">phylosophers callen in such age</line>
+                        <line n="l.13">a chuld to wyue / a wodnesse<!--check if m or w in MS--> or a rage<note place="bottom" anchored="true" n="informational">There is what appears to be an "a" to the left of the final line in the verse. Much like the previous section that is likely meant to be a nota mark misinterpreted by the scribe.</note></line>
+                    </zone>
+                    <zone n="EETS.MH.3">
+                        <line n="l.1">ffor they afferme / ther is non erthly stryffe</line>
+                        <line n="l.2">may be compared / to weddynge of a wyffe</line>
+                        <line n="l.3">and who that euer standeth in the case</line>
+                        <line n="l.4">he w<ex>ith</ex> his rebecke / may singe full oft allas</line>
+                        <line n="l.5">lyke as thos hynes / here standenge<!--check MS - this is too dark to make out clearly--> on by on</line>
+                        <line n="l.6">he maye with them vpon the daunce goon</line>
+                        <line n="l.7">learne the tras / both at euen and morow</line>
+                        <line n="l.8">of <hi rend="underline">karycantowe</hi> / in torment and in sorowe</line>
+                        <line n="l.9">weyle the whyll ellas that he was borne</line>
+                        <line n="l.10">for <hi rend="underline">obbe</hi><note place="bottom" anchored="true" n="informational">The scribe has bracketed on three sides the underlined word here, rather than simply underlining it.  They are inconsistent in their practice.</note> the reve / that goth here all to forne</line>
+                        <line n="l.11">he playneth sore / his mariage is not meke<note place="bottom" anchored="true" n="informational">This differs from Trinity R.3.20 and thus from MacCraken, where it is rendered as "meete."</note></line>
+                        <line n="l.12">ffor hys wyff beautryce Bitterswett</line>
+                        <line n="l.13">cast vpon him an hougly chere full rowghe</line>
+                        <line n="l.14">whan he comeeth home / full wery from the ploughe</line>
+                        <line n="l.15">with hugely sherecke<!--check against MS - Trinity R.3.20 has "stomake"--> / dead and pale of chere</line>
+                        <line n="l.16">In hope to fynde redy his dynner</line>
+                    </zone>
+                    <zone n="EETS.MH.N.3">
+                        <line n="l.1"/>
+                        <line n="l.2"/>
+                        <line n="l.3"/>
+                        <line n="l.4"/>
+                        <line n="l.5">demonstrando vj rusticul<!--check rest of margin on MS--></line>
+                    </zone>
+                    <zone n="EETS.MH.4">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>than sitteth <hi rend="underline">Beautryce</hi> bollinge at the noalle<!--check that second glyph, might be an artifact--><note place="bottom" anchored="true" n="informational">From this point on in the witness the scribe follows what is likely the practice of the exemplar and places an "n" to the left of the opening line denoting a new section.</note></line>
+                        <line n="l.2">As she that geueth of hym no man<ex>er</ex> talle</line>
+                        <line n="l.3">ffor she alldaye with hyr Iouose<!--is this an intentional underline?--> nolle</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 137 Verso</label>
+                    <graphic url="Add_29729_f137v.jpg"/>
+                    <zone n="EETS.MH.4">
+                        <line n="l.1">hath for the collyk pouped in the bolle</line>
+                    </zone>
+                    <zone n="EETS.MH.5">
+                        <line n="l.2"><hi rend="pilcrow">¶</hi>And for fede ache / with peper and ging<ex>er</ex></line>
+                        <line n="l.3">grinke dolled alle / to make histhrot cler</line>
+                        <line n="l.4">And kometh he hom / whan hit draweth to eve</line>
+                        <line n="l.5">and than <hi end="underline">robyn</hi> / the cely pour reve</line>
+                        <line n="l.6">ffynd none amendes of harme ne damage</line>
+                        <line n="l.7">but bene<!--"l" for first glyph in Trinity R.3.20. check MS. Need note if it is in fact not l here. If it is "l", note part seven, line 1's "colyn" as another example. -->growell and soupeth cold potage</line>
+                        <line n="l.8">and of his wyffe hath non other cher</line>
+                        <line n="l.9">but cokkutwortes vnto his supper</line>
+                        <line n="l.10">this is hys seruyce sittynge at the borde</line>
+                        <line n="l.11">and cely <hi rend="underline">robyn</hi> yf he spoake<!--check third glyph. Could be e, could be o--> aword</line>
+                    </zone>
+                    <zone n="EETS.MH.6">
+                        <line n="l.1">beautryce of him / doth so lyttell rekke</line>
+                        <line n="l.2">that w<ex>ith</ex> hir distaffe / she hitteth hym in þ<ex>e</ex> nekk<!--dot over n. In MS? --></line>
+                        <line n="l.3">ffor a medecyne to chaffe with his blud</line>
+                        <line n="l.4">with such a medcyne<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "metyerde" here.</note> / she hath shape him a hud</line>
+                    </zone>
+                    <zone n="EETS.MH.7">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>and <hi rend="underline">colyn</hi> <hi rend="underline">cobeller</hi> / folowinge his felowe</line>
+                        <line n="l.2">hath had his parte of the sam lawe</line>
+                        <line n="l.3">ffor by þ<ex>e</ex> fayth þ<ex>at</ex> the prest him gaffe</line>
+                        <line n="l.4">his wyffe hath taugħt hym to play at the stafe</line>
+                        <line n="l.5">hir quarter stroke / were so large and round</line>
+                        <line n="l.6">that on his rigge the towche was allweyes found<!--otiose mark over this - check MS--></line>
+                    </zone>
+                    <zone n="EETS.MH.N.7">
+                        <line n="l.1">demonstrando</line>
+                        <line n="l.2">pictaciarium</line>
+                    </zone>
+                    <zone n="EETS.MH.8">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>cely sourechere / his owen precyous spouse</line>
+                        <line n="l.2">koude hym rehete whan he came to house</line>
+                        <line n="l.3">yf he ought spake whan he fellte payne</line>
+                        <line n="l.4">agayne one word allwaye he had twayne</line>
+                        <line n="l.5">she quyte hym euer / ther was nothynge to seche</line>
+                        <line n="l.6">six for one / of wordes and strokes eche</line>
+                        <line n="l.7">ther was no men / betwen them for to gone</line>
+                        <line n="l.8">what eu<ex>er</ex> he wan cloutyng ould shone</line>
+                        <line n="l.9">the werke daye playnly this is no tale</line>
+                        <line n="l.10">she would on sundaye drynke it at þe ale<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "nale" here instead. Ale makes better sense in terms of the narrative of the mumming.</note></line>
+                        <line n="l.11">his part was none, he sayd not once naye</line>
+                        <line n="l.12">it is no game but on herenest playe</line>
+                        <line n="l.13">ffor lacke of wit a man his wyffe to greue</line>
+                        <line n="l.14">thos husbandmen / who so would them leue</line>
+                        <line n="l.15">kould yf they dyrst tell In audyence</line>
+                        <line n="l.16">what foloweth <add>ther</add> of wyues to done offence</line>
+                        <line n="l.17">is non so ould ne ryuell on hur face</line>
+                        <line n="l.18">with tonge or staffe but þat she doth<note place ="bottom" anchored="true" n="informational">Trinity R.3.20 has "dare" here.</note> manasse</line>
+                        <line n="l.19">mabylle god hur saue and blesse</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.138" n="folio">
+                <surface n="recto">
+                    <label>Folio 138 Recto</label>
+                    <graphic url="Add_29729_f138r.jpg"/>
+                    <zone n="EETS.MH.8">
+                        <line n="l.20">Koude yff hir list / bere here of wytnesse</line>
+                        <line n="l.21">wordes strockes / vnhappye<!--check MS--> and harde grace</line>
+                        <line n="l.22">with sharpe nayles kracchynge<!--most likely two 'c's but think about it--> in þe face</line>
+                        <line n="l.23">I meane thus whan the distaffe is broke</line>
+                        <line n="l.24">with ther fystes wyues wylle wroke</line>
+                    </zone>
+                    <zone n="EETS.MH.9">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>blessed the men / that cane in such offence</line>
+                        <line n="l.2">mekely suffer / take all in pacyence</line>
+                        <line n="l.3">tender such wyfely pulgatory</line>
+                        <line n="l.4">heuen for ther mede to raygne ther in glorye</line>
+                        <line n="l.5">god graunt all husband<ex>ys</ex> that be in this place</line>
+                        <line n="l.6">to wyn so heuen / for his holy grace</line>
+                    </zone>
+                    <zone n="EETS.MH.10">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>next in order / thys bocher stoute and bould</line>
+                        <line n="l.2">that killed hath / bulles and bores olde</line>
+                        <line n="l.3">rhia <hi rend="underline">bartellniew</hi> / for all his brod knyffe</line>
+                        <line n="l.4">yet durst he neu<ex>er</ex> with his sturdy wyffe</line>
+                        <line n="l.5">in no mater holde champartye</line>
+                        <line n="l.6">and yff he did / she wolde anon defye</line>
+                        <line n="l.7">his pompe<note place="bottom" anchored="true" n="informational">This looks, at first glance, like "un" rather than "m' based on the number of possible minims. Comparison with other "p" glyphs in this manuscript, however, show that the scribe consistently begins the p with a mark to the left of the initial descenter. Thus, what the scribe is doing is completing the m, then carrying the stroke up to the initial position of the following "p." A similar upstroke after the final minim can be seen in "hym" in the following line.</note> his pryd with a sterne thought</line>
+                        <line n="l.8">and sodenly setten hym at nought</line>
+                        <line n="l.9">though his bely were rounded lyche an ocke</line>
+                        <line n="l.10">she would not fayle / to gyue the fyrst stroke</line>
+                        <line n="l.11">for proude pernelle / lyche a campyon</line>
+                        <line n="l.12">wolde leue hir puddinges / in agreat cawdron</line>
+                        <line n="l.13">suffer them boylle / and take of them non hede</line>
+                        <line n="l.14">but with hir skumer<!--check against MS--> reche hym on the heued</line>
+                        <line n="l.15">she was no cowarde found at suche a nede</line>
+                        <line n="l.16">hir fyst fułł<!--check against MS - strikethrough l's --> oft made his chekes bled</line>
+                        <line n="l.17">what quarell euer that he agaynst hyr sett</line>
+                        <line n="l.18">she cast hyr not / to dye in his debte</line>
+                        <line n="l.19">she made no talle / but gwytt hym by and by</line>
+                        <line n="l.20">his quarter sowde / she payde hym faythfully</line>
+                        <line n="l.21">and his wagis w<ex>ith</ex> all hur beste entente</line>
+                        <line n="l.22">she made ther of no assyne ment</line>
+                    </zone>
+                    <zone n="EETS.MH.11">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Seke <hi rend="underline">thome</hi> <hi rend="underline">tinker</hi> / with all his pannes olde</line>
+                        <line n="l.2">and alle the wynes of banbury that he solde</line>
+                        <line n="l.3">his fryth hys hamour hys bagge portatyffe</line>
+                        <line n="l.4">bare vp his arme / when he foughte with his wyffe</line>
+                        <line n="l.5">he founde for haft<!--could be "hast."  Consider--> ne better bokeler</line>
+                        <line n="l.6">vpo<ex>n</ex>n his cheke / the distaffe cam so nere</line>
+                    </zone>
+                    <zone n="EETS.MH.N.11">
+                        <line n="l.1">demonstrando</line>
+                        <line n="l.2">the tynker</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 138 Vecto</label>
+                    <graphic url="Add_29729_f138v.jpg"/>
+                    <zone n="EETS.MH.11">
+                        <line n="l.7">His name was cleped <hi rend="underline">tybet tapister</hi></line>
+                        <line n="l.8">to brawle and broylle<!--check MS--> / she made ne maner fer</line>
+                        <line n="l.9">to chakke his pilche<!--check ms. t/c--> / stoundemell now and thanne</line>
+                        <line n="l.10">thikker than thom<ex>e</ex> / koude clowten any panne</line>
+                    </zone>
+                    <zone n="EETS.MH.12">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>next <hi rend="underline">Colle tyler</hi> / full heuy of his chere</line>
+                        <line n="l.2">complaynetħ on <hi rend="underline">phelyce</hi> / his wyffe the wafurer</line>
+                        <line n="l.3">all hys bred witħ suger nys not bake</line>
+                        <line n="l.4">yit on his chek<ex>is</ex> / sometyme he hath a aake</line>
+                        <line n="l.5">so hat and newe or he can taken  heed</line>
+                        <line n="l.6">that his eares glowe verrye red</line>
+                        <line n="l.7">ffor a medycyne whan the frost is cold</line>
+                        <line n="l.8">makinge his teth to ratell that bene ould</line>
+                    </zone>
+                    <zone n="EETS.MH.13">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>this is the complaynte / that thos dastardes<!--compare with "dotardes" in Trinity R.3.20. Changes reading.--> colde</line>
+                        <line n="l.2">make on ther wyues that byne so stoute and bould</line>
+                        <line n="l.3">thos holy / marturs preued full pacyente</line>
+                        <line n="l.4">lowly besechynge / in all ther best entente</line>
+                        <line n="l.5">vnto your nobell royall magesty</line>
+                        <line n="l.6">to graunt them fraunchyse and also liberte</line>
+                        <line n="l.7">sith they be fetered / and bounden in maryage</line>
+                        <line n="l.8">a saffeconndyte<!--check against other ff constructions--> to saufe them from domage</line>
+                        <line n="l.9">eke vnder support / of your hygh renowme</line>
+                        <line n="l.10">graunt them also / a proteccyon</line>
+                    </zone>
+                    <zone n="EETS.MH.14">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>conquest of wyues / is rone througħ this land</line>
+                        <line n="l.2">cleyminge of ryght to haue þ<ex>e</ex> higher hand</line>
+                        <line n="l.3">but yff ye lust<!--list in Trinity R.3.20--> of your regollye</line>
+                        <line n="l.4">the ould testament for to modefye</line>
+                    </zone>
+                    <zone n="EETS.MH.15">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>and that the list / asselen ther request</line>
+                        <line n="l.2">that thos poure husbandes might liue in rest</line>
+                        <line n="l.3">and that ther wyues / in ther fell might</line>
+                        <line n="l.4">woll medle amonge mercy w<ex>ith</ex>ther ryght</line>
+                        <line n="l.5">ffor it cam neuer of natur ne reson</line>
+                        <line n="l.6">alyonesse to oppres þ<ex>e</ex> lyon</line>
+                    </zone>
+                    <zone n="EETS.MH.16">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>nor a woulfse<!--write a note on why this needs to be woulfse - or what is intended by woulffe --> for all hur tyrany</line>
+                        <line n="l.2">ouer the wouffe to haue the mastrye</line>
+                        <line n="l.3">ther byn now wollffes / mo than two or thre</line>
+                        <line n="l.4">the rokes<!--Trinity R.3.20 has "bookys"--> record / whych þat younder be</line>
+                        <line n="l.5">soth to this mater / of mercy and of grace</line>
+                        <line n="l.6">and or thos dasters parte out of this place</line>
+                        <line n="l.7"><add>vpon ther compleynte</add></line>
+                        <line n="l.7"><add>to shape remedye</add><note place="bottom" anchored="true" n="informational">Line seven has been inserted in the right hand margin, with a line indicating its placement after the previous line. This is different structurally from the marginal "directions" that occur throughout, and so has been added to the TEI here rather than in the marginal section following.</note></line>
+                        <line n="l.8">or they be likely to stand in Iapardye</line>
+                        <line n="l.9">It is no game with wyues for to playe</line>
+                        <line n="l.10">but for foles / that giue no force to dye</line>
+                    </zone>
+                    <zone n="EETS.MH.N.16">
+                        <line n="l.1"/>
+                        <line n="l.2"/>
+                        <line n="l.3"/>
+                        <line n="l.4">i distaues</line>
+                    </zone>
+                    <zone n="EETS.MH.II">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi> take hede of the aunswer of the wyues</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.139" n="folio">
+                <surface n="recto">
+                    <label>Folio 139 Recto</label>
+                    <graphic url="Add_29729_f139r.jpg"/>
+                    <zone n="EETS.MH.17">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>touchynge the substaunce of this hygh discord</line>
+                        <line n="l.2">we six wyues / bene full of on accorde</line>
+                        <line n="l.3">yff word and chydinge / may vs not avaylle</line>
+                        <line n="l.4">we woll dryte<!--check MS - overwritten but not sure how the glyphs pan out --> it in Champoloos by batayll</line>
+                        <line n="l.5">Imparte / oure righte / laate or elles rathe</line>
+                        <line n="l.6">and for oure partye / the worthy wyffe of bathe</line>
+                        <line n="l.7">cane showe statutes / mo than six or seuen</line>
+                        <line n="l.8">how wyues / make ther husband<ex>is</ex> wynne heuen</line>
+                        <line n="l.9">maugre the fende and all his vyolence</line>
+                        <line n="l.l0">ffor ther bertu / of parfyte pacyence</line>
+                        <line n="l.ll">parteyneth to wyues now adayes</line>
+                        <line n="l.12">saufe on ther husbandes for to make assays</line>
+                        <line n="l.l3">ther pacyence was buryed longe ago</line>
+                        <line n="l.l4">gresyldes story recoreth pleynly so</line>
+                    </zone>
+                    <zone n="EETS.MH.18">
+                        <line n="l.1">it longeth to vs / to clappen all a myll</line>
+                        <line n="l.2">no counsayll kepe / but þe truth out tell</line>
+                        <line n="l.3">we be not borne / by heuenly Influence</line>
+                        <line n="l.4">of our nature to kepe vs in sylence</line>
+                        <line n="l.5">for this is no doute / euery prudent wyffe</line>
+                        <line n="l.6">hath redy aunswere / in all suche maner stryfe</line>
+                        <line n="l.7">though thos dotardes / with ther dokked berdes</line>
+                        <line n="l.8">whycħ straneth <!--Trinity R.3.20 has strowtethe.  Check MED--> oute / as they were made of herdes</line>
+                        <line n="l.9">haue agayne vs / agrett quarell now sette</line>
+                        <line n="l.10">I trowe the bakoun / was neuer of him fette</line>
+                        <line n="l.11">A waye at dounmarwe<!--check ms.  May be tittle in m--> / in the pryorye</line>
+                        <line n="l.12">they wene of vs to haue ay the mastrye</line>
+                        <line n="l.13">elles thos foles / let them aunswere here to</line>
+                        <line n="l.14">who can them washe / who can them wringe also</line>
+                        <line n="l.15">wrynge them the<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "ye", as does the EETS edition based on it. It seems likely that the scribe has misread their exemplar, assuming that a y is a thorn.</note> wrynge / so als god vs sped<!--check MS.  The loop for the o is smaller than usual.--></line>
+                        <line n="l.16">till that some tyme / we make ther nosis bled</line>
+                        <line n="l.17">and sowe ther clothes when they be to rente</line>
+                        <line n="l.18">and cloute ther bacckes till som of vs be shent</line>
+                        <line n="l.20">lo yet thos foles god gyne them sorowe chaunce</line>
+                        <line n="l.21">wolle sett ther wyues / vnder gouernaunce</line>
+                        <line n="l.22">make vs to them / for to lowte<!--could be loute --> lowe</line>
+                        <line n="l.23">we know to well the bout of Iackes bowe </line>
+                        <line n="l.24">all that we clayme / we clayme it but of ryte</line>
+                        <line n="l.25">yf they say nay let preue it out by fyght</line>
+                        <line n="l.26">we woll<!--check ms--> vs<!--check MS.  Something going on with this one--> ground not vppon womanhede</line>
+                        <line n="l.27">ffye on them cowardes / when it cometh to nede</line>
+                        <line n="l.28">we clayme mastry / by prescryption</line>
+                        <line n="l.29">be longe tytell of successyon</line>
+                        <line n="l.30">ffrom wyffe to wyffe w<ex>hic</ex>h we will not lesse</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 139 Verso</label>
+                    <graphic url="Add_29729_f139v.jpg"/>
+                    <zone n="EETS.MH.19">
+                        <line n="l.31">Men maye well gruge / but they shall not chese</line>
+                        <line n="l.32">custome is vs for nature and vsaunce</line>
+                        <line n="l.33">to let oure husbandes / lyfe in great noysaunce<!--possible suspension over c--></line>
+                        <line n="l.34">humbely besechynge nowe at on worde</line>
+                        <line n="l.35">vnto oure lege / and most souerain lorde</line>
+                        <line n="l.36">vs to defend of his regallye</line>
+                        <line n="l.37">and of his grace / sustenen our partye</line>
+                        <line n="l.38">requirynge the statute of olde antiquyte</line>
+                        <line n="l.39">that in your tyme / it maye confermed be</line>
+                    </zone>
+                    <zone n="EETS.MH.III">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>the complaynte of the lewd husband<ex>is</ex> w<ex>ith</ex> the cruell</line>
+                        <line n="l.2">aunswers of ther wyues / hard the kynge and gaue</line>
+                        <line n="l.3">ther vpo<ex>n</ex>n sentence and Iudgemente</line>
+                    </zone>
+                    <zone n="EETS.MH.20">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>This noble prynce most royall of estate</line>
+                        <line n="l.2">hauynge an eyeghe<!-- maybe just eyghe--> / to this mortall debate</line>
+                        <line n="l.3">ffirst aduertyinge / of full hygħ prudence</line>
+                        <line n="l.4">wyll vnavysed gyue here no sentence</line>
+                        <line n="l.5">with oute counsaylle / of haste to procede</line>
+                        <line n="l.6">by sodeyne dome / for he taketh heede</line>
+                        <line n="l.7">to eyther partye / at Iuge in differente</line>
+                        <line n="l.8">seinge the paryll / of hasty Iudgmente</line>
+                        <line n="l.9">pourposith him / in this contynued stryffe</line>
+                        <line n="l.10">to gyue no sentence ther of diffynytyue</line>
+                        <line n="l.11">til ther be made examynaciony<!--suspension over y?  Check manuscript--></line>
+                        <line n="l.12">of other partye  and Inquysiciouny<!--see above.  Check MS--></line>
+                        <line n="l.13">he considereth / and maketh <hi rend="underline">raysoun</hi> his guyd</line>
+                        <line n="l.14">as egall Iudge enclyninge to no syde</line>
+                        <line n="l.15">not w<ex>ith</ex> standynge he hath compassyony<!--see above.  Check MS.  No suspension here--></line>
+                        <line n="l.16">of the poure husbandes trybulaccyon</line>
+                        <line n="l.17">sso offt arrested / w<ex>ith</ex> ther wyues rokes</line>
+                        <line n="l.18">which of there distaues / haue so many knokes</line>
+                        <line n="l.19">paysinge also in his regallye</line>
+                        <line n="l.20">the lawe þ<ex>at</ex> wemen alegge for ther p<ex>ar</ex>tye</line>
+                        <line n="l.21">custome nature and ekk p<ex>re</ex>scriptiony<!--check MS--></line>
+                        <line n="l.22">statute vsed / by confirmacyouny<!--check MS--></line>
+                        <line n="l.23">processe and date of tyme out of mynd</line>
+                        <line n="l.24">recorde of cronycles witnesse of ther kynd</line>
+                        <line n="l.25">wherfore þ<ex>e</ex> kynge / woll<!--check MS--> all this next yeare</line>
+                        <line n="l.26">that wyues franchyse stand hole and entyre</line>
+                        <line n="l.27">and that no man with stand it ne wyth drawe</line>
+                        <line n="l.28">till man may fynde sume<!--check MS--> processe out by lawe</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.140" n="folio">
+                <surface n="recto">
+                    <label>Folio 140 Recto</label>
+                    <graphic url="Add_29729_f140r.jpg"/>
+                    <zone n="EETS.MH.20">
+                        <line n="l.29">that they shuld by nature in ther lyues</line>
+                        <line n="l.30">haue souerayntee / on ther prudente wyues</line>
+                        <line n="l.31">athinge vnkouthe / which was neu<ex>er</ex> found</line>
+                        <line n="l.32">let men be ware ther fore / or they be bound</line>
+                        <line n="l.33">the bond is hard / who so that loketh well</line>
+                        <line n="l.34">somman were leuer fettred be in stell</line>
+                        <line n="l.35">raunsom migħt helpe / his peyne to aswaage<!--check MS--></line>
+                        <line n="l.36">but who is wedded / lyueth / euer in seruage</line>
+                        <line n="l.27">And I know neuer no wher for ner nere</line>
+                        <line n="l.28">man that was glad / to bynd hym prysonere</line>
+                        <line n="l.29">though that his prysom his castell or his holde</line>
+                        <line n="l.30">were depeynted with asure or with golde</line>
+                    </zone>
+                    <zone n="EETS.MH.IV">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Explicete</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

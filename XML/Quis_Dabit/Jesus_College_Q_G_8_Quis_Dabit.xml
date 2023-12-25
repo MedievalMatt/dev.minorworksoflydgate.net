@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Quis_Dabit">
+                <title type="full">
+                    <title type="main">
+                        <emph rend="italic">Quis Dabit Meo Capiti Fontem Lacrimarum</emph>
+                    </title>
+                    <title type="sub">Cambridge Jesus College Q.G.8 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="free" xml:id="jesus_college">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are taken with the permission of Jesus
+                            College, Cambridge, and rights are reserved. Please contact the editor
+                            with any requests. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Cambridge_Jesus_College_Q_G_8">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="Jesus_College_Q_G_8">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>Cambridgeshire</region>
+                        <settlement>Cambridge</settlement>
+                        <institution>Jesus College</institution>
+                        <idno>Q.G.8</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem n="ff.1r-19v">
+                            <p><emph rend="italic">The Testament of John Lydgate</emph></p>
+                        </msItem>
+                        <msItem n="ff.19v-21r">
+                            <p><emph rend="italic"><ref
+                                target="http://www.minorworksoflydgate.net/Quis_Dabit/Jesus_College_Q_G_8/Jesus_Q_G_8_f19v.html"
+                                >Quis Dabit Capiti Meo Fontem Lacrimarum</ref></emph></p>
+                        </msItem>
+                        <msItem n="ff.22v-25r">
+                            <p><emph rend="italic">Consulo Quisque Eris</emph></p>
+                        </msItem>
+                        <msItem n="ff.25r-27v">
+                            <p><emph rend="italic">Midsomer Rose</emph></p>
+                        </msItem>
+                        <msItem n="ff.27v-29r">
+                            <p><emph rend="italic">A dyte of womenhis hornys</emph></p>
+                        </msItem>
+                        <msItem n="ff.29r-33r">
+                            <p><emph rend="italic">Look in thy merour and deeme noon othir
+                                wiht</emph></p>
+                        </msItem>
+                        <msItem n="ff.33r-36r">
+                            <p><emph rend="italic">On the Mutability of Man’s Nature due to the
+                                Seasons, the Elements, the Complexions, and the
+                                Planets</emph></p>
+                        </msItem>
+                        <msItem n="ff.36r-37v">
+                            <p><emph rend="italic">Song of Vertu</emph></p>
+                        </msItem>
+                        <msItem n="ff.37v-41r">
+                            <p><emph rend="italic">A Praise of Peace</emph></p>
+                        </msItem>
+                        <msItem n="ff.41r-44r">
+                            <p><emph rend="italic">Misericordias Domini in Eternum
+                                Cantabo</emph></p>
+                        </msItem>
+                        <msItem n="ff.44r-44v">
+                            <p><emph rend="italic">A Doctryne for Pestilence</emph></p>
+                        </msItem>
+                        <msItem n="ff.44v-46r">
+                            <p><emph rend="italic">Dietary</emph></p>
+                        </msItem>
+                        <msItem n="ff.46r-47v">
+                            <p><emph rend="italic">Verses on the Kings of England</emph></p>
+                        </msItem>
+                        <msItem n="ff.47v-53r">
+                            <p><emph rend="italic">Exposition of the Pater Noster</emph></p>
+                        </msItem>
+                        <msItem n="ff.53r-58r">
+                            <p><emph rend="italic">Fifteen Joys and Sorrows of Our Lady</emph></p>
+                        </msItem>
+                        <msItem n="ff.58r-60v">
+                            <p><emph rend="italic">De Profundis</emph></p>
+                        </msItem>
+                        <msItem n="ff.60v-65v">
+                            <p><emph rend="italic">Letabundus</emph></p>
+                        </msItem>
+                        <msItem n="ff.65v-70v">
+                            <p><emph rend="italic">Fifteen O’s of Christ</emph></p>
+                        </msItem>
+                        <msItem n="ff.71r-71v">
+                            <p><emph rend="italic">Why artow froward sith I am mercyable?</emph></p>
+                        </msItem>
+                        <msItem n="ff.71v-72v">
+                            <p><emph rend="italic">Verses On the Five Joys addressed to the Virgin
+                                Mary</emph></p>
+                        </msItem>
+                        <msItem n="ff.72r-73r">
+                            <p><emph rend="italic">On Kissing</emph></p>
+                        </msItem>
+                        <msItem n="ff.73r-73v">
+                            <p><emph rend="italic">Stella Celi extirpauit</emph></p>
+                        </msItem>
+                        <msItem n="ff.74r-75r">
+                            <p><emph rend="italic">Prayers to Ten Saints</emph></p>
+                        </msItem>
+                        <msItem n="ff.75v-76r">
+                            <p><emph rend="italic">A Prayer to St. Leonard</emph></p>
+                        </msItem>
+                        <msItem n="ff.76r-76v">
+                            <p><emph rend="italic">De tribus Virginibus Katerina Margareta &amp;
+                                Magdalena</emph></p>
+                        </msItem>
+                        <msItem n="ff.76v-77r">
+                            <p><emph rend="italic">Prayer to British Saints</emph></p>
+                        </msItem>
+                        <msItem n="ff.77r-78v">
+                            <p><emph rend="italic">Stans Puer ad Mensam</emph></p>
+                        </msItem>
+                        <msItem n="ff.78v-92v">
+                            <p><emph rend="italic">Cato Major</emph></p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <extent>92 leaves <material>Parchment</material>
+                                    <dimensions unit="cm" type="leaf">
+                                        <height>21.6</height>
+                                        <width>16.5</width>
+                                    </dimensions>
+                                </extent>
+                                <collation>
+                                    <note n="gatherings">16</note>
+                                    <p>
+                                        <formula> A<hi rend="superscript">6</hi>-P<hi
+                                            rend="superscript">6</hi> Q<hi rend="superscript"
+                                                >4</hi> (wants 3,4): 92 leaves </formula>
+                                    </p>
+                                </collation>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" ruledLines="32">
+                                    <p n="page_layout"> The page consists of 32 lines, ruled in
+                                        drypoint, with the text beginning below the first line. </p>
+                                    <p n="stanza_layout"> The poem is written in eight-line ballade
+                                        format, written continuously with a space left between
+                                        stanzas. </p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="major" script="anglicana">
+                                <p n="hand_title">The title of the text is slightly larger than the
+                                    text of the poem proper, marked off on its own line with red
+                                    lines both above and below.</p>
+                                <p n="hand_intro">The text is written throughout in Anglicana.</p>
+                                <p n="hand_otiose">The beginning letter of each line after the first
+                                    in a stanza is capitalized and touched in red, and words are
+                                    periodically underlined in red for emphasis throughout.</p>
+                            </handNote>
+                            <handNote scope="minor" script="insular">
+                                <p n="hand_capitals">The initial letter of each stanza is rendered
+                                    in red ink and written in Insular. A space is provided in the
+                                    first stanza of the poem for three line illuminated initial, but
+                                    this remains empty. A possible guide letter occurs to the left
+                                    of the margin next to this space, but it is indeterminate
+                                    whether this is in fact intended to be a guide letter.</p>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history/>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20172611" who="#medavis" status="revision">removed "orig" tags throughout to bring it into compliance with spot change to TEI P5</change>
+                <change when="20151508" who="#medavis" status="draft"/>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="g.3" n="gathering">
+            <surfaceGrp xml:id="f.19" n="folio">
+                <surface n="verso">
+                    <label>Folio 19 Verso</label>
+                    <graphic url="Jesus_Q_G_8_f19v.jpg"/>
+                    <zone n="EETS.QD.I">
+                        <line n="l.1"><hi rend="touched">Q</hi>uis dabit capiti meo fontem
+                                lacr<ex>i</ex>ma<ex>rum</ex><note place="bottom" anchored="true"
+                                type="explanatory">The title is in a somewhat sloppy textura rotunda
+                                rather than the anglicana of the main body of the
+                            text.</note></line>
+                    </zone>
+                    <zone n="EETS.QD.1">
+                        <line n="l.1"><hi rend="capital_missing_3">W</hi>ho shal <hi
+                                rend="underline">yeue</hi> vn to <hi rend="underline">myn hede</hi>
+                            a well .<note place="bottom" anchored="true" type="explanatory">There is
+                                no guide letter, but there is a mark to the left of the space that
+                                may indicate the same intent.</note></line>
+                        <line n="l.2"><hi rend="touched">O</hi>f bitter terys my sorowes to <hi
+                                rend="underline">compleyne</hi> .</line>
+                        <line n="l.3"><hi rend="touched">O</hi>r a grete <hi rend="underline"
+                                >conduyt</hi> or troubly waters fell .</line>
+                        <line n="l.4"><hi rend="touched">D</hi>owne to <hi rend="underline"
+                                >distill</hi> frome myne eyne tweyne . </line>
+                        <line n="l.5"><hi rend="touched">T</hi>o shew þe <hi rend="underline"
+                                >constreynt</hi> of my dedly peyne .</line>
+                        <line n="l.6"><hi rend="touched">W</hi>han I allas <hi rend="underline"
+                                >behelde</hi> and dide see . </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+        <surfaceGrp xml:id="g.4" n="gathering">
+            <surfaceGrp xml:id="f.20" n="folio">
+                <surface n="recto">
+                    <label>Folio 20 Recto</label>
+                    <graphic url="Jesus_Q_G_8_f20r.jpg"/>
+                    <zone n="EETS.QD.1">
+                        <line n="l.7"><hi rend="touched">M</hi>y dere son <hi rend="underline"
+                                >bled</hi><hi rend="underline">e</hi> in eu<ex>er</ex>y weyne . </line>
+                        <line n="l.8"><hi rend="touched">B</hi>e twix two <hi rend="underline"
+                                >thewes</hi> nayled to a <hi rend="underline">tre</hi> . </line>
+                    </zone>
+                    <zone n="EETS.QD.2">
+                        <line n="l.1"><hi>W</hi>ho shall of <hi rend="underline">wepyng</hi> giff me
+                                <hi rend="underline">suffisaunce</hi> .</line>
+                        <line n="l.2"><hi rend="touched">O</hi>r to my <hi rend="underline"
+                                >sobbyng</hi> who shall my teres fynde . </line>
+                        <line n="l.3"><hi rend="touched">T</hi>o see my ioye my hart<ex>is </ex>high
+                                <hi rend="underline">plesauncce</hi> . </line>
+                        <line n="l.4"><hi rend="touched">M</hi>y swete sone þat <hi rend="underline"
+                                >was</hi> to me so kynde .</line>
+                        <line n="l.5"><hi rend="underline"><hi rend="touched">R</hi>ailed</hi> with
+                            rede bloode as sappe doth þurth <hi rend="underline">þe rynde</hi> . </line>
+                        <line n="l.6"><hi rend="touched">T</hi>hurgh his <hi rend="underline"
+                                >enmys</hi> wengeable crueltee . </line>
+                        <line n="l.7"><hi rend="touched">D</hi>irkenyd with dethe his eyne nowe made
+                                <hi rend="underline">blynde</hi><note place="bottom" anchored="true"
+                                type="explanatory">The "de" here has been corrected and written over
+                                another glyph, but the glyph cannot be made out.</note> .</line>
+                        <line n="l.8"><hi rend="touched">A</hi> twix two <hi rend="underline"
+                                >thewes</hi> nailed to a <hi rend="underline">tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.3">
+                        <line n="l.1"><hi>M</hi>y ioye my light my <hi rend="underline">lant</hi><hi
+                                rend="underline">er</hi><hi rend="underline">ne </hi>moost entier
+                            .</line>
+                        <line n="l.2"><hi rend="touched">T</hi>his <hi rend="underline">heuenly</hi>
+                                p<hi rend="underline">hebu</hi>s is clepsid of his light .</line>
+                        <line n="l.3"><hi rend="touched">Þ</hi>is Esperus hath hidd his bemys <hi
+                                rend="underline">clere</hi> . </line>
+                        <line n="l.4"><hi rend="touched">A</hi>nd is of now corteynde for my sight
+                            .</line>
+                        <line n="l.5"><hi rend="touched">W</hi>han shall this day st<ex>er</ex>re
+                                <hi rend="underline">shew</hi> me his bemys <hi rend="underline"
+                                >bright </hi>.<note place="bottom" anchored="true"
+                                type="explanatory">"Sterre" in this line appears to have been
+                                inserted into a provided space, as the ink color is darker than the
+                                rest of the line and is similar to that of the "de" correction noted
+                                above.</note></line>
+                        <line n="l.6"><hi rend="touched">T</hi>o clere the <hi rend="underline"
+                                >trouble </hi>of myne adu<ex>er</ex>site .</line>
+                        <line n="l.7"><hi rend="touched">P</hi><ex>ar</ex>de þe <hi rend="underline"
+                                >jewes</hi> doon me to grete <hi rend="underline">vnright</hi>
+                            .</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o naile my <hi rend="underline"
+                                >sone</hi> allas vnto a <hi rend="underline">tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.4">
+                        <line n="l.1"><hi>A</hi>ll the <hi rend="underline">doughtren </hi>of <hi
+                                rend="underline">Ier<ex>usale</ex>m</hi> .<note place="bottom"
+                                anchored="true" type="explanatory">the continuous bar beginning over
+                                the r, passing through the l, and concluding over the m suggests
+                                that the l should be considered as part of an abbreviation rather
+                                than as seperate glyph bracketed by two suspensions.</note></line>
+                        <line n="l.2"><hi rend="touched">H</hi>aue some compassion on my sighes <hi
+                                rend="underline">depe</hi> .</line>
+                        <line n="l.3"><hi rend="touched">N</hi>ot like þe <hi rend="underline"
+                                >gladnes</hi> which I had in <hi rend="underline">bedlem</hi>
+                            .</line>
+                        <line n="l.4"><hi rend="touched">C</hi>ome nere of reuthe and <hi
+                                rend="underline">helpe</hi> me for to wepe .</line>
+                        <line n="l.5"><hi rend="touched">A</hi> swerd of deth doth thorowe my herte
+                                <hi rend="underline">crepe</hi> .</line>
+                        <line n="l.6"><hi rend="touched">I</hi> fele it <hi rend="underline">full
+                                well </hi>of modirly pitee .</line>
+                        <line n="l.7"><hi rend="touched">C</hi><hi rend="underline">raumpasshed</hi>
+                            with swonyng I do <hi rend="underline">slepee</hi> .</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 20 Verso</label>
+                    <graphic url="Jesus_Q_G_8_f20v.jpg"/>
+                    <zone n="EETS.QD.4">
+                        <line n="l.8"><hi rend="touched">T</hi>o see my son <hi rend="underline"
+                                >thus</hi> nailed to <hi rend="underline">a tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.5">
+                        <line n="l.1"><hi>A</hi> gentill <hi rend="underline">princesses </hi> and
+                            ladies of <hi rend="underline">estate</hi> .</line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd ye <hi rend="underline"
+                                >virgyns</hi> in your<ex>e</ex><ex> </ex>entent moost <hi
+                                rend="underline">clene .</hi></line>
+                        <line n="l.3"><hi rend="touched">T</hi>o gyff me <hi rend="underline"
+                                >comfort </hi>þat stood all desolate .</line>
+                        <line n="l.4"><hi rend="touched">R</hi>enneth a paas to se þe <hi
+                                rend="underline">woundes</hi> grene .</line>
+                        <line n="l.5"><hi rend="touched">O</hi>f your true <hi rend="underline"
+                                >spouse </hi>of bleding pale <hi rend="underline">and leue
+                            </hi>.</line>
+                        <line n="l.6"><hi rend="touched">A</hi>nd <hi rend="underline">adu</hi><hi
+                                rend="underline">er</hi><hi rend="underline">tiseth</hi> and hath
+                            now reuth on me .</line>
+                        <line n="l.7">ffeynt for to stonde for how shuld <hi rend="underline">I
+                                sustene</hi> .</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o se my <hi rend="underline"
+                                >sone</hi> þus <hi rend="underline">nailed</hi> to a<hi
+                                rend="underline"> tre .</hi></line>
+                    </zone>
+                    <zone n="EETS.QD.6">
+                        <line n="l.1"><hi>A</hi>nd all ye <hi rend="underline">women</hi> to appeise
+                            my <hi rend="underline">heuynes</hi> .</line>
+                        <line n="l.2"><hi rend="touched">R</hi>emembrith þe processe of his <hi
+                                rend="underline">dredfull</hi> victory .</line>
+                        <line n="l.3"><hi rend="touched">S</hi>e to fore pilat by <hi
+                                rend="underline">many</hi> false witnes .</line>
+                        <line n="l.4"><hi rend="touched">H</hi>ow he was <hi rend="underline"
+                                >dampned</hi> in þe consistorye .</line>
+                        <line n="l.5"><hi rend="touched">R</hi>edd ye euer or saw in <hi
+                                rend="underline">historye</hi> .</line>
+                        <line n="l.6"><hi rend="touched">O</hi>f ony <hi rend="underline"
+                                >sorwes</hi> þat may compared be .</line>
+                        <line n="l.7"><hi rend="touched">V</hi>nto the sorwes <hi rend="underline"
+                                >graue </hi>in my <hi rend="underline">memorie</hi> . </line>
+                        <line n="l.8"><hi rend="touched">T</hi>o se my sone þus <hi rend="underline"
+                                >nailed</hi> to a <hi rend="underline">tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.7">
+                        <line n="l.1"><hi>A</hi>nd if ȝe like of <hi rend="underline"
+                                >reuth</hi><ex> </ex>for to lere .</line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd at my <hi rend="underline"
+                                >terys</hi> yeue ȝe not <hi rend="underline">disdeyne</hi> .</line>
+                        <line n="l.3"><hi rend="touched">B</hi>ot of <hi rend="underline"
+                                >compassion</hi> mekely list to here .</line>
+                        <line n="l.4"><hi rend="touched">H</hi>ow a sharpe swerde my <hi
+                                rend="underline">herte</hi> hath carue on <hi rend="underline"
+                                >tweyne</hi> .</line>
+                        <line n="l.5"><hi rend="touched">A</hi> swerde of sorowe <hi
+                                rend="underline">þurth</hi> p<ex>er</ex>cide eu<ex>er</ex>y vayne
+                            .</line>
+                        <line n="l.6"><hi rend="touched">H</hi>ow deth hath <hi rend="underline"
+                                >slayne</hi> my sone and <hi rend="underline">sparith me</hi>
+                            .</line>
+                        <line n="l.7"><hi rend="underline"><hi rend="touched">A</hi>llas</hi> fro
+                            wepyng how sholde I me restreyne .</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o se my <hi rend="underline"
+                                >sone</hi> þus <hi rend="underline">nailed</hi> to a <hi
+                                rend="underline">tre</hi> .</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.21" n="folio">
+                <surface n="recto">
+                    <label>Folio 21 Recto</label>
+                    <graphic url="Jesus_Q_G_8_f21r.jpg"/>
+                    <zone n="EETS.QD.8">
+                        <line n="l.1"><hi>P</hi>peple <hi rend="underline">vnkynde</hi> why wist
+                                þ<ex>u</ex> non<ex>e </ex>hede <hi rend="underline">take</hi>
+                            .</line>
+                        <line n="l.2"><hi rend="touched">T</hi>o se thy lord of hell erth and <hi
+                                rend="underline">heuen</hi> .</line>
+                        <line n="l.3"><hi rend="touched">M</hi>eeke as a <hi rend="underline"
+                                >lambe</hi> thus offrid for þi sake .</line>
+                        <line n="l.4"><hi rend="touched">T</hi>o sle þe dragon with his <hi
+                                rend="underline">hed</hi><hi rend="underline">is</hi><hi
+                                rend="underline"> seuen .</hi></line>
+                        <line n="l.5"><hi rend="underline"><hi rend="touched">D</hi>aunting</hi> þe
+                            power of his infernal leuen<ex>e </ex>.</line>
+                        <line n="l.6"><hi rend="touched">O</hi>ut of his thraldome to <hi
+                                rend="underline">make</hi> ye go fre .</line>
+                        <line n="l.7"><hi rend="touched">W</hi><ex>ith</ex> many mo <hi
+                                rend="underline">woundes</hi> þan eny man can <hi rend="underline"
+                                >neven</hi><hi rend="underline">e</hi><hi rend="underline"> .
+                            </hi></line>
+                        <line n="l.8"><hi rend="touched">W</hi>han he at calvarie was nailed to a
+                                <hi rend="underline">tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.9">
+                        <line n="l.1"><hi>I</hi>t is a m<ex>er</ex>vale or any maner <hi
+                                rend="underline">wounder . </hi></line>
+                        <line n="l.2"><hi rend="touched">Þ</hi>of I full oft <hi rend="underline"
+                                >wowne</hi> for greuaunce .</line>
+                        <line n="l.3"><hi rend="touched">W</hi>as <hi rend="underline">euer</hi>
+                            moder outhir here or yonder .</line>
+                        <line n="l.4"><hi rend="touched">T</hi>hat for hire childe felt more <hi
+                                rend="underline">Penaunce .</hi></line>
+                        <line n="l.5"><hi rend="touched">M</hi>yn inwarde <hi rend="underline"
+                                >sorowes</hi> can fynde non<ex>e</ex> allegeaunce</line>
+                        <line n="l.6"><hi rend="touched">I</hi>ch howre renewing it will <hi
+                                rend="underline">now </hi>other be .</line>
+                        <line n="l.7"><hi rend="touched">W</hi>han eu<ex>er</ex> it cometh to my <hi
+                                rend="underline">Remembraunce</hi> .</line>
+                        <line n="l.8"><hi rend="touched">H</hi>ow <hi rend="underline">my son</hi>
+                            was nailed to a <hi rend="underline">tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.10">
+                        <line n="l.1"><hi>T</hi>he <hi rend="underline">lymmes</hi> feble vpon the
+                            feete <hi rend="underline">to stonde </hi>.</line>
+                        <line n="l.2"><hi rend="touched">W</hi>han I allas <hi rend="underline"
+                                >considre</hi> and do be holde .</line>
+                        <line n="l.3"><hi rend="touched">T</hi>his pitios matier þat we <hi
+                                rend="underline">have</hi> on honde .</line>
+                        <line n="l.4"><hi rend="touched">ff</hi>ull litill <hi rend="underline"
+                                >m</hi><hi rend="underline">er</hi><hi rend="underline">vale</hi>
+                            þof my herte colde . </line>
+                        <line n="l.5"><hi rend="touched">M</hi>yn haund<ex>is</ex>
+                            <hi rend="underline">craumpyss</hi><hi rend="underline">in</hi><hi
+                                rend="underline">g</hi> I may them not vnfolde .</line>
+                        <line n="l.6"><hi rend="touched">T</hi>o goon vpright I haue no <hi
+                                rend="underline">foote or kne</hi> .</line>
+                        <line n="l.7"><hi rend="touched">M</hi>y paynes passe all turment<ex>is</ex>
+                            newe or olde .</line>
+                        <line n="l.8"><hi rend="underline"><hi rend="touched">T</hi>hus to se
+                                my</hi> sone nailed to a <hi rend="underline">tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.11">
+                        <line n="l.1"><hi>A</hi>geyn the <hi rend="underline">guyse</hi> of
+                                king<ex>is</ex> riche <hi rend="underline">crownes</hi> .</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 21 Verso</label>
+                    <graphic url="Jesus_Q_G_8_f21v.jpg"/>
+                    <zone n="EETS.QD.11">
+                        <line n="l.2"><hi rend="touched">M</hi>y dere son <hi rend="underline"
+                                >wered</hi> a crowne of <hi rend="underline">thorne</hi>.</line>
+                        <line n="l.3"><hi rend="touched">O</hi>f golde and perle <hi
+                                rend="underline">a gryne</hi> þeire stately crownes .</line>
+                        <line n="l.4"><hi rend="touched">A</hi> geyn þeire <hi rend="underline"
+                                >ridyng </hi>þeire grete <hi rend="underline">menye</hi> tham be
+                                forn<ex>e </ex>.</line>
+                        <line n="l.5"><hi rend="touched">M</hi>y son on foot hath his <hi
+                                rend="underline">cros born</hi><hi rend="underline">e</hi> .</line>
+                        <line n="l.6"><hi rend="touched">A</hi>
+                            <hi rend="underline">geyn</hi> þ<ex>er</ex>e seet<ex>is</ex> of stones
+                            and <hi rend="underline">perree</hi> .<note place="bottom"
+                                anchored="true" type="informational">The mark to the left of the A
+                                here seems to serve no purpose.</note></line>
+                        <line n="l.7"><hi rend="touched">A</hi>nd for <hi rend="underline"
+                                >mankynd</hi> þat was þurgh <hi rend="underline">synne lorn</hi><hi
+                                rend="underline">e</hi> .</line>
+                        <line n="l.8"><hi rend="touched">H</hi>e <hi rend="underline">poore</hi> and
+                            nakid was <hi rend="underline">nailed</hi> to <hi rend="underline">a
+                                tre</hi> .</line>
+                    </zone>
+                    <zone n="EETS.QD.12">
+                        <line n="l.1"><hi>A</hi>geyn there <hi rend="underline">bedd</hi><ex>is
+                            </ex>staatly high and <hi rend="underline">soft</hi> .</line>
+                        <line n="l.2"><hi rend="touched">O</hi>f wordly p<ex>ri</ex>ncys with <hi
+                                rend="underline">pilowes</hi> for þere hede .</line>
+                        <line n="l.3"><hi rend="touched">V</hi>pon þe <hi rend="underline"
+                                >Roode</hi> my son was lift on loft .</line>
+                        <line n="l.4"><hi rend="touched">W</hi>ith <hi rend="underline">Bloody</hi>
+                            purpul his <hi rend="underline">mantel</hi> maade all rede .</line>
+                        <line n="l.5"><hi rend="touched">M</hi>arked w<ex>ith</ex> a spere and for
+                                <hi rend="underline">mankynde</hi> dede .</line>
+                        <line n="l.6"><hi rend="touched">A</hi>nd <hi rend="underline">gruchid</hi>
+                            nothing þurth his humilite .</line>
+                        <line n="l.7"><hi rend="touched">T</hi>o me noon ese <hi rend="underline"
+                                >whan </hi>þ<ex>at </ex>I take hede .</line>
+                        <line n="l.8"><hi rend="touched">A</hi>nd saw <hi rend="underline">my
+                                sone</hi> thus nailed t<hi rend="underline">o a tre .</hi></line>
+                    </zone>
+                    <zone n="EETS.QD.13">
+                        <line n="l.1"><hi>F</hi>or <hi rend="underline">adam</hi> synne thus was my
+                            son <hi rend="underline">slane .</hi></line>
+                        <line n="l.2"><hi rend="touched">T</hi>hurgh þe olde <hi rend="underline"
+                                >s</hi><hi rend="underline">er</hi><hi rend="underline">pent</hi> by
+                            þe assent of <hi rend="underline">Eve </hi>.</line>
+                        <line n="l.3"><hi rend="touched">W</hi>han <hi rend="underline">þurth
+                            </hi>my meknes mankynd was maade fayne .</line>
+                        <line n="l.4"><hi rend="touched">H</hi>ere name turned þere <hi
+                                rend="underline">thraldome </hi>to releue .</line>
+                        <line n="l.5"><hi rend="underline"><hi rend="touched">G</hi>abriell</hi> cam
+                            my mekenes for to preue .</line>
+                        <line n="l.6"><hi rend="touched">S</hi>ent by oon accorde of all þe <hi
+                                rend="underline">Trinite .</hi></line>
+                        <line n="l.7"><hi rend="touched">B</hi>ot full sore aft<ex>er</ex> it did my
+                            herte greue .</line>
+                        <line n="l.8"><hi rend="touched">W</hi>han I sawe my<hi rend="underline">
+                                son</hi> nailed t<hi rend="underline">o a tre .</hi></line>
+                    </zone>
+                    <zone n="EETS.QD.14">
+                        <line n="l.1"><hi>F</hi>or <hi rend="underline">mannes</hi> loue he faught a
+                            grete <hi rend="underline">bataile</hi><hi rend="underline">
+                            .</hi></line>
+                        <line n="l.2"><hi rend="touched">W</hi>ith his vij hedys he <hi
+                                rend="underline">outraed </hi>the dragon ·.</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.22" n="folio">
+                <surface n="recto">
+                    <label>Folio 22 Recto</label>
+                    <graphic url="Jesus_Q_G_8_f22r.jpg"/>
+                    <zone n="EETS.QD.14">
+                        <line n="l.3"><hi rend="touched">L</hi>yke myghtty <hi rend="underline"
+                                >Sampson</hi> without playt or <hi rend="underline">maill</hi>
+                            .</line>
+                        <line n="l.4"><hi rend="touched">I</hi>n his <hi rend="underline"
+                                >stronge</hi> fight he st<ex>re</ex>ngiled þe leon .</line>
+                        <line n="l.5"><hi rend="touched">T</hi>hus was my son mankynde <hi
+                                rend="underline">Champio</hi><hi rend="underline">n</hi> .<note
+                                place="bottom" anchored="true" type="explanatory">The mark on "n" at
+                                the end of the line here is otiose. Neither "leon" or "oblacion"
+                                have any indication of abbreviation, and so it seems unlikely that a
+                                work intended to rhyme with them would include the
+                            letter.</note></line>
+                        <line n="l.6"><hi rend="touched">T</hi>hurgh his most <hi rend="underline"
+                                >magnanymyte</hi> .</line>
+                        <line n="l.7"><hi rend="touched">A</hi>s <hi rend="underline">kyng</hi> and
+                            Bisshop maade his oblacion</line>
+                        <line n="l.8"><hi rend="touched">V</hi>pon þe high awter of þe <hi
+                                rend="underline">Roode tre .</hi></line>
+                    </zone>
+                    <zone n="EETS.QD.15">
+                        <line n="l.1"><hi>M</hi>y sonnys <hi rend="underline">sufferaunce</hi> to
+                                <hi rend="underline">Sathan</hi> was grete wrake .</line>
+                        <line n="l.2"><hi rend="touched">W</hi>hos grete mekenes did I <hi
+                                rend="underline">nought </hi>suffice .</line>
+                        <line n="l.3"><hi rend="touched">C</hi>lerely <hi rend="underline"
+                                >figured</hi> whan þat Isaake .</line>
+                        <line n="l.4"><hi rend="touched">W</hi>as by his father offrid in <hi
+                                rend="underline">sacrifise</hi> .</line>
+                        <line n="l.5"><hi rend="touched">N</hi>ot <hi rend="underline"
+                                >disobeing</hi> in no man<ex>er</ex> wise .</line>
+                        <line n="l.6"><hi rend="touched">B</hi>ot like a lamb of <hi
+                                rend="underline">lownes</hi> list not fle .</line>
+                        <line n="l.7"><hi rend="touched">B</hi>ot most myn herte þat tyme did <hi
+                                rend="underline">a grife .</hi></line>
+                        <line n="l.8"><hi rend="touched">W</hi>han I first saw hym <hi
+                                rend="underline">nailed</hi> to a<hi rend="underline"> tre
+                                .</hi><note place="bottom" anchored="true" type="explanatory">There
+                                is what appears to be an "e" to the left of the line here. When
+                                combined with the mark at line six of stanza eleven, it seems likely
+                                that this is either to indicate a stopping point or a shift in
+                                scribe.</note></line>
+                    </zone>
+                    <zone n="EETS.QD.16">
+                        <line n="l.1"><hi>H</hi>e myght be called <hi rend="underline">Elisar</hi>
+                            the seconde .</line>
+                        <line n="l.2"><hi rend="touched">T</hi>he <hi rend="underline">Campion</hi>
+                            myghtiest and notable .</line>
+                        <line n="l.3"><hi rend="touched">T</hi>hat gaf tholifant his last mortall
+                                <hi rend="underline">wounde</hi> .</line>
+                        <line n="l.4"><hi rend="underline">Macabeo</hi><hi rend="underline">rum</hi>
+                            this story is no fable .</line>
+                        <line n="l.5"><hi rend="touched">A</hi>nd as <hi rend="underline">hercules
+                            </hi>in his conquest<ex>is </ex>stable .</line>
+                        <line n="l.6"><hi rend="touched">B</hi>are vp þe heueuys in his <hi
+                                rend="underline">humanite</hi> .</line>
+                        <line n="l.7"><hi rend="touched">ff</hi>or whome my sorowes were maade moost
+                                <hi rend="underline">lamentable</hi> .</line>
+                        <line n="l.8"><hi rend="touched">W</hi>han I beheld hym þus <hi
+                                rend="underline">nailed</hi> to <hi rend="underline">a tre
+                            .</hi></line>
+                    </zone>
+                    <zone n="EETS.QD.17">
+                        <line n="l.1"><hi>Th</hi>us deth w<ex>ith</ex>
+                            <hi rend="underline">deth</hi> was outraied and <hi rend="underline"
+                                >brought</hi> lowe .</line>
+                        <line n="l.2"><hi rend="underline"><hi rend="touched">M</hi>ankyndys</hi>
+                            quarell maade <hi rend="underline">victorious .</hi></line>
+                        <line n="l.3"><hi rend="touched">ff</hi>or than leuyathan <hi
+                                rend="underline">was bounde </hi>and ou<ex>er</ex>throwe .</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 22 Verso</label>
+                    <graphic url="Jesus_Q_G_8_f22v.jpg"/>
+                    <zone n="EETS.QD.17">
+                        <line n="l.4"><hi rend="touched">W</hi>han with his <hi rend="underline"
+                                >triumphes </hi>moost <hi rend="underline">singuler</hi>
+                                glori<ex>ous</ex> .</line>
+                        <line n="l.5"><hi rend="touched">M</hi>y son had <hi rend="underline"
+                                >foughten</hi> with his bloode p<ex>re</ex>cious .</line>
+                        <line n="l.6"><hi rend="underline"><hi rend="touched">C</hi>onquerid</hi> þe
+                            dragon for all his <hi rend="underline">fel poste</hi> .</line>
+                        <line n="l.7"><hi rend="touched">A</hi>nd dryue hym <hi rend="underline"
+                                >home</hi> to his infernal hous .</line>
+                        <line n="l.8"><hi rend="touched">W</hi>han fyrst <hi rend="underline">my
+                                son</hi> was <hi rend="underline">nailed</hi> to <hi
+                                rend="underline">a tre </hi>.</line>
+                    </zone>
+                    <zone n="EETS.QD.18">
+                        <line n="l.1"><hi>L</hi>at eu<ex>er</ex>y man in þis <hi rend="underline"
+                                >matter </hi>take hede .</line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd euery<hi rend="underline">
+                                woman</hi> in þis worlde a lyue .</line>
+                        <line n="l.3"><hi rend="touched">C</hi>ome nere to me to seen his <hi
+                                rend="underline">wound</hi><hi rend="underline">is </hi><hi
+                                rend="underline">blede </hi>.</line>
+                        <line n="l.4"><hi rend="touched">H</hi>is <hi rend="underline">loue</hi> his
+                            deth his <hi rend="underline">kyndnes</hi> to discryue .</line>
+                        <line n="l.5"><hi rend="touched">T</hi>o se þe <hi rend="underline"
+                                >misteries</hi> of his <hi rend="underline">woundis</hi> fyue
+                            .</line>
+                        <line n="l.6"><hi rend="touched">A</hi>s <hi rend="underline">bawme</hi> and
+                            triacle of moost <hi rend="underline">souerynte </hi>.</line>
+                        <line n="l.7"><hi rend="touched">C</hi>lerely <hi rend="underline"
+                                >distillyng t</hi>o fynde socor blyue .</line>
+                        <line n="l.8"><hi rend="touched">D</hi>owne fro my son <hi rend="underline"
+                                >nailed</hi> to a<hi rend="underline"> tre .</hi></line>
+                    </zone>
+                    <zone n="EETS.QD.19">
+                        <line n="l.1"><hi>T</hi>rust in his <hi rend="underline">m</hi><hi
+                                rend="underline">er</hi><hi rend="underline">cye</hi> and I will go
+                                be<hi rend="underline"> twene .</hi></line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd <hi rend="underline">humbly</hi>
+                            knele be fore his <hi rend="underline">face </hi>.</line>
+                        <line n="l.3"><hi rend="touched">ff</hi>or all <hi rend="underline"
+                                >mankynde</hi> be mediatrix and<hi rend="underline"> mene</hi>
+                            .</line>
+                        <line n="l.4"><hi rend="touched">O</hi>f synfull folke to <hi
+                                rend="underline">releue</hi> þe trispace .</line>
+                        <line n="l.5"><hi rend="touched">T</hi>hat he w<ex>ith</ex>
+                            <hi rend="underline">vengeaunce</hi> shall hem not<hi rend="underline">
+                                manace</hi> .</line>
+                        <line n="l.6"><hi rend="touched">L</hi>ike þeire<hi rend="underline">
+                                demerites</hi> to shewe his crueltee .</line>
+                        <line n="l.7"><hi rend="touched">B</hi>ot shewe to þam his <hi
+                                rend="underline">m</hi><hi rend="underline">er</hi><hi
+                                rend="underline">cy </hi>and his <hi rend="underline">grace
+                            </hi>.</line>
+                        <line n="l.8"><hi rend="touched">T</hi>hat for þ<ex>er</ex>e <hi
+                                rend="underline">loue</hi><ex> </ex>was <hi rend="underline"
+                                >nailed</hi> to <hi rend="underline">a tre </hi>. </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Data Dictionary</title><style type="text/css">
+          .body{
+          width:700px;
+          margin-left:auto;
+          margin-right:auto;
+          }
+          
+          /* unvisited link */
+          a:link {
+          text-decoration: none;
+          color: #29aba4;
+          }
+          /* visited link */
+          a:visited {
+          text-decoration: none;
+          color: #29aba4;
+          }
+          /* mouse over link */
+          a:hover {
+          text-decoration: none;
+          color: #171409;
+          /*border-bottom: 0.125em solid #000;*/
+          background-color: #29aba4;
+          padding: 4px;
+          color: #FFF;
+          }
+          /* selected link */
+          a:active {
+          color: #FFF;
+          }
+          
+          /* Bulleted Items */
+          ul{list-style-type: none; margin: 0; padding: 0;}
+          
+          /* Back to top botton */
+          .go-top{
+          font-family: 'Martel', serif;
+          position: fixed;
+          bottom: 2em;
+          right: 2em;
+          text-decoration: none;
+          background-color: #eb7260;
+          padding: 15px;
+          border: none!important;
+          color: #FFF!important;
+          opacity: 0.8;
+          }
+          .go-top:hover{
+          font-family: 'Martel', serif;
+          opacity: 1;
+          position: fixed;
+          text-decoration: none;
+          background-color: #eb7260;
+          padding: 15px;
+          border: none!important;
+          color: #FFF!important;
+          opacity: 1;
+          }
+          .title{
+          font-size:xx-large;
+          font-weight:bold;
+          margin-top:50px;
+          }
+          .header{
+          padding-top:0.5em;
+          font-family: 'Martel', serif;
+          font-size: 12px;
+          border-bottom: solid 1px lightgray;
+          margin-bottom: 16px;
+          margin-top: 70px;
+          /* This forces section to break to the next line regardless of floats */
+          clear: both;
+          
+          }
+          /* Hero cover potion */
+          .hero{  
+          width:100%;
+          background-color: #48A6A1;
+          margin: 0px;
+          }
+          /* Description Paragraph */
+          .tagline{  
+          width:700px;
+          margin-left:auto;
+          margin-right:auto;
+          margin-bottom:50px;
+          margin-top:0px;
+          padding: 55px 0px 55px 0px;
+          font-family: 'Martel', serif;
+          font-size: 26px;
+          color: #FFF;
+          }
+          /* Table of Contents */
+          .attributeTOCLink{font-size: 18px;}
+          .elementTOCLink{color: gray;}
+          
+          /* Columns */
+          div.columns       { width: 700px; font-size: 20px; line-height: 32px;}
+          div.columns div   { width: 155px;  float: left; }
+          div.grey          { background-color: white; }
+          div.red           { background-color: #white; }
+          div.clear         { clear: both; }
+          
+          .name{
+          font-size:large;
+          font-weight:700;
+          font-size:40px;
+          }
+          .count{
+          width:50px;
+          display:inline-block;
+          float:right;
+          text-align:right;
+          padding-right:0.5em;
+          font-size:medium;
+          }
+          .project{
+          font-size:medium;
+          margin-top:.5em;
+          
+          }
+          .tei_guidelines{
+          font-size:medium;
+          margin-top:.5em;
+          
+          }
+          .tei_description{
+          font-family: 'Martel', serif;
+          font-family: 
+          font-size:medium;
+          padding-bottom: 10px;
+          display: block;
+          }
+          .label{
+          font-family: 'Martel', serif;
+          font-weight:900;
+          font-size: 15px;
+          }
+          .tei_link{
+          font-size:medium;
+          font-style:italic;
+          }
+          
+          .entry_contents_local{
+          font-size:medium;
+          margin-top:.5em;
+          
+          }
+          .local_description{
+          font-size:medium;
+          font-family: 'Martel', serif;
+          display: block;
+          padding-bottom: 10px;
+          }
+          
+          .see_also{
+          font-size:medium;
+          font-family: 'Martel', serif;
+          display: inline;
+          padding-bottom: 10px;
+          }
+          .see_also_label{
+          font-size:medium;
+          font-family: 'Martel', serif;
+          font-style:italic;
+          display: inline;
+          padding-bottom: 10px;
+          }
+          
+          .usage{
+          font-size:medium;
+          font-family: 'Martel', serif;
+          display: inline;
+          padding-bottom: 10px;
+          }
+          .usage_label{
+          font-size:medium;
+          font-family: 'Martel', serif;
+          font-style:italic;
+          display: inline;
+          padding-bottom: 10px;
+          }
+          
+          .examples{
+          font-size:medium;
+          font-family: 'Martel', serif;
+          display: block;
+          padding-bottom: 10px;
+          }
+          .entry_struct_notes{
+          font-size:medium;
+          margin-top:0em;
+          margin-left:0.5em;
+          }
+          .struct_note_marker{
+          font-weight:600;
+          }
+          .entry_local_contained_by{
+          font-size:medium;
+          }
+          .entry_local_may_contain{
+          font-size:medium;
+          }
+          .entry_local_attributes{
+          font-size:medium;
+          }
+          
+          /* Styles for 3 boxes under each element */
+          .context{line-height: 25px; }
+          .attributes {overflow: auto;margin-bottom: 15px; float: left; padding-right: 30px;}
+          .parents{overflow: auto; margin-bottom: 15px; float: left; padding-right: 30px;}
+          .children{overflow: auto; margin-bottom: 15px;}
+          
+          /* Handling of example XML code embedded in pages. */
+          
+          pre.teiCode{
+          white-space:pre-wrap;
+          border-top: solid lightgray 1px;
+          border-bottom: solid lightgray 1px;
+          padding: 13px 0px 0px 20px;
+          background-color: #f2ede7;
+          } 
+          
+          /* Divider between name and gloss */
+          .divider{color:lightgray; font-size: 40px;}
+          
+          /* We want our XML code to look like code. */
+          .xmlTag,
+          .xmlAttName,
+          .xmlAttVal,
+          .teiCode{
+          font-family:monospace;
+          } 
+          
+          /* We want our XML code text to be bold. */
+          .xmlTag,
+          .xmlAttName,
+          .xmlAttVal{
+          font-weight:bold;
+          } 
+          
+          /* We want syntax highlighting. */
+          .xmlTag{
+          color:#000099;
+          }
+          .xmlAttName{
+          color:#f5844c;
+          }
+          .xmlAttVal{
+          color:#993300;
+          }
+          
+          
+          /* Joe's new tags (Sean: please keep and/or tweak) */
+          .giTag{
+          color:#000099;
+          font-size:medium;
+          font-size:18px;
+          font-family:monospace;
+          }
+          .attTag{
+          color:#f5844c;
+          font-size:medium;
+          font-size:18px;
+          font-family:monospace;
+          }
+          .gloss{
+          color:#48A6A1;
+          font-size:large;
+          font-size:30px;
+          font-weight:300;
+          }
+        </style><link href="http://fonts.googleapis.com/css?family=Martel:400,200,300,600,800,700,900" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div class="hero">
+         <div class="tagline">
+            <h1>Data Dictionary</h1>A description of your data dictionary goes here.<br />Last updated: November 28, 2016
+         </div>
+      </div>
+      <div class="body">
+         <div class="columns">
+            <div class="red">
+               <ul>
+                  <li><a href="#e.TEI">TEI</a></li> 
+                  <li><a href="#e.author">author</a></li> 
+                  <li><a href="#e.availability">availability</a></li> 
+                  <li><a href="#e.bibl">bibl</a></li> 
+                  <li><a href="#e.country">country</a></li> 
+                  <li><a href="#e.date">date</a></li> 
+                  <li><a href="#e.decoDesc">decoDesc</a></li> 
+                  <li><a href="#e.decoNote">decoNote</a></li> 
+                  <li><a href="#e.editor">editor</a></li> 
+                  <li><a href="#e.emph">emph</a></li> 
+                  <li><a href="#e.ex">ex</a></li> 
+                  <li><a href="#e.fileDesc">fileDesc</a></li> 
+                  <li><a href="#e.forename">forename</a></li> 
+                  <li><a href="#e.gap">gap</a></li> 
+                  <li><a href="#e.graphic">graphic</a></li> 
+                  <li><a href="#e.handDesc">handDesc</a></li> 
+                  <li><a href="#e.handNote">handNote</a></li> 
+                  <li><a href="#e.hi">hi</a></li> 
+                  <li><a href="#e.history">history</a></li>                                       
+               </ul>
+            </div>
+            <div class="red">
+               <ul>                   
+                  <li><a href="#e.idno">idno</a></li> 
+                  <li><a href="#e.institution">institution</a></li> 
+                  <li><a href="#e.label">label</a></li> 
+                  <li><a href="#e.langUsage">langUsage</a></li> 
+                  <li><a href="#e.language">language</a></li> 
+                  <li><a href="#e.layout">layout</a></li> 
+                  <li><a href="#e.layoutDesc">layoutDesc</a></li> 
+                  <li><a href="#e.line">line</a></li> 
+                  <li><a href="#e.listChange">listChange</a></li> 
+                  <li><a href="#e.material">material</a></li> 
+                  <li><a href="#e.msContents">msContents</a></li> 
+                  <li><a href="#e.msDesc">msDesc</a></li> 
+                  <li><a href="#e.msIdentifier">msIdentifier</a></li> 
+                  <li><a href="#e.msItem">msItem</a></li> 
+                  <li><a href="#e.note">note</a></li> 
+                  <li><a href="#e.objectDesc">objectDesc</a></li> 
+                  <li><a href="#e.orig">orig</a></li> 
+                  <li><a href="#e.p">p</a></li> 
+                  <li><a href="#e.persName">persName</a></li>                    
+               </ul>
+            </div>
+            <div class="red">
+               <ul>                                      
+                  <li><a href="#e.physDesc">physDesc</a></li> 
+                  <li><a href="#e.profileDesc">profileDesc</a></li> 
+                  <li><a href="#e.pubPlace">pubPlace</a></li> 
+                  <li><a href="#e.publicationStmt">publicationStmt</a></li> 
+                  <li><a href="#e.publisher">publisher</a></li> 
+                  <li><a href="#e.region">region</a></li> 
+                  <li><a href="#e.revisionDesc">revisionDesc</a></li> 
+                  <li><a href="#e.settlement">settlement</a></li> 
+                  <li><a href="#e.sourceDesc">sourceDesc</a></li> 
+                  <li><a href="#e.sourceDoc">sourceDoc</a></li> 
+                  <li><a href="#e.support">support</a></li> 
+                  <li><a href="#e.supportDesc">supportDesc</a></li> 
+                  <li><a href="#e.surface">surface</a></li> 
+                  <li><a href="#e.surfaceGrp">surfaceGrp</a></li> 
+                  <li><a href="#e.surname">surname</a></li> 
+                  <li><a href="#e.teiHeader">teiHeader</a></li> 
+                  <li><a href="#e.title">title</a></li> 
+                  <li><a href="#e.titleStmt">titleStmt</a></li> 
+                  <li><a href="#e.zone">zone</a></li> 
+               </ul>
+            </div>
+            <div class="grey">
+               <ul>
+                  <li><a class="attributeTOCLink" href="#a.anchored">@anchored</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.ident">@ident</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.level">@level</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.n">@n</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.place">@place</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.quantity">@quantity</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.reason">@reason</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.rend">@rend</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.scope">@scope</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.script">@script</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.sort">@sort</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.status">@status</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.type">@type</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.unit">@unit</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.url">@url</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.version">@version</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.when">@when</a></li> 
+                  <li><a class="attributeTOCLink" href="#a.xml:id">@xml:id</a></li> 
+               </ul>
+            </div>
+         </div>
+         <div class="clear"></div>
+         <div class="entry" id="e.TEI">
+            <div class="header"><span class="name">TEI</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.version" target="_self">@version</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.teiHeader" target="_self">teiHeader</a></li>
+                     <li><a href="#e.sourceDoc" target="_self">sourceDoc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.author">
+            <div class="header"><span class="name">author</span><span class="count">6</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.titleStmt" target="_self">titleStmt</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.availability">
+            <div class="header"><span class="name">availability</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.status" target="_self">@status</a></li>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.publicationStmt" target="_self">publicationStmt</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.bibl">
+            <div class="header"><span class="name">bibl</span><span class="count">3</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.type" target="_self">@type</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.sourceDesc" target="_self">sourceDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.author" target="_self">author</a></li>
+                     <li><a href="#e.editor" target="_self">editor</a></li>
+                     <li><a href="#e.publisher" target="_self">publisher</a></li>
+                     <li><a href="#e.pubPlace" target="_self">pubPlace</a></li>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                     <li><a href="#e.date" target="_self">date</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.country">
+            <div class="header"><span class="name">country</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msIdentifier" target="_self">msIdentifier</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.date">
+            <div class="header"><span class="name">date</span><span class="count">4</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.when" target="_self">@when</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.publicationStmt" target="_self">publicationStmt</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.decoDesc">
+            <div class="header"><span class="name">decoDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.physDesc" target="_self">physDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.decoNote" target="_self">decoNote</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.decoNote">
+            <div class="header"><span class="name">decoNote</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.decoDesc" target="_self">decoDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.editor">
+            <div class="header"><span class="name">editor</span><span class="count">2</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.titleStmt" target="_self">titleStmt</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.persName" target="_self">persName</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.emph">
+            <div class="header"><span class="name">emph</span><span class="count">13</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.rend" target="_self">@rend</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.ex">
+            <div class="header"><span class="name">ex</span><span class="count">34</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                     <li><a href="#e.orig" target="_self">orig</a></li>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.fileDesc">
+            <div class="header"><span class="name">fileDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.teiHeader" target="_self">teiHeader</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.titleStmt" target="_self">titleStmt</a></li>
+                     <li><a href="#e.publicationStmt" target="_self">publicationStmt</a></li>
+                     <li><a href="#e.sourceDesc" target="_self">sourceDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.forename">
+            <div class="header"><span class="name">forename</span><span class="count">2</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.sort" target="_self">@sort</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.persName" target="_self">persName</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.gap">
+            <div class="header"><span class="name">gap</span><span class="count">154</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.quantity" target="_self">@quantity</a></li>
+                     <li><a href="#a.unit" target="_self">@unit</a></li>
+                     <li><a href="#a.reason" target="_self">@reason</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.orig" target="_self">orig</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.graphic">
+            <div class="header"><span class="name">graphic</span><span class="count">6</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.url" target="_self">@url</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.surface" target="_self">surface</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.handDesc">
+            <div class="header"><span class="name">handDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.physDesc" target="_self">physDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.handNote" target="_self">handNote</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.handNote">
+            <div class="header"><span class="name">handNote</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.scope" target="_self">@scope</a></li>
+                     <li><a href="#a.script" target="_self">@script</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.handDesc" target="_self">handDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.hi">
+            <div class="header"><span class="name">hi</span><span class="count">11</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                     <li><a href="#e.orig" target="_self">orig</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.history">
+            <div class="header"><span class="name">history</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msDesc" target="_self">msDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.idno">
+            <div class="header"><span class="name">idno</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msIdentifier" target="_self">msIdentifier</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.institution">
+            <div class="header"><span class="name">institution</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msIdentifier" target="_self">msIdentifier</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.label">
+            <div class="header"><span class="name">label</span><span class="count">6</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.surface" target="_self">surface</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.langUsage">
+            <div class="header"><span class="name">langUsage</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.profileDesc" target="_self">profileDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.language" target="_self">language</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.language">
+            <div class="header"><span class="name">language</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.ident" target="_self">@ident</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.langUsage" target="_self">langUsage</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.layout">
+            <div class="header"><span class="name">layout</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.layoutDesc" target="_self">layoutDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.layoutDesc">
+            <div class="header"><span class="name">layoutDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.objectDesc" target="_self">objectDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.layout" target="_self">layout</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.line">
+            <div class="header"><span class="name">line</span><span class="count">48</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.n" target="_self">@n</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.zone" target="_self">zone</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.orig" target="_self">orig</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.listChange">
+            <div class="header"><span class="name">listChange</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.revisionDesc" target="_self">revisionDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.material">
+            <div class="header"><span class="name">material</span><span class="count">2</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.support" target="_self">support</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.msContents">
+            <div class="header"><span class="name">msContents</span><span class="count">2</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msDesc" target="_self">msDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                     <li><a href="#e.msItem" target="_self">msItem</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.msDesc">
+            <div class="header"><span class="name">msDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.sourceDesc" target="_self">sourceDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.msIdentifier" target="_self">msIdentifier</a></li>
+                     <li><a href="#e.msContents" target="_self">msContents</a></li>
+                     <li><a href="#e.history" target="_self">history</a></li>
+                     <li><a href="#e.physDesc" target="_self">physDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.msIdentifier">
+            <div class="header"><span class="name">msIdentifier</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msDesc" target="_self">msDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.country" target="_self">country</a></li>
+                     <li><a href="#e.region" target="_self">region</a></li>
+                     <li><a href="#e.settlement" target="_self">settlement</a></li>
+                     <li><a href="#e.institution" target="_self">institution</a></li>
+                     <li><a href="#e.idno" target="_self">idno</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.msItem">
+            <div class="header"><span class="name">msItem</span><span class="count">14</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.n" target="_self">@n</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msContents" target="_self">msContents</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.note">
+            <div class="header"><span class="name">note</span><span class="count">32</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.place" target="_self">@place</a></li>
+                     <li><a href="#a.anchored" target="_self">@anchored</a></li>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                     <li><a href="#e.orig" target="_self">orig</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.emph" target="_self">emph</a></li>
+                     <li><a href="#e.ex" target="_self">ex</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.objectDesc">
+            <div class="header"><span class="name">objectDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.physDesc" target="_self">physDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.supportDesc" target="_self">supportDesc</a></li>
+                     <li><a href="#e.layoutDesc" target="_self">layoutDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.orig">
+            <div class="header"><span class="name">orig</span><span class="count">48</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.line" target="_self">line</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.gap" target="_self">gap</a></li>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                     <li><a href="#e.ex" target="_self">ex</a></li>
+                     <li><a href="#e.hi" target="_self">hi</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.p">
+            <div class="header"><span class="name">p</span><span class="count">20</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.n" target="_self">@n</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msContents" target="_self">msContents</a></li>
+                     <li><a href="#e.history" target="_self">history</a></li>
+                     <li><a href="#e.support" target="_self">support</a></li>
+                     <li><a href="#e.layout" target="_self">layout</a></li>
+                     <li><a href="#e.handNote" target="_self">handNote</a></li>
+                     <li><a href="#e.msItem" target="_self">msItem</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.emph" target="_self">emph</a></li>
+                     <li><a href="#e.ex" target="_self">ex</a></li>
+                     <li><a href="#e.hi" target="_self">hi</a></li>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.persName">
+            <div class="header"><span class="name">persName</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.editor" target="_self">editor</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.surname" target="_self">surname</a></li>
+                     <li><a href="#e.forename" target="_self">forename</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.physDesc">
+            <div class="header"><span class="name">physDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msDesc" target="_self">msDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.objectDesc" target="_self">objectDesc</a></li>
+                     <li><a href="#e.handDesc" target="_self">handDesc</a></li>
+                     <li><a href="#e.decoDesc" target="_self">decoDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.profileDesc">
+            <div class="header"><span class="name">profileDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.teiHeader" target="_self">teiHeader</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.langUsage" target="_self">langUsage</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.pubPlace">
+            <div class="header"><span class="name">pubPlace</span><span class="count">7</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.publicationStmt" target="_self">publicationStmt</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.publicationStmt">
+            <div class="header"><span class="name">publicationStmt</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.fileDesc" target="_self">fileDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.publisher" target="_self">publisher</a></li>
+                     <li><a href="#e.pubPlace" target="_self">pubPlace</a></li>
+                     <li><a href="#e.availability" target="_self">availability</a></li>
+                     <li><a href="#e.date" target="_self">date</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.publisher">
+            <div class="header"><span class="name">publisher</span><span class="count">4</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.publicationStmt" target="_self">publicationStmt</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.region">
+            <div class="header"><span class="name">region</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msIdentifier" target="_self">msIdentifier</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.revisionDesc">
+            <div class="header"><span class="name">revisionDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.status" target="_self">@status</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.teiHeader" target="_self">teiHeader</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.listChange" target="_self">listChange</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.settlement">
+            <div class="header"><span class="name">settlement</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.msIdentifier" target="_self">msIdentifier</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.sourceDesc">
+            <div class="header"><span class="name">sourceDesc</span><span class="count">4</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.fileDesc" target="_self">fileDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.msDesc" target="_self">msDesc</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.sourceDoc">
+            <div class="header"><span class="name">sourceDoc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.TEI" target="_self">TEI</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.surfaceGrp" target="_self">surfaceGrp</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.support">
+            <div class="header"><span class="name">support</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.supportDesc" target="_self">supportDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.material" target="_self">material</a></li>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.supportDesc">
+            <div class="header"><span class="name">supportDesc</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.objectDesc" target="_self">objectDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.support" target="_self">support</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.surface">
+            <div class="header"><span class="name">surface</span><span class="count">6</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                     <li><a href="#a.n" target="_self">@n</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.surfaceGrp" target="_self">surfaceGrp</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.label" target="_self">label</a></li>
+                     <li><a href="#e.graphic" target="_self">graphic</a></li>
+                     <li><a href="#e.zone" target="_self">zone</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.surfaceGrp">
+            <div class="header"><span class="name">surfaceGrp</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                     <li><a href="#a.n" target="_self">@n</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.sourceDoc" target="_self">sourceDoc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.surface" target="_self">surface</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.surname">
+            <div class="header"><span class="name">surname</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.persName" target="_self">persName</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.teiHeader">
+            <div class="header"><span class="name">teiHeader</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.TEI" target="_self">TEI</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.fileDesc" target="_self">fileDesc</a></li>
+                     <li><a href="#e.profileDesc" target="_self">profileDesc</a></li>
+                     <li><a href="#e.revisionDesc" target="_self">revisionDesc</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.title">
+            <div class="header"><span class="name">title</span><span class="count">11</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.type" target="_self">@type</a></li>
+                     <li><a href="#a.level" target="_self">@level</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.titleStmt" target="_self">titleStmt</a></li>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                     <li><a href="#e.emph" target="_self">emph</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.titleStmt">
+            <div class="header"><span class="name">titleStmt</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.xml:id" target="_self">@xml:id</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.fileDesc" target="_self">fileDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                     <li><a href="#e.author" target="_self">author</a></li>
+                     <li><a href="#e.editor" target="_self">editor</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="e.zone">
+            <div class="header"><span class="name">zone</span><span class="count">6</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="attributes"><span class="label">Attributes: </span><ul>
+                     <li><a href="#a.n" target="_self">@n</a></li>
+                  </ul>
+               </div>
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.surface" target="_self">surface</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li><a href="#e.line" target="_self">line</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <hr />
+         <div class="entry" id="a.anchored">
+            <div class="header"><span class="name">@anchored</span><span class="count">32</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>true</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.ident">
+            <div class="header"><span class="name">@ident</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.language" target="_self">language</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>enm</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.level">
+            <div class="header"><span class="name">@level</span><span class="count">5</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>m a j u</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.n">
+            <div class="header"><span class="name">@n</span><span class="count">78</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.p" target="_self">p</a></li>
+                     <li><a href="#e.msItem" target="_self">msItem</a></li>
+                     <li><a href="#e.surfaceGrp" target="_self">surfaceGrp</a></li>
+                     <li><a href="#e.surface" target="_self">surface</a></li>
+                     <li><a href="#e.zone" target="_self">zone</a></li>
+                     <li><a href="#e.line" target="_self">line</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>stanza_layout hand_intro hand_otiose Center Beam Crossbeams South Wall West Wall North
+                        Wall East Wall panel EETS.QD.8 l.1 l.2 l.3 l.4 l.5 l.6 l.7 l.8 EETS.QD.4 EETS.QD.14
+                        EETS.QD.17 EETS.QD.18 EETS.QD.19
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.place">
+            <div class="header"><span class="name">@place</span><span class="count">32</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>bottom</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.quantity">
+            <div class="header"><span class="name">@quantity</span><span class="count">154</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.gap" target="_self">gap</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>1 5 7 3 2 4 6 8 12 11 10 9</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.reason">
+            <div class="header"><span class="name">@reason</span><span class="count">154</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.gap" target="_self">gap</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>illegible</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.rend">
+            <div class="header"><span class="name">@rend</span><span class="count">11</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.emph" target="_self">emph</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>italic</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.scope">
+            <div class="header"><span class="name">@scope</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.handNote" target="_self">handNote</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>sole</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.script">
+            <div class="header"><span class="name">@script</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.handNote" target="_self">handNote</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>textura quadrata</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.sort">
+            <div class="header"><span class="name">@sort</span><span class="count">2</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.forename" target="_self">forename</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>1 2</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.status">
+            <div class="header"><span class="name">@status</span><span class="count">2</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.availability" target="_self">availability</a></li>
+                     <li><a href="#e.revisionDesc" target="_self">revisionDesc</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>free draft</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.type">
+            <div class="header"><span class="name">@type</span><span class="count">14</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.title" target="_self">title</a></li>
+                     <li><a href="#e.bibl" target="_self">bibl</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>full main sub book article dissertation</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.unit">
+            <div class="header"><span class="name">@unit</span><span class="count">154</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.gap" target="_self">gap</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>chars</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.url">
+            <div class="header"><span class="name">@url</span><span class="count">6</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.graphic" target="_self">graphic</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>ww_qd_1.jpg ww_qd_2.jpg ww_qd_3.jpg ww_qd_4.jpg ww_qd_5.jpg ww_qd_6.jpg</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.version">
+            <div class="header"><span class="name">@version</span><span class="count">1</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.TEI" target="_self">TEI</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>5.0</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.when">
+            <div class="header"><span class="name">@when</span><span class="count">3</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.date" target="_self">date</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>1911 1955-01 2008-08</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="entry" id="a.xml:id">
+            <div class="header"><span class="name">@xml:id</span><span class="count">49</span></div>
+            <div class="descriptions"></div>
+            <div class="context">
+               <div class="parents"><span class="label">Contained by: </span><ul>
+                     <li><a href="#e.teiHeader" target="_self">teiHeader</a></li>
+                     <li><a href="#e.titleStmt" target="_self">titleStmt</a></li>
+                     <li><a href="#e.persName" target="_self">persName</a></li>
+                     <li><a href="#e.availability" target="_self">availability</a></li>
+                     <li><a href="#e.sourceDesc" target="_self">sourceDesc</a></li>
+                     <li><a href="#e.msDesc" target="_self">msDesc</a></li>
+                     <li><a href="#e.note" target="_self">note</a></li>
+                     <li><a href="#e.sourceDoc" target="_self">sourceDoc</a></li>
+                     <li><a href="#e.surfaceGrp" target="_self">surfaceGrp</a></li>
+                     <li><a href="#e.surface" target="_self">surface</a></li>
+                  </ul>
+               </div>
+               <div class="children"><span class="label">May contain: </span><ul>
+                     <li>HeaderInfo Quis_Dabit medavis clopton Clopton_Chantry_Chapel Clopton informational
+                        MacCracken Trapp Floyd TextContent w.1 p.1 explanatory p.2 p.3 both p.4 p.5 p.6
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div><a href="#" class="go-top">Back to top</a></div>
+   </body>
+</html>

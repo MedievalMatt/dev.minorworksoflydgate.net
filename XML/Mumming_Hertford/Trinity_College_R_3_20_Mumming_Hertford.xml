@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Hertford">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at Hertford</emph>
+                    </title>
+                    <title type="sub">Trinity R.3.20 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <xi:include href="../Witness_Descriptions/Trinity_R_3_20.xml" xpointer="publication"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Trinity_R_3_20.xml" xpointer="Trinity_R_3_20"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Minor_Poems_Vol_II.xml" xpointer="MacCracken"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220802" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.3" n="gathering" rend=".xvi." rendition="conjectured">
+            <surfaceGrp xml:id="f.20" n="folio">
+                <surface n="verso" xml:id="p.40">
+                    <label>Folio 20 Verso (Page 40)</label>
+                    <!-- 200mm x 116mm 29 lines-->
+                    <graphic url="Trinity_R_3_20_f20v.jpg"/>
+                    <zone n="EETS.MH.H.1">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>A desgysinge to fore þe
+                                kynge</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.I">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Nowe foloweþe here þe maner of a
+                                bille by wey<note place="bottom" anchored="true" n="informational"
+                                    >There is a "b" to the left of the first line of this
+                                    introduction.</note></line>
+                            <line n="l.2">of supplicac<ex>i</ex>on<!--should be ioun?--> putte to þe
+                                kyng holding his noble</line>
+                            <line n="l.3">feest of Cristmasse in þe Castel of
+                                hertford<!-- note the otiose mark in the final gylph in the scribal notes-->
+                                as</line>
+                            <line n="l.4">in a disguysing<note place="bottom" anchored="true"
+                                    n="informational">The mark after the final glyph is most likely
+                                    an otiose mark, but it differs enough from the scribe's typical
+                                    practice regarding otiose marks at the end of terminal "g" to
+                                    suggest the need for a formal note.</note><!--e at end?--> of þe
+                                Rude vpplandissħe people com</line>
+                            <line n="l.5"
+                                >pleyning<!-- note the mark over "y." It might be an indication of "y" rather than "thorn."-->
+                                on hir wyves / witħ þe boystoris<note place="bottom" anchored="true"
+                                    n="informational">The EETS edition has "boystous," but it seems
+                                    more likely that it is "boystoris" based on both the shape of
+                                    the glyphs and the word in BL Additional 29729, which is
+                                    "boystrus."</note> aunswere</line>
+                            <line n="l.6">of hir wyves / devysed by lydegate at þe Request of</line>
+                            <line n="l.7">þe
+                                Countre<!--note the otiose mark after "e" in the scribal notes.-->
+                                Roullour Brys slayne at Loviers<note place="bottom" anchored="true"
+                                    n="informational">The line from "Brys" on appears to be an
+                                    addition in a different hand, as determined by the shape of "at"
+                                    in the line when compared with the above and the use of a
+                                    straight line title as opposed to the primary scribe's use of a
+                                    curved line.</note></line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.1">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi><hi rend="capital_2">M</hi>oost
+                                noble prynce witħ support of your grace</line>
+                            <line n="l.2">Þer beon entred in to youre royal place</line>
+                            <line n="l.3">And late ecomen in to youre castell</line>
+                            <line n="l.4">Youre poure lieges / wheche lyke no thing weel</line>
+                            <line n="l.5">Nowe in þe vigyle / of þis nuwe yeere</line>
+                            <line n="l.6">Certeyne sweynes ful<damage agent="tearing" unit="char"
+                                    quantity="14"><supplied reason="missing" source="EETS">froward
+                                        of ther c</supplied>here</damage></line>
+                            <line n="l.7">Of entent comon <damage agent="tearing" unit="char"
+                                    quantity="15"><supplied reason="missing" source="EETS">fallen on
+                                        ther kne</supplied></damage></line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.21" n="folio">
+                <surface n="recto" xml:id="p.41">
+                    <label>Folio 21 Recto (Page 41)</label>
+                    <!--222mm x 117mm 33 lines-->
+                    <graphic url="Trinity_R_3_20_f21r.jpg"/>
+                    <zone n="EETS.MH.H.2">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>At cristmasse <hi rend="pilcrow"
+                                    >.</hi>in þe Castel of Herford</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.2">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi><note>The "n" of this nota mark
+                                    is set slightly further to the left of the verse than that of
+                                    other marks on this and the prior page, and appears to be in a
+                                    different hand.</note>ffor to compleyne vn to yuoure
+                                magestee</line>
+                            <line n="l.2"
+                                >Vpo<ex>n</ex>n<!--check against other instances besides below to see what the suspension mark means definitively.-->
+                                þe mescheef of gret aduersytee</line>
+                            <line n="l.3">Vpo<ex>n</ex>n þe trouble and þe cruweltee</line>
+                            <line n="l.4">Whicħ þat þey haue endured in þeyre lyves</line>
+                            <line n="l.5">By þe felnesse of þeyre fierce wyves</line>
+                            <line n="l.6">Whicħ is a tourment verray importable</line>
+                            <line n="l.7">A bonde of sorowe / a
+                                knott<!-- note otiose mark in scribal notes--> vnremuwable</line>
+                            <line n="l.8">ffor whoo is bounde / or looked in
+                                maryage<!--strikethrough on g. significant?--></line>
+                            <line n="l.9">yif he beo olde / he falleþe in dotage</line>
+                            <line n="l.10">And yong<note place="bottom" anchored="true"
+                                    n="informational">The EETS edition terminates with "e," but the
+                                    glyph elsewhere in the manuscript is otiose so it seems likely
+                                    it would be here as well.</note> folkes of þeyre lymes<note
+                                    place="bottom" anchored="true" n="informational">The stroke over
+                                    the majority of the word appears to be otiose, and there's a
+                                    secondary mark over the "y" which, as the scribal notes mention,
+                                    is likely to indicate a "y" rather than thorn.</note>
+                                sklendre</line>
+                            <line n="l.11">Grene and lusty / and of brawne but tendre</line>
+                            <line n="l.12">Phylosophres callen in suche aage</line>
+                            <line n="l.13">a Chylde to wyve / a woodnesse or a raage</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.3">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>ffor þey afferme / þer is noon
+                                eorþely stryff</line>
+                            <line n="l.2">May beo compared / to wedding of a wyff</line>
+                            <line n="l.3">And who þat euer stondeþe in þe cas</line>
+                            <line n="1.4">He witħ his Rebecke / may sing ful offt ellas</line>
+                            <line n="l.5">Lyke as þeos hynes / here stonding oon by oon</line>
+                            <line n="l.6">He may witħ hem vpo<ex>n</ex>n þe daunce goon</line>
+                            <line n="l.7">Leorne þe traas /booþe at even and morowe</line>
+                            <line n="l.8">Of <hi rend="underline">karycantowe</hi> / in tourment and
+                                in sorowe</line>
+                            <line n="l.9">Weyle þe whyle ellas þat he was borne</line>
+                            <line n="l.10">ffor <hi rend="underline">Obbe</hi> / þe Reeve
+                                /<!-- treat as comma? --> þat grooþe here al to forne</line>
+                            <line n="l.11">he pleyneþe sore / his mariage is
+                                not<!-- compare with the final word here and "knott" above in scribal notes -->
+                                meete</line>
+                            <line n="l.12">ffor his wyff <hi rend="underline">Beautryce</hi>
+                                <hi rend="underline">Bittersweete</hi></line>
+                            <line n="l.13">Cast vpo<ex>n</ex>n him an hougly cheer ful rowgħe</line>
+                            <line n="l.14">Whane he komeþe home / ful wery frome þe plougħe</line>
+                            <line n="l.15">Witħ hungry stomake / deed and paale of cheere</line>
+                            <line n="l.16">In hope to fynde redy his dynier</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3"/>
+                            <line n="l.4"/>
+                            <line n="l.5"><hi rend="pilcrow">/i.</hi> demonstrando .vj.
+                                Rusticos</line>
+                            <line n="l.6"/>
+                            <line n="l.7"/>
+                            <line n="l.8"/>
+                            <line n="l.9"/>
+                            <line n="l.10"/>
+                            <line n="l.11"/>
+                            <line n="l.12"/>
+                            <line n="l.13"/>
+                            <line n="l.14"/>
+                            <line n="l.15"/>
+                            <line n="l.16"/>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.4">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þanne sitteþe <hi
+                                    rend="underline">Beautryce</hi> bolling at þe nale</line>
+                            <line n="l.2">As she þat gyveþe of him no maner tale</line>
+                            <line n="l.3">ffor she al day witħ his Iowsy nolle</line>
+                            <line n="l.4">Hathe for þe collyk pouped in þe bolle</line>
+                        </zone></zone>
+                </surface>
+                <surface n="verso" xml:id="p.42">
+                    <label>Folio 21 Verso (Page 42)</label>
+                    <!--221mm x 120mm -->
+                    <graphic url="Trinity_R_3_20_f21v.jpg"/>
+                    <zone n="EETS.MH.H.3">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>A desguysinge to fore þe
+                                kyng</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.5">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>And for heed aache witħ pepir and
+                                gynger</line>
+                            <line n="l.2">Dronk dolled ale / to make hir throte cleer</line>
+                            <line n="l.3">And kemeþe<note place="bottom" anchored="true"
+                                    n="informational">MacCraken has "komeþe" here, but it lacks the
+                                    box form of the "o" elsewhere and is similar to the scribe's "e"
+                                    form, so I have rendered it "kemeþe" here.</note> hir hoome /
+                                whane hit draweþe to eve</line>
+                            <line n="l.4">And þanne <hi rend="underline">Roby<ex>n</ex>n</hi> þe
+                                cely poure Reeve</line>
+                            <line n="l.5">ffynde noone amendes / of harome ne damage</line>
+                            <line n="l.6">But leene growełł / and soupeþe colde potage</line>
+                            <line n="l.7">And of his wyf haþe noone oþer cheer</line>
+                            <line n="l.8">But Cokkrowortes vn to his souper</line>
+                            <line n="l.9">Þis is his servyce sitting at þe borde</line>
+                            <line n="l.10">And cely <hi rend="underline">Roby<ex>n</ex>n</hi> / yif
+                                he speke a
+                                worde<!--notice that word here is not the capital form.  So either the capital form does not mean the initial w in a word or it should be rendered "aworde"--></line>
+                        </zone></zone>
+                    <zone n="EETS.MH.6">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Beautryce of him / dooþe so lytel
+                                rekke</line>
+                            <line n="l.2">Þat witħ hir distaff she hitteþe him in þe nekke</line>
+                            <line n="l.3">ffor a medecyne to chawf witħ his blood<ex>e</ex></line>
+                            <line n="l.4">Witħ suche a metyerde / she haþe shape him an hoode</line>
+                        </zone></zone>
+                    <zone n="EETS.MH.7">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>And <hi rend="underline"
+                                    >Colyn</hi>
+                                <hi rend="underline">Cobeller</hi> folowing his felawe</line>
+                            <line n="l.2">haþe hade his part of þe same lawe</line>
+                            <line n="l.3">ffor by þe feytħ þat þe preost him gaf</line>
+                            <line n="l.4">His wyff haþe taugħt him to pleyne at þe staff</line>
+                            <line n="l.5">Hir quarter strooke / were so large and rounde</line>
+                            <line n="l.6">Þat on his rigge / þe towche was alwey founde</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1">demonstrando</line>
+                            <line n="l.2">pictaciarium</line>
+                            <line n="l.3"/>
+                            <line n="l.4"/>
+                            <line n="l.5"/>
+                            <line n="l.6"/>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.8">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Cecely sourechere / his
+                                    owe<ex>n</ex>n precyous spouse</line>
+                            <line n="l.2">Kowde him reheete / whane he came to house</line>
+                            <line n="l.3">yif he ougħt spake whanne he felt peyne</line>
+                            <line n="l.4">Ageyne oon worde / alweys he hade tweyne</line>
+                            <line n="l.5">Sheo qwytt him ouer / þer was no thing to seeche</line>
+                            <line n="l.6">Six for oon / of worde and strookes eeche</line>
+                            <line n="l.7">þer was no meen / bytweene hem for to goone</line>
+                            <line n="l.8">What euer he wan clowting olde shoone<note place="bottom"
+                                    anchored="true" n="informational">The next to last glyph here
+                                    looks like a transitional glyph between "n" and "m" based on
+                                    "goone" in the line above and "game" in line twelve. Rendering
+                                    it as "m" breaks the rhyming couplets and Occam's Razor would
+                                    suggest that the extra minim is a mistake.</note></line>
+                            <line n="l.9">Þe wykday pleynly þis is no tale</line>
+                            <line n="l.10">Sheo wolde on sondayes drynk it at þe nale</line>
+                            <line n="l.11">His <unclear>pa</unclear><!--unclear or corr?-->rt was
+                                noon / he sayde not oonys nay</line>
+                            <line n="l.12">Hit is no game / but an hernest play</line>
+                            <line n="l.13">ffor lack of wit a man his wyf to greeve</line>
+                            <line n="l.14">Þeos housbondemen who so wolde hem leeve</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.22" n="folio">
+                <surface n="recto" xml:id="p.43">
+                    <label>Folio 22 Recto (Page 43)</label>
+                    <!--222mm x 120mm -->
+                    <graphic url="Trinity_R_3_20_f22r.jpg"/>
+                    <zone n="EETS.MH.H.4">
+                        <zone n="header">
+                            <line n="l.1">In Cristemasse <hi rend="pilcrow">ɲ</hi>In þe Castełł of
+                                Hertford</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.8">
+                        <zone n="text">
+                            <line n="l.15">Koude yif þey dourst / telle in Audyence</line>
+                            <line n="l.16">What foloweþe þer of wyves to doone offence</line>
+                            <line n="l.17">Is noon so olde ne ryveld on hir face</line>
+                            <line n="l.18">Wit tong or staff but þat she dare manase</line>
+                            <line n="l.19">Mabyle god hir sauve and blesse</line>
+                            <line n="l.20">Koude yif hir list / bere here of witnesse</line>
+                            <line n="l.21">Wordes strookes / vnhappe and harde grace</line>
+                            <line n="l.22">witħ sharp<ex>e</ex> nayles kracching in þe face</line>
+                            <line n="l.23">I mene þus whane þe distaff is brooke</line>
+                            <line n="l.24">Witħ þeyre fistes wyves wol be wrooke</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.9">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Blessed þoo men / þat cane in
+                                suche offence</line>
+                            <line n="l.2">Meekly suffre / take al in pacyence</line>
+                            <line n="l.3">Tendure suche wysly purgatorye</line>
+                            <line n="l.4">Heven for þeyre meede / to regne þer in glorye</line>
+                            <line n="l.5">God graunt al housbandes þat beon in þis place</line>
+                            <line n="l.6">To wynne so heven / for his hooly grace</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.10">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Nexst in ordre / þis Bochier
+                                stoute and bolde</line>
+                            <line n="l.2">Þat killed haþe bulles and boores olde</line>
+                            <line n="l.3">Þis <hi rend="underline">Berthilmewe</hi> for al his
+                                broode knyff</line>
+                            <line n="l.4">Yit durst he neuer witħ his sturdy wyff</line>
+                            <line n="l.5">In no mater holde chaumpartye</line>
+                            <line n="l.6">And if he did / sheo wolde anoon defye</line>
+                            <line n="l.7">His pompe his pryde witħ a sterne thougħt</line>
+                            <line n="l.8">And sodeynly setten him as nougħt</line>
+                            <line n="l.9">Þougħe his bely / was rounded lyche an ooke</line>
+                            <line n="l.10">She wolde not fayle / to gyf þe first<note place="bottom"
+                                    anchored="true" n="informational">MacCraken has an suspended "e"
+                                    here, rendering it as "first[e]." I see no indication of such a
+                                    suspension in the manuscript and so have rendered it as
+                                    "first"</note> strooke</line>
+                            <line n="l.11">ffor proude pernelle lyche a Chaumpyoun</line>
+                            <line n="l.12">Wolde leve hir puddinges / in a gret Cawdroun</line>
+                            <line n="l.13">Suffre hem boylle / and taake of hem noon heede</line>
+                            <line n="l.14">But witħ hir skumour reeche him on þe heued</line>
+                            <line n="l.15">Shee wolde paye him and make no delaye</line>
+                            <line n="l.16">Bid him goo pleye him a twenty deuel wey</line>
+                            <line n="l.17">She was no cowarde founde at suche a neode<note
+                                    place="bottom" anchored="true" n="informational">MacCraken
+                                    renders this as "neode," which breaks the rhyme with "bleed"
+                                    below but is what the manuscript renders. I'm not sure why he
+                                    did not feel the need to correct the manuscript here when he did
+                                    elsewhere.</note></line>
+                            <line n="l.18">Hir fist ful offt made him cheekes bleed</line>
+                            <line n="l.19">What querell euer / þat he agenst hir sette</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1">demonstrando</line>
+                            <line n="l.2">Carnificem</line>
+                            <line n="l.3"/>
+                            <line n="l.4"/>
+                            <line n="l.5"/>
+                            <line n="l.6"/>
+                            <line n="l.7"/>
+                            <line n="l.8"/>
+                            <line n="l.9"/>
+                            <line n="l.10"/>
+                            <line n="l.11"/>
+                            <line n="l.12"/>
+                            <line n="l.13"/>
+                            <line n="l.14"/>
+                            <line n="l.15"/>
+                            <line n="l.16"/>
+                            <line n="l.17"/>
+                            <line n="l.18"/>
+                            <line n="l.19"/>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.44">
+                    <label>Folio 22 Verso (Page 44)</label>
+                    <!-- 223mm x 120mm 34 lines -->
+                    <graphic url="Trinity_R_3_20_f22v.jpg"/>
+                    <zone n="EETS.MH.H.5">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þe desgysinge for þe Kynge</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.10">
+                        <zone n="text">
+                            <line n="l.20">She cast hir not / to dyen in his dette</line>
+                            <line n="l.21">She made no taylle / but qwytt him by and by</line>
+                            <line n="l.22">His quarter sowde / she payde him feytħfully</line>
+                            <line n="l.23">And his waages / w<ex>ith</ex> al hir best entent</line>
+                            <line n="l.24">She made þer of noon assignement</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.11">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Eeke <hi rend="underline"
+                                        >Thom<ex>m</ex>e</hi>
+                                <hi rend="underline">Tynker</hi> witħ alle hees pannes olde</line>
+                            <line n="l.2">And alle þe wyres of Banebury þat he solde</line>
+                            <line n="l.3">His frytħ<note place="bottom" anchored="true"
+                                    n="informational">The EETS edition as "styth" here, but the
+                                    shape of the glyphs and comparison to BL Add. 29729 supports
+                                    "fryth."</note> his hamour his bagge portatyf</line>
+                            <line n="l.4">Bare vp his arme / whane he faugħt witħ his wyff</line>
+                            <line n="l.5">He foonde for haste / no better bokeller</line>
+                            <line n="l.6">Vpo<ex>n</ex>n his cheeke / þe distaff came so neer</line>
+                            <line n="l.7">Hir name was cleped <hi rend="underline">Tybot
+                                    Tapister</hi></line>
+                            <line n="l.8">To brawle and broyle / she nad no maner for</line>
+                            <line n="l.9">To thakke his pilche / stoundemel nowe and þanne</line>
+                            <line n="l.10">Thikker þane Thom<ex>m</ex>e / koude clouwten any
+                                panne</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1">demonstrando</line>
+                            <line n="l.2">þe Tynker</line>
+                            <line n="l.3"/>
+                            <line n="l.4"/>
+                            <line n="l.5"/>
+                            <line n="l.6"/>
+                            <line n="l.7"/>
+                            <line n="l.8"/>
+                            <line n="l.9"/>
+                            <line n="l.10"/>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.12">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Nexst <hi rend="underline">Colle
+                                    Tyler</hi> ful hevy of his cheer</line>
+                            <line n="l.2">Compleyneþe on phelyce his wyff þe wafurer</line>
+                            <line n="l.3">Al his bred witħ sugre nys not baake</line>
+                            <line n="l.4">yit on his cheekis / some tyme he haþe a caake</line>
+                            <line n="l.5">So hoot and nuwe or he can taken heede</line>
+                            <line n="l.6">þat his heres Glowe verray reede</line>
+                            <line n="l.7">ffor a medecyne whane þe forst is colde</line>
+                            <line n="l.8">Making his teethe to Ratle þat beon oolde</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.13">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þis is þe compleynt / þat þeos
+                                    dotardes<note place="bottom" anchored="true" n="explanatory">The
+                                    second glyph of this word appears to have originally been an "a"
+                                    based on the upper portion of the letter form when compared with
+                                    the "a" glyphs in the prior stanzam, but has been corrected to
+                                    an "o" after the fact.</note> oolde</line>
+                            <line n="l.2">Make on þeyre wyves þat beon so stoute and bolde</line>
+                            <line n="l.3">Þeos holy Martirs preued ful pacyent</line>
+                            <line n="l.4">Lowly beseching in al hir best entent</line>
+                            <line n="l.5">Vn to youre noble ryal magestee</line>
+                            <line n="l.6">To graunte hem fraunchyse and al so liberte</line>
+                            <line n="l.7">Sith þey beoþe fetird / and bounden in maryage</line>
+                            <line n="l.8">A saufconduyt to sauf him frome damage</line>
+                            <line n="l.9">Eeke vnder support<note place="bottom" anchored="true"
+                                    n="informational">The long descender on the "r" in this word
+                                    appears nowhere else in this witness.</note> / of youre hyegħe
+                                Renoun</line>
+                            <line n="l.10">Graunt hem also / a proteccyoun</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.14">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Conquest of wyves / is
+                                    ron<ex>n</ex>e thorougħe þis lande</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.23" n="folio">
+                <surface n="recto" xml:id="p.45">
+                    <label>Folio 23 Recto (Page 45)</label>
+                    <!--223mm x 120mm 32 lines -->
+                    <graphic url="Trinity_R_3_20_f23r.jpg"/>
+                    <zone n="EETS.MH.H.6">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>At Cristemasse At Hertford</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.14">
+                        <zone n="text">
+                            <line n="l.2">Cleyming of Rigħt to haue þe hyegħer hande</line>
+                            <line n="l.3">But if you list of youre Regallye</line>
+                            <line n="l.4">þe olde testament for to modefye</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.15">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>And þat þee<note place="bottom"
+                                    anchored="true" n="informational">MacCraken has rendered this as
+                                    "yee" based on "you" and "youre" in line two of the previous
+                                    grouping. The gylph, however, does not match the scribe's
+                                    rendering of "y" elsewhere in the manuscript and lacks the
+                                    tittle that the scribe intermittantly uses to render "y"
+                                    throughout or the flourish used consistently to terminate "y."
+                                    BL Add. 29729 has "the" here.</note> list / asselen þeyre
+                                Request</line>
+                            <line n="l.2">þat þeos poure husbandes migħt lyf in Rest</line>
+                            <line n="l.3">And þat þeyre wyves / in þeyre felle migħt</line>
+                            <line n="l.4">Wol medle amonge mercy witħ þeyre rigħt</line>
+                            <line n="l.5">ffor it came neuer of nature ne Raysoun</line>
+                            <line n="l.6">A lyonesse toppresse / þe lyoun<note place="bottom"
+                                    anchored="true" n="informational">MacCraken has a comma
+                                    terminating his line, which is his rendering of the line filler
+                                    that I believe the otiose mark to be.</note></line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.16">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Ner a wolfesse for al hir
+                                thraunye</line>
+                            <line n="l.2">Ouer þe wolf to haven þe maystrye</line>
+                            <line n="l.3">þer beo<ex>n</ex>n nowe wolfesses / moo þane twoo or
+                                three</line>
+                            <line n="l.4">þe Rookys recorde / wheeche þ<ex>at</ex> yonder bee</line>
+                            <line n="l.5">Sooþe to þis mater / of mercy and of grace</line>
+                            <line n="l.6">And or þeos dotardes parte out of þis place</line>
+                            <line n="l.7">Vpo<ex>n</ex>n þeyre compleynt to shape remedye</line>
+                            <line n="l.8">Or þey beo likly to stande in Iupardye</line>
+                            <line n="l.9">It is no game with wyves for to pleye</line>
+                            <line n="l.10">But for foolis / þat gif no force to deye</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3"/>
+                            <line n="l.4"><hi rend="pilcrow">i.</hi> distaves</line>
+                            <line n="l.5"/>
+                            <line n="l.6"/>
+                            <line n="l.7"/>
+                            <line n="l.8"/>
+                            <line n="l.9"/>
+                            <line n="l.10"/>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.II">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Takeþe heed of þaunswer of þe
+                                wyves</line>
+                        </zone></zone>
+                    <zone n="EETS.MH.17">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Touching þe substance of þis
+                                hyegħe discorde</line>
+                            <line n="l.2">We six wyves beon ful of oon acorde</line>
+                            <line n="l.3">yif worde and chyding / may vs not avaylle</line>
+                            <line n="l.4">We wol
+                                darrein<!--check.  Could be "darrem." EETS has "darrein" This is odd, and 29729 is no help-->
+                                it in Chaumpoloos<note place="bottom" anchored="true"
+                                    n="informational">MacCraken has an "e" for the seventh glyph
+                                    here, but it lacks the loop of the scribe's "e" and looks
+                                    similar to "o" as rendered both in this word and throughout the
+                                    manuscript. Furthermore, BL Add. 29729 renders the corresponding
+                                    glyph as "o" as well.</note> by bataylle</line>
+                            <line n="l.5">Iupart<!--maybe inpart? Is that possible?--> oure rigħt /
+                                laate or ellys Raathe</line>
+                            <line n="l.6">And for oure partye / þe worthy wyff of
+                                Bathe<!-- otiose mark at end? --></line>
+                            <line n="l.7">Cane shewe statutes / moo þan six
+                                    o<unclear>r</unclear><note place="bottom" anchored="true"
+                                    n="informational">The scribe appears to have written "r" over
+                                    "f" or "s" here.</note> seven</line>
+                            <line n="l.8">Howe wyves make hir housbandes wynne heven</line>
+                            <line n="l.9">Maugre þe feonde and al his vyolence</line>
+                            <line n="l.10">ffor þeyre vertu of parfyte pacyence
+                                <!--otiose mark at end. seems to be a line-filler based on earlier in the MS. --></line>
+                            <line n="l.11">parteneþe not to wyves nowe
+                                adayes<!--otiose mark at end. Seems to be a line-filler based on earlier in the MS. - does it mean something?--></line>
+                            <line n="l.12">Sauf on þeyre housbandes for to make assayes</line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.46">
+                    <label>Folio 23 Verso (Page 46)</label>
+                    <!--200mm x 120mm  32 lines-->
+                    <graphic url="Trinity_R_3_20_f23v.jpg"/>
+                    <zone n="EETS.MH.H.7">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>A desgisinge to fore þe
+                                Kynge</line>
+                        </zone></zone>
+                    <zone n="EETS.MH.17">
+                        <zone n="text">
+                            <line n="l.13">Þer pacyence was buryed<!--otiose mark at end of d-->
+                                long agoo</line>
+                            <line n="l.14">Gresyldes story recordeþe pleinly
+                                soo<!--otiose mark at end --></line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.18">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>It longeþe to vs / to clappen as
+                                a mylle</line>
+                            <line n="l.2">No counseyle keepe / but þe troutħ oute telle</line>
+                            <line n="l.3">We beo not borne / by<!--tittle at the end for y-->
+                                hevenly influence</line>
+                            <line n="l.4">Of oure nature to keepe vs in sylence</line>
+                            <line n="l.5">ffor þis is no doute / euery prudent wyff<note
+                                    place="bottom" anchored="true" n="explanatory">The EETS edition
+                                    terminates this line with a suspended "e" but does not do so
+                                    with the following line, which has the same mark. Considering
+                                    the scribe's tendency to use otiose marks it seems more likely
+                                    this is "wyff" than a suspension.</note></line>
+                            <line n="l.6">Haþe redy aunswere / in al suche maner stryff</line>
+                            <line n="l.7">Þougħe þeos dotardes witħ þeyre dokked berdes</line>
+                            <line n="l.8">Whicħ strowteþe out / as þey were made of herdes</line>
+                            <line n="l.9">Haue ageyn hus / a gret quarełł nowe
+                                sette<!--this is written over as though there's two s's superimposed upon each other--></line>
+                            <line n="l.10">I trowe þe bakoun / was neuer of hem fette</line>
+                            <line n="l.11">Awaye at dounmowe / in þe Pryorye</line>
+                            <line n="l.12">Þey weene of vs to haue ay þe maystrye</line>
+                            <line n="l.13">Ellas þeos fooles / let hem aunswere here to</line>
+                            <line n="l.14">Whoo cane hem wassħe / who can hem wring al soo</line>
+                            <line n="l.15">Wryng hem yee wryng so als God vs speed</line>
+                            <line n="l.16">Til þat some tyme / we make hir nases bleed</line>
+                            <line n="l.17">And sowe hir clooþes / whan þey beoþe to rent</line>
+                            <line n="l.18">And clowte hir bakkes / til so<ex>m</ex>me of vs beo
+                                shent</line>
+                            <line n="l.19">Loo yit þeos fooles / god gyf hem sory chaunce</line>
+                            <line n="l.20">Wolde sette hir wyves / vnder gouuernaunce</line>
+                            <line n="l.21">Make vs to hem / for to lowte lowe<note place="bottom"
+                                    anchored="true" n="explanatory">I believe the otiose line at the
+                                    end is a line filler, rather than a semi-colon as MacCraken has
+                                    it rendered.</note></line>
+                            <line n="l.22">We knowe to weel þe bent / of Iackys bowe</line>
+                            <line n="l.23">Al þat we clayme / we clayme it but of rigħt</line>
+                            <line n="l.24">yif þey say nay let prove it out by
+                                    <unclear>f</unclear>igħt<note place="bottom" anchored="true"
+                                    n="informational">There are two descenders here, which might be
+                                    taken to mean a double "f," but the scribe typically truncates
+                                    the bow of the first "f's" ascender and that is not present
+                                    here. It seems more likely this is a corrected scribal error.
+                                    MacCraken has rendered it as a "ff" in the EETS
+                                edition.</note></line>
+                            <line n="l.25">We wil vs grounde not vpo<ex>n</ex>n
+                                wo<ex>m</ex>manhede<!-- otiose mark at the end of the line--></line>
+                            <line n="l.27">ffy on hem cowardes / when hit komeþe to nede</line>
+                            <line n="l.28">We clayme maystrye / by prescripcyoun</line>
+                            <line n="l.29">Be long tytle of successyoun</line>
+                            <line n="l.30">ffrome wyff to wyff whicħ we wol not leese</line>
+                            <line n="l.31">Men may weel gruchche / but they shal not cheese</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.24" n="folio">
+                <surface n="recto" xml:id="p.47">
+                    <label>Folio 24 Recto (Page 47)</label>
+                    <!--222mm x 120mm-->
+                    <graphic url="Trinity_R_3_20_f24r.jpg"/>
+                    <zone n="EETS.MH.H.8">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>And qweene</line>
+                        </zone></zone>
+                    <zone n="EETS.MH.18">
+                        <zone n="text">
+                            <line n="l.32">Custume is vs for nature and vsaunce</line>
+                            <line n="l.33">To let<note place="bottom" anchored="true"
+                                    n="informational">MacCracken has "set" here, but both this
+                                    manuscript and Add. 29729 have "let." Multiple definitions of
+                                        "<ref
+                                        target="https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25277"
+                                        >letten</ref>" as well as <ref
+                                        target="https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25257"
+                                        >definition 1a</ref> of "leten" in the Middle English
+                                    Dictionary (, in particular the sub-definition regarding "a
+                                    place or room for hatred") would both fit the line and the
+                                    spirit of the debate.</note> oure housbandes lyf in gret
+                                noysaunce</line>
+                            <line n="l.34">humbelly byseching nowe at oon worde</line>
+                            <line n="l.35">vn to our liege / and moost souerein lord</line>
+                            <line n="l.36">vs to defende of his Regallye</line>
+                            <line n="l.37">And of his grace / susteenen oure partye</line>
+                            <line n="l.38">Requering þe statuyt of olde antiquytee</line>
+                            <line n="l.39">þat in youre tyme / it may confermed bee</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.III">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þe complaynte of þe lewed
+                                husbandes w<ex>ith</ex> þe cruwell</line>
+                            <line n="l.2">aunswers of þeyre wyves / þe Kyng yiveþe þer </line>
+                            <line n="l.3">vpo<ex>n</ex>n sentence and Iugement</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.19">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þis noble Prynce moost<del
+                                    rend="strikethrough">y</del> royal of estate</line>
+                            <line n="l.2">having an eyegħe / to þis mortal debate</line>
+                            <line n="l.3">ffirst aduerting / of ful hyegħe prudence</line>
+                            <line n="l.4">Wil vnavysed gyve here no
+                                sentence<!--otiose mark at the end of the line--></line>
+                            <line n="l.5">Witħ oute counseylle / of haste to procede</line>
+                            <line n="l.6">By sodeyne doome / for he takeþe heede</line>
+                            <line n="l.7">To eyþer partye / as Iuge in different</line>
+                            <line n="l.8">Seing þe paryll / of hasty Iugement</line>
+                            <line n="l.9">Pourposiþe him / in þis contynude stryff<note
+                                    place="bottom" anchored="true" n="informational">MacCracken has
+                                    chosen to consider the otiose mark after the double "f" at the
+                                    end of this line an e; he does not do so in the following line,
+                                    nor does he do it in other places it appears. I see nothing to
+                                    indicate that in this particular instance it is a suspension, so
+                                    I have chosen to leave it out, especially because a similar mark
+                                    appears at the end of "debate" and "sentence" in lines two and
+                                    four, respectively. It should be noted, however, that Add. 29729
+                                    does terminate both "stryff" and "diffynytyff" below with an e
+                                    as well as "different" and "Iugement" in lines seven and eight,
+                                    although its rendering of the final words of lines eleven and
+                                    twelve leave something to be desired.</note></line>
+                            <line n="l.10">To gif no sentence þer of diffynytyff</line>
+                            <line n="l.11">Til þer beo made examynacyoun</line>
+                            <line n="l.12">Of oþer partye / and Inquysicyoun</line>
+                            <line n="l.13">He considereþe / and makeþe <hi rend="underline"
+                                    >Raysoun</hi> his guyde</line>
+                            <line n="l.14">As egal Iuge enclyning to noo syde</line>
+                            <line n="l.15">Not witħstanding he haþe compassyoun</line>
+                            <line n="l.16">Of þe poure housbandes trybulacyoun</line>
+                            <line n="l.17">So offt arrested / witħ þeyre wyves rokkes</line>
+                            <line n="l.18">Whicħ of þeyre distaves / haue so many knokkes</line>
+                            <line n="l.19">Peysing also in his Regallye</line>
+                            <line n="l.20">Þe lawe þ<ex>at</ex> wymme<ex>n</ex>n allegge for þeyre
+                                partye</line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.48">
+                    <label>Folio 24 Verso (Page 48)</label>
+                    <!--224mm x 120mm 29 lines -->
+                    <graphic url="Trinity_R_3_20_f24v.jpg"/>
+                    <zone n="EETS.MH.20">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi><note place="bottom"
+                                    anchored="true" n="informational">It should be noted that unlike
+                                    in other instances the nota mark appears only in this witness;
+                                    Add. 29729 carries on with the speech without indicating any
+                                    sort of new section.</note>Custume Nature and eeke
+                                prescripcyoun</line>
+                            <line n="l.2">Statuyt vsed / by confirmacyoun</line>
+                            <line n="l.3">Processe and daate of tyme oute of mynde</line>
+                            <line n="l.4">Recorde of Cronycles witnesse of hir kuynde</line>
+                            <line n="l.5">Wher fore þe kyng / wol al þis nexst<note place="bottom"
+                                    anchored="true" n="informational">MacCraken suggests a suspended
+                                    "e" here, but there is nothing in the manuscript to support such
+                                    a suspension, nor does it appear in Add. 29729</note>
+                                yeere</line>
+                            <line n="l.6">þat wyves fraunchyse stonde hoole and entier</line>
+                            <line n="l.7">And þat no man witħ stonde it ne witħdrawe</line>
+                            <line n="l.8">Til man may fynde so<ex>m</ex>me p<ex>ro</ex>cesse oute by
+                                lawe</line>
+                            <line n="l.9">Þat þer shoulde by nature in þeyre lyves</line>
+                            <line n="l.10">Haue souerayntee / on þeyre prudent wyves</line>
+                            <line n="l.11">A thing<note place="bottom" anchored="true"
+                                    n="informational">The mark terminating "g" here differs from
+                                    that seen in other glyphs in the witness.</note> vnkouþe / whicħ
+                                was neuer founde</line>
+                            <line n="l.12">Let men be ware þer fore / or þey beo bounde</line>
+                            <line n="l.13">Þe bonde is harde / who soo þat lookeþe weel</line>
+                            <line n="l.14">Some man were leuer fetterd beon in steel</line>
+                            <line n="l.15">Raunsoun migħt / help / his peyne to aswaage</line>
+                            <line n="l.16">But whoo is wedded / lyueþe /<note place="bottom"
+                                    anchored="true" n="informational">This bracketing of "lyueþe"
+                                    between two virgules happens in both the Trinity R.3.20 witness
+                                    and in the Add. 29729 witness. It is likely carried over from
+                                    their shared exemplar.</note> euer in s<ex>er</ex>uage</line>
+                            <line n="l.17">And I knowe neuer nowher fer nor neer</line>
+                            <line n="l.18">Man þat Was gladde / to bynde him prysonier</line>
+                            <line n="l.19">Þougħe þat his prysoun his castell or his holde</line>
+                            <line n="l.20">Was depeynted witħ asure or witħ golde.</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MH.IV">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Explicit</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

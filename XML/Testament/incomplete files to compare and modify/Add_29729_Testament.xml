@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">British Library Additional 29729 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Add_29729">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library Additional MS 29729) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Additional_29729">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Additional_29729">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Additional 29729</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+                                <p> The scribe is fairly consistent about differentiating between
+                                    "u" and "v" when intended, rendering the latter with a raised
+                                    initial minim that at times can almost appear like an ascender.
+                                    It is tempting to assume that this is just how the scribe
+                                    renders "u" in the initial position of a word, but examples like
+                                    "delyver" and "servaunt" in stanza 9 (180v) clarify that this is
+                                    a deliberate choice and that they do see the two letters as
+                                    separate glyphs.</p>
+                                <p>For this reason where "u" is in the initial position in a word
+                                    ("us" in this witness) it has been rendered as "vs." While the
+                                    scribe consistently makes the initial stroke higher when "v"
+                                    rather than "u" is meant there is no similar consistent
+                                    distinction between "u" and "w." An initial "w" can have a
+                                    raised minim, as can be seen in some places in words like
+                                    "whan," or "we," but it becomes more difficult to ascertain when
+                                    the letter is rendered within a word, such as with "bowe."
+                                    Generally, the upward stroke in the final minim of "w" hooks
+                                    slightly to the left at the top, then runs into the letter
+                                    following, while in "u" it tends to complete the final minim
+                                    then begin the upstroke for the next letter. This can be seen
+                                    clearly in "plukked" in stanza ten, line six and in "bowe"
+                                    throughout.</p>
+                                <p>In certain words, such as "our," it is not entirely clear whether
+                                    the letter intended is "u" or "w" at first glance. Comparing the
+                                    formation of the final two glyphs in "our" with the formation of
+                                    the final two glyphs in "merrour" (stanza fifteen, line six),
+                                    "licour" (stanza twenty-one, line one), and "socour" (stanza
+                                    twenty-two, line five) suggests that the final two glyphs in
+                                    "our" throughout are actually "wr." This carries through to
+                                    words like "towr" (stanza eighteen line three) and "creatowr"
+                                    (stanza twenty, line four). The latter is especially noticable
+                                    when compared to "savyour" and "redemptour" in the same stanza
+                                    (lines two and five, respectively). </p>
+                                <p>Conversely, "out" appears at first to be a similar combination of
+                                    glyphs to "owr," but taking a closer look at the examples at
+                                    stanza ten, line five; stanza fourteen, line five; stanza
+                                    twenty-five, line two show that what appears to be the hook of
+                                    the "w" glyph is actually formed by the crossbar of the
+                                    following "t." This same combination also occurs with "but" at
+                                    stanza ten, line five and stanza sixteen, line eight.</p>
+                                <p n="hand_intro"/>
+                                <p n="hand_otiose"/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20203108" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.X" n="gathering">
+            <surfaceGrp xml:id="f.179" n="folio">
+                <surface n="verso">
+                    <label>Folio 179 Verso</label>
+                    <graphic url="add_29729_179v.jpg"/>
+                    <zone n="EETS.T.I">
+                        <line n="l.1">This folowynge is þ<ex>e</ex> prologe of Joh<ex>n</ex>n
+                            Lydgattes</line>
+                        <line n="l.2">testament which I fownd in M<ex>a</ex>st<ex>er</ex> stantons
+                            boke</line>
+                    </zone>
+                    <zone n="EETS.T.1">
+                        <line n="l.1">O howe holsum and glad is the memorie</line>
+                        <line n="l.2">of crist Ih<ex>es</ex>u / surmountyng all swetnesse</line>
+                        <line n="l.3">name of conquest / of triumphe and victorie</line>
+                        <line n="l.4">thassaunt of sathan / to venquysshe and oppresse</line>
+                        <line n="l.5">To which name / seynt poule ber<ex>e</ex>th witnesse</line>
+                        <line n="l.6">of hevene and erthe / and infernall pouste</line>
+                        <line n="l.7">alle creatures of right / and dewe humblesse</line>
+                        <line n="l.8">and of hole herte / bowe shall ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.2">
+                        <line n="l.1">No song so sote / onto the audience</line>
+                        <line n="l.2">as is Ih<ex>esu</ex>s / nor so full of plesaunce</line>
+                        <line n="l.3">ageyn alle enemyes / sheld pavis and defence</line>
+                        <line n="l.4">to hevy hertes / chieff comfort in substaunce</line>
+                        <line n="l.5">of gostly gladnesse / most comfort in
+                                <del>substaunce</del><note place="bottom" anchored="true"
+                                n="explanatory">The scribe has made an error here and concluded
+                                with "substaunce," which is the concluding word of the previous
+                                line. The correct word, "suffisaunce," is written following but is
+                                partially obscured by what appears to be a blot on the microform.
+                                The descenders of the two "f" glyphs can be seen below the blot,
+                                however.</note>su<unclear n="2"
+                            >ff</unclear>isaunce</line>
+                        <line n="l.6">chief directorie / to hevene ward the cite</line>
+                        <line n="l.7">gladdest resort / of spirituall remembraunce</line>
+                        <line n="l.8">to whome alle creatures / bowe shall ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.3">
+                        <line n="l.1">To all folkes / that stonde in repentaunce</line>
+                        <line n="l.2">with herte contrite / made ther confessio<ex>u</ex>n</line>
+                        <line n="l.3">of will and thought / accomplisshed ther penaunce</line>
+                        <line n="l.4">and to ther power / done satisfaccio<ex>u</ex>n</line>
+                        <line n="l.5"><add>that clayme by mene / of christes passio<ex>u</ex>n<note
+                                place="bottom" anchored="true" n="explanatory">The scribe
+                                realized they'd forgotten this line some time after they wrote line
+                                six of this verse, and so it is shoehorned between four and six on
+                                the page.</note></add></line>
+                        <line n="l.6">marked with tav &#183;&#0932;&#183;<note place="bottom" anchored="true"
+                                n="informational">This is one of several witnesses where the
+                                scribe has not only the word "tau," but a representation of the
+                                letter next to it. <!--Others include Harley 218,--> It also replaces the
+                                virgule in this
+                            line.</note><!-- COMPLETE NOTE WHEN YOU HAVE TRANSCRIBED THE OTHER MANUSCRIPTS -->
+                            for more suerte</line>
+                        <line n="l.7">to them Ih<ex>es</ex>u / shall graunte full
+                            pardo<ex>u</ex>n</line>
+                        <line n="l.8">to aske hym mercy / whan they knele on ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.4">
+                        <line n="l.1">In this name Ih<ex>es</ex>u / most sovereyn of vertu</line>
+                        <line n="l.2">stant all owr hope / and all owr assuraunce</line>
+                        <line n="l.3">for wher that evar / named is Ih<ex>es</ex>u</line>
+                        <line n="l.4">geyn gostly trouble / men fynde alleggeaunce</line>
+                        <line n="l.5">who trusteth Ih<ex>es</ex>u / may fele no grevaunce</line>
+                        <line n="l.6">which from all thraldom / brought vs to liberte</line>
+                        <line n="l.7">owt of servage / he made<note place="bottom" anchored="true"
+                                n="informational">The "ma" in "made" is underlined in the
+                                manuscript, but I am not sure if it is a microfilm error or an
+                                otiose mark in the manuscript.</note> acquyntaunce</line>
+                        <line n="l.8">to all that knele / to Ih<ex>es</ex>u on ther kne.</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.180" n="folio">
+                <surface n="recto">
+                    <label>Folio 180 Recto</label>
+                    <graphic url="add_29729_180r.jpg"/>
+                    <zone n="EETS.T.5">
+                        <line n="l.1">In amorous hertes / brennyng of kyndenesse</line>
+                        <line n="l.2">this name Ih<ex>es</ex>u / most p<ex>ro</ex>foundly dothe
+                            myne</line>
+                        <line n="l.3">martir Ignacius / can ber<ex>e</ex>n<note place="bottom"
+                                anchored="true" n="explanatory">Based on the microfilm the
+                                suspension mark seems to flow from the n at the end of the word, but
+                                this may be an artifact of the filming process based on "a
+                                    do<ex>u</ex>n" below. There, it it clear the scribe is making an
+                                otise mark on final "n," then completing the suspension mark.</note>
+                            ther of witnesse</line>
+                        <line n="l.4">amyd whos herte / by grace which is dyvyne</line>
+                        <line n="l.5">w<ex>ith</ex> aureat lettres / as gold that dyd shyne</line>
+                        <line n="l.6">his herte was grave / men may his legende se</line>
+                        <line n="l.8">to blissed Ih<ex>es</ex>u / and bowe A do<ex>u</ex>n ther
+                            kne.</line>
+                    </zone>
+                    <zone n="EETS.T.6">
+                        <line n="l.1">This is the name / that chanceth away the clips</line>
+                        <line n="l.2">of foreyn dirknesse / as clerkes determyne</line>
+                        <line n="l.3">by Joh<ex>n</ex>n remembrid / in thapocalips</line>
+                        <line n="1.4">how lyke a lambe / his hede he did enclyne</line>
+                        <line n="l.5">whos blode downe ran / right as any lyne</line>
+                        <line n="l.6">to wasshe the ordures / of owr Inyquyte</line>
+                        <line n="l.7">medled w<ex>ith</ex> water / clere and cristallyne</line>
+                        <line n="l.8">which from his herte / do<ex>u</ex>n railled by his
+                            kne.</line>
+                    </zone>
+                    <zone n="EETS.T.7">
+                        <line n="l.1">By blode Ih<ex>es</ex>u / made owr redempcio<ex>u</ex>n</line>
+                        <line n="l.2">w<ex>ith</ex> water of baptem / from felthe <del>wh</del><note
+                                place="bottom" anchored="true" n="informational">Here the scribe
+                                made an error, which they have corrected with a strikethrough before
+                                continuing.</note> wesshe vs clene</line>
+                        <line n="l.3">and from his herte / two licours ther ran<ex>n</ex><note
+                                place="bottom" anchored="true" n="explanatory">This is unlikely
+                                to be an otiose mark as final "n" in a word does not have an idiose
+                                mark in the same word in line five above (albeit there with the
+                                single "n" spelling rather than the double "n" implied here).</note>
+                                do<ex>w</ex>n</line>
+                        <line n="l.4">on calvary / the truthe was well sene</line>
+                        <line n="l.5">whan<ex>n</ex> that longious / w<ex>ith</ex> a spere
+                            kene</line>
+                        <line n="l.6">perced his hert / vpon the rode tre</line>
+                        <line n="l.7">O ma<ex>n</ex>n <del>vn</del><note place="bottom" anchored="true" n="informational"
+                                >It appears that the scribe began to write some form of "vnkind"
+                                here before correcting with "onkynde." Harley 218 has "vnkende"
+                                here.</note> onkynde / thynk what this dothe mene</line>
+                        <line n="l.8">and onto Ih<ex>es</ex>u / bowe ado<ex>u</ex>n thy kne.</line>
+                    </zone>
+                    <zone n="EETS.T.8">
+                        <line n="l.1">Ther is no speche / nor language
+                            can<ex>n</ex><!-- again, check to see if it could be "canne" -->
+                            remembre</line>
+                        <line n="l.2">lettre, sillable / nor word þ<ex>at</ex> may expresse</line>
+                        <line n="l.3">though in to tunges / wer turned every membre</line>
+                        <line n="l.4">Of man to felle / thexcellent noblesse</line>
+                        <line n="l.5">Of blissed Ih<ex>es</ex>u / whiche of his grete
+                            mekenesse</line>
+                        <line n="l.6">list suffre deth / to make his servaunt fre</line>
+                        <line n="l.7">nowe mercyfull Ih<ex>es</ex>u / for thyn<ex>e</ex> high
+                            godnesse</line>
+                        <line n="l.8">have mercy on all / that bowe to the ther kne.</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 180 Verso</label>
+                    <graphic url="add_29729_180v.jpg"/>
+                    <zone n="EETS.T.9">
+                        <line n="l.1">The prynce was slayn / the servaunt went at large</line>
+                        <line n="l.2">and to delyver / his soget from prison</line>
+                        <line n="l.3">the
+                            lord<ex>e</ex><!-- This may not be an e, but it shouldn't be an otiose mark in comparison to the other d's -->
+                            toke on hym / for to bere the charge</line>
+                        <line n="l.4">to quyte mankynde / by oblacio<ex>u</ex>n</line>
+                        <line n="l.5">sealed w<ex>ith</ex> .v.<note place="bottom" anchored="true"
+                                n="explanatory">This denotation of the Roman numeral five is
+                                similar across the manuscripts, appearing in Harley 218</note> 
+                            woundes / he payde owr raunso<ex>u</ex>n</line>
+                        <line n="l.6">ma<ex>n</ex>n to restore / to paradys his cite</line>
+                        <line n="l.7">Is not ma<ex>n</ex>n bounde / I aske this
+                            questio<ex>u</ex>n</line>
+                        <line n="l.8">to blissed Ih<ex>es</ex>u / for to bowe his kne.</line>
+                    </zone>
+                    <zone n="EETS.T.10">
+                        <line n="l.1">Sixe hundred<ex>e</ex> tymes / w<ex>ith</ex> sixty told by
+                            nombre</line>
+                        <line n="l.2">in poules pistles / Ih<ex>es</ex>u men may rede</line>
+                        <line n="l.3"><unclear n="2">am</unclear>ultitude<note place="bottom"
+                                anchored="true" n="explanatory">This is either "m" or "am," with
+                                an odd descender. This may be an artifact of the microfilm process,
+                                however.</note> of fendes / to encombre</line>
+                        <line n="l.4">to paye owr raunsom / his blode he did shede</line>
+                        <line n="l.5">nat a small part / but all he did out blede</line>
+                        <line n="l.6">for adames appel / plukked from the tre</line>
+                        <line n="l.7">Ih<ex>es</ex>u dyede / for shame man take hede</line>
+                        <line n="l.8">gif thanke to Ih<ex>es</ex>u / and bowe to hym thy kne.</line>
+                    </zone>
+                    <zone n="EETS.T.11">
+                        <line n="l.1">All thes thynges / consid<ex>er</ex>ed<note place="bottom"
+                                anchored="true" n="explanatory">The suspension here appears over
+                                the s, but may be there because the ascender of the d does not
+                                provide enough room to place it in the usual spot.</note> that I
+                            tolde</line>
+                        <line n="l.2">man wher evar / thou holdest thy passage</line>
+                        <line n="l.3">toward Ih<ex>es</ex>u / always that thou beholde</line>
+                        <line n="l.4">with eye fix / loke on his visage</line>
+                        <line n="l.5">crouned w<ex>ith</ex> thorn<ex>e</ex> / for owr grete
+                            outrage</line>
+                        <line n="l.6">have this in mynde / and lerne o thynge of me</line>
+                        <line n="l.7">that day none enemy / shall done vs no damage</line>
+                        <line n="l.8">whan<ex>e</ex> we to Ih<ex>es</ex>u / devoutly bowe owr
+                            kne.</line>
+                    </zone>
+                    <zone n="EETS.T.12">
+                        <line n="l.1">Withynne my closet / and my litel couche</line>
+                        <line n="l.2">O blissed Ih<ex>es</ex>u / and by my beddes syde</line>
+                        <line n="l.3">That none enemy / nor no fend shall me touche</line>
+                        <line n="l.4">the name of Ih<ex>es</ex>u / with me shall evar abyde</line>
+                        <line n="l.5">my lode sterre / and my Sovereyn guyde</line>
+                        <line n="l.6">in this world here / bothe on lond and se</line>
+                        <line n="l.7">O Ih<ex>es</ex>u Ih<ex>es</ex>u / for all tho folke
+                            provyde</line>
+                        <line n="l.8">whiche to thy name / devoutly bowe ther kne.</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.181" n="folio">
+                <surface n="recto">
+                    <label>Folio 181 Recto</label>
+                    <graphic url="add_29729_181r.jpg"/>
+                    <zone n="EETS.T.13">
+                        <line n="l.1">With maria called maudeleyne</line>
+                        <line n="l.2">erly eche morowe / while that my lyfe may dure</line>
+                        <line n="l.3">fro slouthe and sombre / I shall my selff restreyne</line>
+                        <line n="l.4">to seke Ih<ex>es</ex>u / at his sepulture</line>
+                        <line n="l.5">whome ffor to fynde / yf that I may recoure</line>
+                        <line n="l.6">to have pssession<note place="bottom" anchored="true"
+                                n="explanatory">The scribe appears to have omitted the "o"
+                                here.</note> / of hym at liberte</line>
+                        <line n="l.7">ther were in erthe / no richer creature</line>
+                        <line n="l.8">to whome ech whight / bowe shall his kne.</line>
+                    </zone>
+                    <zone n="EETS.T.14">
+                        <line n="l.1">In mercyfull Jh<ex>es</ex>u / to putte a verray preffe</line>
+                        <line n="l.2">of his mercy / that to man disepayre</line>
+                        <line n="l.3">vppon the crosse / gaf graunt onto the theffe</line>
+                        <line n="l.4">to paradys / with hym to repayre</line>
+                        <line n="l.5">toke out of helle / soules many A
+                            <!--Look at this again - capital? --> payre</line>
+                        <line n="l.6">mangre cerberus / and all his creuelte</line>
+                        <line n="l.7">O gracious Ih<ex>es</ex>u / benygne and debonayre</line>
+                        <line n="l.8">have mercy on all / that bowe to the ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.15">
+                        <line n="l.1">The name of Ih<ex>es</ex>u / swettest of names all</line>
+                        <line n="l.2">geyn ghostly venymes / holsomest triacle</line>
+                        <line n="l.3">for whosoevar / vnto this name calle</line>
+                        <line n="l.4">of cankred surfetes / fynt reles by myracle</line>
+                        <line n="l.5">to eyen blynd / light lanterne and spectacle</line>
+                        <line n="l.6">and bryghtest merrour / of all felicite</line>
+                        <line n="l.7">support and sheld / defence and chefe obstacle</line>
+                        <line n="l.8">to all that knele / to Ih<ex>es</ex>u on ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.16">
+                        <line n="l.1">This royall name / most soverayn of reno<ex>u</ex>n</line>
+                        <line n="l.2">this name Ih<ex>es</ex>u / victorious in batayle</line>
+                        <line n="l.3">of hevenely trivmphes / the laureat guerdo<ex>u</ex>n</line>
+                        <line n="l.4">The spirituall palme / of gostly apparayle</line>
+                        <line n="l.5">Celestiall prowesse / whiche may most avayle</line>
+                        <line n="l.6">to syt w<ex>ith</ex> angeles / in ther eternall se</line>
+                        <line n="l.7">The Imperiall conquest / nat get w<ex>ith</ex> plate or
+                            mayle</line>
+                        <line n="l.8">but withe meke knelyng / to I<ex>es</ex>u on owr kne.</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 181 Verso</label>
+                    <graphic url="add_29729_181v.jpg"/>
+                    <zone n="EETS.T.17">
+                        <line n="l.1">patriarkes / and prophetes one by one</line>
+                        <line n="l.2">thre Ierarchies / and all thordres nyne</line>
+                        <line n="l.3">twelve apostles / and martirs everychone</line>
+                        <line n="l.4">holy confessours / and every pure virgyne</line>
+                        <line n="l.5">to blissedd Ih<ex>es</ex>u / most mekely shall enclyne</line>
+                        <line n="l.6">ffowles bests / and fysshes of the se</line>
+                        <line n="l.7">kynde hath taught them / by naturall disciplyne</line>
+                        <line n="l.8">mekely to Ih<ex>es</ex>u / to bowe a do<ex>u</ex>n ther
+                            kne.</line>
+                    </zone>
+                    <zone n="EETS.T.18">
+                        <line n="l.1">Ther is no love / parfitely I grounded</line>
+                        <line n="l.2">but it of Ih<ex>es</ex>u / all parfitenesse is founded</line>
+                        <line n="l.3">Owr towr owr castill / geyn powrs infernall</line>
+                        <line n="l.4">Owr portecolys / owr bolewerk and owr wall</line>
+                        <line n="l.5">Owr sheld owr pavys / geyn all adversite</line>
+                        <line n="l.6">Owr heritage / owr guerdo<ex>u</ex>n etarnall</line>
+                        <line n="l.7">to whome all creatures / bowe shall ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.19">
+                        <line n="l.1">Condygne laude<!--POSSIBLY lawde.  Come back and check--> /
+                            nor co<ex>m</ex>mendacio<ex>u</ex>n</line>
+                        <line n="l.2">yove to his name / ther can no tonge telle</line>
+                        <line n="l.3">Of gostly fode / richest refectio<ex>u</ex>n</line>
+                        <line n="l.4">hede spryng of grace / of lyff conduyt
+                            &amp;<!--possibly tironian et?--> welle</line>
+                        <line n="l.5">Jh<ex>es</ex>u namyd / ther dar no drago<ex>u</ex>n
+                            dwelle</line>
+                        <line n="l.6">blissedest bawme / of owr felicite</line>
+                        <line n="l.7">all cancred sores / and poysouns to repelle</line>
+                        <line n="l.8">from them to Ih<ex>es</ex>u / that knelle vpon ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.20">
+                        <line n="l.1">This name Ih<ex>es</ex>u / by interpritacio<ex>u</ex>n</line>
+                        <line n="l.2">is for to sayne / owr blissed savyour</line>
+                        <line n="l.3">Owr stronge sampson / that strangled the lyon</line>
+                        <line n="l.4">Owr lord owr maker / and owr creatowr</line>
+                        <line n="l.5">And by his passio<ex>u</ex>n / fro deth owr redemptiowr</line>
+                        <line n="l.6">Owr orpheus / that from captyvite</line>
+                        <line n="l.7">ffett Erudice / to his celestiall towr</line>
+                        <line n="l.8">to whome all creatures / bowe shall ther kne.</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.182" n="folio">
+                <surface n="recto">
+                    <label>Folio 182 Recto</label>
+                    <graphic url="add_29729_182r.jpg"/>
+                    <zone n="EETS.T.21">
+                        <line n="l.1">At welles fyve / licour I shall drawe</line>
+                        <line n="l.2">to wasshe the rust / of my synn<del><unclear n="1"
+                                >a</unclear></del><add>e</add>s<note place="bottom" anchored="true"
+                                n="explanatory">The scribe made an error here, correcting what
+                                may have been an a to e. It is unclear what the corrected letter is
+                                for sure on the microform, although the word "nowe" where other
+                                copies have "newe" may suggest one option and a possible difference
+                                in spelling practice between the exemplar and this text.</note>
+                            blyve</line>
+                        <line n="l.3">wher all mysteries / of the old and nowe<note place="bottom"
+                                anchored="true" n="explanatory">Other witnesses and the standard
+                                edition have "newe" here, but the form of the glyph is too similar
+                                to "moraly," "toke," and "woundes" in the same stanza to assume this
+                                is a malformed "e."</note> lawe</line>
+                        <line n="l.4">toke origynall / moraly to descryve</line>
+                        <line n="l.5">I mene the welles / of cristes woundes fyve</line>
+                        <line n="l.6">Wherby we cleyme / of mercyfull piete</line>
+                        <line n="l.7">Thurgh helpe of Ih<ex>es</ex>u / at gracious port
+                            taryve</line>
+                        <line n="l.8">ther to have marcy<note place="bottom" anchored="true"
+                                n="explanatory">Again, this appears to be an "a" where other
+                                copies would have "e" or a suspension for "er." "Marci" for "merci"
+                                is known, however (see the Middle English Dictionary <ref
+                                    target="https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27400"
+                                    >entry</ref> for examples), so there's no need to presume in
+                                this case that it's scribal error.</note></line>
+                    </zone>
+                    <zone n="EETS.T.22">
+                        <line n="l.1">I in Ih<ex>es</ex>u / sette for Iocunditas</line>
+                        <line n="l.2">gynnyng and ground / of all gostly gladnesse</line>
+                        <line n="l.3">E next in ordre / is eternytas</line>
+                        <line n="l.4">tokene and signe / of ternall brightnesse</line>
+                        <line n="l.5">S sette for sanatas / socour agey<ex>n</ex>n</line>
+                        <line n="l.6">V for vbertas / of spirituall plente</line>
+                        <line n="l.7">S for sauatas<note place="bottom" anchored="true"
+                                n="explanatory">This appears to be a scribal error occuring in
+                                both this word and "sanatas" in line five, perhaps caused by the
+                                similarity between "sanitas" and "sauauitas" if one is not careful
+                                and further facilitated by the lack of an "i" in "vbertas"
+                                above.</note> / from whome cometh all swetnesse</line>
+                        <line n="l.8">to them that knele / to Jh<ex>es</ex>u on ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.23">
+                        <line n="l.1">I in Ih<ex>es</ex>u is ioye / that nevar shall ende</line>
+                        <line n="l.2">E signyfieth / evarlastyng suffisaunce</line>
+                        <line n="l.3">S owr savacio<ex>u</ex>n / wha<ex>n</ex>n we shall hens
+                            wende</line>
+                        <line n="l.4">V his fyve woundes / that made vs acquyntaunce</line>
+                        <line n="l.5">from sathanas myght / thurgh his meke suffraunce</line>
+                        <line n="l.6">S for the sacrament / which eche day we may se</line>
+                        <line n="l.7">in forme of brede / to save vs fro myschaunce</line>
+                        <line n="l.8">wha<ex>n</ex>n we devoutly / receyve it on owr kne.</line>
+                    </zone>
+                    <zone n="EETS.T.24">
+                        <line n="l.1">I from Iacob h from habraham</line>
+                        <line n="l.2">the lyne descendyng / by generacio<ex>u</ex>n</line>
+                        <line n="l.3">C stant for Crist / that from heuene kam</line>
+                        <line n="l.4">borne of A mayde / for owr redempcion</line>
+                        <line n="l.5">The sharpe / titel<note place="bottom" anchored="true"
+                                n="explanatory">The word "titel" is bracketed here on the right
+                                side and bottom. This appears to have occurred after the line was
+                                written, but the microform does not allow me to make any substantive
+                                statements about the order of events beyond that.</note> tokene of
+                            his passio<ex>u</ex>n</line>
+                        <line n="l.6">whan he was nayled / cpon the rode tre</line>
+                        <line n="l.7">O blissed Ih<ex>es</ex>u / do remissio<ex>u</ex>n</line>
+                        <line n="l.8">to all that aske mercy on ther kne.</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 182 Verso</label>
+                    <graphic url="add_29729_182v.jpg"/>
+                    <zone n="EETS.T.25">
+                        <line n="l.1">do mercy Ih<ex>es</ex>u / or we hens passe</line>
+                        <line n="l.2">out of this perillous / dredefull pilgrymage</line>
+                        <line n="l.3">besette with brigauntes / leyd wayte in every place</line>
+                        <line n="l.4">with mortall saute / to lette owr passage</line>
+                        <line n="l.5">Amonge othar / I that ame falle in age</line>
+                        <line n="l.6">gretely feblysshed / of olde infirmyte</line>
+                        <line n="l.7">crye onto Ih<ex>es</ex>u / for my synfull outrage</line>
+                        <line n="l.8">Right of hole herte / thus knelyng on my kne.</line>
+                    </zone>
+                    <zone n="EETS.T.26">
+                        <line n="l.1">Lat not be lost / that thou has bought so dere</line>
+                        <line n="l.2">w<ex>ith</ex> gold nor silver / but w<ex>ith</ex> thy precious
+                            blode</line>
+                        <line n="l.3">owr flessh is freill / but short abydynge here</line>
+                        <line n="l.4">the olde serpent / malicious and wode</line>
+                        <line n="l.5">the worlde vnstable / nowe ebbe nowe is flode</line>
+                        <line n="l.6"><del>of</del><note place="bottom" anchored="true"
+                                n="explanatory">It appears that the scribe began this line with
+                                the word "of," but realized their mistake and deleted it.</note>
+                            eche thynge concludyng / on mutabilitie</line>
+                        <line n="l.7">gey<ex>n</ex>n whos daungers / I holde this counsayll
+                            goode</line>
+                        <line n="l.8">to praye for mercy / to Ih<ex>es</ex>u on owr kne.</line>
+                    </zone>
+                    <zone n="EETS.T.27">
+                        <line n="l.1">And vnder support / Ih<ex>es</ex>u of thy favour</line>
+                        <line n="l.2">or I passe hense / this hoolly myne entent</line>
+                        <line n="l.3">to make Ih<ex>es</ex>u / to be chief surveyour</line>
+                        <line n="l.4">of my laste will / sette in my testament</line>
+                        <line n="l.5">which of my self / am Insuffient<note place="bottom"
+                                anchored="true" n="explanatory">The scribe appears to have
+                                skipped the "ic" of "insufficient" here.</note></line>
+                        <line n="l.6">to rekene or counte / but mercy and piete</line>
+                        <line n="l.7">be prefferryd / or thou do Iugement</line>
+                        <line n="l.8">to all that call / to Ih<ex>es</ex>u on ther kne.</line>
+                    </zone>
+                    <zone n="EETS.T.28">
+                        <line n="l.1">Age is crope In / callythe me to my grave</line>
+                        <line n="l.2">to make rekenyng / howe I my tyme have spent</line>
+                        <line n="l.3"> barey<ex>n</ex>n of vertue / allas who shall me save</line>
+                        <line n="l.4">from fendes daunger / tacounte for my talent</line>
+                        <line n="l.5">but Ih<ex>es</ex>u be my staffe / and my potent</line>
+                        <line n="l.6">overstreyght audyt / is like
+                            tencomnbre<!-- mention what appears to be superfluous n? --> me</line>
+                        <line n="l.7">or dome be yove / but mercy be present</line>
+                        <line n="l.8">to all that knele / to Ih<ex>es</ex>u on ther kne.</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.183" n="folio">
+                <surface n="recto">
+                    <label>Folio 183 Recto</label>
+                    <graphic url="add_29729_183r.jpg"/>
+                    <zone n="EETS.T.29">
+                        <line n="l.1">Now in the name / of my lord Ih<ex>es</ex>us</line>
+                        <line n="l.2">of right hole herte / in all my best entent</line>
+                        <line n="l.3">my lyf remembryng / froward and vicious</line>
+                        <line n="l.4">Aye contrarie / to the commaundement</line>
+                        <line n="l.5">of christ Ih<ex>es</ex>u / nowe with avisement</line>
+                        <line n="l.6">the lord besechyng / to have mercy and piete</line>
+                        <line n="l.7">my youthe my<ex>n</ex>e age / how þ<ex>at</ex> I have
+                            spent</line>
+                        <line n="l.8">w<ex>ith</ex> this word seid / knelynge on my kne.</line>
+                    </zone>
+                    <zone n="EETS.T.30">
+                        <line n="l.1">O Jh<ex>es</ex>u mercy / with support of thy grace</line>
+                        <line n="l.2">for thy meke passio<ex>u</ex>n / remembre on my
+                                compl<del>a</del><add>e</add>ynt<note place="bottom" anchored="true"
+                                n="explanatory">The scribe appears to have replaced an "a" with
+                                an "e" here.</note></line>
+                        <line n="l.3">duryng my lyff / withe many grete respace</line>
+                        <line n="l.4">by many <del>A</del> wrong path / wher I have my swent</line>
+                        <line n="l.5">I nowe purpose / by thy grace influent</line>
+                        <line n="l.6">to wryt A tretys / of surfetes done to the<note place="bottom"
+                                anchored="true" n="informational">There is a mark in the margin
+                                left of the word "to" beginning this line, but it is not readily
+                                apparent if it's intended as a nota mark or something otiose to the
+                                text. A better image of the text might help to alleviate
+                                this.</note></line>
+                        <line n="l.7">and call it / my last testament</line>
+                        <line n="l.8">with Ih<ex>es</ex>u <del>mers</del>
+                             mercy<note place="bottom" anchored="true" n="explanatory"
+                                >The scribe appears to have begun to write "mersy" and then
+                                corrected themselves, repeating with "mercy"</note> / knelyng on my
+                            kne.</line>
+                    </zone>
+                    <zone n="EETS.T.Ex">
+                        <line n="l.1">explicit prologus of Ioh<ex>n</ex>n lidgats testament<note
+                                place="bottom" anchored="true" n="informational">"explicit
+                                prologus of" appears to be a later addition over erased text -- the
+                                letters "th" can be seen to the left of it in the microform
+                                copy.</note></line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

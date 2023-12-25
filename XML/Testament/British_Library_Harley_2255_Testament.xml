@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">British Library Harley 2255 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="harley_2255">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library MS Harley 2255) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Harley_2255">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Harley_2255">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Harley 2255</idno>
+                    </msIdentifier>
+                    <history/>
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>parchment</material>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><p n="stanza_layout"/>
+                                    <p n="gathering" xml:id="g.20"/>
+                                    <p n="collation" xml:id="q.8"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <p>A special note should be made about the forms of the letter "a" throughout. The scribe renders "a," when not in the initial position of a line, in three forms: a two-bow form that is indented slightly, which can be seen in "and" in line seven of the first stanza, a closed-bow form without indenting, as can be seen in "and" at line two of the same stanza, and a slightly more indented vesion where the lower bow is larger than the upper, which can be seen in "amerous" in the first line of stanza five. Whether this is magiscule or miniscule seems dependant on line height, but the scribe is inconsistent regarding their line heights so it's not easy to determine which is intended at particular locations. For this reason I've chosen to render tham all as miniscule.</p>
+                                <p>Magiscule "a" is also rendered in one of three forms if we assume the initial glyph of each line is intended to be magiscule -- which I am not sure can accurately determined. There is a form that is similar to the variable line-height form mentioned above, a form that is similar to this form but with a much deeper bow (as can be seen in "as" in the second line of the second stanza of folio 47), a form with a flattened upper bow and angular lower bow (as can be seen in "A geyn" at line three of that same stanza), a form that is similar to an "A" compressed on both sides (as can be seen in the initial line of the first stanza of folio 50 verso) and a form that is similar to the variable line-height form but with a much more pronounced lower bow and deeper indentation (as can been in "and" at line two of the first stanza of folio 48 verso). </p>
+                                
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <msContents>
+                        <msItem>
+                            <p/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20222410" who="#medavis" status="draft"/>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="g.7" n="gathering">
+            <surfaceGrp xml:id="f.47" n="folio">
+                <surface n="recto">
+                    <label>Folio 47 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f47r.jpg"/>
+                    <zone n="EETS.T.I">
+                        <line n="l.1"><hi rend="rend">Testamentu<ex>m</ex> Ioh<ex>n</ex> lidgate nobił poete</hi></line>
+                    </zone>
+                    <zone n="EETS.T.1">
+                        <line n="l.1"><hi rend="capital_3_gold">O</hi> how holsom / and glade is the memorye</line>
+                        <line n="l.2">Of criste Ih<ex>es</ex>u<note place="bottom" anchored="true" n="explanatory">The scribe consistently strikes a bar through "h" in this witness only when a suspension might be expected. It is most obvious in "ih<ex>es</ex>u" as it suspends more than one glyph and is the expected suspension, but the "gh" combination of letters is also consistently rendered by barred h as well.</note> / surmo<ex>u</ex>ntyng al swetnesse</line>
+                        <line n="l.3">name<!--could be capital based on pattern elsewhere.  Look for other examples--> of conquest / of tryu<ex>m</ex>phe <ex>&amp;</ex> victorye</line>
+                        <line n="l.4">Thassaut of Sathan / to venquysshen and oppresse</line>
+                        <line n="l.5">To which name <hi rend="underline_red">Seyn Poule<!--look for other inital S's and P's to confirm if capital--></hi> berith witnesse</line>
+                        <line n="l.6">Of heuene and erthe / and Infernal pooste</line>
+                        <line n="l.7">Alle creaturys of ri<ex>g</ex>ht / and dewe humblesse</line>
+                        <line n="l.8">And of hool herte / bowe shal ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.2">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>No song so swete vnto the audience</line>
+                        <line n="l.2">As is <hi rend="underline_red">ih<ex>es</ex>us</hi> nor so ful of plesaunce</line>
+                        <line n="l.3">Ageyn al emnyes / sheeld pavys and diffence</line>
+                        <line n="l.4">To hevy hertys / cheef comfort / in substaunce</line>
+                        <line n="l.5">Of goostly gladnesse / moost sovereyn Suffisaunce</line>
+                        <line n="l.6">Cheef directorye / to heueneward / the Cite</line>
+                        <line n="l.7">Gladdest resoort of spiritual remembraunce</line>
+                        <line n="l.8">To whom al creaturys / bowe shal ther kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 47 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f47v.jpg"/>
+                    <zone n="EETS.T.3">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>To alle folkys / that stonden in repentaunce</line>
+                        <line n="l.2">with hert contryt / maad ther confessio<ex>u</ex>n</line>
+                        <line n="1.3">Of wyl and thou<ex>g</ex>ht accomplysshed ther pena<ex>u</ex>nce</line>
+                        <line n="1.4">And to ther poweer / doon Satisfaccio<ex>u</ex>n</line>
+                        <line n="l.5">That cleyme be mene / of Cristis passio<ex>u</ex>n</line>
+                        <line n="l.6">Markyd with Tav<hi rend="gold_pilcrow">Τ</hi><note place="bottom" anchored="true" n="informational">The glyph takes up the full line height, making this a capital tau. It is rendered in gold with red penwork surrounding it.</note> for moor suerte</line>
+                        <line n="l.7">to them <hi rend="underline_red">Ih<ex>es</ex>u</hi> / shal graunte ful pardo<ex>u</ex>n</line>
+                        <line n="l.8">To axe hym mercy / whan they knele on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.4">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>In this name / foost sovereyn of vertu</line>
+                        <line n="l.2">Stant hool our hoope and al our assuraunce</line>
+                        <line n="l.3">ffor wher that evir / namyd is <hi rend="underline_red">ih<ex>es</ex>u</hi></line>
+                        <line n="l.4">Geyn gostly trouble / men fynden allegea<ex>u</ex>nce</line>
+                        <line n="l.5">who trustith in <hi rend="underline_red">ih<ex>es</ex>u</hi> may feele no grevaunce</line>
+                        <line n="l.6">which from al thraldam / brouht<!-- what looks like an otiose mark but could be a barred h --> vs to liberte</line>
+                        <line n="l.7">Out of al servage / he made an acquynta<ex>u</ex>nce</line>
+                        <line n="l.8">To alle that knele / to <hi rend="underline_red">ih<ex>es</ex>u</hi> on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.5">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>In amerous<note place="bottom" plaee="anchored" n="informational">The initial glyph here may be capitalized based on its line height in comparison to the other glyphs in the word, but line heights for "a" are fairly inconsistent throughout and so I'm not confident that initial "a" should be rendered in majuscule.</note> hertyes brennyng of kyndenesse</line>
+                        <line n="l.2">This name of <hi rend="underline_red">ih<ex>es</ex>u</hi> / moost profoundly doth myne</line>
+                        <line n="l.3">Martir <hi rend="underline_red">Ignacius</hi> / can bern heerof witnesse</line>
+                        <line n="l.4">A myd whoos herte / by grace which is divyne</line>
+                        <line n="l.5">with aureat lettrys / as gold that did shyne</line>
+                        <line n="l.6">his herte was grave / men may his legende se</line>
+                        <line n="l.7">To teche al cristene / ther heedys to enclyne</line>
+                        <line n="l.8">To blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> and bow a do<ex>u</ex>n ther kne</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+        <surfaceGrp xml:id="g.8" n="gathering">
+            <surfaceGrp xml:id="f.48" n="folio">
+                <surface n="recto">
+                    <label>Folio 48 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f48r.jpg"/>
+                    <zone n="EETS.T.6">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This is the name / that chaceth away the clips</line>
+                        <line n="l.2">Of fforeyn dirkenesse / as clerkys determyne</line>
+                        <line n="l.3">By <hi rend="underline_red">Ioh<ex>n</ex>n</hi> remembryd / in <hi rend="underline">thapocalips</hi></line>
+                        <line n="l.4">how lich<ex>e</ex> a lamb / his heed / he did enclyne</line>
+                        <line n="l.5">whos blood do<ex>u</ex>n ran / ri<ex>g</ex>ht as any lyne</line>
+                        <line n="l.6">To wasshe the Orduris / of our Iniquite</line>
+                        <line n="l.7">Medlyd with watir / cleer and cristallyne</line>
+                        <line n="l.8">which from his herte do<ex>u</ex>n railed by his kne</line>
+                    </zone>
+                    <zone n="EETS.T.7">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>By blood <hi rend="underline_red">ih<ex>es</ex>us</hi> made our redempcio<ex>u</ex>n</line>
+                        <line n="l.2">with watir of baptym / fro felthe wessh vs cleene</line>
+                        <line n="l.3">And from his herte / too licours ther ran do<ex>u</ex>n</line>
+                        <line n="l.4">On <hi rend="underline_red">Caluary</hi> / the trouthe was wel seene</line>
+                        <line n="l.5">Whan <hi rend="underline_red">longius</hi> / with a spere keene</line>
+                        <line n="l.6">Percyd his herte / vpon the roode</line>
+                        <line n="l.7">O man vnkynde / thynk what this doth meene</line>
+                        <line n="l.8">And on to <hi rend="underline_red">ih<ex>es</ex>u</hi> / bowe a do<ex>u</ex>n thy kne</line>
+                    </zone>
+                    <zone n="EETS.T.8">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Ther is no speche / for language can remembre</line>
+                        <line n="l.2">lettir Sillable nor word / that may expresse</line>
+                        <line n="l.3">thouh in too tungys / were turnyd eu<ex>er</ex>y membre</line>
+                        <line n="l.4">Of man to telle thexcellent noblesse</line>
+                        <line n="l.5">Of blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> which of his gret meeknesse</line>
+                        <line n="l.6">list suffre deth to make his Servaunt fre</line>
+                        <line n="l.7">Now merciful <hi rend="underline_red">ih<ex>es</ex></hi> / for thyn hi<ex>g</ex>h goodnesse</line>
+                        <line n="l.8">Haue mercy on alle / that bowe to the ther kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 48 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f48v.jpg"/>
+                    <zone n="EETS.T.9">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>The prince was slayn / the Servau<ex>n</ex>t went at large</line>
+                        <line n="l.2">And to delyuer / his soget fro priso<ex>u</ex>n</line>
+                        <line n="l.3">The lord took on hym / for to bere the charge</line>
+                        <line n="l.4">To quyte mankynde / by obligacio<ex>u</ex>n</line>
+                        <line n="l.5">Seelyd with fyve wo<ex>u</ex>ndys he payed our ra<ex>u</ex>nso<ex>u</ex>n</line>
+                        <line n="l.6">Man to restoore / to paradys his Cite</line>
+                        <line n="l.7">Is man nat bounde / I axe this questio<ex>u</ex>n</line>
+                        <line n="l.8">To blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> / for to bowe his kne</line>
+                    </zone>
+                    <zone n="EETS.T.10">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi><hi rend="underline_red">Six hundryd</hi> tyme / with <hi rend="underline_red">Sixty toold</hi> by nou<ex>m</ex>bre</line>
+                        <line n="l.2">In <hi rend="underline_red">poulys</hi> pistlys / <hi rend="underline_red">ih<ex>es</ex>u</hi> men may reede</line>
+                        <line n="l.3">Multitude of feendys / to encombre</line>
+                        <line n="l.4">To paye our ra<ex>u</ex>nso<ex>u</ex>n / his blood he did sheede</line>
+                        <line n="l.5">Nat a final part / but al he did out bleede</line>
+                        <line n="l.6">Ffor <hi rend="underline_red">Adamys</hi> appyl / plukkyd from the tre</line>
+                        <line n="l.7">Ih<ex>es</ex>u deyed / for shame man tak heede</line>
+                        <line n="l.8">Gyf thank to <hi rend="underline_red">ih<ex>es</ex>u</hi> / and bowe to hym thy kne</line>
+                    </zone>
+                    <zone n="EETS.T.11">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Alle thes thynges / considred that I tolde</line>
+                        <line n="l.2">Man / wher evir thu holdist thy passage</line>
+                        <line n="l.3">toward <hi rend="underline_red">ih<ex>es</ex>u</hi> / alwey / that thu beholde</line>
+                        <line n="l.4">with Eye ffyx / looke on his visage</line>
+                        <line n="l.5">Crownyd with thorn / fo our gret Outrage</line>
+                        <line n="l.6">haue this in mynde / and lerne o thyng of me</line>
+                        <line n="l.7">that day noon Enmy shal doon vs noon damage</line>
+                        <line n="l.8">Whan we to <hi rend="underline_red">ih<ex>es</ex>u</hi> / devoutly bowe our kne</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.49" n="folio">
+                <surface n="recto">
+                    <label>Folio 49 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f49r.jpg"/>
+                    <zone n="EETS.T.12">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Withynne my closet / and in my litil couche</line>
+                        <line n="l.2">O blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> / and by my beddys syde</line>
+                        <line n="l.3">that noon Enmy / nor no feend shal me touche</line>
+                        <line n="l.4">The name of <hi rend="underline_red">ih<ex>es</ex>u</hi> / with me shal evir abyde</line>
+                        <line n="l.5">My loode sterre / and my sovereyn guyde</line>
+                        <line n="l.6">In this world heer / bothe on lond and se</line>
+                        <line n="l.7"><hi rend="underline_red">O ih<ex>es</ex>u ih<ex>es</ex>u</hi> / for al tho folk provyde</line>
+                        <line n="l.8">Which to thy name / devoutly bowe ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.13">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>With <hi rend="underline_red">Maria</hi> / callyd <hi rend="underline_red">Mawdeleyne</hi></line>
+                        <line n="l.2">Erly ech morwe / whil that my liff may dure</line>
+                        <line n="l.3">Ffro slouthe and slombre / my silf I shal restreyne</line>
+                        <line n="l.4">To seke <hi rend="underline_red">ih<ex>es</ex>u</hi> / at his sepulture</line>
+                        <line n="l.5">Whom for to fynde / yif that I may recure</line>
+                        <line n="l.6">To haue pocessio<ex>u</ex>n of hym at liberte</line>
+                        <line n="l.7">Ther were in erthe / no richere creature</line>
+                        <line n="l.8">To whoom al creaturys / bowe shal ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.14">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>in merciful <hi rend="underline_red">ih<ex>es</ex>u</hi> / to putte a verray preef</line>
+                        <line n="l.2">Of his mercy / that Noman<!--descender on the left. compare to other capital n's.--> disespeyre</line>
+                        <line n="l.3">Vpon the cros / gaf grau<ex>n</ex>t vnto the theef</line>
+                        <line n="l.4">To paradys / with hym for to repayre</line>
+                        <line n="l.5">Took out of helle / soulys many apeyre</line>
+                        <line n="l.6">Mawgre <hi rend="underline_red">Cerberus</hi> / and al his cruelte</line>
+                        <line n="l.7">O gracious <hi rend="underline_red">ih<ex>es</ex>u</hi> benygne and debonayre</line>
+                        <line n="l.8">Haue mercy on all that bowe to the ther kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 49 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f49v.jpg"/>
+                    <zone n="EETS.T.15">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>The name of <hi rend="underline_red">ih<ex>es</ex>u</hi> swettest of namys alle</line>
+                        <line n="l.2">Geyn goostly Venyms<!--left descender - different than other V's.  assume capital.--> / holsomest tryacle</line>
+                        <line n="l.3">Ffor who so evir / vnto this name calle</line>
+                        <line n="l.4">Of cankryd Surfetys / fynt reles by myracle</line>
+                        <line n="l.5">To eyen blynde li<ex>g</ex>ht lanterne and spectacle</line>
+                        <line n="l.6">And bry<ex>g</ex>htest myrour / of al felicite</line>
+                        <line n="l.7">Support and Sheeld/ diffence / and cheef obstacle</line>
+                        <line n="l.8">To alle that kneele to <hi rend="underline_red">ih<ex>es</ex>u</hi> on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.16">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This roial name / moost sovereyn of reno<ex>u</ex>n</line>
+                        <line n="l.2">this name <hi rend="underline_red">ih<ex>es</ex>us</hi>/ victorious in batail</line>
+                        <line n="l.3">Of heuenly tryvmphis / the laureat guerdou<ex>n</ex></line>
+                        <line n="l.4">The spiritual palme / of goostly appairail</line>
+                        <line n="l.5">Celestial prowesse / which may moost avail</line>
+                        <line n="l.6">To Sitte with angelis / in ther eternal se</line>
+                        <line n="l.7">Themp<ex>er</ex>ial conquest / nat gett with plate or mayl</line>
+                        <line n="l.8">But with meeke keelyng / to <hi rend="underline_red">to ih<ex>es</ex>u</hi> on our kne</line>
+                    </zone>
+                    <zone n="EETS.T.17">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi><hi rend="underline_red">Patriarkes</hi> and <hi rend="underline_red">p<ex>ro</ex>phetis</hi> / oon by oon</line>
+                        <line n="l.2">thre <hi rend="underline_red">ierarchyes</hi> / and al the orderis nyne</line>
+                        <line n="l.3"><hi rend="underline_red">Twelue apostlys</hi> / and martirs eu<ex>er</ex>ychoon</line>
+                        <line n="l.4">Hooly <hi rend="underline_red">confessours</hi> / and euery pure <hi rend="underline_red">virgyne</hi></line>
+                        <line n="l.5">To blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> moost meekly shal enclyne</line>
+                        <line n="l.6">ffonlys beestys / and fisshes of the se</line>
+                        <line n="l.7">kynde hath tau<ex>g</ex>ht hem / by natural disciplyne</line>
+                        <line n="l.8">Meekly to <hi rend="underline_red">ih<ex>es</ex>u</hi> to bowe a do<ex>u</ex>n ther kne</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.50" n="folio">
+                <surface n="recto">
+                    <label>Folio 50 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f50r.jpg"/>
+                    <zone n="EETS.T.18">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Ther is no love / parfitly I groundid</line>
+                        <line n="l.2">but it of <hi rend="underline_red">ih<ex>es</ex>u</hi> / took his Original</line>
+                        <line n="l.3">ffor vpon <hi rend="underline_red">ih<ex>es</ex>u</hi> / al parfitnesse is foundid</line>
+                        <line n="l.4">Our tour our castel / geyn poweers infernal</line>
+                        <line n="l.5">Our poortcolys / our bolewerk / and our wal</line>
+                        <line n="l.6">our sheeld / our pavys / geyn al aduersite</line>
+                        <line n="l.7">Our herytage / our guerdo<ex>u</ex>n eternal</line>
+                        <line n="l.8">To whoom alle creaturys / bowe shal ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.19">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Condigne laude / nor Comendacio<ex>u</ex>n</line>
+                        <line n="l.2">Youe to this name / ther can no tonge telle</line>
+                        <line n="l.3">Of goostly foode / richest refeccio<ex>u</ex>n</line>
+                        <line n="l.4">Hedspryng of grace / of lyff conduyt and welle</line>
+                        <line n="l.5"><hi rend="underline_red">Ih<ex>es</ex>u</hi> namyd / ther dar no drago<ex>u</ex>n dwelle</line>
+                        <line n="l.6">Blissidest bawme / of our felicite</line>
+                        <line n="l.7">Alle cancryd soorys / and poyso<ex>u</ex>ns to repelle</line>
+                        <line n="l.8">ffrom them / to <hi rend="underline">ih<ex>es</ex>u</hi> / that knele on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.20">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>This name <hi rend="underline_red">ih<ex>es</ex>us</hi> / by interpretacio<ex>u</ex>n</line>
+                        <line n="l.2">Is for to seyne / our blyssid Saviour</line>
+                        <line n="l.3">Our Strong <hi rend="underline_red">Sampson</hi> / that stranglyd the lio<ex>u</ex>n</line>
+                        <line n="l.4">Our lord our maker / and our creatour</line>
+                        <line n="l.5">And by his passio<ex>u</ex>n / fro deth our Redemptour</line>
+                        <line n="l.6">Our <hi rend="underline_red">Orpheus</hi> that from captyuyte</line>
+                        <line n="l.7">ffeit <hi rend="underline_red">Erudice</hi> / to his celestial your</line>
+                        <line n="l.8">To whoom alle creaturys / bowe shal ther kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 50 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f50v.jpg"/>
+                    <zone n="EETS.T.21">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>At wellys five / licour I shal drawe</line>
+                        <line n="l.2">To wasshe the rust / of my synnys blyve</line>
+                        <line n="l.3">Wheer al mysteryes / of the Oold and Newe<note place="bottom" anchored="true" n="explanatory">The extneded descender on the left of the initial glyph, when combined with the magiscule form of "o" in the initial glyph of "Oold," suggests that this is intended to be magiscule as well. Compare with "nayled" in line six of the first stanza of the following page to see the initial form of "n" in miniscule.</note> lawe</line>
+                        <line n="l.4">Took orygynal / morally to descryve</line>
+                        <line n="l.5">I meene the wellys / of Cristis woundys five</line>
+                        <line n="l.6">Wherby we clyme / of merciful pite</line>
+                        <line n="l.7">thoru<ex>g</ex>h help of <hi rend="underline_red">ih<ex>es</ex>u</hi> / at gracious poort taryve</line>
+                        <line n="l.8">Ther to haue mercy / kneelyng on our kne</line>
+                    </zone>
+                    <zone n="EETS.T.22">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi><hi rend="underline_red">I<hi rend="touched">.</hi></hi> in <hi rend="underline_red">ih<ex>es</ex>u</hi> / set for <hi rend="underline_red">Iocunditas</hi></line>
+                        <line n="l.2">Gynnyng and ground / of al goostly gladnesse</line>
+                        <line n="l.3"><hi rend="underline_red">E<hi rend="touched">.</hi></hi> next in Ordre / is <hi rend="underline_red">Eternitas</hi></line>
+                        <line n="l.4">Tokne and signe / of <hi rend="underline_red">eternal</hi> bri<ex>g</ex>htnesse</line>
+                        <line n="l.5"><hi rend="underline_red">S<hi rend="touched">.</hi></hi> Set for <hi rend="underline_red">Sanitas</hi> / socour ageyn syknesse</line>
+                        <line n="l.6"><hi rend="underline_red">V<hi rend="touched">.</hi></hi> for <hi rend="underline_red">vbertas</hi> / of <hi rend="underline_red">Spiritual</hi> plente</line>
+                        <line n="l.7"><hi rend="underline_red">S<hi rend="touched">.</hi></hi> for <hi rend="underline_red">Suauitas</hi> / from whom comyth al swetnesse</line>
+                        <line n="l.8">To them that kneele / to <hi rend="underline_red">Ih<ex>es</ex>u</hi> on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.23">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi><hi rend="underline_red">I<hi rend="touched">.</hi></hi> in <hi rend="underline_red">ih<ex>es</ex>u</hi> / is ioye / that nevir shal eende</line>
+                        <line n="l.2"><hi rend="underline_red">E<hi rend="touched">.</hi></hi> signefieth / evirlastyng Suffisaunce</line>
+                        <line n="l.3"><hi rend="underline_red">S<hi rend="touched">.</hi></hi> our Savacio<ex>u</ex>n / whan we shal hens weende</line>
+                        <line n="l.4"><hi rend="underline_red">V<hi rend="touched">.</hi></hi> his five woundys / that made vs aquytaunce</line>
+                        <line n="l.5">ffro Sathanys my<ex>g</ex>ht thoru<ex>g</ex>h his meeke Suffra<ex>u</ex>nce</line>
+                        <line n="l.6"><hi rend="underline_red">S<hi rend="touched">.</hi></hi> for the Sacrament / which ech day we may se</line>
+                        <line n="l.7">In fourme of breed / to save vs from myschaunce</line>
+                        <line n="l.8">Whan we devoutly / receyve it on our kne</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.51" n="folio">
+                <surface n="recto">
+                    <label>Folio 51 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f51r.jpg"/>
+                    <zone n="EETS.T.24">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi><hi rend="underline_red">I.</hi> fro <hi rend="underline_red">Iacob</hi> / <hi rend="underline_red">H</hi>. from <hi rend="underline_red">Abrah<ex>a</ex>m</hi></line>
+                        <line n="l.2">The lyne descendyng / by generacio<ex>u</ex>n</line>
+                        <line n="l.3"><hi rend="underline_red">C.</hi> stant for <hi rend="underline_red">Crist</hi> / that from heuene cam</line>
+                        <line n="l.4">Born of a mayde / for our Redempcio<ex>u</ex>n</line>
+                        <line n="l.5">the sharpe titel / tokne of his passio<ex>u</ex>n</line>
+                        <line n="l.6">Whan he was nayled / vpon the Roode tre</line>
+                        <line n="l.7">O blidded <hi rend="underline_red">Ih<ex>es</ex>u</hi> / do remyssio<ex>u</ex>n</line>
+                        <line n="l.8">To alle that axe mercy / on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.25">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>So mercy <hi rend="underline_red">ih<ex>es</ex>u</hi> / or that we hens pace</line>
+                        <line n="l.2">Out of this pereillous dreedful pilgrymage</line>
+                        <line n="l.3">beset with brygauntys / leyd wayt in eu<ex>er</ex>y place</line>
+                        <line n="l.4">With mortal sawt / to lettyn our passage</line>
+                        <line n="l.5">Among othre / I that am falle in age</line>
+                        <line n="l.6">Gretly ffeblisshed / of Oold Infirmyte</line>
+                        <line n="l.7">Crye vnto <hi rend="underline_red">Ih<ex>es</ex>u</hi> / for my Synful outrages</line>
+                        <line n="l.8">Ri<ex>g</ex>ht of hool herte / thus kneelyng on my kne</line>
+                    </zone>
+                    <zone n="EETS.T.26">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Lat nat be lost / that thu hast bou<ex>g</ex>ht So deere</line>
+                        <line n="l.2">with gold nor Silver / but with thy p<ex>re</ex>cious blood</line>
+                        <line n="l.3">Our fflessh<ex>e</ex><note place="bottom" anchored="true" n="explanatory">the "h" is barred here, so my assumption is that this is meant to indicate terminal "e."</note> is freel / but short abydyng heere</line>
+                        <line n="l.4">The Oold Serpent / malicious and wood</line>
+                        <line n="l.5">the world vnstable / now ebbe / now is flood</line>
+                        <line n="l.6">Ech thyng concludyng / on Mutabilite</line>
+                        <line n="l.7">Geyn whos daungeers / I hold this consayl good</line>
+                        <line n="l.8">To prey for mercy / to <hi rend="underline_red">ih<ex>es</ex>u</hi> on our kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 51 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f51v.jpg"/>
+                    <zone n="EETS.T.27">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>And vndir Suppoort / <hi rend="underline_red">ih<ex>es</ex>u</hi> of thy favour</line>
+                        <line n="l.2">Or I passe hens / this hoolly myn entent</line>
+                        <line n="l.3">To make <hi rend="underline_red">Ih<ex>es</ex>u</hi> / to be cheef Surveyour</line>
+                        <line n="l.4">Of my laste wyl / set in my <hi rend="underline_red">testament</hi></line>
+                        <line n="l.5">Which of my silf / am insufficient</line>
+                        <line n="l.6">To rekne or counte / but mercy and pite</line>
+                        <line n="l.7">be preferryd / or thu do Iugement</line>
+                        <line n="l.8">To alle that calle / to <hi rend="underline_red">ih<ex>es</ex>u</hi> on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.28">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Age is crope in / callith me to my grave</line>
+                        <line n="l.2">To make reknyng / how I my tyme haue spent</line>
+                        <line n="l.3">bareyn of vertu / allas / who shal me save</line>
+                        <line n="l.4">ffro feendys daunger / tacounte for my <hi rend="underline_red">Talent</hi></line>
+                        <line n="l.5">but <hi rend="underline_red">ih<ex>es</ex>u be my staff / and my potent</hi></line>
+                        <line n="l.6">Ovir streyt Audit / is lik tencoumbre me</line>
+                        <line n="l.7">Or doom be yove / but mercy be present</line>
+                        <line n="l.8">To alle that kneele / to <hi rend="underline_red">ih<ex>es</ex>u</hi> on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.29">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Now in the name / of my lord <hi rend="underline_red">Ih<ex>es</ex>us</hi></line>
+                        <line n="l.2">Of ri<ex>g</ex>ht hool herte / in al my best entent</line>
+                        <line n="l.3">My lyff remembryng / froward and vicious</line>
+                        <line n="l.4">Ay contrary to the Comaundement</line>
+                        <line n="l.5">Of Crist <hi rend="underline_red">ih<ex>es</ex>u</hi> / Now with avisement</line>
+                        <line n="l.6">The lord besechyng / to haue mercy and pite</line>
+                        <line n="l.7">My youthe myn Age<!-- make a note about angular lower bow in hand note--> / how that I haue myspent</line>
+                        <line n="l.8">With this woord seyd / keelyng on my kne</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.52" n="folio">
+                <surface n="recto">
+                    <label>Folio 52 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f52r.jpg"/>
+                    <zone n="EETS.T.30">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>O <hi rend="underline_red">ih<ex>es</ex>u</hi> mercy / with suppoort of thy grace</line>
+                        <line n="l.2">ffor thy meek passio<ex>u</ex>n / remembre on my compleynt</line>
+                        <line n="l.3">Duryng my lyf / with many gret trespace</line>
+                        <line n="l.4">By many wrong path / wher I haue myswent</line>
+                        <line n="l.5">I now purpoose / by thy grace influent</line>
+                        <line n="l.6">To write a tretys / of Surfetys doon to the</line>
+                        <line n="l.7">And callyn it / my last <hi rend="underline_red">testament</hi></line>
+                        <line n="l.8">With <hi rend="underline_red">ih<ex>es</ex>u</hi> mercy / kneelyng on my kne</line>
+                    </zone>
+                    <zone n="EETS.T.II">
+                        <line n="l.1"><hi rend="red">Testamentu<ex>m</ex></hi></line>
+                        <line n="l.2"><hi rend="red">in no<ex>min</ex>ie ih<ex>es</ex>u</hi><note place="bottom" anchored="true" n="informational">This is rendered in red to the right of the first stanza of part two. This, rather than an illuminated initial, indicates the beginning of part II of the "Testament."</note></line>
+                    </zone>
+                    <zone n="EETS.T.31">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>The yeerys passyd / of my tendir youthe</line>
+                        <line n="l.2">Off my fressh age / seryd the grennesse</line>
+                        <line n="l.3">lust appallyd thexperience is towthe</line>
+                        <line n="l.4">The vnweedly Ioyntes / starkyd with rudnesse</line>
+                        <line n="l.5">the cloudy si<ex>g</ex>hte mystyd with dirknesse</line>
+                        <line n="l.6">withoute redres / recure or amendys</line>
+                        <line n="l.7">To me of deth / han brou<ex>g</ex>ht in the <hi rend="underline_red">kalendys</hi></line>
+                    </zone>
+                    <zone n="EETS.T.32">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Of myspent tyme / a fool may weel compleyne</line>
+                        <line n="l.2">Thyng impossible / ageyn for to recure</line>
+                        <line n="l.3">Dayes lost in ydil / no man may restreyne</line>
+                        <line n="l.4">Them to refourme / by noon aventure</line>
+                        <line n="l.5">Ech<ex>e</ex> mortal man / is callid to the lure</line>
+                        <line n="l.6">Of deth allas vncerteyn the passage</line>
+                        <line n="l.7">whos cheef maryneer / is callyd crokyd age</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 52 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f52v.jpg"/>
+                    <zone n="EETS.T.33">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Oon of his bedellys / namyd febilnesse</line>
+                        <line n="l.2">Cam with his potent / in stede of a maas</line>
+                        <line n="l.3">Somowned me / and aftir cam syknesse</line>
+                        <line n="l.4">Malencolyk erthely / ad<note place="bottom" anchored="true" n="informational">This is meant to be "and", but the scribe omitted the "n" in the middle of the word</note> pale of faas</line>
+                        <line n="l.5">with ther wara<ex>u</ex>nt / thes tweyne gan manaas</line>
+                        <line n="l.6">how deth of me / his dew dette sou<ex>g</ex>hte</line>
+                        <line n="l.7">And to a bed / of langour / they me brou<ex>g</ex>hte</line>
+                    </zone>
+                    <zone n="EETS.T.34">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Wher vnto me / anoon ther did appeere</line>
+                        <line n="l.2">Whyl that I lay / compleynyng in a traunce</line>
+                        <line n="l.3">Clad in a mantyl / a woman sad of cheere</line>
+                        <line n="l.4">Blak was hir habite / sobre was hir contena<ex>u</ex>nce</line>
+                        <line n="l.5">Straunge of hir poort / froward and dalia<ex>u</ex>nce</line>
+                        <line n="l.6">Castyng hir look / to me ward in certeyn</line>
+                        <line n="l.7">lych as of me / she had disdeyn</line>
+                    </zone>
+                    <zone n="EETS.T.35">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This sayd woman / was callyd <hi rend="underline_red">Remembra<ex>u</ex>nce</hi></line>
+                        <line n="l.2">Of myspent tyme / in youthys lustynesse</line>
+                        <line n="l.3">Which to recorde did me gret grevaunce</line>
+                        <line n="l.4">than cam hir sustir / namyd <hi rend="underline_red">Pensiffnesse</hi></line>
+                        <line n="l.5">ffor olde surfetys / and gan vnto me dresse</line>
+                        <line n="l.6">A wooful bille / which brou<ex>g</ex>ht vnto my mynde</line>
+                        <line n="l.7">My grete outrages / of long tyme left behynde</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.53" n="folio">
+                <surface n="recto">
+                    <label>Folio 53 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f53r.jpg"/>
+                    <zone n="EETS.T.36">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Lyggyng allone / I gan to ymagyne</line>
+                        <line n="l.2">How with foure tymes / departyd is the yeer</line>
+                        <line n="l.3">ffirst how in <hi rend="underline_red">Ver</hi> / the soyl tenlvmyne</line>
+                        <line n="l.4">buddys gyme opne / ageyn the sonne cleer</line>
+                        <line n="l.5">the bawme vp reysed / moost sovereyn <ex>&amp;</ex> enteer</line>
+                        <line n="l.6">Out of the Roote / doth naturally ascende<note place="bottom" anchored="true" n="informational">This appears to be "st" at first, especially when compared with "distillyng" in the following stanza and "lustynesse" on the third stanza of the page prior. However, comparison with "ascencio<ex>u</ex>n" on 53 verso, stanza three suggests that what is seen as an ascender is actually an otiose mark.</note></line>
+                        <line n="l.7">With newe lyvere / the bareyn soyl tamende</line>
+                    </zone>
+                    <zone n="EETS.T.37">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>The honysoucle / the froissh<ex>e</ex> prymerollys</line>
+                        <line n="l.2">ther levys splaye / at <hi rend="underline_red">Phebus</hi> vprysyng</line>
+                        <line n="l.3">The amerous fowlys / with motetys <ex>&amp;</ex> Carollys</line>
+                        <line n="l.4"><hi rend="underline_red">Salwe</hi> that seso<ex>u</ex>n / euery morwenyng</line>
+                        <line n="l.5">Whan <hi rend="underline_red">Aurora</hi> / hir licour distillyng</line>
+                        <line n="l.6">Sent on herbys / the peerly dropys sheene</line>
+                        <line n="l.7">Of silvir dewys / tenlvmyne w<ex>ith</ex> the greene</line>
+                    </zone>
+                    <zone n="EETS.T.38">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This tyme <hi rend="underline_red">Ver</hi> / is namyd of grennesse</line>
+                        <line n="l.2">tyme of Ioye / of gladnesse and dispoort</line>
+                        <line n="l.3">Tyme of growyng cheef moodir of fressh<ex>e</ex>nesse</line>
+                        <line n="l.4">tyme of reioisshyng / ordeyned for co<ex>u</ex>nfoort</line>
+                        <line n="l.5">Tyme whan tyme / makith his resoort</line>
+                        <line n="l.6">In geryssh<ex>e</ex> <hi rend="underline_red">March<ex>e</ex></hi> / toward the <hi rend="underline_red">Ariete</hi></line>
+                        <line n="l.7">Our <hi rend="underline_red">Emysperye</hi> / to gladen with his hete</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 53 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f53v.jpg"/>
+                    <zone n="EETS.T.39">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Which seso<ex>u</ex>n / pryketh fressh<ex>e</ex> corages</line>
+                        <line n="l.2">Reioisshith<ex>e</ex> beestys / walkyng in ther pasture</line>
+                        <line n="l.3">Causith briddys / to syngen in ther cages</line>
+                        <line n="l.4">Whan blood renewyth / in euery creature</line>
+                        <line n="l.5">Som observa<ex>u</ex>nce / doyng to nature</line>
+                        <line n="l.6">Which<add>natura</add><note place="bottom" anchored="true" n="informational">An otiose mark, followed by "natura", is above "which" in this line. This appears to be a correction of "nature" in the previous line but there are no marks indicating that the line is struck through. Additionally, the rhyme scheme does not support the word "natura" here so it's unclear what the intend of the word's inclusion here is.</note> is of <hi rend="underline_red">ver</hi> / callyd cheef pryncesse</line>
+                        <line n="l.7">And vndir god / ther worldly Emperesse</line>
+                    </zone>
+                    <zone n="EETS.T.40">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>And for this lusty seso<ex>u</ex>n agreable</line>
+                        <line n="l.2">of gladnesse / hath so gret avauntage</line>
+                        <line n="l.3">by convenyent reso<ex>u</ex>ns / ful notable</line>
+                        <line n="l.4">therto ful weel / resemblith childissh<ex>e</ex> age</line>
+                        <line n="l.5">Quyk greene fressh<ex>e</ex> / and delyvere of corage</line>
+                        <line n="l.6">ffor ri<ex>g</ex>ht as <hi rend="underline_red">Ver</hi> / ay moreth in grennesse</line>
+                        <line n="l.7">so doth childhood / in amerows lustynesse</line>
+                    </zone>
+                    <zone n="EETS.T.41">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This quykyng seso<ex>u</ex>n / nutrityff and good</line>
+                        <line n="l.2">Of his nature / hath tweyne qualitees</line>
+                        <line n="l.3">Of hoot and moyst / whigh longe also to blood</line>
+                        <line n="l.4">In ther ascencio<ex>u</ex>n / vpward by degrees</line>
+                        <line n="l.5">Of kyndly ri<ex>g</ex>ht / the which propirtees</line>
+                        <line n="l.6">by natural heete / and temperat moisture</line>
+                        <line n="l.7">Reknyd in childhod / fourtene yeer doth endure</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.54" n="folio">
+                <surface n="recto">
+                    <label>Folio 54 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f54r.jpg"/>
+                    <zone n="EETS.T.42">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Thus in <hi rend="underline_red">sixe</hi> thynges / by ordre men may seen</line>
+                        <line n="l.2">Notable accoord / and iust<note place="bottom" anchored="true" n="informational">The EETS edition has "lust" here.</note> convenience</line>
+                        <line n="l.3"><hi rend="underline_red">Blood</hi> <hi rend="underline_red">Eyr</hi> / an <hi rend="underline_red">ver</hi> / <hi rend="underline_red">south<ex>e</ex></hi> / and <hi rend="underline_red">Merydien</hi></line>
+                        <line n="l.4">And age of Childhood / by natural assistence</line>
+                        <line n="l.5">Which whil they stonde / in ther fressh p<ex>re</ex>mynence</line>
+                        <line n="l.6">Heete and moysture / directyth ther passages</line>
+                        <line n="l.7">With greene feruence / tafforce yong corages</line>
+                    </zone>
+                    <zone n="EETS.T.43">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>ffirst <hi rend="underline_red">zephirus</hi> / with his blastys soote</line>
+                        <line n="l.2">Enspireth <hi rend="underline_red">ver</hi> / with newe buddys greene</line>
+                        <line n="l.3">the bawme ascendith<ex>e</ex> / out of every Roote</line>
+                        <line n="l.4">Causyng with flourys / ageyn the sonne sheene</line>
+                        <line n="l.5"><hi rend="underline_red">May</hi> / among monethys / sitte lyk a queene</line>
+                        <line n="l.6">Hir sustir <hi rend="underline_red">April</hi> / wattryng hir gardynes</line>
+                        <line n="l.7">With holsom shour<ex>i</ex>s / shad in the tendyr vynes</line>
+                    </zone>
+                    <zone n="EETS.T.44">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This tyme of <hi rend="underline_red">Ver</hi> / <hi rend="underline_red">fflora</hi> / doth hir cure</line>
+                        <line n="l.2">With pleyn motles / passyng fressh<ex>e</ex> and gaye</line>
+                        <line n="l.3">Purpil clours / wrought / wrouht by dame nature</line>
+                        <line n="l.4">Mounteyns valys / and meedewys for taraye</line>
+                        <line n="l.5">Hir warderobe open / list nat to delaye</line>
+                        <line n="l.6">large mesour / to shewe out and to sheede</line>
+                        <line n="l.7">tresours / of ffayrye / which she doth poosseede</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 54 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f54v.jpg"/>
+                    <zone n="EETS.T.45">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>This seso<ex>u</ex>n <hi rend="underline_red">Ver</hi> / moost plesaunt to childhood</line>
+                        <line n="l.2">with hire chapelettys / greene whit and Reede<!--make note about color scheme at melford--></line>
+                        <line n="l.3">In which tyme / the newe yonge blood</line>
+                        <line n="l.4">hoot and moyst / ascendith vp in deede</line>
+                        <line n="l.5">Reioisshyng hertys / as it a brood doth spreede</line>
+                        <line n="l.6">Weenyng this seso<ex>u</ex>n among ther merthis alle</line>
+                        <line n="l.7">Shuld nevir discresen / nor appalle</line>
+                    </zone>
+                    <zone n="EETS.T.46">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>The variaunt seso<ex>u</ex>n / of this stormy age</line>
+                        <line n="l.2">Abraydeth evere / on newfangilnesse</line>
+                        <line n="l.3">Now frownyng cheer / now fressh of visage</line>
+                        <line n="l.4">Now glad now li<ex>g</ex>ht / now trouble and hevynesse</line>
+                        <line n="l.5">Wylde as an hert / now moornyng for sadnesse</line>
+                        <line n="l.6">Stormyssh<ex>e</ex> as <hi rend="underline_red">March<ex>e</ex></hi> / w<ex>ith</ex> chaungis ful sodeyne</line>
+                        <line n="l.7">Afftir cleer shynyng / to tourne <ex>&amp;</ex> make it reyne</line>
+                    </zone>
+                    <zone n="EETs.T.47">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Off this seso<ex>u</ex>n / lust halt Reyne and brydil</line>
+                        <line n="l.2">Seelde or nevir / abydyng in o poynt</line>
+                        <line n="l.3">Now passyng besy / now dissolut / now ydil</line>
+                        <line n="l.4">Now a good felawe / now al out of ioynt</line>
+                        <line n="l.5">Now Smothe now stark / now lyk an hard purporynt</line>
+                        <line n="l.6">Now as the peys / of a dyal goth</line>
+                        <line n="l.7">Now geryssh<ex>e</ex> glad / and anoon aftir wroth<ex>e</ex></line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.55" n="folio">
+                <surface n="recto">
+                    <label>Folio 55 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f55r.jpg"/>
+                    <zone n="EETS.T.48">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Lych as in Ver / men gretly them delite</line>
+                        <line n="l.2">to beholde / the bewte sovereyne</line>
+                        <line n="l.3">Of thes blosmys / Som blew / red and white</line>
+                        <line n="l.4">to whos fresshnesse / no colour may atteyne</line>
+                        <line n="l.5">But than vnwarly / comyth a wynd sodeyne</line>
+                        <line n="l.6">ffor no favour / list nat for to spare</line>
+                        <line n="l.7">ffresshnesse of braunchys / for to make hem bare</line>
+                    </zone>
+                    <zone n="EETS.T.49">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>This seso<ex>u</ex>n <hi rend="underline_red">Ver</hi> stant evir in nouncerteyne</line>
+                        <line n="l.2">ffor som Oon hour / thou<ex>g</ex>h <hi rend="underline_red">phebus</hi> fressh<ex>e</ex>ly shyne</line>
+                        <line n="l.3">In <hi rend="underline_red">Marchys</hi> Wedrys / it sodeynly wil Reyne</line>
+                        <line n="l.4">Which of the day / al dirknesse doth declyne</line>
+                        <line n="l.5">And semblably / a lyknesse to diffyne</line>
+                        <line n="l.6">Men seen childre / of berthe yong and greene</line>
+                        <line n="l.7">Buryed with<ex>e</ex>yne</line>
+                    </zone>
+                    <zone n="EETS.T.50">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Whan <hi rend="underline_red">Ver</hi> is fresshest / of blosmys <ex>&amp;</ex> of flourys</line>
+                        <line n="l.2">An vnwar storm / his fresshnesse may apayre</line>
+                        <line n="l.3">Who may withstonde / the sterne sharp shourys</line>
+                        <line n="l.4">Of dethys power wher hym list repayre</line>
+                        <line n="l.5">thou<ex>g</ex>h the feturis / fressh<ex>e</ex> angelik and fayre</line>
+                        <line n="l.6">Shewe out in childhood / as any cristal cleer</line>
+                        <line n="l.7">Deth<ex>e</ex> can difface hem / with<ex>e</ex>yne fyfteene yeer</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 55 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f55v.jpg"/>
+                    <zone n="EETS.T.51">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi><hi rend="underline_red">Veris</hi> seso<ex>u</ex>n / doth but a while abyde</line>
+                        <line n="l.2">Skarsly thre monethys / he holdith heer soiour</line>
+                        <line n="l.3">The age of childhood / rekne on the tothir syde</line>
+                        <line n="l.4">In his encrees vp growyng / as a flour</line>
+                        <line n="l.5">But whan that deth / manacith<ex>e</ex> with his shour</line>
+                        <line n="l.6">In such caas / he can / no moor diffence</line>
+                        <line n="l.7">Than crokyd age / in his moost impotence</line>
+                    </zone>
+                    <zone n="EETs.T.52">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Ver and ech seso<ex>u</ex>n / mot by processe fade</line>
+                        <line n="l.2"><hi rend="underline_red">In ver</hi> / of age / may be no sekirnesse</line>
+                        <line n="l.3">Ech<ex>e</ex> hath his hourys / heuy and eek glade</line>
+                        <line n="l.4">ther seso<ex>u</ex>ns meynt / with Ioye and hevynesse</line>
+                        <line n="l.5">Now fayr now foul / now helithe now siknesse</line>
+                        <line n="l.6">To shew amaner / lyknesse and ymage</line>
+                        <line n="l.7">Our dwellyng heer / is but a pilgrymage</line>
+                    </zone>
+                    <zone n="EETS.T.53">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>And for my part / I can remembre weel</line>
+                        <line n="l.2">Whan I gladdest / in that fressh<ex>e</ex> seso<ex>u</ex>n</line>
+                        <line n="l.3">lyk brotyl glas / nat stable / nor lyk steel</line>
+                        <line n="l.4">ffer out of arrest / wylde of condicio<ex>u</ex>n</line>
+                        <line n="l.5">Savagyne<note place="bottom" anchored="true" n="informational">The EETS edition has "Ful geryssh" here.</note> / voyd of al reso<ex>u</ex>n</line>
+                        <line n="l.6">lyk a phane / ay tornyng to and froo</line>
+                        <line n="l.7">Or lyk / a <hi rend="underline_red">horloge</hi> / whan the peys is goo</line>
+                    </zone>
+                    <zone n="EETS.T.III">
+                        <line n="l.1"><hi rend="red">pond<ex>us</ex> distercioius</hi><!--could be discercioius. Need to look it up and get opinions--><note place="bottom" anchored="true" n="informational">This is to the left of the final word on the page, rendered in red.</note></line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.56" n="folio">
+                <surface n="recto">
+                    <label>Folio 56 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f56r.jpg"/>
+                    <zone n="EETS.T.54">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Yove to vnthrift / and dissolucio<ex>u</ex>n</line>
+                        <line n="l.2">stood vnbrydlyd / of al good governa<ex>u</ex>nce</line>
+                        <line n="l.3">Which remembryd / by meetk confessio<ex>u</ex>n</line>
+                        <line n="l.4">Now with my potent / to fynden allegea<ex>u</ex>nce</line>
+                        <line n="l.5">Of Oold surfetys / contryt with repenta<ex>u</ex>nce</line>
+                        <line n="l.6">To the ih<ex>es</ex>u / I make my passage</line>
+                        <line n="l.7">Rehersyng respacys doon in my tendir age</line>
+                    </zone>
+                    <zone n="EETS.T.55">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>But to directe / by grace my mateere</line>
+                        <line n="l.2">Meekly kneelyng / ih<ex>es</ex>u in thy presence</line>
+                        <line n="l.3">I me purpoose / to gynne with prayeere</line>
+                        <line n="l.4">Vndir thy merciful fructuous influence</line>
+                        <line n="l.5">So thu ih<ex>es</ex>u / of thy benyvolence</line>
+                        <line n="l.6">To my requestys / by merciful attenda<ex>u</ex>nce</line>
+                        <line n="l.7">Graunt or I deye / shrift hosyl repenta<ex>u</ex>nce</line>
+                    </zone>
+                    <zone n="EETS.T.56">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>My wrecchyd lyf / tamenden and correcte</line>
+                        <line n="l.2">I me purpoose / with support of thy grace</line>
+                        <line n="l.3">thy deth / thy passio<ex>u</ex>n / thy cros τ . shal me directe</line>
+                        <line n="l.4">Which suffredist deeth / ih<ex>es</ex>u for our trespace</line>
+                        <line n="l.5">I wrecche vnworthy / to looke vpon thy face</line>
+                        <line n="l.6">thy feet enbracyng / from which<ex>e</ex> I shal nat twynne</line>
+                        <line n="l.7">Mercy requeeryng thus I wyl begynne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 56 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f56v.jpg"/>
+                    <zone n="EETS.T.57">
+                        <line n="l.1"><hi rend="capital_2_gold">O</hi> myhty lord / of poweer myhtiest</line>
+                        <line n="l.2">With oute whom / al force is febilnesse</line>
+                        <line n="l.3">bountevous <hi rend="underline_red">ih<ex>es</ex>u</hi> / of good goodliest</line>
+                        <line n="l.4">Mercy thy bedel / or thu thy doomys dresse</line>
+                        <line n="l.5">delayest / rigour / to punysshe my wikkydnesse</line>
+                        <line n="l.6">lengest abydyng / lothest to do venga<ex>u</ex>nce</line>
+                        <line n="l.7">O blyssed <hi rend="underline_red">ih<ex>es</ex>u</hi> / of thyn hi<ex>g</ex>h goodnesse</line>
+                        <line n="l.8">Graunt or I deye shrift hosyl repenta<ex>u</ex>nce</line>
+                    </zone>
+                    <zone n="EETS.T.IV">
+                        <line n="l.1"><!--FIGURE OUT LATIN - two line initial--><note place="bottom" anchored="true" n="informational">This is rendered in red to the right of the two-line initial.</note></line>
+                    </zone>
+                    <zone n="EETS.T.58">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Thou<ex>g</ex>h thu be my<ex>g</ex>hty / thu art Eek merciable</line>
+                        <line n="l.2">to alle folkys / that meekly hem repente</line>
+                        <line n="l.3">I a wrecche / contagious / and Coupable</line>
+                        <line n="l.4">To alle outrages / reedy for tassente</line>
+                        <line n="l.5">but of hool herte and wyl in myn entente</line>
+                        <line n="l.6">Of Oold and newe / al vicious governa<ex>u</ex>nce</line>
+                        <line n="l.7">Of youthe of age / and of mystyme spente</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repenta<ex>u</ex>nce</line>
+                    </zone>
+                    <zone n="EETS.T.59">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Off my confessio<ex>u</ex>n / receyve the sacrefise</line>
+                        <line n="l.2">By my tonge / vp offryd vnto the</line>
+                        <line n="l.3">That I may seyn / in al my beste guyse</line>
+                        <line n="l.4">Meekly with <hi rend="underline_red">Dauid</hi> / haue mercy vpon me</line>
+                        <line n="l.5">Sauf al my Soorys / that they nat cankryd be</line>
+                        <line n="l.6">With noon oold rust / of disesperaunce</line>
+                        <line n="l.7">which of hool herte / crye vpon my kne</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.57" n="folio">
+                <surface n="recto">
+                    <label>Folio 57 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f57r.jpg"/>
+                    <zone n="EETS.T.60">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi><hi rend="underline_red">O ih<ex>es</ex>u ih<ex>es</ex>u</hi> / heere myn oriso<ex>u</ex>n</line>
+                        <line n="l.2">brydle myn outrage / vndir thy disciplyne</line>
+                        <line n="l.3">ffetre sensualite / Enlvmyne my reso<ex>u</ex>n</line>
+                        <line n="l.4">To folwe the tracys / of spiritual doctryne</line>
+                        <line n="l.5">lat thy grace / leede me ri<ex>g</ex>ht as lyne</line>
+                        <line n="l.6">With humble herte / to live to thy plesaunce</line>
+                        <line n="l.7">And blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> / or I this liff shal ffyne</line>
+                        <line n="l.8">Graunt of thy mercy / shrift hosil repenta<ex>u</ex>nce</line>
+                    </zone>
+                    <zone n="EETS.T.61">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Suffre me to haue / savour nor swetnesse</line>
+                        <line n="l.2">but in thy name / that callid is <hi rend="underline_red">ih<ex>es</ex>u</hi></line>
+                        <line n="l.3">Al foreyn thyng / to me make bittirnesse</line>
+                        <line n="l.4">Sauf oonly <hi rend="underline_red">ih<ex>es</ex>u</hi> / moost sovereyn of vertu</line>
+                        <line n="l.5">to my professio<ex>u</ex>n / accordyng / and moost dew</line>
+                        <line n="l.6">Evere to be preentyd / in my remembra<ex>u</ex>nce</line>
+                        <line n="l.7">At myn Eende / to graunte me this issu</line>
+                        <line n="l.8">To for my deth / shrift hosil repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.62">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>No lord but <hi rend="underline_red">ih<ex>es</ex>u</hi> / moost merciable <ex>&amp;</ex> benygne</line>
+                        <line n="l.2">Which of mercy / took our humanyte</line>
+                        <line n="l.3">And of love / to shewe a sovereyn signe</line>
+                        <line n="l.4">Suffredist passio<ex>u</ex>n vpon the Roode tre</line>
+                        <line n="l.5">Oonly to fraunchise / our mortalite</line>
+                        <line n="l.6">Which stood in daunger of Sathanys encou<ex>m</ex>bra<ex>u</ex>nce</line>
+                        <line n="l.7">Or I passe hens / <hi rend="underline_red">ih<ex>es</ex>u</hi> graunt vnto me</line>
+                        <line n="l.8">To for my deth / shrift hosil repentaunce</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 57 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f57v.jpg"/>
+                    <zone n="EETS.T.63">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>I am excited / and meevyd of nature</line>
+                        <line n="l.2">This name of <hi rend="underlne_red">ih<ex>es</ex>u</hi> / sovereynly to preyse</line>
+                        <line n="l.3">Name comendid / moost hi<ex>g</ex>hly in scripture</line>
+                        <line n="l.4">Which name hath poweer / dede men to reise</line>
+                        <line n="l.5">To liff Eternal / whos vertu doth so peyse</line>
+                        <line n="l.6">A geyn my synnes / weyed in ballaunce<!-- this would be a good example of why the suspension should be u as opposed to n in a lot of cases--></line>
+                        <line n="l.7">that grace and mercy / shal so cou<ex>n</ex>tirpeyse</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.64">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Lat me nat reste nor haue no quyete</line>
+                        <line n="l.2">Occupye my soule / with spiritual travayl</line>
+                        <line n="l.3">to synge and seyn / o mercy <hi rend="underline_red">ih<ex>es</ex>u</hi> swete</line>
+                        <line n="l.4">My proteccio<ex>u</ex>n / geyn feendys in batayl</line>
+                        <line n="l.5">Sette a syde / al othir apparayl</line>
+                        <line n="l.6">And in <hi rend="underline_red">ih<ex>es</ex>u</hi> / put hool myn affiaunce</line>
+                        <line n="l.7">tresour of tresour<ex>i</ex>s / that me moost avayl</line>
+                        <line n="l.8">Graunt or I deye / shift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.65">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Myn feith / myn hoope / to the <hi rend="underline_red">ih<ex>es</ex>u</hi> doth calle</line>
+                        <line n="l.2">Which glorious name / shal nevir out of mynde</line>
+                        <line n="l.3">I shal the seeke / what hap that evyr be falle</line>
+                        <line n="l.4">by grace and mercy / in trust I shal the fynde</line>
+                        <line n="l.5">And but I did / trewly I were vnkynde</line>
+                        <line n="l.6">which for my sake / wer percyd with a launce</line>
+                        <line n="l.7">vnto the herte / <hi rend="underline_red">ih<ex>es</ex>u</hi> leff nat behynde</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.58" n="folio">
+                <surface n="recto">
+                    <label>Folio 58 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f58r.jpg"/>
+                    <zone n="EETS.T.66">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Ther is no god / but thu <hi rend="underline_red">ih<ex>es</ex>u</hi> allone</line>
+                        <line n="l.2">Sovereynest / and eek moost merciful</line>
+                        <line n="l.3">ffayrest of fair / erly late and soone</line>
+                        <line n="l.4">Stable and moost strong / pitous and ri<ex>g</ex>htful</line>
+                        <line n="l.5">Refourmyng / synners<!--could be a e suspension--> / that been in vertu dul</line>
+                        <line n="l.6">Dawntyng the proude / meeknesse to enha<ex>u</ex>nce</line>
+                        <line n="l.7">thy toune of mercy / is evir I liche<ex>e</ex> ful</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.67">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Suffre of mercy / I may to the speke</line>
+                        <line n="l.2">O blissed <hi rend="underline_red">ih<ex>es</ex>u</hi> / and goodly do aduerte</line>
+                        <line n="l.3">Who shal yeve me leiser / out to breke</line>
+                        <line n="l.4">that thu <hi rend="underline_red">ih<ex>es</ex>u</hi> / mayst entren in myn herte</line>
+                        <line n="l.5">ther tabyde / moor neer than my sherte</line>
+                        <line n="l.6">With <hi rend="underline_red">Aureat</hi> lettris / grave ther in subst<del><unclear>er</unclear></del><add>a</add>unce</line>
+                        <line n="l.7">Provide for me / and lat it nat asterte<note place="bottom" anchored="true" n="informational">It's tempting to read this as "afterte," but if one looks closely at the crosses of the "a" and "t" they terminate just before the ascender of the second glyph. When compared with the "f of "suffre" in the first line of the stanza and the "st" ligature throughout it seems this is a deliberate decision by the scribe. This further reinforces it's "asterte," as expected.</note></line>
+                        <line n="l.8">Graunt or I deye shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.68">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Sey to my soule <hi rend="underline_red">ih<ex>es</ex>u</hi> / thu art myn helthe</line>
+                        <line n="l.2">heeryng this wys / aftir I shal purswe</line>
+                        <line n="l.3">Skore that place / from al goostly felthe</line>
+                        <line n="l.4">And vice alle fro thens do remwe</line>
+                        <line n="l.5">Thyn hooly goost / close in that litil mwe</line>
+                        <line n="l.6">parte nat li<ex>g</ex>htly / mak such chevisa<ex>u</ex>nce</line>
+                        <line n="l.7">tencrese in vert / and vices to schewe</line>
+                        <line n="l.8">And or I deye / shrift hosyl repenta<ex>u</ex>nce</line>
+                    </zone>
+                    <zone n="EETS.T.N.68">
+                        <line n="l.1"><hi rend="red">Dic a<ex>n</ex>i<ex>m</ex>e mee salus</hi></line>
+                        <line n="l.2"><hi rend="red">tau ego sum</hi></line><!--add note about it being in other manuscripts-->
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 58 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f58v.jpg"/>
+                    <zone n="EETS.T.N.69">
+                        <line n="l.1"><hi rend="red">Illust<ex>ra</ex> facie<ex>m</ex> tua<ex>m</ex></hi><!--add note about it being in other manuscripts--></line>
+                    </zone>
+                    <zone n="EETS.T.69">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Shew glad thy face / and thy li<ex>g</ex>ht do<ex>u</ex>n sheede</line>
+                        <line n="l.2">the merciful li<ex>g</ex>ht / of thyn eyen tweyne</line>
+                        <line n="l.3">On me thy servaunt / which hath so mooche neede</line>
+                        <line n="l.4">for his synnes / to weepen and compleyne</line>
+                        <line n="l.5">And blissed <hi rend="underline_red">ih<ex>es</ex>u / of mercy nat disdeyne</hi></line>
+                        <line n="l.6">thy gracious shourys / lat reyne in habunda<ex>u</ex>nce</line>
+                        <line n="l.7">Vpon myn herte / tadewen every veyne</line>
+                        <line n="l.8">And or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.N.70">
+                        <line n="l.1"><hi rend="red">Saluu<ex>m</ex> me fac i<ex>n</ex></hi></line> 
+                        <line n="l.2"><hi rend="red">mi<ex>sercordia</ex> tua d<ex>omi</ex>ne</hi></line>
+                    </zone>
+                    <zone n="EETS.T.70">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Save me thy serva<es>u</es>nt / o lord in thy mercy</line>
+                        <line n="l.2">ffor lak of which / lat me nat be confoundid</line>
+                        <line n="l.3">for in the <hi rend="underline_red">ih<ex>es</ex>u</hi> / myn hoope stant fynally</line>
+                        <line n="l.4">And al my trust / in the ih<ex>es</ex>u is groundid</line>
+                        <line n="l.5">ffor my synnes / thynk <hi rend="underline_red">ih<ex>es</ex>u</hi> thu were woundid</line>
+                        <line n="l.6">Nakid on the Roode / by mortal gret penau<ex>n</ex>ce</line>
+                        <line n="l.7">by which the poweer of sathan was confou<ex>n</ex>did</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.N.71">
+                        <line n="l.1"><hi rend="red">Tu es refugiu<ex>m</ex></hi></line>
+                        <line n="l.2"><hi rend="red">reu<ex>m</ex> a t<ex>ri</ex>bulac<ex>i</ex>o<ex>n</ex>e</hi></line>
+                    </zone>
+                    <zone n="EETS.T.71">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Thu art <hi rend="underline_red">ih<ex>es</ex>u</hi> / my socour and refuge</line>
+                        <line n="l.2">geyn every tempest / and tribulacio<ex>u</ex>n</line>
+                        <line n="l.3">that worldly wawes / with ther mortal deluge</line>
+                        <line n="l.4">Ne drowne me nat / in ther dreedful dongo<ex>u</ex>n</line>
+                        <line n="l.5">wher karibdys / hath domynacio<ex>u</ex>n</line>
+                        <line n="l.6">And Circes syngeth / songis of disturba<ex>u</ex>nce</line>
+                        <line n="l.7">to passe that daunger / be my proteccio<ex>u</ex>n</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.59">
+                <surface n="recto">
+                    <label>Folio 59 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f59r.jpg"/>
+                    <zone n="EETS.T.72">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Who shal give me / lych to myn entent</line>
+                        <line n="l.2">that thu <hi rend="underline_red">ih<ex>es</ex>u</hi> / maist make thyn herbergage</line>
+                        <line n="l.3">by receyvyng / of thooly sacrament</line>
+                        <line n="l.4">In to myn herte / which is to myn Oold age</line>
+                        <line n="l.5">Repast Eternal / geyn al foreyn damage</line>
+                        <line n="l.6">dewly receyved / with devout observaunce</line>
+                        <line n="l.7">Celestial guerdo<ex>u</ex>n / eende of my pilgrymage</line>
+                        <line n="l.8">Is shrift hosyl / and hertly repenta<ex>u</ex>nce</line>
+                    </zone>
+                    <zone n="EETS.T.N.72">
+                        <line n="l.1"><hi rend="red">Quis dabit m<ex>ichi</ex></hi></line>
+                        <line n="l.2"><hi rend="red">venias in cor meu<ex>m</ex></hi></line>
+                    </zone>
+                    <zone n="EETS.T.73">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>I feele myn herte / brotel / and Ruynous</line>
+                        <line n="l.2">Nat purefied / <hi rend="underline_red">ih<ex>es</ex>u</hi> ther in to reste</line>
+                        <line n="l.3">but as a carpenteer / comyth to a broken hous</line>
+                        <line n="l.4">Or an artificeer / reparith a Riven cheste</line>
+                        <line n="l.5">So thu <hi rend="underline_red">ih<ex>es</ex>u</hi> / of craffty men the beste</line>
+                        <line n="l.6">Repare my thou<ex>g</ex>ht / broke with mysgoverna<ex>u</ex>nce</line>
+                        <line n="l.7">Visite my soule / myn herte of steel thu breste</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.74">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>With wepyng eyen / and a contryt cheer</line>
+                        <line n="l.2">Accepte me <hi rend="underline_red">ih<ex>es</ex>u</hi> / and my compleynt conceyve</line>
+                        <line n="l.3">As moost vnwurthy / tapeere at thyn awteer</line>
+                        <line n="l.4">Which<ex>e</ex>in my silf / no vertu apparceyve</line>
+                        <line n="l.5">but yif thy mercy by grace me receyve</line>
+                        <line n="l.6">by synful lyvyng brou<ex>g</ex>ht vnto vttra<ex>u</ex>nce</line>
+                        <line n="l.7">Preye with good hoope / which may me nat deceyve</line>
+                        <line n="l.8">Graunt or I deye / shrift hosyl repentaunce</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 59 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f59v.jpg"/>
+                    <zone n="EETS.T.75">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Cryeng to the / that deydest on the Rood</line>
+                        <line n="l.2">which with thy blood / wer steyned <ex>&amp;</ex> maad Reed</line>
+                        <line n="l.3">And on Sheerthursday / gaf vs to our food</line>
+                        <line n="l.4">Thy blissed boody / <hi rend="underline_red">ih<ex>es</ex>u</hi> in foorme of breed</line>
+                        <line n="l.5">to me moost synful / graunt or I be deed</line>
+                        <line n="l.6">To cleyme by mercy / for myn enheritaunce</line>
+                        <line n="l.7">that with sharp thorn / wer crownyd on thy<ex>n</ex> heed</line>
+                        <line n="l.8">Or I passe hens / shryfft hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.76">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>And Oon requeste / in<note place="bottom" anchored="true" n="informational">There is a mark over the second minim which may be a tittle or an otiose mark.</note> especial</line>
+                        <line n="l.2">Graunt me <hi rend="underline_red">ih<ex>es</ex>u</hi> / whyl I am heer alyve</line>
+                        <line n="l.3">Evir haue enprentyd / in my memorial</line>
+                        <line n="l.4">the Remembraunce / of thy woundys five</line>
+                        <line n="l.5">Naylles with the spere / that did thyn h<ex>er</ex>te Ryve</line>
+                        <line n="l.6">Thy crown of thorn / which was no smal pena<ex>u</ex>nce</line>
+                        <line n="l.7">language and tonge / me dewly for to shryve</line>
+                        <line n="l.8">the hooly vnccio<ex>u</ex>n / shrift hosyl repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.77">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Alle the tokyns / of thy passio<ex>u</ex>n</line>
+                        <line n="l.2">I pray the <hi rend="underline_red">ih<ex>es</ex>u</hi> / grave hem in my memorye</line>
+                        <line n="l.3">dewly marke / myd Centre of my reso<ex>u</ex>n</line>
+                        <line n="l.4">On Caluary / thy tryvmphal victorye</line>
+                        <line n="l.5">Man to restoore / to thyn eternal glorye</line>
+                        <line n="l.6">by mediacio<ex>u</ex>n / of thy meeke suffraunce</line>
+                        <line n="l.7">out of this exil vnswre and transitorye</line>
+                        <line n="l.8">And whan I passe / shrifft holyl<note place="bottom" anchored="true" n="informational">The third glyph of this word should be "s" so this is a scribal error. It may also suggest a misreading of the exemplar as "hosyl" appears repeatedly throughout the witness.</note> repentaunce</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.60" n="folio">
+                <surface n="recto">
+                    <label>Folio 60 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f60r.jpg"/>
+                    <zone n="EETS.T.78">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Of thy mercy requeryng the to myne</line>
+                        <line n="l.2">of my mynde / the myd poynt / moost profo<ex>u</ex>nde</line>
+                        <line n="l.3">this woord <hi rend="underline_red">ih<ex>es</ex>u</hi> / my fyve wittys tenlvmyne</line>
+                        <line n="l.4">In lengthe and breede / lyk a large wounde<note place="bottom" anchored="true" n="informational">There is what appears to be a supension on terminal "e," but a suspension does not fit with the rhyme scheme of the stanza.  Therefore, it's an otiose mark.</note></line>
+                        <line n="l.5">Al ydel thouhtis / tavoyde hem and confounde</line>
+                        <line n="l.6">thy cros thy scorgis / thy garneme<ex>n</ex>t cast at cha<ex>u</ex>nce</line>
+                        <line n="l.7">The Rop<ex>e</ex> the piler to which thu wer bounde</line>
+                        <line n="l.8">Graunt or I deye / Shrift hosil repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.79">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Of this prayeer / meekly I make an eende</line>
+                        <line n="l.2">vndir thy merciful / supportacio<ex>u</ex>n</line>
+                        <line n="l.3">O gracious <hi rend="underline_red">ih<ex>es</ex>u</hi> / gra<ex>u</ex>nt wher evir I weende</line>
+                        <line n="l.4">to haue memory / vpon thy passio<ex>u</ex>n</line>
+                        <line n="l.5">Testimonial / of my Redempcio<ex>u</ex>n</line>
+                        <line n="l.6">In my testament / set for allegaunce</line>
+                        <line n="l.7">This clause last / of my peticio<ex>u</ex>n</line>
+                        <line n="l.8">Graunt or I deye / shrift hosil repentaunce</line>
+                    </zone>
+                    <zone n="EETS.T.80">
+                        <line n="l.1"><hi rend="capital_gold">D</hi>uryng<note place="bottom" anchored="true" n="informational">Unlike the initial beginning parts, three, and five this is only a single line initial. That said, it is illuminated and decorated similarly to the initials beginning the other sections. It may be the lack of spacing for the initial underneath prevented this from being a two-line initial.</note> the tyme of this seso<ex>u</ex>n <hi rend="underline_red">ver</hi></line>
+                        <line n="l.2">I meene the seso<ex>u</ex>n of my yeerys greene</line>
+                        <line n="l.3">Gynnyng from childhood / strecchith<ex>e</ex> vp so fer</line>
+                        <line n="l.4">to ye<note place="bottom" anchored="true" n="informational">Other witnesses as well the EETS edition have "the" here, and my suspicion is that the exemplar the scribe was copying from used thorn rather than "th." There is nothing to indicate a difference between the initial glyph of this word and glyphs rendered as "y" elsewhere (as in the next word in this line). Since this manuscript does not typically use thorn, I have chosen to render this as "ye."</note> yeerys / accountyd ful ffifteene</line>
+                        <line n="l.5">bexperience / as it was weel seene</line>
+                        <line n="l.6">The gerissh<ex>e</ex> seso<ex>u</ex>n / straunge of condicio<ex>u</ex>ns</line>
+                        <line n="l.7">dispoosyd to many vnbridlyd passiouns</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 60 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f60v.jpg"/>
+                    <zone n="EETS.T.81">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Voyd of reso<ex>u</ex>n / yove to wilfulnesse</line>
+                        <line n="l.2">ffroward to vertu / of thrift gaf litil heede</line>
+                        <line n="l.3">loth ot lerne / lovid no besynesse</line>
+                        <line n="l.4">sauf pley or merthe / stra<ex>u</ex>nge to spelle or reede</line>
+                        <line n="l.5">ffolwyng al appetites / longyng to childheede</line>
+                        <line n="l.6">lihtly tournyng wylde / and seelde sade</line>
+                        <line n="l.7">weepyng for nou<ex>g</ex>ht / and anoon afftir glad</line>
+                    </zone>
+                    <zone n="EETS.T.82">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>ffor litil wroth / to scryve with my felawe</line>
+                        <line n="l.2">as my passio<ex>u</ex>ns / did my bridil leede</line>
+                        <line n="l.3">Of the yeerde somtyme / I stood in awe</line>
+                        <line n="l.4">to be scooryd / that was al my dreede</line>
+                        <line n="l.5">loth toward scole / lost my tyme in deede</line>
+                        <line n="l.6">lik a yong colt / that ran with owte brydil</line>
+                        <line n="l.7">Made my freendys / ther good to spende in ydil</line>
+                    </zone>
+                    <zone n="EETS.T.83">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>I hadde in custom / to come to scole late</line>
+                        <line n="l.2">Nat for to lerne / but for a contenaunce</line>
+                        <line n="l.3">with my felawys / reedy to debate</line>
+                        <line n="l.4">to Iangle and and Iape / was set al my plesaunce</line>
+                        <line n="l.5">Wherof rebukyd / this was my chevisaunce</line>
+                        <line n="l.6">to forge a lesyng / and therupon to muse</line>
+                        <line n="l.7">whan I trespasyd / my silven to excuse</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.61" n="folio">
+                <surface n="recto">
+                    <label>Folio 61 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f61r.jpg"/>
+                    <zone n="EETS.T.84">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>To my bettre / did no reverence</line>
+                        <line n="l.2">Of my soveryns / gaf no fors at al</line>
+                        <line n="l.3">Wex obstynat / by inobedience</line>
+                        <line n="l.4">Ran in to gardyns / applys ther I stal</line>
+                        <line n="l.5">To gadre frutys sparyd hegg nor wal</line>
+                        <line n="l.6">to plukke grapys in othir mennys vynes</line>
+                        <line n="l.7">Was moor reedy / than for to seyn matynes</line>
+                    </zone>
+                    <zone n="EETS.T.85">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>My lust was al / to storne folk and iape</line>
+                        <line n="l.2">shrewde tornys / evir among to vse</line>
+                        <line n="l.3">to skoffe and mowe / lyk a wanto<ex>u</ex>n ape</line>
+                        <line n="l.4">whan I did evil / othre I did accuse</line>
+                        <line n="l.5">My wittys five / in wast I did abuse</line>
+                        <line n="l.6">Rediere chirstoonys / for to telle</line>
+                        <line n="l.7">Than gon to chirche / or heere the sacry belle</line>
+                    </zone>
+                    <zone n="EETS.T.86">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Loth to ryse / lother to bedde at eve</line>
+                        <line n="l.2">with vnwassh handys / reedy to dyneer</line>
+                        <line n="l.3">My <hi rend="underline_red">pater nost<ex>er</ex></hi> / my <hi rend="underline_red">Crede</hi> / or my beleeve</line>
+                        <line n="l.4">Cast at the Cok / loo this was my maneer</line>
+                        <line n="l.5">wavid with ech wynd / as doth a reed speer</line>
+                        <line n="l.6">snybbyd of my frendys / such tech<ex>e</ex>chys fortame<ex>n</ex>de</line>
+                        <line n="l.7">Made deff ere / lyst nat / to them attende</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 61 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f61v.jpg"/>
+                    <zone n="EETS.T.87">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>A child resembylng / which was nat lyk to thryve</line>
+                        <line n="l.2">ffroward to god / reklees in his servise</line>
+                        <line n="l.3">loth to correccio<ex>u</ex>n / slou<ex>g</ex>h my sylf to shryve</line>
+                        <line n="l.4">Al good thewys / reedy to despise</line>
+                        <line n="l.5">Cheef bellewedir / of feyned trwaundise</line>
+                        <line n="l.6">this is to meene / my silf I cowde feyne</line>
+                        <line n="l.7">Syk lyk a t<ex>r</ex><!--check this - get second opinion-->waunt / felte no maneer peyne</line>
+                    </zone>
+                    <zone n="EETS.T.88">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>My poort my pas / my foot alwey vnstable</line>
+                        <line n="l.2">my look myn eyen / vnswre and vagabounde</line>
+                        <line n="l.3">In al my werkys / sodeynly chaungable</line>
+                        <line n="l.4">To al good thewys / contrary I was founde</line>
+                        <line n="l.5">Now ovir sad / now moornyng / now iocounde</line>
+                        <line n="l.6">Wilful rekles / mad stertyng as an hare</line>
+                        <line n="l.7">To folwe my lust / for no man wold I spare</line>
+                    </zone>
+                    <zone n="EETS.T.89">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Entryng this tyme / in to Religio<ex>u</ex>n</line>
+                        <line n="l.2">Vnto the plou<ex>g</ex>h / I putte forth myn hoond</line>
+                        <line n="l.3">A yeer compleet / made my professio<ex>u</ex>n</line>
+                        <line n="l.4">Considryng litil charg / og thilke boond</line>
+                        <line n="l.5">Of perfeccio<ex>u</ex>n / ful good exau<ex>m</ex>ple I foond</line>
+                        <line n="l.6">the techyng good / in me was al the lak</line>
+                        <line n="l.7">With lootys wyff / I lookyd ofte bak</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.62" n="folio">
+                <surface n="recto">
+                    <label>Folio 62 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f62r.jpg"/>
+                    <zone n="EETS.T.90">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Tau<ex>g</ex>ht of my maistris / by vertuous disciplyne</line>
+                        <line n="l.2">My look restreyne / and keepe clos my si<ex>g</ex>ht</line>
+                        <line n="l.3">Of <hi rend="underline_red">blyssed Benyt</hi> / to folwe the doctryne</line>
+                        <line n="l.4">And ber me lowly / to euery maneer wi<ex>g</ex>ht</line>
+                        <line n="l.5">by the advertence / of myn inward si<ex>g</ex>ht</line>
+                        <line n="l.6">Cast to godward / of hool affeccio<ex>u</ex>n</line>
+                        <line n="l.7">To folwe themprises / of my professio<ex>u</ex>n</line>
+                    </zone>
+                    <zone n="EETS.T.91">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>His hooly rewle / was vnto me rad</line>
+                        <line n="l.2">And expowndyd / in ful notable wise</line>
+                        <line n="l.3">by vertuous men / Religious and sad</line>
+                        <line n="l.4">fful weel expert / discreet prudent and wise</line>
+                        <line n="l.5">And observauncys / of many goostly emprise</line>
+                        <line n="l.6">i herd al week / but touchyng to the deede</line>
+                        <line n="l.7">Of that they tau<ex>g</ex>hte / I took but litil heede</line>
+                    </zone>
+                    <zone n="EETS.T.92">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Of religio<ex>u</ex>n / I weryd a blak habite</line>
+                        <line n="l.2">oonly outward / as by apparence</line>
+                        <line n="l.3">to folwe that charge / savouryd but ful lite</line>
+                        <line n="l.4">Sauf by a maneer countirfet pretence</line>
+                        <line n="l.5">but in effect ther was noon existence</line>
+                        <line n="l.6">lyk the ymage / of <hi rend="underline_red">Pygmalioon</hi></line>
+                        <line n="l.7">shewyd liffly / and was nat but of stoon</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 62 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f62v.jpg"/>
+                    <zone n="EETS.T.93">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Vpon the laddere / with stavys thryves thre</line>
+                        <line n="l.2">The nyne degrees / of vertuous meeknesse</line>
+                        <line n="l.3">Callyd in the rewle / grees of hvmylite</line>
+                        <line n="l.4">Wheron tascende / my feet me lyst nat dresse</line>
+                        <line n="l.5">but by a maneer / feyned fals hu<ex>m</ex>blesse</line>
+                        <line n="l.6">So covertly / whan folkys wer present</line>
+                        <line n="l.7">Oon to shewe outward / another in my<ex>n</ex> entent</line>
+                    </zone>
+                    <zone n="EETS.T.94">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>ffirst wher as I forsook myn owne wil</line>
+                        <line n="l.2">Shett with a lok of Obedyence</line>
+                        <line n="l.3">tobeye my sovereyns / as it was ri<ex>g</ex>ht and skil</line>
+                        <line n="l.4">to folwe the scoole of parfi<ex>g</ex>ht pacience</line>
+                        <line n="l.5">to my Eynes / doon worship and reverence</line>
+                        <line n="l.6">ffolwyng the Revers / took al a nothir weye</line>
+                        <line n="l.7">What I was bodyn I cowde wel disobeye</line>
+                    </zone>
+                    <zone n="EETS.T.95">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>With tonge at large / and brotil conscience</line>
+                        <line n="l.2">fful of woordys / disordynat of language</line>
+                        <line n="l.3">Rekles to keepe my lippys in silence</line>
+                        <line n="l.4">Mouth eye and eerys / tooke ther avauntage</line>
+                        <line n="l.5">To haue ther cours / vnbrydlid by outrage</line>
+                        <line n="l.6">Out of Reynes / of attemperaunce</line>
+                        <line n="l.7">To Sensualite / gaff al the governaunce</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.63" n="folio">
+                <surface n="recto">
+                    <label>Folio 63 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f63r.jpg"/>
+                    <zone n="EETS.T.96">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Wacch<ex>e</ex> out of tyme Ryot and dronkenesse</line>
+                        <line n="l.2">Vnfructuous talkyng / Imtemperat diete</line>
+                        <line n="l.3">to veyn fablys / I did myn eerys dresse</line>
+                        <line n="l.4">ffals detraccio<ex>u</ex>n / among was to me swete</line>
+                        <line n="l.5">to talke of vertu me thouht it was not mete</line>
+                        <line n="l.6">To my corage / nor my compleccio<ex>u</ex>n</line>
+                        <line n="l.7">Nor nouht that sownyd / toward perfeccio<ex>u</ex>n</line>
+                    </zone>
+                    <zone n="EETS.T.97">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Oon with the firste to take my dispoort</line>
+                        <line n="l.2">last that aroos / to come to the queer</line>
+                        <line n="l.3">In contemplacio<ex>u</ex>n / I fond but smal co<ex>u</ex>nfoort</line>
+                        <line n="l.4">Hooly historyes / did to me no cheer</line>
+                        <line n="l.5">I savouryd mor / in good wyn that was cleer</line>
+                        <line n="l.6">And every honr<note place="bottom" anchored="true" n="informational">The third glyph looks more like an "n," but it's likely that this is meant to be "hour" rather than "honr"</note> / my passage for to dresse</line>
+                        <line n="l.7">As I seide erst / to Ryot or excesse</line>
+                    </zone>
+                    <zone n="EETS.T.98">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Kowde grucch<ex>e</ex> / and fond no cause why</line>
+                        <line n="l.2">Causelees ofte / compleyned on my fare</line>
+                        <line n="l.3">Geyn my correccio<ex>u</ex>ns / answeryd frowardly</line>
+                        <line n="l.4">Withoute Reverence / lyst noman to spare</line>
+                        <line n="l.5">Of al vertu / and pacience / I was bare</line>
+                        <line n="l.6">of Reklees youthe / lyst noon heed to take</line>
+                        <line n="l.7">What crist ih<ex>es</ex>u suffryd for my sake</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 63 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f63v.jpg"/>
+                    <zone n="EETS.T.99">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Which now remembryng / in my latter age</line>
+                        <line n="l.2">tyme of my childhood / as I reherse shal</line>
+                        <line n="l.3">with<ex>e</ex>yne ffifteene / holdyng my passage</line>
+                        <line n="l.4">Mid<note place="bottom" anchored="true" n="informational">The first glyph should be a magiscule "M," but it appears to be very oddly constructed here.</note> of a cloistre / depict vpon a wal</line>
+                        <line n="l.5">I sau<ex>g</ex>h <hi rend="underline_red">a Crucifix</hi> / whos woundys were nat smal</line>
+                        <line n="l.6">With this woord <hi rend="underline_red">vide</hi> / writen ther besyde</line>
+                        <line n="l.7">behold my meeknesse / o child / and lef thy pride</line>
+                    </zone>
+                    <zone n="EETS.T.100">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>The which woord / whan I did vndirstonde</line>
+                        <line n="l.2">In my last Age / takyng the sentence</line>
+                        <line n="l.3">theron Remembryng / my penne I took in honde</line>
+                        <line n="l.4">gan to write / with humble reverence</line>
+                        <line n="l.5">On this woord <hi rend="underline_red">vide</hi> / of humble dilligence</line>
+                        <line n="l.6">In Remembraunce / of cristis passio<ex>u</ex>n</line>
+                        <line n="l.7">this litil dite / this compilacio<ex>u</ex>n</line>
+                    </zone>
+                    <zone n="EETS.T.101">
+                        <line n="l.1"><hi rend="capital_2_gold"><!--vegatative decoration is consistent.  Compare with architectural version.  Make a note?-->B</hi>E hoold o man left vp thyn eye and see</line>
+                        <line n="l.2">What mortal peyne / I <del>t</del><add>s</add>uffryd<note place="bottom" anchored="true" n="infomrational">The scribe originally started the word with a "t, then corrected by overwriting with "s." This is clear by the hook on the lower end of the minim. Thus what appears to be the crossbar of an "f" is actually the crossbar of the overwritten "t."</note> for thy trespace</line>
+                        <line n="l.3">with pitous voys / I crye and sey to the</line>
+                        <line n="l.4">behoold my wo<ex>u</ex>ndys / behold my bloody face</line>
+                        <line n="l.5">Behold the Rebukys / that do me so manace</line>
+                        <line n="l.6">behold myn emnyes / that do me so despise</line>
+                        <line n="l.7">And how that I / to refourme the to grace</line>
+                        <line n="l.8">Was like a lamb / offryd in sacrifise</line>
+                    </zone>
+                    <zone n="catchword">
+                        <line n="l.1">Be hold<note place="bottom" anchored="true" n="informational">The catchword can be seen on the lower right portion of the page, but it has been half cut by later trimming of the manuscript.</note></line>
+                    </zone>
+                </surface>                
+            </surfaceGrp>
+        </surfaceGrp>
+        <!--gathered in eight-->
+        <surfaceGrp xml:id="g.8" n="gathering">
+            <surfaceGrp xml:id="f.64" n="folio">
+                <surface n="recto">
+                    <label>Folio 64 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f64r.jpg"/>
+                    <zone n="EETS.T.102">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Behold the paynemys / of whom I was take</line>
+                        <line n="l.2">behold the cordys / w<ex>ith</ex> which that I was bounde</line>
+                        <line n="l.3">Behold the Armwrys / which made myn herte quake</line>
+                        <line n="l.4">behold the gardyn / in which that I was founde</line>
+                        <line n="l.5">Behold how <hi rend="underline_red">Iudas</hi> took <hi rend="underline_red">thrytty</hi> penyes rounde</line>
+                        <line n="l.6">behoold his treso<ex>u</ex>n / behold his covetise</line>
+                        <line n="l.7">Behold how I / with many a mortal wounde</line>
+                        <line n="l.8">Was lyk a lamb / offryd in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.103">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>See my disciple / which that hath me sold</line>
+                        <line n="l.2">And see his feyned / fals salutacio<ex>u</ex>n</line>
+                        <line n="l.3">And see the mony / which that he hath told</line>
+                        <line n="l.4">And see his kissyng / of fals decepcio<ex>u</ex>n</line>
+                        <line n="l.5">behold laso / the compassyd fals treso<ex>u</ex>n</line>
+                        <line n="l.6">take as a theef / with lanternys in ther guyse</line>
+                        <line n="l.7">And aftirward / for mannys redempcio<ex>u</ex>n</line>
+                        <line n="l.8">Was like a lamb / offryd in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.104">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Behold to <hi rend="underline_red">Caiphas</hi> / how I was presentyd</line>
+                        <line n="l.2">behold how <hi rend="underline_red">Pilat</hi> / list geve me no respyt</line>
+                        <line n="l.3">behold how bisshopis / wer to my deth assentyd</line>
+                        <line n="l.4">And see how <hi rend="underline_red">herowd</hi> / had me in despit</line>
+                        <line n="l.5">And lik a fool / how I was clad in whit</line>
+                        <line n="l.6">Drawen as a felo<ex>u</ex>n / in moost cruel wyse</line>
+                        <line n="l.7">And last of alle / I aftir ther delit</line>
+                        <line n="l.8">Was like a lamb / offryd in sacrifise</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 64 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f64v.jpg"/>
+                    <zone n="EETS.T.105">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Behold the mynystrys / which had me in keepyng</line>
+                        <line n="l.2">behold the piler / and the roopis stronge</line>
+                        <line n="l.3">wher I was bounde / my sides do<ex>u</ex>n bleedyng</line>
+                        <line n="l.4">Moost felly beete / with ther scoorgis longe</line>
+                        <line n="l.5">behold the batail / that I did vndirfonge</line>
+                        <line n="l.6">the bront abydyng / of ther mortal emprise</line>
+                        <line n="l.7">Thoru<ex>g</ex>h ther accusyng / and ther scla<ex>u</ex>ndrys wronge</line>
+                        <line n="l.8">Was like a lamb / offryd in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.106">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Behold and see / the hatful wrecchidnesse</line>
+                        <line n="l.2">Put ageyn me / to my confusio<ex>u</ex>n</line>
+                        <line n="l.3">Myn eyen hyd / and blyndid with derknesse</line>
+                        <line n="l.4">bete and Eek bobbid / by fals illusio<ex>u</ex>n</line>
+                        <line n="l.5">Salwed in scorn / by ther fals knelyng do<ex>u</ex>n</line>
+                        <line n="l.6">Behold al this / and see the mortal guyse</line>
+                        <line n="l.7">how I oonly / for mannys savacio<ex>u</ex>n</line>
+                        <line n="l.8">Was like a manb / offrid in Sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.107">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>See the witnessis / by whom I was deceyved</line>
+                        <line n="l.2">behold the Iugis / that gaf my Iugement</line>
+                        <line n="l.3">Behold the cros / that was for me devised</line>
+                        <line n="l.4">behold my boody / with betyng al to rent</line>
+                        <line n="l.5">Behold the peeple / which of fals entent</line>
+                        <line n="l.6">Causelees / did ageyns me rise</line>
+                        <line n="l.7">Which like a lamb/ of malys Innocent</line>
+                        <line n="l.8">was for mankynde / offrid in sacrifise</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.65" n="folio">
+                <surface n="recto">
+                    <label>Folio 65 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f65r.jpg"/>
+                    <zone n="EETS.T.108">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Behold the women / that folwyd me aferre</line>
+                        <line n="l.2">that sore wepte / whan I thus was assailed</line>
+                        <line n="l.3">behold the Iewys / which by ther cruel werre</line>
+                        <line n="l.4">Han my body / vnto a cros I nayled</line>
+                        <line n="l.5">behold my tormentys / moost sharply apparailed</line>
+                        <line n="l.6">Attween too thevys / put to my</line>
+                        <line n="l.7">beholde how moche / my deth hath eek avayled</line>
+                        <line n="l.8">that was for man / offrid in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.109">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Behold the spere / moost sharply gro<ex>u</ex>nde <ex>&amp;</ex> whet</line>
+                        <line n="l.2">Myn herte woundid / vpon the ri<ex>g</ex>ht syde</line>
+                        <line n="l.3">behold the reed speer / galle and eysel fett</line>
+                        <line n="l.4">Behold the scornyngis / which that I did abyde</line>
+                        <line n="l.5">And my five woundys / that wer<ex>e</ex> maad so wyde</line>
+                        <line n="l.6">Which noman lyst / of routhe to advertise</line>
+                        <line n="l.7">And thus I was / of meeknesse ageyn pryde</line>
+                        <line n="l.8">ffo mannys offence / offrid in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.110">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>See my disciplis / how they ha me forsake</line>
+                        <line n="l.2">And fro me fled / almoost everychon</line>
+                        <line n="l.3">See how theisleepte / and list nat with me wake</line>
+                        <line n="l.4">Of mortal dreed / they lefft me al allon</line>
+                        <line n="l.5">Except my moodir / and my cosyn seyn <hi rend="underline_red">Ioh<ex>n</ex>n</hi></line>
+                        <line n="l.6">My deth compleynyng / in moost doolful wise</line>
+                        <line n="l.7">See fro my cros / they wolde nevir gon</line>
+                        <line n="l.8">ffor mannys offence / whan I did sacrifise</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 65 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f65v.jpg"/>
+                    <zone n="EETs.T.111">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>See how I / was Iugid to the deth</line>
+                        <line n="l.2">See <hi rend="underline_red">Baraban</hi> / goon at his liberte</line>
+                        <line n="l.3">See with a speere / how <hi rend="underline_red">longius</hi> me sleth</line>
+                        <line n="l.4">behold too licour<ex>i</ex>s / distyllyng do<ex>u</ex>n fro me</line>
+                        <line n="l.5">See blood and watir / by merciful plente</line>
+                        <line n="l.6">Rayle by my sides / which au<ex>g</ex>hte I nou<ex>g</ex>h suffise</line>
+                        <line n="l.7">To man / whan I vpon the roode tre</line>
+                        <line n="l.8">was like a lamb / offrid in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.112">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Behold the kny<ex>g</ex>htis / which by ther froward cha<ex>u</ex>nce</line>
+                        <line n="l.2">Sat for my clothys / at the dees to pleye</line>
+                        <line n="l.3">behold my moodir / swownyng / for freva<ex>u</ex>nce</line>
+                        <line n="l.4">vpon the cros / whan she sau<ex>g</ex>h me deye</line>
+                        <line n="l.5">behold the sepulcre / in which my boonys leye</line>
+                        <line n="l.6">kept with strong wacch<ex>e</ex> / tyl I did arrise</line>
+                        <line n="l.7">Of helle gatys / see how I brake he keye</line>
+                        <line n="l.8">And gaf for man / my blood in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.113">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Ageyn thy <hi rend="underline_red">pryde</hi> / behold my gret meeknesse</line>
+                        <line n="l.2">Geyn thyn <hi rend="underline_red">envye</hi> / behold my charite</line>
+                        <line n="l.3">geyn thy <hi rend="underline_red">lechreye</hi> / behold my caast clennesse</line>
+                        <line n="l.4">Geyn thy <hi rend="underline_red">Covetise</hi> / behold my poverte</line>
+                        <line n="l.5">Attween too theevys / nayled to a tre</line>
+                        <line n="l.6">Railed with reed blood / they list me to disguyse</line>
+                        <line n="l.7">behold o man / al this I did for the</line>
+                        <line n="l.8">Meek as a lamb / offrid in sacrifise</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.66" n="folio">
+                <surface n="recto">
+                    <label>Folio 65 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f65r.jpg"/>
+                    <zone n="EETS.T.114">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Behold my love / and gif me thyn ageyn</line>
+                        <line n="l.2">behold I deyed / thy raunso<ex>u</ex>n for to paye</line>
+                        <line n="l.3">See how myn herte / is open brood and pleyn</line>
+                        <line n="l.4">thy goostly emnyes / oonly to affraye</line>
+                        <line n="l.5">An hardere batayl / noman my<ex>g</ex>ht assaye</line>
+                        <line n="l.6">Of alle tryvmphes / the grettest hi<ex>g</ex>h emprise</line>
+                        <line n="l.7">Wherfor o man / no lenger the dismaye</line>
+                        <line n="l.8">I gaff my blood / for the in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.115">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Turne hoom ageyn / thy synne do forsake</line>
+                        <line n="l.2">Behold and see / yif ou<ex>g</ex>ht be lefft behynde</line>
+                        <line n="l.3">How I to mercy / am redy the to take</line>
+                        <line n="l.4">Gyff me thyn herte / and be no mor vnkynde</line>
+                        <line n="l.5">thy love and myn / to gidre do hem bynde</line>
+                        <line n="l.6">And let hem nevir parte in no wyse</line>
+                        <line n="l.7">whan thu wer lost / thy soule ageyn to fynde</line>
+                        <line n="l.8">My blood I offryd / for the in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.116">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Enprente thes thynges / in thyn inward thou<ex>g</ex>ht</line>
+                        <line n="l.2">And grave hem deepe / in thy remembraunce</line>
+                        <line n="l.3">Thynk on hem weel / and forgete hem nou<ex>g</ex>ht</line>
+                        <line n="l.4">Al this I suffryd / to do the allegaunce</line>
+                        <line n="l.5">And with my seyntis / to yeve the suffisa<ex>u</ex>nce</line>
+                        <line n="l.6">In the heuenly court / for the I so devise</line>
+                        <line n="l.7">A place eternal / of al plesaunce</line>
+                        <line n="l.8">ffor which my blood / I gaff in sacrifise</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 65 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f65v.jpg"/>
+                    <zone n="EETS.T.117">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>And mor my mercy / to putten at a preeff</line>
+                        <line n="l.2">To euery synnere / that noon ne shal it mys</line>
+                        <line n="l.3">Remembre / how I gaf mercy to the theeff</line>
+                        <line n="l.4">Which had so long / trespacyd and doon a mys</line>
+                        <line n="l.5">went he nat freely / with me to paradys</line>
+                        <line n="l.6">Ha this in mynde / how it is my guyse</line>
+                        <line n="l.7">Alle repentaunt / to bryng hem to my blys</line>
+                        <line n="l.8">ffor whom my blood / I gaf in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.118">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Tarye no lenger / toward thyn heritage</line>
+                        <line n="l.2">Hast on thy weye / and be of ri<ex>g</ex>ht good cheer</line>
+                        <line n="l.3">Go ech day onward / on thy pilgrymage</line>
+                        <line n="l.4">thynk how short tyme / thu shalt abyde heer</line>
+                        <line n="l.5">Thy place is biggyd / a bove the sterrys cleer</line>
+                        <line n="l.6">noon erth<ex>e</ex>ly paleyes / my brothir moost enteer</line>
+                        <line n="l.7">Com on my freend / my brothir moost enteer</line>
+                        <line n="l.8">ffor the I offryd / my blood in sacrifise</line>
+                    </zone>
+                    <zone n="EETS.T.E">
+                        <line n="l.1">Ex<ex>plicit</ex> testame<ex>n</ex>t</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

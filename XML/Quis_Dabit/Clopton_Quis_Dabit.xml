@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Quis_Dabit">
+                <title type="full">
+                    <title type="main">
+                        <emph>Quis Dabit Meo Capiti Fontem Lacrimarum</emph>
+                        <!-- consider using Lamentation of our Lady Maria since there is no title here. -->
+                    </title>
+                    <title type="sub">Long Melford Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="free" xml:id="clopton">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> All rights to the images, however, are reserved as a
+                            courtesy to the Church of the Holy Trinity, Long Melford, which
+                            partially relies on donations for its upkeep. Please contact the editor
+                            with any requests. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Clopton_Chantry_Chapel">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="Clopton">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>Suffolk</region>
+                        <settlement>Long Melford</settlement>
+                        <institution>Church of the Holy Trinity</institution>
+                        <idno>Clopton Chantry Chapel</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem n="Center Beam">
+                            <p>Sections of the invocation to Christ from the Sarum litany between
+                                the litany of saints and the <emph rend="italic">te rogamus</emph>.
+                                The verses are laid out so that those on the southern side of the
+                                central beam, facing towards the high altar, contain the set of
+                                phrases describing how Christ should protect the speaker while those
+                                items that Christ should protect the speaker from appear on the
+                                northern side, facing away from the high altar.</p>
+                        </msItem>
+                        <msItem n="Crossbeams">
+                            <p>Four scrolls painted on each crossbeam on the altar-facing side of
+                                the roof, but only once (on the fourth crossbeam from the east wall)
+                                on the side facing away from the altar. The text is oriented so as
+                                to be read by someone facing the altar, and the phrase
+                                "<hi>J</hi>h<ex>es</ex>u mercy"/"<hi>A</hi>nd gramercy" repeats
+                                twice.</p>
+                        </msItem>
+                        <msItem n="South Wall">
+                            <p>Verses 29, 30, 27, 56, 57, 58, and 59 of the <emph rend="italic"
+                                >Testament of John Lydgate</emph> on a carved wooden
+                                molding.</p>
+                        </msItem>
+                        <msItem n="South Wall">
+                            <p>Request for blessing by the saints, now badly damaged, along the base
+                                of the now-empty niches that most likely contained statues of the
+                                twelve apostles.</p>
+                        </msItem>
+                        <msItem n="West Wall">
+                            <p>Verses 60, 63, 65, 66, 68, and 69 of the <emph rend="italic"
+                                >Testament of John Lydgate</emph> on a carved wooden
+                                molding.</p>
+                        </msItem>
+                        <msItem n="West Wall">
+                            <p>Verses 8, 4, 14, 17, 18, and 19 of the <emph rend="italic">Quis Dabit
+                                Meo Capiti Fontem Lacrimarum</emph> on the bressemer.</p>
+                        </msItem>
+                        <msItem n="West Wall">
+                            <p>Six <emph rend="italic">Ars Moriendi</emph> and <emph rend="italic"
+                                >Contemptus Mundi</emph> verses painted at the very top of the
+                                wall underneath the bressemer.</p>
+                        </msItem>
+                        <msItem n="West Wall">
+                            <p>Two scrolls above the squint, with "<hi>J</hi>h<ex>es</ex>u mercy" on
+                                the first and "<hi>A</hi>nd gramercy" on the second.</p>
+                        </msItem>
+                        <msItem n="West Wall">
+                            <p>Two badly damaged scrolls on the right side of the squint, of an
+                                indeterminate sequence, opposite a badly deteriorated image of the
+                                Virgin or St. Anne, with "<hi>J</hi>h<ex>es</ex>u mercy" on the
+                                first and "<hi>A</hi>nd gramercy" on the second. Their positioning
+                                suggests that the entire sequence repeated this phrase.</p>
+                        </msItem>
+                        <msItem n="West Wall">
+                            <p>Verse 4 of the <emph rend="italic">Ballade at the Reveranace of Our
+                                Lady</emph> below the squint.<note place="bottom"
+                                    anchored="true" n="informational">As David Griffith has pointed
+                                    out (“A Newly Identified Verse Item by John Lydgate at Holy
+                                    Trinity Church, Long Melford, Suffolk,” Notes and Queries 58.3
+                                    (Sept. 2011): 364-367)" there are remnants of at least four
+                                    other panels on the west wall, but the text is largely missing
+                                    and while the position suggests additional verses from the <emph
+                                        rend="italic">Ballade</emph>, it cannot be stated with
+                                    certainty.</note></p>
+                        </msItem>
+                        <msItem n="North Wall">
+                            <p>Verses 70, 74, 75, 76, 77, 78, and 79 of the <emph rend="italic"
+                                >Testament of John Lydgate</emph> on a carved wooden
+                                molding.</p>
+                        </msItem>
+                        <msItem n="North Wall">
+                            <p>Twentieth-Century plaque noting the financing of the chapel
+                                restoration by members of the Clopton family in the United
+                                States.</p>
+                        </msItem>
+                        <msItem n="North Wall">
+                            <p>Seventeenth-Century funerary inscription for William Clopton</p>
+                        </msItem>
+                        <msItem n="East Wall">
+                            <p>Verses 101, 114, 115, 116, 117, and 118 of the <emph rend="italic"
+                                >Testament of John Lydgate</emph> on a carved wooden
+                                molding.</p>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>wood</material>
+                                    <material>paint</material>
+                                    <p>The text of the <emph rend="italic">Quis Dabit Meo Capiti
+                                        Fontem Lacrimarum</emph> is composed on badly damaged
+                                        painted panels intended to appear like scrollwork wrapped
+                                        around a typical vinework motif.</p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout">In keeping with the majority of the source
+                                        material, the poem is laid out in eight line ballade
+                                        stanzas, with line fillers where the text is too short for
+                                        the provided space. As the intention of the panels on which
+                                        the lines were painted is to give the appearance of a single
+                                        continous scroll, the left and right sides of these panels
+                                        are at an angle to the orientation of the lines, but the
+                                        lines themselves are presented with parallel to the ground
+                                        for ease of reading</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="major" script="textura quadrata">
+                                <p n="hand_intro">Like the other objects in the chapel, the text of
+                                    the <ex>Quis Dabit</ex> is written by what appears to be a
+                                    single painter/scribe in Textura Quadrata. There is some
+                                    Anglicana influence, however; it is most notable in the use of
+                                    Anglicana “w” but also can be seen in the similarities between
+                                    “f” and the tall “s” and the form of “r” in the “or”
+                                    ligature.</p>
+                                <p n="hand_otiose">The scribe consistently splits ascenders and
+                                    descenders when they are either the full height of the line (as
+                                    in “b,” “h,” and “l”) or at the midpoint between full height and
+                                    that of regular letters (as with “t,” “p,” and “q”).
+                                    Additionally, otiose marks appear to the left or right of “f”
+                                    and “t” when they are the initial or last letter in a word, at
+                                    the end of “e” when it completes a word, and at the end of
+                                    suspension marks.</p>
+                            </handNote>
+                            <handNote scope="minor" script="insular"> <!-- add attribute to schema -->
+                                <p n="hand_capitals">Capitals are depicted in red and written in
+                                    Insular rather than the Textura of the main body of the text.
+                                    This is consistent with the scribal practice and heirarchy of
+                                    scripts seen in many of the manuscript witnesses and underscores
+                                    the connection between them despite the majority of the text
+                                    being rendered in Textura and not Anglicana.</p>
+                            </handNote>
+                            
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>Painted panels intended to look like scrollwork wrapped around
+                                a typical vinework motif.</decoNote>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p>From the period between 1464 and 1494 the Church of the Holy Trinity in
+                            the Parish of Long Melford, Suffolk underwent an extensive remodeling
+                            and expansion, largely under the auspices of a successful wool merchant,
+                            John Clopton. While he provided funds for, or was the executor of
+                            bequests to, a number of parish chruches in his area, Long Melford was
+                            Clopton’s own parish church, and as part of the remodeling process he
+                            endowed a permanent chantry north of the high altar intended to serve as
+                            means for the salvation of his soul, the souls of his family, and the
+                            souls of those he was legally and morally obligated to pray for. As part
+                            of the process of building the chantry a number of verses from religious
+                            works in both Latin and English were included. Thus, the chapel itself
+                            served as a type of <emph rend="italic">compilatio</emph> centered on
+                            the ideas of penance and salvation.</p>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+            <sourceDesc xml:id="Trapp">
+                <bibl type="article">
+                    <author> John Lydgate </author>
+                    <author> J.B. Trapp </author>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="a">
+                        <title type="main" level="j"> The Review of English Studies </title>
+                        <title type="sub" level="a"> "Verses By Lydgate at Long Melford" </title>
+                    </title>
+                    <date when="1955-01">Jan, 1955</date>
+                </bibl>
+            </sourceDesc>
+            <sourceDesc xml:id="Floyd">
+                <bibl type="dissertation">
+                    <author> John Lydgate </author>
+                    <author> Jennifer Eileen Floyd </author>
+                    <title type="full" level="u"> Writing on the Wall </title>
+                    <title type="sub"> John Lydgate's Architectural Verse </title>
+                    <date when="2008-08">August, 2008</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange> 
+                <change when="20172611" who="#medavis" status="revision">removed "orig" tags throughout to bring it into compliance with spot change to TEI P5</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="w.4" n="West Wall">
+            <surface xml:id="p.1" n="panel">
+                <label>First Panel</label>
+                <graphic url="ww_qd_1.jpg"/>
+                <zone n="EETS.QD.8">
+                    <line n="l.1">
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/><gap quantity="4"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>ke<note place="bottom"
+                            anchored="true" n="explanatory">This line is damaged down to the bare
+                            wood save for the final two letters.</note>
+                    </line>
+                    <line n="l.2"> to <gap quantity="2" unit="chars" reason="illegible"/> the lord
+                            <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>e </line>
+                    <line n="l.3"> meke as alambe thus offerid for your<ex>e</ex> sake </line>
+                    <line n="l.4"> to sle þ<ex>e</ex> drago<ex>u</ex>n with his hedes seuene </line>
+                    <line n="l.5"> dauntyng the power of his infer<ex>n</ex>all<note place="bottom"
+                            anchored="true" n="explanatory">There must be a missing suspension mark
+                            above the “a” here, as the line crossing the terminal “l” indicates that
+                            it is the rightmost of two barred “l” and the letter preceding them
+                            cannot be “n.”</note> leuene </line>
+                    <line n="l.6"> out of his thraldom to make you goo free </line>
+                    <line n="l.7">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>o w<gap quantity="5"
+                            unit="chars" reason="illegible"/>s tha<ex>n</ex>
+                        <gap quantity="3" unit="chars" reason="illegible"/> ma<ex>n</ex> kan<note
+                            place="bottom" anchored="true" n="explanatory">The remnants of the
+                            ascender with split finishing stroke here suggest that the missing
+                            letter is a “k” rather than the expected “c.”</note> neuene </line>
+                    <line n="l.8">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> atree<note
+                            place="bottom" anchored="true" n="explanatory">The top of the ascender
+                            on “t,” with its split finishing stroke, can be seen just above the
+                            replaced wood from the repair here. There is no indication of the otiose
+                            mark, which means that “a” is connected to it on the left.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.2" n="panel">
+                <label>Second Panel</label>
+                <graphic url="ww_qd_2.jpg"/>
+                <zone n="EETS.QD.4">
+                    <line n="l.1">
+                        <hi>O</hi> alle ye <gap quantity="8" unit="chars" reason="illegible"/>s of
+                            ierusaleem<note place="bottom" anchored="true" n="explanatory">The “l”
+                            in “ierusaleem” in the final word is determined from context.</note>
+                    </line>
+                    <line n="l.2"> haue<note place="bottom" anchored="true" n="explanatory">The “ue”
+                            has been determined from context and the manuscript witnesses.</note>
+                        <gap quantity="3" unit="chars" reason="illegible"/> com<gap quantity="8"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.3"> not like the glad<gap quantity="5" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/> h<gap quantity="4"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>leem </line>
+                    <line n="l.4"> come neer<ex>e</ex> of routhe <ex>&amp;</ex> helpe me for to <gap
+                            quantity="4" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.5"> a swerde of deth <gap quantity="4" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>gh <gap quantity="3"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/> crepe </line>
+                    <line n="l.6"> i fele it well of <gap quantity="6" unit="chars"
+                            reason="illegible"/>y p<gap quantity="3" unit="chars" reason="illegible"
+                        />
+                    </line>
+                    <line n="l.7">
+                        <gap quantity="12" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> deth swownyng <gap
+                            quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>o slepe<note
+                            place="bottom" anchored="true" n="explanatory">The “le” in the final
+                            word has been determined from context and the manuscript witnesses, as
+                            has the third word, of which the top of the “t” and barred “h” are still
+                            visible, as is a slight bit of the “e.”</note>
+                    </line>
+                    <line n="l.8"> to see my<ex>n</ex>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>e </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.3" n="panel">
+                <label>Third Panel</label>
+                <graphic url="ww_qd_3.jpg"/>
+                <zone n="EETS.QD.14">
+                    <line n="l.1">
+                        <hi>F</hi>or ma<ex>n</ex>nys love he f<gap quantity="1" unit="chars"
+                            reason="illegible"/>ught <gap quantity="1" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> batail<note
+                            place="bottom" anchored="true" n="explanatory">There is the remnant of a
+                            mark above the second word here, suggesting that the first “n” is
+                            suspended. This would make the likely spelling “ma<ex>n</ex>nys.” The
+                            second letter of the fifth word is largely missing save for the point
+                            connecting the two minims. This feature is shared by “a” and “o,”
+                            leaving the exact spelling of the word in question.</note>
+                    </line>
+                    <line n="l.2"> w<ex>ith</ex> his seuene heed<ex>es</ex> he outrayed the dragon </line>
+                    <line n="l.3"> lyke myghty sampso<ex>u</ex>n wythoute plate or maile </line>
+                    <line n="l.4">
+                        <gap quantity="2" unit="chars" reason="illegible"/> his stronge fight he
+                            stra<ex>n</ex>gled the lyo<ex>u</ex>n </line>
+                    <line n="l.5"> this was myn sone mankyndes champyo<ex>u</ex>n<note
+                            place="bottom" anchored="true" n="both">“This” rather than “thus” is
+                            unique to the Clopton chapel, and an interesting distinction when the
+                            location of the verse, with the high altar and mount potentially visible
+                            to the left of the penitent depending on where they stood in the room is
+                            considered. There also appears to be the remnants of a suspension mark
+                            here, making the damaged text “my<ex>n</ex>” rather than “my,” but this
+                            does not follow the text in the EETS edition. The mark is largely
+                            missing, but can be seen above the o and n at the end.</note>
+                    </line>
+                    <line n="l.6"> th<gap quantity="1" unit="chars" reason="illegible"/>rgh his <gap
+                            quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/> magnanymyte </line>
+                    <line n="l.7">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <ex>&amp;</ex> bysshop <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/> oblacio<ex>u</ex>n<note
+                            place="bottom" anchored="true" n="explanatory">The line is badly
+                            damaged, but the descender of the “y” in “bysshop” can be seen. As the
+                            position of the word and the length of what remains makes “kyng”
+                            unlikely, the mark to the right of the “y” is the hook of the second
+                            “s,” running into the ascender of the “h.” Since there is another
+                            suspension mark to the left of the word, the et symbol rather than “and”
+                            must be intended there. Likewise, the suspension mark at the end of the
+                            line, which moves too far to the left to be the descender of the “y” in
+                            the line above, indicates an abbreviation in the terminal word. The
+                            remainder is determined from the manuscript witnesses.</note>
+                    </line>
+                    <line n="l.8"> vpon þ<ex>e</ex> high <gap quantity="5" unit="chars"
+                            reason="illegible"/> of the roode tre<note place="bottom"
+                            anchored="true" n="explanatory">While the line itself is very damaged,
+                            the area below the line is more intact. This allows the location of both
+                            “h’s” in “high” to be determined, as well as the lack of an “h” for
+                            “the” prior, indicating that it was the abbreviated form beginning with
+                            a thorn. Remnants of the “on” in the initial word can be seen to the
+                            right of the “p,” and common practice throughout the chapel makes the
+                            initial letter likely to be “v.” The final four words can be determined
+                            by the remnants on the panel, but the particular form of the word
+                            “altar” cannot be determined as the fourth word is too damaged and the
+                            only distinguishing mark is the lack of the descender for “h.”</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.4" n="panel">
+                <label>Fourth Panel</label>
+                <graphic url="ww_qd_4.jpg"/>
+                <zone n="EETS.QD.17">
+                    <line n="l.1">
+                        <hi>T</hi>hus deth <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="11" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.2"> mank<gap quantity="2" unit="chars" reason="illegible"/>des
+                        quarell made <gap quantity="10" unit="chars" reason="illegible"/><note
+                            place="bottom" anchored="true" n="explanatory">The remnants of the third
+                            letter of the first word, and the split finishing stroke to its right
+                            makes clear that the first four letters are “mank.” However, it cannot
+                            be determined if the letter following the “k” would be a “y” or “i,”
+                            making the remaining spelling ambiguous. The remnant of an ascender
+                            hooting to the left, however, makes it clear that the third word is
+                            “made” and not “maad.”</note>
+                    </line>
+                    <line n="l.3"> for tha<ex>n</ex>n leuyathan <gap quantity="3" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">The “or” of the initial word can be
+                            seen, as can the suspension mark between the “a” and “n” in the second.
+                            Likewise, the terminal “n” in the third word can be seen as well as the
+                            ascender for the “h” and the slightly lower point of the split finishing
+                            stroke of “t” prior. The space between the remnants of the initial three
+                            letters of the word and the final four suggests “y” rather than “i,”
+                            making the spelling “leuyathan.” This spelling is common in the
+                            fifteenth century.</note>
+                    </line>
+                    <line n="l.4">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> hys tryumphes most
+                            synguler<ex>e</ex> glorious<note place="bottom" anchored="true"
+                            n="explanatory">The terminal “s” in the third word is provided based on
+                            the manuscript witnesses and the remains of “hy” present. Likewise, the
+                            remains of the “y” in the fourth word can be seen, which when combined
+                            with the remnants of the descenders for “p” and “h” later in the line
+                            and the “es” ending provides enough context to state the spelling of the
+                            word. Likewise, the “st” in the fifth word is taken from the initial
+                            “mo” and the provided context.</note>
+                    </line>
+                    <line n="l.5"> my<ex>n</ex> sone had foughte w<ex>ith</ex> his b<gap
+                            quantity="4" unit="chars" reason="illegible"/> pre<gap quantity="1"
+                            unit="chars" reason="illegible"/>ious<note place="bottom"
+                            anchored="true" n="explanatory">The remnant of the suspension mark may
+                            be seen above the the “y” in the initial word. Likewise, the remnant of
+                            the tittle for the “i” in the final four letters of the line can be
+                            seen. This fits the manuscript witnesses, making the likely word
+                            “precious.” However, since the fourth letter could be a “c” or “s,” it
+                            remains ambiguous. The initial letter in the seventh word must have a
+                            tall ascender based on the remnants on the panel, and the manuscript
+                            witnesses make the most likely letter “b.” However, the remainder of the
+                            particular spelling cannot be determined from what remains.</note>
+                    </line>
+                    <line n="l.6"> conquerid þ<ex>e</ex>
+                        <gap quantity="6" unit="chars" reason="illegible"/> for al his feel <gap
+                            quantity="3" unit="chars" reason="illegible"/>st<note place="bottom"
+                            anchored="true" n="explanatory">The initial three letters are taken from
+                            the manuscript witnesses. The tall ascender with hook on the fourth
+                            word, when combined with the top of the remaining minims, provides
+                            “for.” There is unfortunately not enough of the remains of the final
+                            word to determine spelling, although based on the “st” ligature and the
+                            remnant of the “t’s” otiose mark at the bottom of the line the word is
+                            likely to have been some form of “poust.”</note>
+                    </line>
+                    <line n="l.7"> and draue hym h<gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/> his infernall hous<note
+                            place="bottom" anchored="true" n="explanatory">The crossbar indicating
+                            “a” rather than “o” can be seen in the second word on the panel, as can
+                            the ascender of “h” and the descender of “y” in the third. The ascender
+                            of “h” can be seen in the fourth word, and the remaining minims indicate
+                            “his.” The tittle for the initial “i” in the fifth word can be seen, as
+                            can the terminal “all,” and the rest is provided by reference to the
+                            word elsewhere in the chapel and the manuscript witnesses.</note>
+                    </line>
+                    <line n="l.8"> whan firste my<ex>n</ex> son<ex>e</ex> was nayled to atre<note
+                            place="bottom" anchored="true" n="explanatory">The line here is badly
+                            damaged, but many of the unique letter forms can be discerned. The “r,”
+                            “st” ligature, and “e” of the second word can be seen, and the initial
+                            letter is taken from context. The descender of the “y” in the second
+                            word, the portion of the first two minims in the “m,” and the remnants
+                            of the suspension mark barely visible indicate “myn.” The remnant of the
+                            “a” and position of the descender on the “y” in the sixth word indicates
+                            that a single, rather than two “l’s” are present. The lack of an otiose
+                            mark for “t” and the remaining finishing strokes indicates the end of
+                            the line, and the “s” beginning the fourth word and finishing the fifth
+                            suggests that the expected words are there. Spelling for that section
+                            was determined via reference to elsewhere in the chapel, as the words do
+                            not shift spelling there.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.5" n="panel">
+                <label>Fifth Panel</label>
+                <graphic url="ww_qd_5.jpg"/>
+                <zone n="EETS.QD.18">
+                    <line n="l.1">
+                        <hi>L</hi>ete <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/> hys <gap quantity="5"
+                            unit="chars" reason="illegible"/> take <gap quantity="2" unit="chars"
+                            reason="illegible"/><note place="bottom" anchored="true" n="both"
+                            >Unfortunately, this panel is very badly damaged and many of the letters
+                            are simply too damaged to discern. Nevertheless, the fourth letter of
+                            the first word is “e,” making the third letter “t” from context. The
+                            descender for “h” and “y” and the top and bottom of the short “s” can be
+                            seen in the fifth word. The bottom portion of the minims, as well as the
+                            otiose mark the scribe uses for “t” can be seen on the seventh word.
+                            Interestingly, it appears that the fourth word began with “b” or “o”
+                            rather than the “i” of “in” based on the remnants of a rounded bottom
+                            and the bottom of a minim visible on the panel, but with the damage to
+                            the line determining which word the scribe intended cannot be
+                            done.</note>
+                    </line>
+                    <line n="l.2">
+                        <gap quantity="3" unit="chars" reason="illegible"/> euery w<gap quantity="5"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> world alyue<note
+                            place="bottom" anchored="true" n="explanatory">The “w” and the unique
+                            “or” ligature can be seen at the beginning of the sixth word. The rest
+                            of the word is supplied by context.</note>
+                    </line>
+                    <line n="l.3"> come neer to me to <gap quantity="3" unit="chars"
+                            reason="illegible"/> his woundes b<gap quantity="5" unit="chars"
+                            reason="illegible"/><note place="bottom" anchored="true" n="explanatory"
+                            >While damaged, many of the letter forms can be made out. The “e” of the
+                            first and fourth words are implied by context. The left minim of the
+                            third letter and the flourish at the end of the seventh word can be
+                            seen, allowing the word and the spelling to be identified based on the
+                            context of other words in the chapel and the manuscript witnesses.
+                            Likewise, the tittle of the “i” and a very slight bit of the descender
+                            in the first letter of the sixth word can be seen, making “his” the
+                            likely word based on context. The ascender of the eighth word is
+                            visible, but there is nothing else remaining of the word to determine
+                            spelling. The “b” is supplied based on context and the manuscript
+                            witnesses.</note>
+                    </line>
+                    <line n="l.4"> hys <gap quantity="4" unit="chars" reason="illegible"/> his deth
+                        his ky<gap quantity="9" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>y<gap quantity="2"
+                            unit="chars" reason="illegible"/><note place="bottom" anchored="true"
+                            n="both">While the top portion of the line is missing many the bottom
+                            portion of the letter forms are visible, allowing many of the words to
+                            be determined due to the unique descenders on “h” and “y.” The end of
+                            the line, while visible, cannot be determined definitively beyond the
+                            single “y.”</note>
+                    </line>
+                    <line n="l.5"> to see the mysteries of his <gap quantity="7" unit="chars"
+                            reason="illegible"/> fyue<note place="bottom" anchored="true"
+                            n="explanatory">The top of the “h” ascender in the third word is just
+                            visible at the top of the line. The otiose mark at the beginning of the
+                            eighth word indicates “f” or “t,” and the manuscript witnesses suggest
+                            “f.” The rest of the word is supplied by context and the spelling of
+                            “alyue” above.</note>
+                    </line>
+                    <line n="l.6"> as bawme <ex>&amp;</ex> triacle of most<note place="bottom"
+                            anchored="true" n="explanatory">The initial letter “m” and the “o”
+                            following can be seen, as can the finishing stroke of the bottom minims
+                            of the final two letters. The actual letters themselves are supplied by
+                            reference to the manuscript witnesses.</note>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.7"> cleerly <gap quantity="10" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/> fynde socour <gap
+                            quantity="5" unit="chars" reason="illegible"/>e<note place="bottom"
+                            anchored="true" n="explanatory">The final two letters of the first word
+                            are supplied via reference to the scribe’s practice elsewhere in the
+                            chapel. While damaged, the fifth word can be determined via the bottom
+                            portions of the minims present and the initial two letters, which can be
+                            easily seen.</note>
+                    </line>
+                    <line n="l.8"> d<gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">Unfortunately, the line here is too
+                            damaged and the remnants present lack any unique letter forms, making
+                            the determination of spelling impossible.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.6" n="panel">
+                <label>Sixth Panel</label>
+                <graphic url="ww_qd_6.jpg"/>
+                <zone n="EETS.QD.19">
+                    <line n="l.1">
+                        <hi>T</hi>ruste in his <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">This panel has been damaged down to the
+                            bare wood in many places and the rest of this line is missing.</note>
+                    </line>
+                    <line n="l.2"> and vmbuly knele <gap quantity="2" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>a<gap quantity="2"
+                            unit="chars" reason="illegible"/><note place="bottom" anchored="true"
+                            n="explanatory">While damaged, the second word can be determined based
+                            on the remnant of the ascender of the third letter and the remnant of
+                            the descender on the terminal “y.” The third word can be determined
+                            based on the ascender and the remnant of the top bow of the “k” as well
+                            as the remnant of the ascender of the “l.” The rest is supplied via
+                            reference to elsewhere in the chapel. The horizontal rather than
+                            diagonal stroke in the remnant that can be seen at the end of the line
+                            indicates “a,” but it lacks additional letters to determine
+                            placement.</note>
+                    </line>
+                    <line n="l.3"> f<gap quantity="2" unit="chars" reason="illegible"/> al<gap
+                            quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">The hook of the initial letter remnant
+                            on the panel indicates “f” or “s,” and the barred ascender in the next
+                            visible section indicates “l” or “h.” The actual letters are supplied
+                            from reference to the manuscript witnesses, and as the top of the “a” at
+                            the beginning of the second word is visible it has been supplied.</note>
+                    </line>
+                    <line n="l.4">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.5">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.6"> lyke ther<ex>e</ex> demerites to shewe his cruelte </line>
+                    <line n="l.7"> but shewe to them his mercy and his <gap quantity="5"
+                            unit="chars" reason="illegible"/><note place="bottom" anchored="true"
+                            n="explanatory">This line is very damaged, but most of the letter forms
+                            can be made out. The fifth word is indicated by the remnants of “h” and
+                            “s” which can be seen. The initial two letters and the remnant of the
+                            leftmost minim of the third determine the sixth word. The rest is
+                            supplied via context and the manuscript witnesses. The remnant of the
+                            initial letter and the left-leaning ascender of the final letter
+                            determine the seventh, and the eighth is determined via the remnant of
+                            the initial letter and the tittle of the second.</note>
+                    </line>
+                    <line n="l.8">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/> there loue<note
+                            place="bottom" anchored="true" n="explanatory">The line is largely
+                            missing as the wood itself has been removed and repaired, likely when
+                            the shields nailed to the wood throughout were removed. I have only
+                            supplied those words within the gap that correspond to the topmost part
+                            of the minims still remaining, and the letter forms are determined via
+                            reference to the manuscript witnesses and the ascenders and top portions
+                            of the letters that remain.</note>
+                    </line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

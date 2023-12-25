@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Eltham">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at Eltham</emph>
+                    </title>
+                    <title type="sub">Trinity R.3.20 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <xi:include href="../Witness_Descriptions/Trinity_College_R_3_20.xml" xpointer="publication" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Trinity_College_R_3_20.xml" xpointer="Trinity_R_3_20" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Minor_Poems_Vol_II.xml" xpointer="MacCracken" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220802" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.3" n="gathering" rend=".xiiii." rendition="present">
+            <surfaceGrp xml:id="f.19" n="folio">
+                <surface n="recto" xml:id="p.37">
+                    <label>Folio 19 Recto (Page 37)</label> <!--195mm x 120mm 32 lines  -->
+                    <graphic url="Trinity_R_3_20_f19r.jpg"/>
+                    <!-- 200 x 120 32 lines -->
+                    <zone n="EETS.ME.H.1">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Of <hi rend="pilcrow">ɲ</hi>love</line>
+                        </zone>
+                    </zone>
+                    <!--include commas after lines?--><zone n="EETS.ME.I">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Loo here beynneþe a balade made by
+                                Dann Ioħn</line>
+                            <line n="l.2">Lidegate at Eltham in<note place="bottom" anchored="true" n="explanatory">There is a curved mark over the n that could be a suspension but is likely an otiose mark.</note> Cristmasse for a
+                                momyng</line>
+                            <line n="l.3">to fore þe kyng and þe Qwene</line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.38">
+                    <label>Folio 19 Verso (Page 38)</label>
+                    <graphic url="Trinity_R_3_20_f19v.jpg"/><!-- 200 x 120mm 35 lines -->
+                    <zone n="EETS.ME.H.2">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þe maner of a mo<ex>m</ex>mynge</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ME.1">
+                        <zone n="text"><line n="l.1"><hi rend="symbol">✧</hi><hi rend="pilcrow">ɲ</hi><hi rend="underline"
+                                        ><hi rend="capital_2">B</hi>achus</hi> whicħ is god
+                                of<!--"f" here has a long ascender.  This appears to be a stylistic thing for Shirley.--> þe glade
+                                vyne</line>
+                            <line n="l.2"><hi rend="underline">Iuno</hi> and <hi rend="underline"
+                                    >Ceres</hi> acorded alle þeos three</line>
+                            <line n="l.3">Thorugħe þeyre power / whicħ þ<ex>a</ex>t is devyne</line>
+                            <line n="l.4">Sende nowe þeyre gifftes / vn to yo<ex>ur</ex>
+                                magestee</line>
+                            <line n="l.5">Wyne, whete and Oyle / by marchandes þ<ex>a</ex>t here be</line>
+                            <line n="l.6">Wheeche
+                                Represent<!--MacCracken has lower case. make note-->
+                                vn to your hye noblesse</line>
+                            <line n="l.7">Pees witħ youre lieges plentee and gladnesse</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.2">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi>ffor þeos gifftes /
+                                pleynly to descryve</line>
+                            <line n="l.2">Wheche in hem self designe al souffisaunce</line>
+                            <line n="l.3">Pees is betokened by þe grene olyve</line>
+                            <line n="l.4">In whete and oyle / is foulsome haboundaunce</line>
+                            <line n="l.5">Wheche to youre hyenesse / for to do plesaunce</line>
+                            <line n="l.6">Þey Represente nowe to youre<note place="bottom" anchored="true" n="informational"
+                                    >MacCracken has "Houre" here in the 1961 reprint. That may be a
+                                    typographical error, as both this manuscript and BL Additional
+                                    29729 have variations of "your" here. Sponsler rightly notes
+                                    "youre."</note> hye noblesse</line>
+                            <line n="l.7">Pees witħ youre lieges / plentee witħ gladnesse</line>
+                        <!--note in scribal notes that initial p is slightly larger at initial line, so likely capitalized. --></zone></zone>
+                    <zone n="EETS.ME.3">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi>Ysaak þe patryark ful
+                                olde<!--note otiose mark that terminates "e" in some places in your scribal notes.--></line>
+                            <line n="l.2">Gaf his blessing<!-- note otiose mark in your scribal notes--> witħ ħis gifftes three</line>
+                            <line n="l.3">Vn to Iacobe in scripture it<!-- note otiose mark in scribal notes? otiose mark after t. compare with "g" above --> is
+                                tolde</line>
+                            <line n="l.4">Genesis yee may hit reede and see</line>
+                            <line n="l.5">And semblabully þe hooly Trynytee<!--note otiose mark terminating y multiple times on this line and in the page in general--></line>
+                            <line n="l.6">your staate blessing<!--otiose mark after g--> / sent to
+                                youre hye noblesse</line>
+                            <line n="l.7">Pees witħ youre lieges / plentee witħ gladnesse</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.4">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi>In þe Olyve / he
+                                sendeþe to yowe pees</line>
+                            <line n="l.2">þe lord of lordes / þat lordshipeþe euery sterre</line>
+                            <line n="l.3">And in youre Rebelles / wheche beon now reklesse</line>
+                            <line n="l.4">He stint shal of <hi rend="underline">Mars</hi> þe cruwel
+                                werre</line>
+                            <line n="l.5">And þane youre renoun shal shyne in londes ferre</line>
+                            <line n="l.6">Of youre two Reavmes<note place="bottom" anchored="true"
+                                n="explanatory">BL Add. 29729 has "realmes" here, which is
+                                correct. The error on the part of the EETS edition based on this
+                                witness is understandable, though, as the fourth glyph does look
+                                similar to "v" elsewhere in the witness (see "vyne" and "devyne"
+                                in the first and third likes at the top of the page, for
+                                example, as well as "avoyding" in line four of verse 8).</note><!-- this should be "Realmes", but compare with l in "Rebelles" above and v elsewhere.--> / graunting to yo<ex>our</ex>
+                                noblesse</line>
+                            <line n="l.7">Pees witħ youre lieges / plenteee and
+                                gladnesse<!--otiose mark (line filler) after e--></line>
+                        </zone></zone>
+                    <zone n="EETS.ME.5">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow"
+                                >ɲ</hi>ffor<!--otiose mark after r-->
+                                mars<!--long descender: indicates capital? More likely it's just an indicator of initial M.  Render it as such in your scribal notes.--> þat is mooste
+                                furyous<!--mark between y and o. probably to indicate that it's y. Inconsistantly done throughout if it is.  Maybe a ligature mark? Make a note articulating this.  Find other examples?-->
+                                and woode</line>
+                            <line n="l.2">Causer of stryff and desobeyssaunce</line>
+                            <line n="l.3">Shal cesse his malice / and god þat is so goode</line>
+                            <line n="l.4">Of vnytee shal sende al souffysaunce</line>
+                            <line n="l.5">He ioyne þe hertes of England and of ffraunce</line>
+                            <line n="l.6">Bassent of booþe<!--note the angle in "booþe" and "þat" above in scribal notes as indicator of how þ is formed as opposed to "p"--> / sent to yo<ex>our</ex> hye
+                                noblesse</line>
+                            <line n="l.7">Pees witħ your lieges / plentee witħ gladnesse</line>
+                        </zone></zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.20" n="folio">
+                <surface n="recto" xml:id="p.39">
+                    <label>Folio 20 Recto (Page 39)</label><!-- 200mm x 120mm 35 lines -->
+                    <graphic url="Trinity_R_3_20_f20r.jpg"/>
+                    <!-- 250mm x 120 mm  35 lines-->
+                    <zone n="EETS.ME.H.3">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>To fore þe kynge at Elthame</line>
+                        </zone>
+                    </zone><zone n="EETS.ME.6">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow"
+                                    >ɲ</hi><!--second n over pilcrow. Note as otiose?--><hi
+                                    rend="underline">Iuno</hi> þat is Goddesse / of Al
+                                tresore</line>
+                            <line n="l.2">Sende eeke hir gyfftes / to your estate royal</line>
+                            <line n="l.3">Lande<note place="bottom" anchored="true" n="informational">The EETS edition has "laude," but based on comparison with "sende" above, "and" in line three of the previous verse, and the text of BL Additional 29729 it seems more likely it is "lande."</note> of knigħt hoode / victorie and honnour</line>
+                            <line n="l.4">Ageyns mescreantes /
+                                in<!--this shows that the tittle is a curved line for this scribe. Put in scribal notes.-->
+                                actes marcyal</line>
+                            <line n="l.5">ffor Crystes feytħ / yee enhaunce shal</line>
+                            <line n="l.6">Repeyre ageyne and regne in yo<ex>ur</ex> noblesse</line>
+                            <line n="l.7">Pees
+                                witħ<!--could "with" be capitalized in this final line throughout?-->
+                                youre lieges plentee and gladnesse</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.7">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi>And al þis whyle <hi
+                                    rend="underline">Ceres</hi> Goddesse of corne</line>
+                            <line n="l.2">Shal where yee ryde mynistre you victayle</line>
+                            <line n="l.3"><hi rend="underline">Provydence</hi> hir sustre / goo
+                                beforne</line>
+                            <line n="l.4">And provyde soo / þat no thing<!--otiose mark after g-->
+                                ne fayle</line>
+                            <line n="l.5"><hi rend="underline">Bachus</hi> also / þat may so micħe
+                                avayle</line>
+                            <line n="l.6">Alle of accorde / present to yo<ex>ur</ex> noblesse</line>
+                            <line n="l.7">Pees witħ youre lieges / plentee witħ gladnesse</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.8">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Þis
+                                God þis Goddesse / also<note place="bottom" anchored="true"
+                                    n="explanatory">There is a "b" over the "al" of "also,"
+                                    indicating that there is a correction. MacCraken noted this and
+                                    has correctly laid out the two lines in the EETS volume. There
+                                    is a similar correction in BL Additional 29729</note> þeyre
+                                gyfftes dresse</line>
+                            <line n="l.2">In goodely wyse / of<note place="bottom" anchored="true"
+                                    n="explanatory">There is an "a" over the "of" here, indicating
+                                    that there is a correction. MacCracken noted this and correctly
+                                    laid out the two lines in the EETS edition. There is a similar
+                                    correction in British Library Additional 29729.</note> entent
+                                ful goode</line>
+                            <line n="l.3">To yowe pryncesse / borne of saint Lowys blood</line>
+                            <line n="l.4">ffrome yowe avoyding /<!--the virgule here could be an otiose mark, which would eliminate the double virgule.--> al sorowe / al hevynesse</line>
+                            <line n="l.5">ffrom yeere to yeere / in verray sikrenesse</line>
+                            <line n="l.6">To you presenting<!--otiose mark after g--> / yif yow list
+                                aduerte</line>
+                            <line n="l.7">Ay by encreesse Ioye and gladnesse of hert</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3">.i. ad Regina<ex>m</ex> kat<ex>er</ex>inam<note place="bottom" anchored="true" n="explanatory">The ink color shifts here to a shade of black, similar to the headers of each page, as opposed to the brown of the text proper. This suggests that the mark after kat<ex>er</ex>inam is meant to terminate the note.  MacCraken renders this termination as a semi-colon.</note> mothar to
+                                    henri<note place="bottom" anchored="true" n="explanatory"
+                                    >MacCracken renders "henri" as "Henrie" on the basis, I assume,
+                                    of a slight mark after the i which could also be an otiose mark
+                                    from completeing the finishing
+                                    stroke.</note></line>
+                            <line n="l.4">þ<ex>e</ex> vi</line>
+                            <line n="l.5"/>
+                            <line n="l.6"/>
+                            <line n="l.7"/>
+                        </zone></zone>
+                    <zone n="EETS.ME.9">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi>Þey wol þeyre gyfftes
+                                / witħ you and youres dwelle</line>
+                            <line n="l.2"><hi rend="underline">Pees vnytee, plentee</hi> and <hi
+                                    rend="underline">haboundaunce</hi></line>
+                            <line n="l.3">So þat fortune / may hem not Repelle</line>
+                            <line n="l.4">Nor hem renuwe<note place="bottom" anchored="true"
+                                    n="informational">MacCraken corrects this to "remuwe," which is
+                                    certainly better for Lydgate's likely intent. It should be
+                                    noted, however, that BL Additional 29729 has "renewe."</note> /
+                                thorugħe hir varyaunce</line>
+                            <line n="l.5">Graunting also p<ex>er</ex>seueraunt constaunce</line>
+                            <line n="l.6">To you presenting / yif yow list aduerte</line>
+                            <line n="l.7">Ay by encreesse Ioye and gladnesse of hert</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.10">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi>To youre hyenesse /
+                                þey gif þe fressħe Olyve</line>
+                            <line n="l.2">By pees toxyle<note place="bottom" anchored="true"
+                                    n="informational">The scribe here has made an error, dropping a
+                                    line which they have added at the end. A "b" is inserted here
+                                    above the line indicating that the following two words are to be
+                                    read second.</note>al hevynesse<note place="bottom"
+                                    anchored="true" n="informational">The scribe has inserted a "a"
+                                    above the a in the following word, indicating that it is to be
+                                    read first before "al hevynesse," which comes before.</note>
+                                awaye<note place="bottom" anchored="true" n="informational">There
+                                    is also what appears to be an erasure covered by a piece of
+                                    contemporary paper to the right, which may be an attempt to
+                                    correct the line. It should be noted that there is no evidence
+                                    of a hole on the opposite side, so it could be possible to
+                                    determine the words corrected with multispectral methods.</note></line>
+                            <line n="l.3">Prosparytee during al your lyve</line>
+                            <line n="l.4">And <hi rend="underline">Iuno</hi> sent you moost
+                                excellent ricchesse</line>
+                            <line n="l.5">Loue of al people <damage agent="tearing" unit="char"
+                                    quantity="8">grounded</damage>
+                                <damage agent="tearing" unit="char" quantity="2"><supplied
+                                        reason="missing" source="EETS">in</supplied></damage>
+                                <damage unit="char" quantity="2"
+                                ><supplied>st</supplied></damage>ablenesse</line>
+                            <line n="l.6">Witħ þis <damage agent="tearing" unit="char" quantity="19"
+                                        ><supplied reason="missing" source="EETS">reffrete yif yowe
+                                        list</supplied></damage> aduerte</line>
+                            <line n="l.7">Ay by e<damage agent="tearing" unit="char" quantity="29"
+                                        ><supplied reason="missing" source="EETS">ncresse ioye and
+                                        gladnesse of hert</supplied></damage></line></zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.40">
+                    <label>Folio 20 Verso (Page 40)</label>
+                    <graphic url="Trinity_R_3_20_f20v.jpg"/>
+                    <!--200mm x 120mm 29 lines-->
+                    <zone n="EETS.ME.H.3">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>A desgysinge to fore þe kynge</line>
+                        </zone>
+                    </zone><zone n="EETS.ME.11">
+                        <zone n="text"><line n="l.1"><hi rend="pilcrow">ɲ</hi><hi rend="underline"
+                                    >Ceres</hi> also sent foulsomnesse</line>
+                            <line n="l.2">ffrome yeere to yeere in yo<ex>ur</ex> court tabyde</line>
+                            <line n="l.3">aduersyte shal þer noon manase</line>
+                            <line n="l.4">But care and sorowe / for ever sette a syde</line>
+                            <line n="l.5"><hi rend="underline">happe</hi>
+                                <hi rend="underline">helthe</hi> and <hi rend="underline">Grace</hi>
+                                chosen to be youre guyde</line>
+                            <line n="l.6">And witħ al þis present yif yee aduerte</line>
+                            <line n="l.7">Ay beo encresse Ioyes / gladnesse of hert<!-- note the otiose mark after "t" here in the scribal notes.--></line></zone>
+                    </zone>
+                    <zone n="EETS.ME.EN.H">
+                        <zone n="header">
+                            <line n="l.1"><hi rend="pilcrow">ɲ</hi>Lenvoie</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ME.EN">
+                        <zone n="text"><line n="l.1">Prynce excellent of your
+                                benig nytee<note place="bottom" anchored="true" n="informational">Both the EETS edition and BL Add. 29729 has this as a single word, which is likely more correct, but the otiose mark on the "g" suggests that the scribe is rendering these as two separate words.  Compare with "gyfftes" below and "gladnesse" in the previous stanza."</note></line>
+                            <line n="l.2">Takeþe þees gyfftes / sent to yo<ex>ur</ex> hye
+                                noblesse</line>
+                            <line n="l.3">Þis hyegħe feest frome þeos yche three</line>
+                            <line n="l.4">Pees witħ your lieges / plentee w<ex>ith</ex>
+                                gladdnesse</line>
+                            <line n="l.5">As <hi rend="underline">Bacus</hi>
+                                <hi rend="underline">Iuno</hi> and <hi rend="underline"
+                                    >Cerces</hi><note place="bottom" anchored="true"
+                                    n="informational">MacCraken has
+                                    corrected this to "Ceres." BL Additional 29729 has
+                                    "Ceres."</note> bere witnesse</line>
+                            <line n="l.6">To you pryncesse also yif yee aduertee<note place="bottom"
+                                    anchored="true" n="informational">MacCraken corrects this to a
+                                    single e, but based on "plentee" in line four above it seems
+                                    more likely it is meant as a double e. This would be consistent
+                                    with lines one and three, as well.</note></line>
+                            <line n="l.7">Ay beo encresse Ioye / gladnesse of hert</line></zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

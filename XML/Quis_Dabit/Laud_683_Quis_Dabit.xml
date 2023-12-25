@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Quis_Dabit">
+                <title type="full">
+                    <title type="main">
+                        <emph>Quis Dabit Meo Capiti Fontem Lacrimarum</emph>
+                    </title>
+                    <title type="sub">Laud 683 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="free" xml:id="oxford_university">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> IMAGE INFORMATION IS NOT YET VALID. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Bodleian_Laud_683">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="Laud_683">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region/>
+                        <settlement>Oxford</settlement>
+                        <institution>Bodleian Library</institution>
+                        <idno>Laud 683</idno>
+                    </msIdentifier>
+                    <msContents> </msContents>
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc/>
+
+
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+
+
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+
+
+                    </physDesc>
+                    <history> </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="g.9" n="gathering">
+            <surfaceGrp xml:id="f.78" n="folio">
+                <surface n="recto">
+                    <label>Folio 78 Recto</label>
+                    <graphic url="Laud_683_f78r.jpg"/>
+                    <zone n="EETS.QD.I">
+                        <line n="l.1"> Here begẏnneth a lamentaciou<ex>n</ex> of our ladẏ </line>
+                        <line n="l.2"> Maria </line>
+                    </zone>
+                    <zone n="EETS.QD.1">
+                        <line n="l.1">
+                            <hi rend="capital_2">W</hi>ho shal ẏeve // vn to mẏn hed a welle </line>
+                        <line n="l.2"> of bitter terẏs / my sorw ẏs to compleẏne </line>
+                        <line n="l.3"> Or a gret condewit // of troublẏ watrẏs ffelle </line>
+                        <line n="l.4"> doun to dẏstẏlle // fro mẏn eẏen tweẏne </line>
+                        <line n="l.5"> To shewe the constreẏnt / of mẏ dedlẏ peẏne </line>
+                        <line n="l.6"> Whan I allas // be holde and dẏd see </line>
+                        <line n="l.7"> mẏ dere sone // bloode in euerẏ veẏne </line>
+                        <line n="l.8"> atwix two thevẏs // naẏllẏd to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.2">
+                        <line n="l.1"> Who shal of wepẏng // geve me suffẏsaunce </line>
+                        <line n="l.2"> Or to mẏ sobbẏng // who shal me terẏs ffẏnde </line>
+                        <line n="l.3"> to se mẏ joie / mẏn hertis hiħ plesaunce </line>
+                        <line n="l.4"> mẏ soote sone // that was to me so kẏnde </line>
+                        <line n="l.5"> railled w<ex>ith</ex> red blood // as sap doth thoruħ the
+                            rẏnde </line>
+                        <line n="l.6"> thorugh his enmẏes // vengable Cruelte </line>
+                        <line n="l.7"> dirkened w<ex>ith </ex>deth // his eien now maad blẏnde </line>
+                        <line n="l.8"> atwix two thevẏs // naẏlled to a tre </line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 78 Verso</label>
+                    <graphic url="Laud_683_f78v.jpg"/>
+                    <zone n="EETS.QD.3">
+                        <line n="l.1"> Mẏ joie mẏ lẏght / mẏ lanterne moost Entẏeer </line>
+                        <line n="l.2"> This hevenlẏ phebus / is clẏpped of his lẏght </line>
+                        <line n="l.3"> This Esperus // hath hẏd hẏs bemẏs Cleer </line>
+                        <line n="l.4"> And is of newe / corteẏned ffrom mẏ sight </line>
+                        <line n="l.5"> whan shal this daẏ sterre // shewe me his bemẏs briħt </line>
+                        <line n="l.6"> To clere the trouble / of mẏn a<damage xml:id="legible"
+                                >dv</damage>ersẏte </line>
+                        <line n="l.7"> parde the jewẏs / do me to gret vnright </line>
+                        <line n="l.8"> To naẏlle mẏn sone / allas on to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.4">
+                        <line n="l.1"> O alle ẏe douhtren of jerusaleem </line>
+                        <line n="l.2"> Haue som compassiou<ex>n</ex> // of mẏn siħes deepe </line>
+                        <line n="l.3"> nat lẏk the gladnesse / wich I hadde in bedleem </line>
+                        <line n="l.4"> kom neer of routhe / and helpe me for to wepe </line>
+                        <line n="l.5"> a sword of deth // doth thoruh mẏn herte crepe </line>
+                        <line n="l.6"> I ffele it ffułł weełł / of modẏrly pẏte </line>
+                        <line n="l.7"> Crau<ex>n</ex>pisshed w<ex>ith</ex> deth / swownẏng I do
+                            slepe </line>
+                        <line n="l.8"> To se mẏ sone / thus naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.5">
+                        <line n="l.1"> O gentẏl prẏncessis // and ladẏes of Estaat </line>
+                        <line n="l.2"> and ẏe virgẏnes / in ẏour entent most clene </line>
+                        <line n="l.3"> To ẏeve me comfort that stonde al desolaat </line>
+                        <line n="l.4"> Renneth a pas // to se the woundẏs grene </line>
+                        <line n="l.5"> Of ẏoure trewe spouce / of bledẏng pale <ex>&amp;</ex> lene </line>
+                        <line n="l.6"> And aduertyseth / and hath now rowthe on me </line>
+                        <line n="l.7"> ffeẏnt for to stonde // for how sholde I sustene </line>
+                        <line n="l.8"> To se mẏ sone / thus naẏlled to a tre </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.79" n="folio">
+                <surface n="recto">
+                    <label>Folio 79 Recto</label>
+                    <graphic url="Laud_683_f79r.jpg"/>
+                    <zone n="EETS.QD.6">
+                        <line n="l.1"> And alle ẏe women / tappere mẏn heuẏnesse </line>
+                        <line n="l.2"> reme<ex>m</ex>breth the processe / of his dredful victorie </line>
+                        <line n="l.3"> So to for pilat / bẏ manẏ fals wẏtnesse </line>
+                        <line n="l.4"> how he was dampned in the Concẏstorẏe </line>
+                        <line n="l.5"> Radde ẏe euere // or sauh in his storẏs </line>
+                        <line n="l.6"> Of anẏ sorwes // that maẏ compared be </line>
+                        <line n="l.7"> on to the sorwẏs // grave in mẏ memorẏe </line>
+                        <line n="l.8"> To se mẏ sone / thus naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.7">
+                        <line n="l.1"> And ẏif ẏe lẏke // of routhe for to leere </line>
+                        <line n="l.2"> and at mẏ terẏs ẏeve ẏe nat dẏsdeẏne </line>
+                        <line n="l.3"> but of compassiou<ex>n</ex> // meeklẏ lẏst to heere </line>
+                        <line n="l.4"> how a sharp suerd / mẏ<ex>n </ex>hert hath corve on tweẏne </line>
+                        <line n="l.5"> A<note place="bottom" anchored="true" n="explanatory"
+                                >This appears to have been an intentional decoration of a mid-stanza
+                                capital, perhaps to draw emphasis to the line. Unlike where it
+                                occurs in other witnesses, it does not take the place of rubrication
+                                or illustration of the capital of the next stanza.</note> swerd of
+                            sorwe / thoruħ perced eu<ex>er</ex>ẏ veẏne </line>
+                        <line n="l.6"> now deth hath slaẏn mẏ sone and spareth me </line>
+                        <line n="l.7"> allas fro wepẏng // how sholde I me restreẏne </line>
+                        <line n="l.8"> To se mẏ sone // thus naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.8">
+                        <line n="l.1"> O peple onkẏnde / whẏ wil ẏe noon heed take </line>
+                        <line n="l.2"> to se the lord // of helle erthe and hevene </line>
+                        <line n="l.3"> meek as a lamb / thus offred for ẏour sake </line>
+                        <line n="l.4"> To sle the drago<ex>u</ex>n / w<ex>ith</ex> his hedẏs sevene </line>
+                        <line n="l.5"> da<ex>u</ex>ntẏng the power // of his Infernal levene </line>
+                        <line n="l.6"> Out of his thraldam / to make ẏow go ffre </line>
+                        <line n="l.7"> w<ex>ith</ex> manẏ mo wo<ex>u</ex>ndẏs / than anẏ
+                                ma<ex>n</ex> can nevene </line>
+                        <line n="l.8"> whan he at Calvarẏ / was naylled to a tre </line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 79 Verso</label>
+                    <graphic url="Laud_683_f79v.jpg"/>
+                    <zone n="EETS.QD.9">
+                        <line n="l.1"> Is it a mervaẏłł / or anẏ manor wonder </line>
+                        <line n="l.2"> Though I ful offte / swowne for grevaunce </line>
+                        <line n="l.3"> Was euere modor / outher here or ẏonder </line>
+                        <line n="l.4"> That for hẏr Chẏld / ffelte more penaunce </line>
+                        <line n="l.5"> mẏ<ex>n </ex>Inward sorwẏs can ffẏnde noon allegaunce </line>
+                        <line n="l.6"> Ech hour renewẏng it wẏl noon other be </line>
+                        <line n="l.7"> whan euere it cometh to mẏ remembraunce </line>
+                        <line n="l.8"> how that mẏ sone was naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.10">
+                        <line n="l.1"> The lemẏs ffeble / vp on mẏ foot to stonde </line>
+                        <line n="l.2"> whanne I allas / consydre and do be holde </line>
+                        <line n="l.3"> This pitous mateer // that we hav on honde </line>
+                        <line n="l.4"> fful lẏtełł mervaẏłł // thouħ mẏ<ex>n </ex>herte colde </line>
+                        <line n="l.5"> mẏ<ex>n </ex>handẏs crau<ex>n</ex>pisshed // I maẏ them nat
+                            vnfolde </line>
+                        <line n="l.6"> To goon vpright I haue no ffoot nor kne </line>
+                        <line n="l.7"> mẏ peẏnes passe alle tormentẏs newe and olde </line>
+                        <line n="l.8"> To se mẏ sone // thus naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.11">
+                        <line n="l.1"> Geẏn the guẏse // of kẏnges riche crownes </line>
+                        <line n="l.2"> mẏ dere sone werẏd / a Crowne of thorn </line>
+                        <line n="l.3"> of gold and perle // ageẏn ther statelẏ gownes </line>
+                        <line n="l.4"> ageẏn ther ridẏng // gret meẏne them be forn </line>
+                        <line n="l.5"> mẏ sone on ffoote // hath his cros I born </line>
+                        <line n="l.6"> ageẏn ther setẏs / of stones and perre </line>
+                        <line n="l.7"> and for mankẏnde // that was thoruħ synne lorn </line>
+                        <line n="l.8"> he pore and naked // was naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.12">
+                        <line n="l.1"> Ageẏn the beddẏs // statelẏ hiħ and soffte </line>
+                        <line n="l.2"> of wordlẏ prẏncẏs / w<ex>ith</ex> pelwẏs for ther hed </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.80" n="folio">
+                <surface n="recto">
+                    <label>Folio 80 Recto</label>
+                    <graphic url="Laud_683_f80r.jpg"/>
+                    <zone n="EETS.QD.12">
+                        <line n="l.3"> vp on the roode / mẏ sone was lẏfft a loffte </line>
+                        <line n="l.4"> with bloodẏ purpil // hẏs mantel maad al reed </line>
+                        <line n="l.5"> marked w<ex>ith</ex> a spere // and for mankẏnde ded </line>
+                        <line n="l.6"> and grucched no thẏng / thoruħ his humẏlẏte </line>
+                        <line n="l.7"> To me noon ese / whanne that I took heed </line>
+                        <line n="l.8"> and sauħ mẏ sone // thus naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.13">
+                        <line n="l.1"> For adamhis sẏnne // thus was mẏ sone slaẏn </line>
+                        <line n="l.2"> thoruħ the olde serpent // bẏ thassent of Eve </line>
+                        <line n="l.3"> whan thoruħ mẏ meknesse // ma<ex>n</ex>kẏnde was maad ffaẏn </line>
+                        <line n="l.4"> hir name turned // ther thraldam to Releve </line>
+                        <line n="l.5"> and Gabrẏełł kam // mẏ meeknesse ffor to preve </line>
+                        <line n="l.6"> Sent bẏ on accord // of al the Trẏnẏte </line>
+                        <line n="l.7"> but ful sore affter // it dẏd mẏn herte greve </line>
+                        <line n="l.8"> whanne I mẏ sone sauħ naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.14">
+                        <line n="l.1"> For manhis love // he faught a gret bataẏłł </line>
+                        <line n="l.2"> w<ex>ith </ex>his sevene hedẏs // he outraẏed the
+                                dragou<ex>n</ex>
+                        </line>
+                        <line n="l.3"> lẏk mẏħtẏ Sampsom // w<ex>ith</ex> oute plate or maẏłł </line>
+                        <line n="l.4"> In his strong ffẏght // he strangeled the lyo<ex>u</ex>n </line>
+                        <line n="l.5"> Thus was mẏ sone // mankẏndẏs Champẏoun </line>
+                        <line n="l.6"> througħ his most mẏgħtẏ magnanẏmẏte </line>
+                        <line n="l.7"> as kẏng and bẏsshop // made his oblacẏoun </line>
+                        <line n="l.8"> vp on the hiħ auhter // of the Roode tre </line>
+                    </zone>
+                    <zone n="EETS.QD.15">
+                        <line n="l.1"> Mẏ sonẏs suffrau<ex>n</ex>ce // to sathan was grat wrak </line>
+                        <line n="l.2"> whos gret meknesse // dyd I nouħ suffẏse </line>
+                        <line n="l.3"> Cleerlẏ ffẏgured // whanne that ẏsaak </line>
+                        <line n="l.4"> was bẏ his ffader // offred in sacrẏfẏse </line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 80 Verso</label>
+                    <graphic url="Laud_683_f80v.jpg"/>
+                    <zone n="EETS.QD.15">
+                        <line n="l.5"> Nat dẏsobeẏing // in no maner wyse </line>
+                        <line n="l.6"> But lyk a lamb // of lownesse lyst nat ffle </line>
+                        <line n="l.7"> But most mẏn herte // that tẏme did agrẏse </line>
+                        <line n="l.8"> whan I first sauħ hẏm // naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.16">
+                        <line n="l.1"> He myħte be callid // Eleasar the secou<ex>n</ex>de </line>
+                        <line n="l.2"> the champiou<ex>n</ex> // moost mẏghtẏ and notable </line>
+                        <line n="l.3"> that gaf tholysau<ex>n</ex>t // his laste mortal wounde </line>
+                        <line n="l.4"> Machabeo<ex>rum </ex>// this storẏ ẏs no ffable </line>
+                        <line n="l.5"> and as hercules // in his conquest<ex>is </ex>stable </line>
+                        <line n="l.6"> Bar up the hevenẏs // in his humanẏte </line>
+                        <line n="l.7"> for whom mẏ sorwis // wer maad most lamentable </line>
+                        <line n="l.8"> whan I be held hẏm // thus naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.17">
+                        <line n="l.1"> Thus deth w<ex>ith</ex> deth // was outraied <ex>&amp;</ex>
+                            brought lowe </line>
+                        <line n="l.2"> mankẏndẏs quarel // maad vẏctorẏous </line>
+                        <line n="l.3"> for thanne leviathan // was bou<ex>n</ex>de and over throwe </line>
+                        <line n="l.4"> whan w<ex>ith</ex> his tryvmphes // most sẏnguler glorious </line>
+                        <line n="l.5"> mẏ sone had faught // w<ex>ith</ex> his blood precẏous </line>
+                        <line n="l.6"> conquorẏd the dragou<ex>n</ex> // for al his ffel pouste </line>
+                        <line n="l.7"> and drẏve hẏm hom // to his Infernałł hous </line>
+                        <line n="l.8"> whan first mẏ sone // was naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.18">
+                        <line n="l.1"> Lat euerẏ man // in this mater take heede </line>
+                        <line n="l.2"> and euerẏ woman // in this world a lẏve </line>
+                        <line n="l.3"> come ner to me // to seen his wo<ex>u</ex>ndẏs bleede </line>
+                        <line n="l.4"> his love his deth // his kẏndenesse to descrẏve </line>
+                        <line n="l.5"> To se the mẏsterẏes // of his woundẏs ffẏve </line>
+                        <line n="l.6"> as bawme and trẏacle // of most souereẏnte </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.81" n="folio">
+                <surface n="recto">
+                    <label>Folio 81 Recto</label>
+                    <graphic url="Laud_683_f81r.jpg"/>
+                    <zone n="EETS.QD.18">
+                        <line n="l.7"> cleerly dẏstyllẏng // to fẏnde socour blẏve </line>
+                        <line n="l.8"> doun fro mẏ sone // naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.19">
+                        <line n="l.1"> Trust in his mercẏ // and I wẏl go be tween </line>
+                        <line n="l.2"> and humblẏ knele // be forn hys fface </line>
+                        <line n="l.3"> for almankẏnde // be medẏatrix and mene </line>
+                        <line n="l.4"> of sẏnful folk // to releve the trespace </line>
+                        <line n="l.5"> That he w<ex>ith </ex>vengau<ex>n</ex>ce // schal them nat
+                            manace </line>
+                        <line n="l.6"> lẏk ther dysmeritees // to shewe his cruelte </line>
+                        <line n="l.7"> But shewe to them // his mercẏ and his crace </line>
+                        <line n="l.8"> That for ther love // was naẏlled to a tre </line>
+                    </zone>
+                    <zone n="EETS.QD.E">
+                        <line n="l.1"> Explicit </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

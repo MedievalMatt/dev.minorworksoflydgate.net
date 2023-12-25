@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Description of British Library Additional 29729</title>
+            <respStmt>
+               <resp>composed by</resp>
+               <name>Matthew Evan Davis</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt xml:id="publication">
+            <publisher/>
+            <pubPlace/>
+            <availability status="restricted" xml:id="Add_29729">
+               <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/" n="license">
+                     <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+                        style="border-width:0" n="Creative Commons License BY-NC-SA"/>
+                  </ref>
+               </licence>
+               <p n="statement"> The transcription of this work is owned by the editor and
+                  licensed under a <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                     n="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                     International License</ref>. The images are (c) British Library Board (British
+                  Library Additional MS 29729) and rights are reserved. </p>
+            </availability>
+            <date/>
+         </publicationStmt>
+         <sourceDesc xml:id="British_Library_Additional_29729">
+            <!-- use LIDO here to build out space? -->
+            <msDesc xml:id="British_Library_Additional_29729">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region>London</region>
+                  <settlement>London</settlement>
+                  <institution>British Library</institution>
+                  <idno>Additional 29729</idno>
+               </msIdentifier>
+               <msContents>
+                  <p>The descriptions of items where a title is not stated are taken from the
+                     Digital Index of Middle English Verse <ref target="https://www.dimev.net/Records.php?MSS=BLAdd29729">entry</ref>. The
+                     <ref target="https://searcharchives.bl.uk/primo-explore/fulldisplay?docid=IAMS032-002021279&amp;context=L&amp;vid=IAMS_VU2&amp;lang=en_US&amp;search_scope=LSCOP_BL&amp;adaptor=Local%20Search%20Engine&amp;tab=local&amp;query=any,contains,additional%2029729&amp;sortby=rank&amp;mode=simple">British Library catalogue record has a slightly different set of names for
+                        the items.</ref></p>
+                  <msItem n="f.2r"><p>"A pece of þe battayll of the psalms, from Master Blomfeld's
+                     Boke"</p></msItem>
+                  <msItem n="f.3r-4v"><p>The difficulty of choosing a profession in religion.
+                     Twenty-one eight-line stanzas.</p></msItem>
+                  <msItem n="4v-5r"><p>John Lydgate, "How the plage was sesyd in Rome." One eight-line
+                     stanza and five rhyme royal stanzas.</p></msItem>
+                  <msItem n="6r-6v"><p>Benedict Burgh's poem in praise of Lydgate. Eight rhyme royal
+                     stanzas.</p></msItem>
+                  <msItem n="6v-7r"><p>John Gower (attr.) "Balade moral of gode counseyle." Five rhyme
+                     royal stanzas. This is attributed to John Gower in Oxford Bodleian Ashmole
+                     59.</p></msItem>
+                  <msItem n="7r-8r"><p>"Remember man thow art but wormes mete." Eight rhyme royal
+                     stanzas.</p></msItem>
+                  <msItem n="8r-9r"><p>John Skelton (attr.), The lamentation of the soul of Edward IV.
+                     Twelve-line stanzas. Robert S. Kinsman notes that Skelton replaces Lydgate in
+                     the attribution here, stating that "Stowe struck through the faulty name and
+                     and inserted the name of Skelton with his own hand," before going on to note that it
+                     is an impossibility that a poem concerning Edward IV was written by Lydgate or
+                     Shirley, who both predeceased him (97).</p></msItem>
+                  <msItem n="9v-10r"><p>John Lydgate, "Balade of the Image of Our Lady." five
+                     eight-line stanzas.</p></msItem>
+                  <msItem n="10r-10v"><p>John Lydgate, "Rammeshorne." Seven eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="11r-16r"><p>John Lydgate, "Fifteen O's of Christ." Forty-two eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="16r"><p>On the properties of wine. One eight-line stanzas.</p></msItem>
+                  <msItem n="17r-83r"><p>John Lydgate, <emph>The Siege of Thebes</emph>. 4716 lines in
+                     couplets.</p></msItem>
+                  <msItem n="84r-86r"><p>John Lydgate, "To Henry VI on his Coronation." eighteen
+                     eight-line stanzas.</p></msItem>
+                  <msItem n="87r-120r"><p><emph>Court of Sapience</emph>.</p></msItem>
+                  <msItem n="122r-123r"><p>John Lydgate, <emph>Life of Our Lady</emph>. 5936 lines in
+                     rhyme royal, with the "Magnificat" in eight-line stanzas.</p></msItem>
+                  <msItem n="123r-124r"><p>John Lydgate, "A song of Iust Measure." Eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="124v-126r"><p>John Lydgate, "Amor et Pecunia." Seventeen eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="126r-126v"><p>The Testament of one about to die. Four rhyme royal
+                     stanzas.</p></msItem>
+                  <msItem n="126v-127v"><p>John Lydgate's paraphrase of the Eight Verses of St.
+                     Bernard.</p></msItem>
+                  <msItem n="127v-129v"><p>John Lydgate, "That now is hay þat sumtyme was grasse."
+                     Seventeen eight-line stanzas.</p></msItem>
+                  <msItem n="129v-130r"><p>John Lydgate, "On the Image of Pity." Five eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="130r-130v"><p>John Lydgate or R. Stokys, Five rhyme royal
+                     stanzas.</p></msItem>
+                  <msItem n="130v-131r"><p>John Lydgate or an anchoress of Maunsfeld, A hymn of the
+                     Five Joys. Five eight-line stanzas.</p></msItem>
+                  <msItem n="131r-131v"><p>John Lydgate or Sheryngham, "Why artow froward sith I am
+                     mercyable?" Five eight-line stanzas.</p></msItem>
+                  <msItem n="131v-132r"><p>John Lydgate "Tyed with a line." Twelve rhyme royal
+                     stanzas.</p></msItem>
+                  <msItem n="132r"><p>John Lydgate, Four things that make a man a fool. One rhyme royal
+                     stanza.</p></msItem>
+                  <msItem n="132r"><p>John Lydgate, Four things that make a man a fool. One rhyme royal
+                     stanza. This is different than the previous entry, but both this witness and
+                     Trinity R.3.20 attribute it to Lydgate.</p></msItem>
+                  <msItem n="132v"><p>"Balade de bone counseyle." One rhyme royal stanza.</p></msItem>
+                  <msItem n="132v-134r"><p>
+                     <ref target="http://www.minorworksoflydgate.net/Mumming_Mercers_London/British_Library_Additional_29729/Add_29729_f132v.html">John Lydgate, "A Mumming for the Mercers of London." Fifteen rhyme royal
+                        stanzas.</ref>
+                  </p></msItem>
+                  <msItem n="134r-135v"><p>
+                     <ref target="http://www.minorworksoflydgate.net/Mumming_Goldsmiths_London/British_Library_Additional_29729/Add_29729_f134r.html">John Lydgate, "A Mumming for the Goldsmiths of London." Fourteen rhyme
+                        royal stanzas.</ref>
+                  </p></msItem>
+                  <msItem n="135v-136v"><p>
+                     <ref target="http://www.minorworksoflydgate.net/Mumming_Eltham/British_Library_Additional_29729/Add_29729_f135v.html">John Lydgate, "A Mumming at Eltham." Twelve rhyme royal stanzas.</ref>
+                  </p></msItem>
+                  <msItem n="136v-140r"><p>
+                     <ref target="http://www.minorworksoflydgate.net/Mumming_Hertford/British_Library_Additional_29729/Add_29729_f136v.html">John Lydgate, "A Mumming at Hertford." 254 lines in couplets.</ref>
+                  </p></msItem>
+                  <msItem n="140r-144r"><p>John Lydgate, "A Mumming at London." 342 lines in
+                     couplets.</p></msItem>
+                  <msItem n="144r-145v"><p>
+                     <ref target="http://www.minorworksoflydgate.net/Mumming_Windsor/British_Library_Additional_29729/Add_29729_f144r.html">John Lydgate, "A Mumming at Windsor." Fourteen rhyme royal stanzas.</ref>
+                  </p></msItem>
+                  <msItem n="145v-146v"><p>John Lydgate, "Balade of a New Year's Gift of an Eagle
+                     Presented to King Henry VI." Eleven rhyme royal stanzas and envoy.</p></msItem>
+                  <msItem n="146v-149v"><p>John Lydgate, "Gloriosa Dicta sunt de Te." Twenty-nine
+                     eight-line stanzas.</p></msItem>
+                  <msItem n="149v-151v"><p>John Lydgate (attr.), "A wikked tong wol alway deme amis."
+                     Nineteen rhyme royal stanzas.</p></msItem>
+                  <msItem n="151v-154r"><p>John Lydgate, "Thoroughfare of woe." Twenty-four eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="154r-155r"><p>John Lydgate, "Riȝt as the crabbe goth forward." Seven
+                     eight-line stanzas.</p></msItem>
+                  <msItem n="155r-157r"><p>John Lydgate, "Valentine to Our Lady." Twenty rhyme royal
+                     stanzas including two stanza envoy.</p></msItem>
+                  <msItem n="157r-157v"><p>John Lydgate, "A Balade of her that hath all virtues." Seven
+                     rhyme royal stanzas including envoy.</p></msItem>
+                  <msItem n="157v-160r"><p>John Lydgate on the Duke of Gloucester's incoming marriage
+                     to Jacqueline of Hainault. Twenty-seven rhyme royal stanzas with an eight-line
+                     envoy.</p></msItem>
+                  <msItem n="160r-161r"><p>John Lydgate, "A Gentlewoman’s Lament." seven eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="161r-166r"><p>John Lydgate, "A Sayenge of the Nyghtyngale." Fifty-four
+                     rhyme royal stanzas.</p></msItem>
+                  <msItem n="166r-168v"><p>John Lydgate, "Procession of Corpus Christi." Twenty-eight
+                     eight-line stanzas.</p></msItem>
+                  <msItem n="169r-169v"><p>John Lydgate, "Of the Sodein Fal of Princes in oure Dayes."
+                     Seven rhyme royal stanzas.</p></msItem>
+                  <msItem n="169v-170v"><p>John Lydgate, "Fall of Princes." Ten rhyme royal
+                     stanzas.</p></msItem>
+                  <msItem n="170v-177v"><p>John Lydgate, "Life of St. Margaret." Seventy-seven rhyme
+                     royal stanzas including eleven stanza prologue and three stanza envoy.</p></msItem>
+                  <msItem n="177v-179r"><p>Kalundare of John Shirley which he sett in ye biginninge of
+                     his booke. 104 lines in couplets.</p></msItem>
+                  <msItem n="179v-183r"><p>
+                     <ref target="http://www.minorworksoflydgate.net/Testament/British_Library_Additional_29729/add_29729_179v.html">John Lydgate, "Testament." In five sections. Sections one, three, and five
+                        are in eight-line stanzas, and sections two and four are in rhyme
+                        royal.</ref>
+                  </p></msItem>
+                  <msItem n="184r-286v"><p>John Lydgate (attr.), <emph>Reson and Sensuallyte</emph>
+                     7042 lines in couplets.</p></msItem>
+                  <msItem n="287r-288r"><p>John Lydgate, "Fifteen O's of Christ." forty-two eight-line
+                     stanzas.</p></msItem>
+                  <msItem n="288v"><p>On the Evils of Prosperty. Eight lines.</p></msItem>
+                  <msItem n="288v"><p>Benedict Burgh, Stanza 104 of "Cato Major." Seven lines.</p></msItem>
+               </msContents>
+               <physDesc>
+                  <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material/>
+                           <p/>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <p>The <emph><ref target="">Catalogue of English Literary
+                                    Manuscripts</ref></emph> claims that this manuscript is collated
+                              by Robert S. Kinsman, but there is no indication that the article it
+                              sites, <ref target="https://www.jstor.org/stable/3816868">"A
+                                 Lamentable of Kyng Edward the IIII,"</ref> has done so. Kinsman's
+                              focus is on the poem and so the work is primarily interested in the
+                              study of sigla for the poem in question. I can only assume that when
+                              CELM refers to the "collation" they are referring to Kinsman's work
+                              charting the relationship between the witnesses. The manuscript itself
+                              is also not much help, as it has been trimmed such that any reference
+                              to quire markers or catchwords are missing save for the verso of folio
+                              132, where "callid þ<ex>e</ex> well" appears on the lower right
+                              corner. Interestingly, this would be the proper place for the end of a
+                              gathering if it were gathered in six, but without any other
+                              indications that remains conjectural.</p>
+                           <p>There are three blank pages in the volume at 83 verso, 86 verso, and
+                              183 verso, but they do not fall at the end of any of the gatherings if
+                              we assume the volume is gathered in six. Interestingly, the first and
+                              last of these blank pages occur adter the volume's longest works,
+                              Lydgate's <emph>Seige of Thebes</emph> and <emph>Reson and
+                                 Sensuallyte</emph>, with the outlier being the shorter "To Henry VI
+                              on his Coronation." </p>
+                           <p n="stanza_layout"/>
+                           <p n="gathering" xml:id="g.48"/>
+                           <p n="collation" xml:id="q.6"/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote scope="sole" script="secretary">
+                        <p>The entire book is written chiefly in <ref
+                              target="https://doi.org/10.1093/ref:odnb/26611">John
+                           Stow's</ref>somewhat inconsistent secretary hand, with the following
+                           features:</p>
+                        <p>Stow is fairly consistent about differentiating between "u" and "v" when
+                           intended, rendering the latter with a raised initial minim that at times
+                           can almost appear like an ascender. It is tempting to assume that this is
+                           just how the scribe renders "u" in the initial position of a word, but
+                           examples like "delyver" and "servaunt" in stanza 9 of Lydgate's
+                              <emph>Testament</emph> (the first stanza on <ref
+                              target="http://www.minorworksoflydgate.net/Testament/British_Library_Additional_29729/add_29729_180v.html"
+                              >180v</ref>) clarify that this is a deliberate choice and that they do
+                           see the two letters as separate glyphs.</p>
+                        <p>For this reason where "u" is in the initial position in a word ("us" in
+                           the <emph>Testament</emph>, for example, in the third stanza on the same page) it has been rendered
+                           as "vs." While the scribe consistently makes the initial stroke higher
+                           when "v" rather than "u" is meant there is no similar consistent
+                           distinction between "u" and "w." An initial "w" can have a raised minim,
+                           as can be seen in some places in words like "Withynne" in the final
+                           stanza of f.180v or "With" in the first stanza of f. 181r, but it becomes
+                           more difficult to ascertain when the letter is rendered within a word,
+                           such as with "bowe." Generally, the upward stroke in the final minim of
+                           "w" hooks slightly to the left at the top, then runs into the letter
+                           following, while in "u" it tends to complete the final minim then begin
+                           the upstroke for the next letter. This can be seen clearly in "plukked"
+                           in the second stanza of f.180v and in "bowe"
+                           throughout.</p>
+                        <p>In certain words, such as "our," it is not entirely clear whether the
+                           letter intended is "u" or "w" at first glance, partially because the way
+                           Stow tends to write "r" in some cases resembles the modern number 3 more than
+                           what is to modern eyes a more familar form of the letter. Comparing the
+                           formation of the final two glyphs in "our" with the formation of the
+                           final two glyphs in "merrour" (line six of the third stanza on f. 181r),
+                           "licour" (line one of the first stanza on f. 182r), and "socour" (line
+                           five of the second stanza on the same page) suggests at first that the
+                           final two glyphs in "our" throughout are actually "wr," particularly in
+                           the form it is rendered where "our" appears twice in the second line of
+                           the fourth stanza on f. 179v. When compared to "liberte" (line six of the
+                           first stanza of f. 181r) and in particular to "recoure" (line five of the
+                           same stanza), however, it is clear that the form of the "r" glyph creates
+                           the impression of a second bow. This is largely due to stow beginning
+                           the strokes for the "r" glyph from the bottom of the second minim of his
+                           "u."</p>
+                        <p n="hand_intro"/>
+                        <p n="hand_otiose"/>
+                     </handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote/>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <p/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

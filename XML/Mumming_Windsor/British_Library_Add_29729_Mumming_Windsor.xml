@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Windsor">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at Windsor</emph>
+                    </title>
+                    <title type="sub">British Library Additional 29729 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Add_29729">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> NEED TO INCLUDE COPYRIGHT BLOCK FOR TRINITY
+                            R.3.20</p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Mumming_Windsor">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Additional_29729">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Additional 29729</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+                                <p n="hand_intro"/>
+                                <p n="hand_otiose"/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220802" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.144" n="folio">
+                <surface n="recto">
+                    <label>Folio 144 Recto</label>
+                    <graphic url="Add_29729_f144r.jpg"/>
+                    <zone n="EETS.MW.I">
+                        <line n="l.1">Now foloweth next the dewyse of amamynge to for the</line>
+                        <line n="l.2">kynge henry<!--note extra minim anc compare with "bury"--> the sixte beinge in his castell of wyndsore</line>
+                        <line n="l.3">the fest of hys crysmasse holdinge ther made by lidgate</line>
+                        <line n="l.4">daune Ioh<ex>n</ex>n the munke of bury how pampull / and the</line>
+                        <line n="l.5">floure delys came first to the kynges of fraunce by</line>
+                        <line n="l.6">myracles at reynes /</line>
+                    </zone>
+                    <zone n="EETS.MW.1">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi><hi rend="capital"><!--mark as invisible-->M</hi>ooste<note place="bottom" anchored="true" n="informational">While the initial is not present here there is a space and guide letter left for it.</note> noble prynce of cristen prynces all</line>
+                        <line n="l.2">to your<!--explain why "your" and not "yowr"--> highnes / let it be plesaunt</line>
+                        <line n="l.3">in your presence / men may <del>se</del> to mynd call</line>
+                        <line n="l.4">how that whylome / oure worthy realme<!--note erasure here?--> of fraunce</line>
+                        <line n="l.5">conuerted was from ther mescraunce</line>
+                        <line n="l.6">whan the lord of lordes cast asyght</line>
+                        <line n="l.7">cpon your lande / and made his grace alyght</line>
+                    </zone>
+                    <zone n="EETS.MW.2">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>ffor in the hygh / heuenly consisterye</line>
+                        <line n="l.2">by full accord / of the trynite</line>
+                        <line n="l.3">as in cronycles / maked is memory</line>
+                    </zone>   
+                </surface>
+                <surface n="verso">
+                    <label>Folio 144 Verso</label>
+                    <graphic url="Add_29729_f144v.jpg"/>
+                    <zone n="EETS.MW.2">
+                        <line n="l.4">the lord which is / called on two and thre</line>
+                        <line n="l.5">his eyen of mercy / caste on cloudovee</line>
+                        <line n="l.6">shadde his grace / of gostly influence</line>
+                        <line n="l.7">towards that kyng / hauinge his aduertence<!--check MS--></line>
+                    </zone>
+                    <zone n="EETS.MW.3">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>that he shuld passe / from paganymes lawe</line>
+                        <line n="l.2">by prescyence / which that ys deuyne</line>
+                        <line n="l.3">his hert all holly / and him sellfe with drawe</line>
+                        <line n="l.4">ffrom his ydoles / And all hys rytes fyne</line>
+                        <line n="l.5">whan heuenly grace / did vpon hym shyne</line>
+                        <line n="l.6">by mean only / and by deuoute prayer</line>
+                        <line n="l.7">of saint <hi rend="underline">cloote</hi> / most goodly and entier</line>
+                    </zone>
+                    <zone n="EETS.MW.4">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>hir hertely loue / hir meditacyons</line>
+                        <line n="l.2">hir wachinge hir fastinge / and hir parfyt lyfffe</line>
+                        <line n="l.3">hir stedfast hope / hir holy orisounes</line>
+                        <line n="l.4">hir conuersacyoun / most contemplatyffe<!--check MS for t/c--></line>
+                        <line n="l.5">stynt in ffraunce of maumetrye þ<ex>e</ex> stryffe</line>
+                        <line n="l.6">causing þ<ex>e</ex> lawe / most souerein of vertue</line>
+                        <line n="l.7">to spred abrode / of our lord Ihesu<note place="bottom" anchored="true" n="explanatory">in most instances the bar over a "u" or "n" indicates a suspension, but here the word "ihesu" is spelled out in full and the only likely suspended letter, an "s" at the end," would break the rhyme with "vertue" above. Trinity R.3.20, the other extant witness, also spells out "Ihesu" here, so this suspension mark could be support for the idea that both manuscripts are copied from a lost exemplar rather than one copied from the other.</note></line>
+                    </zone>
+                    <zone n="EETS.MW.5">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>hir meryte caused / and hir parfyt entent</line>
+                        <line n="l.2">that crystes feytħ / aboute ther did spred<!--should I include the space? between the final two words--></line>
+                        <line n="l.3">whan that an aungell / was from heuen sent</line>
+                        <line n="l.4">vnto an hermyte of parfyt lyffe in dede</line>
+                        <line n="l.5">presented it / who so can take hede</line>
+                        <line n="l.6">a sheld of azure / moste soueraygne by deuise</line>
+                        <line n="l.7">and in the felde of gould thre floure delyse</line>
+                    </zone>
+                    <zone n="EETS.MW.6">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>At <hi rend="underline">Ioye en vale</hi><!--is mark over vale here meaningful?  Check MS--> w<ex>ith</ex> oute more obstacle</line>
+                        <line n="l.2">ffel all this cas / wher thaungell doun alyghte</line>
+                        <line n="l.3">a place notable / chosin by myracle</line>
+                        <line n="l.4">which thorougħe / all ffraunce shadde his bemes lyghte</line>
+                        <line n="l.5">god of his grace / cast on that place asyte</line>
+                        <line n="l.6">ffor to that realme / it passynge auauntage</line>
+                        <line n="l.7">In thilke vale / was sett that ermytage</line>
+                    </zone>
+                    <zone n="EETS.MW.7">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>all this came in / who so list to sene</line>
+                        <line n="l.2">I dare afferme it / with oute any dred</line>
+                        <line n="l.3">by parfytnesse / of the holy quene</line>
+                        <line n="l.4">saynte <hi rend="underline">clot</hi> / floure of womanhed</line>
+                        <line n="l.5">what eu<ex>er</ex> she spake / accordant was the deed</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.145" n="folio">
+                <surface n="recto">
+                    <label>Folio 145 Recto</label>
+                    <graphic url="Add_29729_f145r.jpg"/>
+                    <zone n="EETS.MW.7">
+                        <line n="l.6">I meane it thus / that word and werke were on</line>
+                        <line n="l.7">it is no wender<!--check Ms--> / for wymen so ben echon</line>
+                    </zone>
+                    <zone n="EETS.MW.N.7">
+                        <line n="l.6">A daune Iohan est</line>
+                        <line n="l.7">yvray</line>
+                    </zone>
+                    <zone n="EETS.MW.8">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>hir holynesse / ffraunce did enlumyne</line>
+                        <line n="l.2">and crystes fayth / gretly magnefye</line>
+                        <line n="l.3">loo what grace / doth wymen shyne</line>
+                        <line n="l.4">was assuraunce / no man may denye</line>
+                        <line n="l.5">to saye pleyne truthe / nys no flaterye</line>
+                        <line n="l.6">but stabulnesse / in wymen for to fynde</line>
+                        <line n="l.7">demeth youre sellfe / wher it kometh them of kynde</line>
+                    </zone>
+                    <zone n="EETS.MW.9">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>ffor thorougħ mekenesse / yf it be aduerted</line>
+                        <line n="l.2">of saynte clote / and thorough hir hygh prudence</line>
+                        <line n="l.3">kynge cloudoue / was to oure feyth conuerted</line>
+                        <line n="l.4">in her ther was / so entier diligence</line>
+                        <line n="l.5">ffullye deuoyde / of slouth and necligence</line>
+                        <line n="l.6">no stynt noughte / till that hir lord hath take</line>
+                        <line n="l.7">the fayth of cryst / and his errour forsake</line>
+                    </zone>
+                    <zone n="EETS.MW.10">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>this made the kynge / that crystes feyth take</line>
+                        <line n="l.2">ffor he was bothe / manly and righte wys</line>
+                        <line n="l.3">the thre crepandes / this noble kynge for sake</line>
+                        <line n="l.4">and in his sheld / he bare thre floure delys</line>
+                        <line n="l.5">sent from heuen / a tresore of great prys</line>
+                        <line n="l.6">after at raynes / the story telleth thus</line>
+                        <line n="l.7">baptysed lowly of saint <hi rend="underline">remigius<!--is extra minim i?  Check MS--></hi></line>
+                    </zone>
+                    <zone n="EETS.MW.11">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>thampolle of golde / a coluer broughte adoune</line>
+                        <line n="l.2">with whych he was / this holy kynge ennoynte</line>
+                        <line n="l.3">gret pres ther was / stondinge enuryrounge</line>
+                        <line n="l.4">ffor to be hold the kynge / from poynte to poynt</line>
+                        <line n="l.5">ffor wher as he / stod in grete desioynt</line>
+                        <line n="l.6">first<!--possible double f - check MS--> apaynyme / by baptyme anon righte</line>
+                        <line n="l.7">was so conuerted / and be kamee<!--check MS--> cristes knight</line>
+                    </zone>
+                    <zone n="EETS.MW.12">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>At reygnes ther / that holy vnccyouy</line>
+                        <line n="l.2">conserued it for a remembraunce</line>
+                        <line n="l.3">and of custome / by reuolucyon</line>
+                        <line n="l.4">of god p<ex>ro</ex>uyded / w<ex>ith</ex> due obseruaunce</line>
+                        <line n="l.5">tannoynte of custome / kynges which in ffraunce</line>
+                        <line n="l.6">Iustly succed / the story doth vs lere</line>
+                        <line n="l.7">of whych / sixt henry / þat now sitteth here</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 145 Verso</label>
+                    <graphic url="Add_29729_f145v.jpg"/>
+                    <zone n="EETS.MW.13">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>right sone shall / with goddes holy grace</line>
+                        <line n="l.2">as he is borne / by successyon<!--check MS--></line>
+                        <line n="l.3">be well resceyued / in the same place</line>
+                        <line n="l.4">and by vertu / of that vnceyony</line>
+                        <line n="l.5">atteyne in knighthod / vnto full hye renoun</line>
+                        <line n="l.6">reseyve his coroune / he and his successoure</line>
+                        <line n="l.7">by tytle of righte / lyche hees p<ex>ro</ex>genytoure<!--compare with plural in Trinity R.3.20--></line>
+                    </zone>
+                    <zone n="EETS.MW.14">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>now royall braunch / o blood of saint <hi rend="underline">lowys</hi></line>
+                        <line n="l.2">so lyke it nowe / to thy magnyficence</line>
+                        <line n="l.3">that the story of the flour delys</line>
+                        <line n="l.4">maye here be shewed / in thyne hegħe presence</line>
+                        <line n="l.5">and that thy noble royall excellence</line>
+                        <line n="l.6">lyst to support / here syttinge in thy see</line>
+                        <line n="l.7">Right as it fell this myracle to see</line>
+                    </zone>
+                    <zone n="EETS.MW.N.14">
+                        <line n="l.1"/>
+                        <line n="l.2"/>
+                        <line n="l.3"/>
+                        <line n="l.4"/>
+                        <line n="l.5"/>
+                        <line n="l.6"/>
+                        <line n="l.7">explycet</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Source Information for "Verses by Lydgate at Long Melford."</title>
+         </titleStmt>
+         <author>Matthew Evan Davis</author>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc xml:id="Trapp">
+            <bibl type="article">
+               <author> John Lydgate </author>
+               <author> J.B. Trapp </author>
+               <publisher>Oxford University Press</publisher>
+               <pubPlace>London</pubPlace>
+               <pubPlace>New York</pubPlace>
+               <pubPlace>Toronto</pubPlace>
+               <title type="full" level="a">
+                  <title type="main" level="j">The Review of English Studies</title>
+                  <title type="sub" level="a">"Verses By Lydgate at Long Melford"</title>
+               </title>
+               <date when="1955-01">Jan, 1955</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

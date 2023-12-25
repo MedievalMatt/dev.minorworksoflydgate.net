@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Source Information for <emph>The Minor Poems of John Lydgate,</emph> Vol. I.</title>
+         </titleStmt>
+         <author>Matthew Evan Davis</author>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc xml:id="MacCracken">
+            <bibl type="book">
+               <author>John Lydgate</author>
+               <editor>Henry Noble MacCracken</editor>
+               <publisher>The Early English Text Society</publisher>
+               <publisher>Oxford University Press</publisher>
+               <pubPlace>London</pubPlace>
+               <pubPlace>New York</pubPlace>
+               <pubPlace>Toronto</pubPlace>
+               <title type="full" level="m">
+                  <title type="main">The Minor Poems of John Lydgate</title>
+                  <title type="sub">Edited from all Available MSS., with an Attempt to
+                     Establish the Lydgate Canon</title>
+                  <title type="desc">Volume I</title>
+               </title>
+               <date when="1911">1911</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

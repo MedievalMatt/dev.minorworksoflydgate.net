@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Goldsmiths_London">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming for the Goldsmiths of London</emph>
+                    </title>
+                    <title type="sub">Trinity R.3.20 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Trinity_R_3_20">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> NEED TO INCLUDE COPYRIGHT BLOCK FOR TRINITY
+                            R.3.20</p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Mumming_Goldsmiths_London">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="Trinity_R_3_20">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>Cambridgeshire</region>
+                        <settlement>Cambridge</settlement>
+                        <institution>Trinity College</institution>
+                        <idno>R.3.20</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+                                <p n="hand_intro"/>
+                                <p n="hand_otiose"/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220802" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.87" n="folio">
+                <surface n="recto" xml:id="p.175">
+                    <label>Folio 87 Recto (Page 175)</label>
+                    <graphic url="Trinity_R_3_20_f87r.jpg"/>                    
+                    <zone n="EETS.MGL.I">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>And now filoweþe a l<ex>ett</ex>re
+                            made in wyse of balade by ledegate</line>
+                        <line n="l.2">dann
+                            iohan<!--final stroke of a and initial stroke of n creates the effect of a box o-->
+                            of a mom<ex>m</ex>ynge whiche þe Goldesmythes of þe</line>
+                        <line n="l.3">Cite of Londo<ex>u</ex>n mo<ex>m</ex>med
+                            in<!--curved suspension mark over n--> Right fressħe and costele
+                            welycħ</line>
+                        <line n="l.4">desguysing<!--curved suspension mark over g--> to þeyre Mayre
+                            Estefeld vpo<ex>u</ex>n<!--un or nn?--> Candelmasse day</line>
+                        <line n="l.5">at nygħt affter souper brougħt and presented vn to</line>
+                        <line n="l.6">þe Mayre by an her ande
+                            <!--the space between "her" and "ande" may be imagined--> cleped
+                            ffortune</line>
+                    </zone>
+                    <zone n="EETS.MGL.1">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow"
+                                >¶</hi>Þat<!--curved otiose mark over thorn --> worþy <hi
+                                    rend="underline">david</hi> / whicħ þat slougħe <hi
+                                    rend="underline">Golye</hi></line>
+                            <line n="l.2">Þe first kyng / þat sprang onte of <hi rend="underline"
+                                    >Iesse</hi></line>
+                            <line n="l.3">Of
+                                god<!--strikethrough on g. is it consistent throughout?  If not, how to render?-->
+                                echosen / þe bookes specefye</line>
+                            <line n="l.4">By <hi rend="underline">Samuel</hi> sette / in his royal
+                                see</line>
+                            <line n="l.5">Witħ twelve trybus / as comen to þis citee</line>
+                            <line n="l.6">Brougħt royal gyfftes / kyngly him taquyte</line>
+                            <line n="l.7">Þe noble mayre / to seen and to vysyte</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.2">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>Þe first trybe þe byble cane
+                                well<!--strikethrough on two l's  either struck-through l's or e abbrev.-->
+                                telle</line>
+                            <line n="l.2">Is called <hi rend="underline">Iuda</hi> þe hardy strong
+                                lyoun<!--possible suspension mark.  Two n's?--></line>
+                            <line n="l.3">ffor<note place="bottom" anchored="true" n="informational"
+                                    >MacCraken corrects this to "Fro" with a marginal
+                                    acknowledgement that "For" is the MS rendering. Additional 29729
+                                    has "fro."</note> whos kynrede / for
+                                hit<!--curved otiose mark over t.--> did excelle</line>
+                            <line n="l.4"><hi rend="underline">Cryst</hi> lyneally / he came
+                                adown</line>
+                            <line n="l.5">Whicħ lycħe <hi rend="underline">david</hi> / was þe
+                                chaumpyoun</line>
+                            <line n="l.6">Þat sloughe þe tyraunt / to gete him self aprysse</line>
+                            <line n="l.7">Man to restore ageyne / to Paradys</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.3">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>Þis noble david moost migħty and
+                                moost goode</line>
+                            <line n="l.2">Is nowe descended / in his estate royal</line>
+                            <line n="l.3">With alle þe trybe / of Iacobus blood</line></zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.176">
+                    <label>Folio 87 Verso (Page 176)</label>
+                    <graphic url="Trinity_R_3_20_f87v.jpg"/>
+                    <zone n="EETS.MGL.3">
+                        <zone n="text">
+                            <line n="l.4">ffor to presenten in
+                                especial<!--otiose mark after--></line>
+                            <line n="l.5">Gyfftes þat beon boþe hevenly and moral</line>
+                            <line n="l.6">App<ex>er</ex>teyning<note place="bottom" anchored="true"
+                                    n="informational">A stroke through the descenders of both p's
+                                    serves as the suspension mark here. See also line seven of verse
+                                    four below, where it occurs after the second p. No other p's in
+                                    the witness have a similar strikethrough, so they have not been
+                                    rendered here.</note></line>
+                            <line n="l.7">Vn to þe Mayre / for to doo plesaunce</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.4">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>ffrome his cytee / of
+                                Iherusalem</line>
+                            <line n="l.2">He is come dovne / of humble wille and thougħt</line>
+                            <line n="l.3">þe arke of god brigħt as þe sonne beeme</line>
+                            <line n="l.4">In to þis tovne / he haþe goodely brougħt</line>
+                            <line n="l.5">Whicħ designeþe / if hit<!--otiose mark after t--> be wel
+                                sougħt</line>
+                            <line n="l.6">Grace and
+                                good<!--check manuscript - otoiose mark under g - possible touch striketrough error?-->
+                                eure / and long prosp<ex>er</ex>itee</line>
+                            <line n="l.7">Perpetuelly to byde in þis cytee</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.5">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>O yee levytes / whycħ bere þis
+                                lordes arke</line>
+                            <line n="l.2">dooþe youre devoyre / witħ hevenly armonye</line>
+                            <line n="l.3">Þe gret mysterye / deuoutely for to marke</line>
+                            <line n="l.4">Witħ laude and prys / þe lord to magnefye</line>
+                            <line n="l.5">Of oon acorde<!--otiose mark after e--> sheweþe / your
+                                melodye</line>
+                            <line n="l.6">Syngeþe for joye / þat þe Arke is sent</line>
+                            <line n="l.7">Nowe to þe Mayre / witħ hoole and truwe
+                            entent</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.6">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>Whylome þis Arke /
+                                abyding<!-- curved otiose mark between g and i in in --> in þe
+                                hous</line>
+                            <line n="l.2">Of <hi rend="underline">Ebdomadon</hi> / brougħt in ful
+                                gret Ioye</line>
+                            <line n="l.3">ffor in effect / it<!--otiose mark over t, curved-->
+                                was<!-- mark after was as well--> more gracyous</line>
+                            <line n="l.4">Þanne euer was <hi rend="underline">Palladyone</hi> of
+                                Troye</line>
+                            <line n="l.5">hit did gret gladnesse / and hit did accoye</line>
+                            <line n="l.6">Thinges contrarye / and al aduersytee</line>
+                            <line n="l.7">Þeffect þer of whane <hi rend="underline">David</hi> did
+                                see</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3"/>
+                            <line n="l.4">•• Palladyone was a relyk and an ymage</line>
+                            <line n="l.5">sent by þe goddes in to þe cytee of Troye</line>
+                            <line n="l.6">þe whicħ kept helm in longe p<ex>re</ex>sp<ex>er</ex>ite
+                                ageynst</line>
+                            <line n="l.7">alle hir enemys</line>
+                        </zone></zone>
+                    <zone n="EETS.MGL.7">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>and fully knewe / howe god list
+                                for to blesse</line>
+                            <line n="l.2">Thorugħe his vertu / and his migħty grace</line>
+                            <line n="l.3">Þat of gladdnesse / þey migħt no
+                                thing<!--cross through and mark over g--> mysse</line>
+                            <line n="l.4">Wher hit aboode / any maner spaace</line>
+                            <line n="l.5">God of his migħt halowed so þe place</line>
+                            <line n="l.6">Wher fore Kyng <hi rend="underline">david</hi> / by gret
+                                    deuoc<ex>i</ex>on</line>
+                            <line n="l.7">Maade of þis ark / a fayre
+                            translac<ex>i</ex>on</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.8">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>in to his hond / and his palays
+                                Royal</line>
+                            <line n="l.2">Brougħt by þe levytes / witħ gret
+                            solempuytee</line></zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.88" n="folio">
+                <surface n="recto" xml:id="p.177">
+                    <label>Folio 88 Recto (Page 177)</label>
+                    <graphic url="Trinity_R_3_20_f88r.jpg"/>
+                    <zone n="EETS.MGL.8">
+                        <zone n="text">
+                            <line n="l.3"><hi rend="pilcrow">¶</hi><note place="bottom"
+                                    anchored="true" n="informational">The scribe made a mistake
+                                    here, adding the "n" indicating the beginning of a
+                                    stanza.</note> And he him self / in especyal</line>
+                            <line n="l.4">Daunsed and sang / of gret
+                                humylyte<!--otiose mark at the end the line--></line>
+                            <line n="l.5">And ful deuoutely lefft his ryaltee</line>
+                            <line n="l.6">With <hi rend="underline">Ephod</hi> gyrt/ lyche preestis
+                                of þe lawe</line>
+                            <line n="l.7">To gyf ensaumple / howe pryde shoulde beo<note
+                                    place="bottom" anchored="true" n="explanatory">MacCraken has
+                                    "be" here, but there appears to be a full letter after the e
+                                    rather than an otiose mark.</note></line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.MGL.9">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>In yche estate who list þe trouth
+                                serche</line>
+                            <line n="l.2">And to exclude al veyne ambycyoun</line>
+                            <line n="l.3">Specyally fro mynistres of þe chirche</line>
+                            <line n="l.4">To whome hit longeþe by deuocyoun </line>
+                            <line n="l.5">To serve god / with hool deffeccyoun</line>
+                            <line n="l.6">And afforne him / mynistre in clennesse</line>
+                            <line n="l.7">Bensaumple of <hi rend="underline">Dauid</hi> for al his
+                                worþynesse</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.10">
+                        <zone n="text">
+                            <line n="l.1">Nowe ryse vp lord / in to þy resting
+                                place<!--words are close together. Maybe single word?  Check for other instances. MacCraken has as two--></line>
+                            <line n="l.2">Aark of þyne hooly halowed mansyoun<note place="bottom"
+                                    anchored="true" n="informational">what appears to be a plus mark
+                                    in a different ink color is just to this line, but there is no
+                                    corresponding note</note></line>
+                            <line n="l.3">Þou aark of wisdome / of vertu and of grace</line>
+                            <line n="l.4">Keepe and defende in þy protecc<ex>i</ex>on</line>
+                            <line n="l.5">Þe Meyre,<!--keep?--> þe Citeseyns / þe comunes of þis
+                                tovne</line>
+                            <line n="l.6">Called in cronycles / whylome nuwe Troye</line>
+                            <line n="l.7">Graunte hem plente / vertu honnour and Ioye</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1">•• Surge d<ex>omi</ex>ne in requiem tuam tu <ex>est</ex>
+                                archa</line>
+                            <line n="l.2">sanctificacionis tue</line>
+                        </zone></zone>
+                    <zone n="EETS.MGL.11">
+                        <zone n="text">
+                            <line n="l.1">And for þat meeknesse / is a vertu feyre</line>
+                            <line n="l.2">Worþy <hi rend="underline">David</hi> / witħ kyngly
+                                excelelnce</line>
+                            <line n="l.3">In goodely wyse haþe made his repayre</line>
+                            <line n="l.4">O noble mayre / vn to youre presence</line>
+                            <line n="l.5">And to youre hyegħnesse / witħ freondly dilygence</line>
+                            <line n="l.6">Þis presande brougħt / oonly for<!--otiose mark after r-->
+                                þe best</line>
+                            <line n="l.7">P<ex>er</ex>petuelly þis tovne to sette at
+                            rest</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.12">
+                        <zone n="text">
+                            <line n="l.1">Of purpoos put þis aark to youre depoos</line>
+                            <line n="l.2">Witħ good entent / to make youre hert ligħt</line>
+                            <line n="l.3">And þoo three thinges / whicħ þer Inne beo cloos</line>
+                            <line n="l.4">Shal gif to yowe konnyng / grace and migħt</line>
+                            <line n="l.5">ffor to gouuerne / with wisdome pees and Rigħt</line>
+                            <line n="l.6">Þis noble Cytee / and lawes suche ordeyne</line>
+                            <line n="l.7">Þat no man shal haue cause for to compleyne</line></zone>
+                    </zone>
+                </surface>
+                <surface n="verso" xml:id="p.178">
+                    <label>Folio 88 Recto (Page 178)</label>
+                    <graphic url="Trinity_R_3_20_f88v.jpg"/>                 <zone n="EETS.MGL.13">
+                        <zone n="text">
+                            <line n="l.1">A wrytt witħ inn / shal vnto yon declare</line>
+                            <line n="l.2">And in effect pleynly specefye</line>
+                            <line n="l.3">Where yee shal punyssħe / and where as yee shal
+                                spare</line>
+                            <line n="l.4">And howe þat mercy<note place="bottom" anchored="true"
+                                    n="informational">The scribe has erased an earlier word and
+                                    written "mercy" here. MacCraken capitalizes this but I see no
+                                    indication that it is capitalized in the manuscript</note> shal
+                                    Rygo<ex>ur</ex> modefye</line>
+                            <line n="l.5">And youre estate al so to magnefye</line>
+                            <line n="l.6">Þis aark of god / to make yon gracyous</line>
+                            <line n="l.7">Shal stille abyde / witħ you in youre hous</line></zone>
+                    </zone>
+                    <zone n="EETS.MGL.14">
+                        <zone n="text">
+                            <line n="l.1">ffor whyles it bydeþe stille in youre presence</line>
+                            <line n="l.2">Þe hyegħe lord shal blesse booþe yowe and youres</line>
+                            <line n="l.3">Of grace of fortune / sende yowe influence</line>
+                            <line n="l.4">And of vertue / alle þe fressħe floures</line>
+                            <line n="l.5">And of aduersytee / voyde awey þe shoures</line>
+                            <line n="l.6">Sette pees and rest / welfare and vnytee</line>
+                            <line n="l.7">Duryng youre tyme / thorougħe oute þus cytee</line></zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

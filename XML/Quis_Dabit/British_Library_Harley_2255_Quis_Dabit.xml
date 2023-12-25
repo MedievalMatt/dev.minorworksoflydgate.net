@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Quis_Dabit">
+                <title type="full">
+                    <title type="main">
+                        <emph rend="italic">Quis Dabit Meo Capiti Fontem Lacrimarum</emph>
+                    </title>
+                    <title type="sub">British Library Harley 2255 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="british_library">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library MS Harley 2255) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Harley_2255">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Harley_2255">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Harley 2255</idno>
+
+                    </msIdentifier>
+                    <history/>
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>parchment</material>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><p n="stanza_layout"/>
+                                    <p n="gathering" xml:id="g.20"/>
+                                    <p n="collation" xml:id="q.8"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <p/>
+                                <p/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <msContents>
+                        <msItem>
+                            <p/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main">The Minor Poems of John Lydgate </title>
+                        <title type="sub">Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="g.8" n="gathering">
+            <surfaceGrp xml:id="f.66" n="folio">
+                <surface n="verso">
+                    <label>Folio 66 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f66v.jpg"/>
+                    <zone n="EETS.QD.I">
+                        <line n="l.1"><hi rend="rubricated">Quis dab<ex>it</ex> capiti</hi></line>
+                        <line n="l.2"><hi rend="rubricated">Meo fonte<ex>m </ex>lac<ex>rimarum</ex></hi>
+                       </line>
+                    </zone>
+                    <zone n="EETS.QD.1">
+                        <line n="l.1"><hi rend="capital_3_gold_pilcrow">W</hi>ho shal give / vnto myn heed awelle</line>
+                        <line n="l.2">Of bittir teerys / my sorwes to co<ex>m</ex>pleyne </line>
+                        <line n="l.3">Or a gret conduit / of trowbly watis felle</line>
+                        <line n="l.4">do<ex>u</ex>n to distille / fro myn eyen tweyne</line>
+                        <line n="l.5">to shewe the constreynt / of my dedly peyne</line>
+                        <line n="l.6">whan I allas beheeld / and did see</line>
+                        <line n="l.7">My deere sone / bleede in euery veyne</line>
+                        <line n="l.8">Attwix too theevys / nailed to a tree</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.67" n="folio">
+                <surface n="recto">
+                    <label>Folio 67 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f67r.jpg"/>
+                    <zone n="EETS.QD.2">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Who shal of wepyng / gif me suffisaunce</line>
+                        <line n="l.2">or to my sobbyng / who shal me teerys fynde</line>
+                        <line n="l.3">to see my Ioye / myn hertys hi<ex>g</ex>h plesaunce</line>
+                        <line n="l.4">my soote sone / that was to me so kynde</line>
+                        <line n="l.5">Rayled with reed blood / as sap doth thoru<ex>g</ex>h þ<ex>e</ex> rynde</line>
+                        <line n="l.6">thoruh his enmyes / vengable crueltee</line>
+                        <line n="l.7">derkenyd w<ex>ith</ex> deeth / his eyen now maad blynde</line>
+                        <line n="l.8">attwix too theevys / nailed to a tree</line>
+                    </zone>
+                    <zone n="EETS.QD.3">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>My Joye / my li<ex>g</ex>ht / my lanterne moost enteere</line>
+                        <line n="l.2">This heuenly <hi rend="underline_red">phebus</hi> / is clipsid of his li<ex>g</ex>ht</line>
+                        <line n="l.3">This <hi rend="underline_red">Esperus</hi> / hath hid his beemys cleere</line>
+                        <line n="l.4">And is of newe / certeyned fro my sight</line>
+                        <line n="l.5">whan shal his day sterre / shewe me his bemys bri<ex>g</ex>ht</line>
+                        <line n="l.6">to cleere the trouble of myn adversitee</line>
+                        <line n="l.7">parde the Iewys don me to gret vnri<ex>g</ex>ht</line>
+                        <line n="l.8">to nayle my sone / allas vnto a tree</line>
+                    </zone>
+                    <zone n="EETS.QD.4">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>O alle ye dou<ex>g</ex>htren of <hi rend="underline_red">ierusaleem</hi></line>
+                        <line n="l.2">Ha som compassio<ex>u</ex>n / on my si<ex>g</ex>h<ex>g</ex>hes deepe</line>
+                        <line n="l.3">nat lik the gladnesse / which I had in <hi rend="underline_red">Bedleem</hi></line>
+                        <line n="l.4">cometh neer of routhe / <ex>&amp;</ex> helith me for to weepe</line>
+                        <line n="l.5">a swerd of deth doth thoru<ex>g</ex>h myn herte creepe</line>
+                        <line n="l.6">I feele it ful weel / of moodirly pitee</line>
+                        <line n="l.7">Craunpisshed / with swownyng I do sleepe</line>
+                        <line n="l.8">To see my sone / thus nailed to a tree</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 67 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f67v.jpg"/>
+                    <zone n="EETS.QD.5">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>O gentil princessis / and ladies of estat</line>
+                        <line n="l.2">And ye virgines / in your entent moost cleene</line>
+                        <line n="l.3">To yeue me comfort / that al desolat</line>
+                        <line n="l.4">Rennyth apaas to see the woundys greene</line>
+                        <line n="l.5">Of your trewe spouse / of bleedyng pale <ex>&amp;</ex> leene</line>
+                        <line n="l.6">And aduertiseth / and hath now routhe on me</line>
+                        <line n="l.7">ffeynt for to stonde for how shuld I susteene</line>
+                        <line n="l.8">To see my sone / thus nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.6">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>And alle ye women / tapese myn hevynesse</line>
+                        <line n="l.2">Remembrith the p<ex>ro</ex>cesse / of this dreedful victory</line>
+                        <line n="l.3">See to for <hi rend="underline_red">pilat</hi> / by many fals witnesse</line>
+                        <line n="l.4">How he was dampnyd / in the consistory</line>
+                        <line n="l.5">Bad ye evir / or sau<ex>g</ex>h in history</line>
+                        <line n="l.6">of ony sorwys / that may comparyd be</line>
+                        <line n="l.7">vnto the sorwes / grave in my memory</line>
+                        <line n="l.8">To see my sone thus nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.7">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>And yif ye like / of routhe for to lere</line>
+                        <line n="l.2">and at my terys / yif ye nat disdeyne</line>
+                        <line n="l.3">but of compassio<ex>u</ex>n / meekly list to here</line>
+                        <line n="l.4">how a sharp swerd / myn hert hath corve on tweyne</line>
+                        <line n="l.5">A swerd of sorwe / thoru<ex>g</ex>h percyd every veyne</line>
+                        <line n="l.6">Now deth hath slayn my sone / and sparith me</line>
+                        <line n="l.7">Allas fro weepyng / how shuld me restreyne</line>
+                        <line n="l.8">To see my sone / thus nailed to a tre</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.68" n="folio">
+                <surface n="recto">
+                    <label>Folio 68 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f68r.jpg"/>
+                    <zone n="EETS.QD.8">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>O peeple vnkynde / why wilt thu noon heed take</line>
+                        <line n="l.2">To see the lord / the lord of helle erthe and hevene</line>
+                        <line n="l.3">Meek as a lamb / thus offrid for thy sake</line>
+                        <line n="l.4">To sle the drago<ex>u</ex>n / with his hedys sevene</line>
+                        <line n="l.5">Dauntyng the power / of his infernal levene</line>
+                        <line n="l.6">Out of his thraldam / to make the go fre</line>
+                        <line n="l.7">with many mo woundys / than any man kan nevene</line>
+                        <line n="l.8">Whan he at <hi rend="underline">Caluary</hi> was nayled to a
+                            tre</line>
+                    </zone>
+                    <zone n="EETS.QD.9">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Is it a merveil / or any maner wondir</line>
+                        <line n="l.2">Thouh I ful ofte / swowne for grevaunce</line>
+                        <line n="l.3">Was evir moodir / outhir heer or yondir</line>
+                        <line n="l.4">That for her child / felte moore penaunce</line>
+                        <line n="l.5">Myn inward sorwys / can fynde noon allega<ex>u</ex>nce</line>
+                        <line n="l.6">Ech<ex>e</ex> hour renewyng / it wyl noon othir be</line>
+                        <line n="l.7">whan evir it comyth / to my remembraunce</line>
+                        <line n="l.8">how that my sone / was nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.10">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>The lymes feble / vpon my feet to stonde</line>
+                        <line n="l.2">whan I allas / concidre and so beholde</line>
+                        <line n="l.3">this pitous mateer / that we han on honde</line>
+                        <line n="l.4">fful litil mervail / thou<ex>g</ex>h my herte colde</line>
+                        <line n="l.5">Myn handys cra<ex>u</ex>npissh<ex>e</ex> / I may them nat vnfolde</line>
+                        <line n="l.6">To goon vpri<ex>g</ex>ht / I ha no foot nor kne</line>
+                        <line n="l.7">My peynes passe / all turmentis newe <ex>&amp;</ex> olde</line>
+                        <line n="l.8">To see my sone / thus nailed to a tre</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 68 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f68v.jpg"/>
+                    <zone n="EETS.QD.11">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Geyn the guyse / of kynges riche crownes</line>
+                        <line n="l.2">My deere sone / weryd a crowne of thorn</line>
+                        <line n="l.3">Of gold and perle / ageyn ther statly gownes</line>
+                        <line n="l.4">Ageyn ther rydyng / gret meyne them beforn</line>
+                        <line n="l.5">My sone on foote / hath his cros I born</line>
+                        <line n="l.6">Ageyn ther seetys / of stonys and perre</line>
+                        <line n="l.7">And for mankynde / that was thoruh synne lorn</line>
+                        <line n="l.8">He poore and nakyd / was nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.12">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Ageyn ther beddyn / statly hi<ex>g</ex>h and softe</line>
+                        <line n="l.2">Of worldly pryncis / with pilwes for ther hed</line>
+                        <line n="l.3">Vpon the Roode / my sone was lefft a loffte</line>
+                        <line n="l.4">with bloody purpil / his mantil maad al red</line>
+                        <line n="l.5">Markid with a spere / and for mankynde ded</line>
+                        <line n="l.6">And gruchchid no thyng / thoruh his humylite</line>
+                        <line n="l.7">To me noon ese / what that I took heed</line>
+                        <line n="l.8">And sau<ex>g</ex>h my sone / thus nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.13">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>ffor <hi rend="underline_red">Adamys</hi> synne / thus was my sone slayn</line>
+                        <line n="l.2">thoru<ex>g</ex>h the Oold serpent bi thassent of eve</line>
+                        <line n="l.3">Whan thoruh my meeknesse / mankynde was mad fayn</line>
+                        <line n="l.4">Hir name turnyd / ther thraldam to releve</line>
+                        <line n="l.5">And <hi rend="underline_red">gabriel</hi> cam / my meeknesse for
+                            to preve</line>
+                        <line n="l.6">Sent by oon accoord / of al the trynyte</line>
+                        <line n="l.7">But ful soore aftir / it did my herte greve</line>
+                        <line n="l.8">Whan I my sone sau<ex>g</ex>h nailed to a tre</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.69" n="folio">
+                <surface n="recto">
+                    <label>Folio 69 Recto</label>
+                    <graphic url="British_Library_Harley_2255_f69r.jpg"/>
+                    <zone n="EETS.QD.14">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>ffor mannys love / he fau<ex>g</ex>t a gret batail</line>
+                        <line n="l.2">with his sevene hedys / he outraied þe drago<ex>u</ex>n</line>
+                        <line n="l.3">lyk my<ex>g</ex>hty <hi rend="underline_red">sampson</hi> / withoute plate or mayl</line>
+                        <line n="l.4">In his strong fi<ex>g</ex>ht / he stranglid the leo<ex>u</ex>n</line>
+                        <line n="l.5">Thus was my sone / mankyndis champio<ex>u</ex>n</line>
+                        <line n="l.6">Thoru<ex>g</ex>h his moost my<ex>g</ex>hty magnanymyte</line>
+                        <line n="l.7">as <hi rend="underline_red">kyng</hi> and <hi rend="underline_red">bisshop</hi> / made his oblacio<ex>u</ex>n</line>
+                        <line n="l.8">vpon the hi<ex>g</ex>h auhter / of the roode tre</line>
+                    </zone>
+                    <zone n="EETS.QD.15">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>My sonys suffra<ex>u</ex>nce / to sathan was gret wrak</line>
+                        <line n="l.2">whos gret meeknesse / did I nou<ex>g</ex>h suffise</line>
+                        <line n="l.3">Cleerly figured / whan that <hi rend="underline_red">Isaak</hi>
+                       </line>
+                        <line n="l.4">was by his fadir / offrid in sacrifise</line>
+                        <line n="l.5">Nat disobeyeng / in no maner wyse</line>
+                        <line n="l.6">but like a lamb / of lownesse list nat fle</line>
+                        <line n="l.7">But moost myn herte / that tyme did agrise</line>
+                        <line n="l.8">Whan I first sauh hym nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.16">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>He myhte be callyd <hi rend="underline_red">Eleasar</hi> the secounde</line>
+                        <line n="l.2">the champio<ex>u</ex>n / moost my<ex>g</ex>ħty and notable</line>
+                        <line n="l.3">That gaf <hi rend="underline_red">tholifaunt</hi> / his last mortal wounde</line>
+                        <line n="l.4"><hi rend="underline_red">Machabeo<ex>rum</ex></hi> / this stoory is no fable</line>
+                        <line n="l.5">And as <hi rend="underline_red">hercules</hi> / in his conquestys stable</line>
+                        <line n="l.6">bar vp the heuenys / in his humanyte</line>
+                        <line n="l.7">ffor whom my sorwys / wer maad moost lamentable</line>
+                        <line n="l.8">whan I beheeld hym / thus nailed to a tre</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 69 Verso</label>
+                    <graphic url="British_Library_Harley_2255_f69v.jpg"/>
+                    <zone n="EETS.QD.17">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Thus deth with deth / was outraied <ex>&amp;</ex> brou<ex>g</ex>ht lowe</line>
+                        <line n="l.2">Mankyndes quarel / maad victorious</line>
+                        <line n="l.3">ffor than <hi rend="underline_red">leviathan</hi> / was bounde and ovirthrowe</line>
+                        <line n="l.4">whan with his tryvmphis / moost singuler glorious</line>
+                        <line n="l.5">My sone had fowten / with his blood precious</line>
+                        <line n="l.6">Conqueryd the drago<ex>u</ex>n / for al his fel poste</line>
+                        <line n="l.7">And dryve hym hom / to his infernal hows</line>
+                        <line n="l.8">Whan first my sone / was nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.18">
+                        <line n="l.1"><hi rend="blue_pilcrow">¶</hi>Lat euery man / in this mateer tak heede</line>
+                        <line n="l.2">And euery woman / in this world a lyve</line>
+                        <line n="l.3">Com neer to me / to seen his woundis bleede</line>
+                        <line n="l.4">His love his deth / his kyndnesse to descryve</line>
+                        <line n="l.5">to see the mysteryes / of his woundys fyve</line>
+                        <line n="l.6">As bawme and tryacle / of moost soverynte</line>
+                        <line n="l.7">Cleerly distillyng / to fynde socour blyve</line>
+                        <line n="l.8">Do<ex>u</ex>n from my sone / nailed to a tre</line>
+                    </zone>
+                    <zone n="EETS.QD.19">
+                        <line n="l.1"><hi rend="gold_pilcrow">¶</hi>Trust in his mercy / and I wil go betwene</line>
+                        <line n="l.2">And humbly kneele / beforn his face</line>
+                        <line n="l.3">ffor al mankynde / be mediatrice and mene</line>
+                        <line n="l.4">of synful folk / to releve the trespace</line>
+                        <line n="l.5">that he with vengaunce / shal them nat manace</line>
+                        <line n="l.6">lyk ther demerytis / to shewe his cruelte</line>
+                        <line n="l.7">but shewe to them / his mercy and his grace</line>
+                        <line n="l.8">That for ther love was nailed to a tre</line>
+                    </zone>
+                    <zone n ="EETS.QD.E">
+                        <line n="l.1"><hi rend="underline_red"><hi rend="touched">E</hi>x<ex>plici</ex>t</hi></line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

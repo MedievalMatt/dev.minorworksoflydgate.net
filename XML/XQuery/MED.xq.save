@@ -1,0 +1,23 @@
+
+let $q:=collection('/home/matrygg/minorworksoflydgate.net/XML/XQuery/MED/?select=*.xml')
+
+for $e in $q
+
+let $b := fn:base-uri($e)
+
+(:let $m := transform(map {"stylesheet-location": "MED_Organizer.xsl","source-node": $e)}:)
+let $i := $e//td
+let $f := $i//span[@class="FORM"]
+let $p := $f//span[@class="POS"]
+
+return 
+<word id="{substring-after(substring-before($b,'.xml'),'/MED/MED')}">
+	{for $t in $f
+		let $h := $t//span[@class="HDORTH"]
+
+		return
+		<headword>$h/text())}</headword>
+	}
+		<speech_part>{normalize-space($p/text())}</speech_part>
+
+</word>

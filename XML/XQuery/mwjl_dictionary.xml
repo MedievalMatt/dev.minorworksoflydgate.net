@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Data Dictionary</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>This sample TEI file was released from the River Campus Libraries, University of
+               Rochester.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>A description of your data dictionary goes here.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+
+
+         <!-- As in the example below, enclosing element and attribute names with the <gi> and 
+                 <att> tags respectively will to have the dictionary visually format them in 
+                 the entries. -->
+         <div corresp="TEI" type="element">
+            <div type="entry">
+               <span type="definition">For our encoding project project, the <gi>TEI</gi> element
+                  represents a discrete object—such as a letter, a journal, or something else. A
+                  unique identifier should be added as an <att>xml:id</att> attribute, so that the
+                  item's contents can be targeted directly within the project.</span>
+            </div>
+         </div>
+
+
+         <!-- Entries can contain multiple definitions: just add an additional <span type="definition">
+                 element. -->
+         <!-- Hyperlinks can be added to external documents with a <ref> tag.-->
+         <div corresp="date" type="element">
+            <div type="entry">
+               <span type="definition">Within <gi>origin</gi>, <gi>date</gi>records the creation
+                  date of the letter.</span>
+               <span type="definition">Within <gi>correspAction</gi>, <gi>date</gi>records the
+                  creation date of the letter.</span>
+               <span type="usage"><gi>date</gi> should always contain a <att>when</att> attribute
+                  which encodes the referenced date according to the ISO-8601 <ref
+                  target="https://en.wikipedia.org/wiki/ISO_8601">"Representation of dates and
+                  times"</ref> standard.</span>
+            </div>
+         </div>
+
+
+         <!-- adding a <span type="maycontain"> to your entry can help keep your dictionary page
+                 tidy when documenting attributes that might contain hundreds of different values,
+                 such as identifiers, labels, and so on. -->
+         <div corresp="n" type="attribute">
+            <div type="entry">
+               <span type="definition">Within <gi>pb</gi>, <att>n</att> is used to identify page
+                  numbers.</span>
+               <span type="mayContain">[string]</span>
+            </div>
+         </div>
+
+
+         <!-- Usage notes can be added to provide specific instructions on how tags should be used,
+                 in cases where it is useful to separate this information from the definition(s). -->
+         <!-- cross-references to entries for other elements and attributes in this dictionary can
+                 be added with <span type="seeAlso">.  -->
+         <!-- Example code can be added with <egXML xmlns="http://www.tei-c.org/ns/Examples"> -->
+         <div corresp="choice" type="element">
+            <div type="entry">
+               <span type="definition">Groups alternate encodings for matters such as expanded
+                  abbreviations, misspellings, etc.</span>
+               <span type="usage">Do not use <gi>choice</gi> in order to address situations relating
+                  to physical damage to the text—use <gi>supplied</gi> instead.</span>
+               <span type="seeAlso">
+                  <gi>supplied</gi>
+                  <att>sameAs</att>
+               </span>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <choice>
+                     <sic>doged</sic>
+                     <corr>dodged</corr>
+                  </choice>
+               </egXML>
+            </div>
+         </div>
+         
+         <div corresp="zone" type="element">
+            <div type="entry">
+               <span type="usage">Used to indicate a stanza or part of a stanza within a <gi>surface</gi> element. <att>n</att> is used to indicate which stanza is meant, using a standard edition as a guideline.</span>
+            </div>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+               <surface n="recto">
+                  <label>Folio 20 Recto</label>
+                  <graphic url="Jesus_Q_G_8_f20r.jpg"/>
+                  <zone n="EETS.QD.1">
+                     <line n="l.7"><orig><hi rend="touched">M</hi>y dere son <hi rend="underline">bled</hi><hi rend="underline"
+                        >e</hi> in eu<ex>er</ex>y weyne . </orig></line>
+                     <line n="l.8"><orig><hi rend="touched">B</hi>e twix two <hi rend="underline">thewes</hi> nayled to a <hi
+                        rend="underline">tre</hi> . </orig></line>
+                  </zone>
+                  <zone n="EETS.QD.2">
+                     <line n="l.1"><orig><hi>W</hi>ho shall of <hi rend="underline">wepyng</hi> giff me
+                        <hi rend="underline">suffisaunce</hi> .</orig></line>
+                     <line n="l.2"><orig><hi rend="touched">O</hi>r to my <hi rend="underline">sobbyng</hi> who shall my teres
+                        fynde . </orig></line>
+                     <line n="l.3"><orig><hi rend="touched">T</hi>o see my ioye my hart<ex>is </ex>high <hi rend="underline"
+                        >plesauncce</hi> . </orig></line>
+                     <line n="l.4"><orig><hi rend="touched">M</hi>y swete sone þat <hi rend="underline">was</hi> to me so kynde
+                        .</orig></line>
+                     <line n="l.5"><orig><hi rend="underline"><hi rend="touched">R</hi>ailed</hi> with rede bloode as sappe doth
+                        þurth <hi rend="underline">þe rynde</hi> . </orig></line>
+                     <line n="l.6"><orig><hi rend="touched">T</hi>hurgh his <hi rend="underline">enmys</hi> wengeable crueltee .
+                     </orig></line>
+                     <line n="l.7"><orig><hi rend="touched">D</hi>irkenyd with dethe his eyne nowe made <hi rend="underline"
+                        >blynde</hi><note place="bottom" anchored="true" type="explanatory">The "de" here has been corrected and written over another glyph, but the glyph cannot be made out.</note> .</orig></line>
+                     <line n="l.8"><orig><hi rend="touched">A</hi> twix two <hi rend="underline">thewes</hi> nailed to a <hi
+                        rend="underline">tre</hi> .</orig></line>
+                  </zone>
+               </surface>
+            </egXML>
+         </div>
+
+
+         <!-- Finally, projects that make extensive use of XML comments might need to document 
+                 their usage. This can be done by using the <![CDATA]> construct provided in the
+                 example below.-->
+         <div corresp="note" type="element">
+            <div type="entry">
+               <span type="definition">At this stage in the project, notes are generally meant to be
+                  read only by project staff. For these kinds of notes, an XML comment
+                  <![CDATA[<!--comment-->]]> is preferable in cases where follow-up by a project
+                  editor is needed. Any questions on <gi>note</gi> should be referred to the TEI
+                  Encoding Manager for the Seward Project.</span>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

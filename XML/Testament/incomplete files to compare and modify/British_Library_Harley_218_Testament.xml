@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">British Library Additional 34193 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Add_34193">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library Additional MS 29729) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Additional_34193">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Additional_34193">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Additional 29729</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc/>
+                        
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20203108" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.X" n="gathering">
+            <surfaceGrp xml:id="f.52" n="folio">
+                <surface n="verso">
+                    <zone n="EETS.T.I">
+                        <line n="l.1"><hi rend="capital_2_touched">H</hi><hi rend="underlined_red">ere be gynneth the prologe of damp Ioh<ex>n</ex>n<!--could be suspension, and is likely I rather than J--> Lidgates<note place="bottom" anchored="true" n="informational">This is bracked in red on both sides. Additionally, unlike with the initial letters of each line the capital letters of Lydgate's name are not touched as well as capitalized.</note></hi></line>
+                        <line n="l.2">testament <hi rend="touched">M</hi>onk of <hi rend="touched">B</hi>ury</line>
+                    </zone>
+                    <zone n="EETS.T.1">
+                        <line n="l.1">¶<hi rend="capital_2_touched">O</hi> howe holsom and glad <hi rend="touched">/</hi> is the memorie</line>
+                        <line n="l.2"><hi rend="touched">O</hi>f cryst ih<ex>es</ex>u <hi rend="touched">/</hi> surmountyng ałł swetnesse</line>
+                        <line n="l.3"><hi rend="touched">N</hi>ame of conquest <hi rend="red">/</hi> of triumphe <ex>and</ex> victorie</line>
+                        <line n="l.4"><hi rend="touched">T</hi>assaut of sathan <hi rend="touched">/</hi> to venquysshe and opp<ex>re</ex>sse</line>
+                        <line n="l.5"><hi rend="touched">T</hi>o whiche name <hi rend="touched">/</hi> seynt poule bereth wytnesse</line>
+                        <line n="l.6"><hi rend="touched">O</hi>f heuene and erthe <hi rend="touched">/</hi> and infernal pouste</line>
+                        <line n="l.7"><hi rend="touched">A</hi>lle creatures of rygħt <hi rend="touched">/</hi> and<!--could be capital a--> dewe humblesse</line>
+                        <line n="l.8"><hi rend="touched">A</hi>nd of hole herte <hi rend="touched">/</hi> bowe shałł ther knee</line>
+                    </zone>
+                    <zone n="EETS.T.2">
+                        <line n="l.1"><hi rend="touched">¶</hi><hi rend="touched">N</hi>o song so sote <hi rend="touched">/</hi> vnto the audience</line>
+                        <line n="l.2"><hi rend="touched">A</hi>s is Ih<ex>esus</ex><!--this is not Ihesu abbreviated, but 34193 has ihesu--> nor so fułł <hi rend="touched">/</hi> o<hi rend="touched">f</hi><note place="bottom" anchored="true" n="informational">The terminating otiose mark on the "f" is touched</note> plesaunce</line>
+                        <line n="l.3"><hi rend="touched">A</hi>geyn ałł enemyes <hi rend="touched">/</hi> sheld paveys and defence</line>
+                        <line n="l.4"><hi rend="touched">T</hi>o heuy hertes <hi rend="red">/</hi> chief comfort in sobstaunce<note place="bottom" anchored="true" n="informational">The EETS edition does a silent correction to "substaunce" here, but the second glyph is similar to the "o" in "comfort" and "To" in the same line and is markedly difference than the "u" elsewhere in this word.</note></line>
+                        <line n="l.5"><hi rend="touched">O</hi>f gostly gladnesse <hi rend="red">/</hi> most souereyne suffisaunce</line>
+                        <line n="l.6"><hi rend="touched">C</hi>hief directorie <hi rend="red">/</hi> to hevene ward the cite</line>
+                        <line n="l.7"><hi rend="touched">G</hi>laddest resorte <hi rend="red">/</hi> of spirituałł remembraunce</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o whome ałłe gretnes <hi rend="red">/</hi> bowe shal ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.3">
+                        <line n="l.1">¶<hi rend="touched">T</hi>o alle folkes <hi rend="red">/</hi> þat stonde in repentaunce</line>
+                        <line n="l.2"><hi rend="touched">W</hi>ith herte contrite <hi rend="touched">/</hi> made ther confessio<ex>u</ex>n<note place="bottom" anchored="true" n="informational">MacCraken consistently renders this suspension as "u<ex>n</ex>", but the shape of some of the other glyphs suggests that this is meant to be a suspended "u" rather than "n."</note></line>
+                        <line n="l.3"><hi rend="touched">O</hi>f wille and thougħt <hi rend="red">/</hi> accomplysshed ther penaunce</line>
+                        <line n="l.4"><hi rend="touched">A</hi>nd to ther power<!--possible terminal e--> <hi rend="red">/</hi> done satisfaccio<ex>u</ex>n</line>
+                        <line n="l.5"><hi rend="touched">T</hi>hat cleyme by mene of Crystes passioun<note place="bottom" anchored="true" n="informational">The scribe has a suspension mark over the final two glyphs, but has rendered the "un" ending already.</note></line>
+                        <line n="l.6"><hi rend="touched">M</hi>arked with<!--could be barred h, but looks like the crossbar of the t runs through it--> tav. <hi rend="red">.</hi>Τ<hi rend="red">.</hi> for more suerte</line>
+                        <line n="l.7"><hi rend="touched">T</hi>o them Ih<ex>es</ex>u <hi rend="touched">/</hi> shałł graunte fułł pardo<ex>u</ex>n</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o aske hym mercy <hi rend="touched">/</hi> wha<ex>n</ex>n</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.53" n="folio">
+                <surface n="recto">
+                    <zone n="EETS.T.4">
+                        <line n="l.1">¶<hi rend="touched">I</hi>n this name Ih<ex>es</ex>u <hi rend="red">/</hi> most souereyne of vertu</line>
+                        <line n="l.2"><hi rend="touched">S</hi>tant alle our hope <hi rend="red">/</hi> and alle oure assuraunce</line>
+                        <line n="l.3"><hi rend="touched">F</hi>for where þat eue<ex>r</ex> <hi rend="touched">/</hi> named is Ih<ex>es</ex>u</line>
+                        <line n="l.4"><hi rend="touched">G</hi>ey<ex>n</ex>n gostly trouble <hi rend="touched">/</hi> me<note place="bottom" anchored="true" n="informational">The EETS edition has "men" here, as does Additional 34193 and 29729.</note></line>
+                        <line n="l.5"><hi rend="touched">W</hi>ho trusteth ih<ex>es</ex>u <hi rend="red">/</hi> may fele no grevaunce</line>
+                        <line n="l.6"><hi rend="touched">W</hi>hiche from ałł thraldome <hi rend="red">/</hi> brougħt vs to lib<ex>er</ex>te</line>
+                        <line n="l.7"><hi rend="touched">O</hi>ut of servage <hi rend="red">/</hi> he made acquyntaunce</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o alle that knelen <hi rend="touched">/</hi> to Ih<ex>es</ex>u on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.5">
+                        <line n="l.1">¶<hi rend="touched">I</hi>n Amorous hertes <hi rend="touched">/</hi> brennyng of kyndenesse</line>
+                        <line n="l.2"><hi rend="touched">T</hi>his name Ih<ex>es</ex>u <hi rend="red">/</hi> most p<ex>ro</ex>foundely doth myne</line>
+                        <line n="l.3"><hi rend="touched">M</hi>arter ignacius<note place="bottom" anchored="true" n="informational">The EETS edition capitalizes "Ignacious," but when compared with "Ih<ex>es</ex>u" elsewhere in the manuscript it's being rendered without the capital letter.</note> <hi rend="touched">/</hi> can beren ther of witnesse</line>
+                        <line n="l.4"><hi rend="touched">A</hi>myd whos herte <hi rend="touched">/</hi> be grace whiche is dyvyne</line>
+                        <line n="l.5"><hi rend="touched">W</hi>ith Aureatt<note place="bottom" anchored="true" n="informational">The EETS edition renders it as "Aureat."</note> letteres <hi rend="red">/</hi> As gold þat dyd shyne</line>
+                        <line n="l.6"><hi rend="touched">H</hi>is herte was graven <hi rend="touched">/</hi> men may his legende se</line>
+                        <line n="l.7"><hi rend="touched">T</hi>o teche alle crysten <hi rend="red">/</hi> here hedes to enclyne</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o blyssed Ih<ex>es</ex>u <hi rend="touched">/</hi> and bowe a dovn<note place="bottom" anchored="true" n="informational">The EETS edition has "adovn" here.<!--perhaps mention this in the scribal notes instead. Decide during final pass-->.</note> ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.6">
+                        <line n="l.1">¶<hi rend="touched">T</hi>his is the name <hi rend="red">/</hi> that chaceth a way the clips<!--make a note about shippis in other editions"--></line>
+                        <line n="l.2"><hi rend="touched">O</hi>f foreyne dirkenesse <hi rend="touched">/</hi> as clerkes determyne</line>
+                        <line n="l.3"><hi rend="touched">B</hi>y Ioh<ex>n</ex>n remembred <hi rend="red">/</hi> in thapocalips</line>
+                        <line n="l.4"><hi rend="touched">H</hi>ow lyche a lambe <hi rend="touched">/</hi> his hede he dyd enclyne<note place="bottom" anchored="true" n="informational">The scribe ran "dyd enclyne" together, but then separated them via an upright stroke.</note></line>
+                        <line n="l.5"><hi rend="touched">W</hi>hos blood dovn<note place="bottom" anchored="true" n="informational">The terminal "n" in "dovn" has a curved stroke over it which may be indicative of a suspension but is more likely an otiose mark based on the terminal "n" elsewhere in the manuscript.</note> ran<ex>n</ex> <hi rend="touched">/</hi>rygħt as ony lyne</line>
+                        <line n="l.6"><hi rend="touched">T</hi>o wasshe the ordures <hi rend="red">/</hi> of our Iniquite</line>
+                        <line n="l.7"><hi rend="touched">M</hi>edeled with water <hi rend="red">/</hi> clere as crystallyne</line>
+                        <line n="l.8"><hi rend="touched">W</hi>hiche from his herte <hi rend="red">/</hi> down rayled by his kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <zone n="EETS.T.7">
+                        <line n="l.1">¶<hi rend="touched">B</hi>e holde<note place="bottom" anchored="true" n="informational">The EETS edition has "Be blode" here, as does Add. 29729 ("By blode"). Add. 34193, however, has "Be holde." When compared with "blood" on the first verse of the following page, however, it is clear that the initial glyph is an "h."</note> Ih<ex>esus</ex> / made our redempcioun<!--this reinforces that the curve over n is not a suspension. Counterargument is two lines below, though.--></line>
+                        <line n="l.2"><hi rend="touched">W</hi>ith water<!--otiose mark or suspended e--> of baptem / from fylthe wesshe vs clene</line>
+                        <line n="l.3"><hi rend="touched">A</hi>nd fro his herte / to licours ther ran dou<ex>n</ex></line>
+                        <line n="l.4"><hi rend="touched">O</hi>n <hi rend="touched">C</hi>aluerye / the trouthe was weel sene<!--curvied line over n, so maybe nne?--></line>
+                        <line n="l.5"><hi rend="touched">W</hi>han that longious<!--make a note that MacCraken consistently capitalizes proper nouns--> / with a spere kene</line>
+                        <line n="l.6"><hi rend="touched">P</hi>erced his herte / vpon the rode tre</line>
+                        <line n="l.7"><hi rend="touched">O</hi> man vnkende / thynke what this dothe mene</line>
+                        <line n="l.8"><hi rend="touched">A</hi>nd vn to Ih<ex>es</ex>u / bowe a dovne<!-- note regarding split versus whole "adovne"--> thy kne</line>
+                    </zone>
+                    <zone n="EETS.T.8">
+                        <line n="l.1">¶<hi rend="touched">T</hi>her is no speche / nor language can remembre</line>
+                        <line n="l.2"><hi rend="touched">L</hi>ettre sillable / nor word that may expresse</line>
+                        <line n="l.3"><hi rend="touched">T</hi>hougħ into tunges / were turned eu<ex>er</ex>y membre</line>
+                        <line n="l.4"><hi rend="touched">O</hi>f man to telle the excellent noblesse</line>
+                        <line n="l.5"><hi rend="touched">O</hi>f blessed ih<ex>es</ex>u / whicħ of his gret mekenesse</line>
+                        <line n="l.6"><hi rend="touched">L</hi>ist suffre deth / to make his servant fre</line>
+                        <line n="l.7"><hi rend="touched">N</hi>ow m<ex>er</ex>cyful ih<ex>es</ex>u / for thyn hygħ goodnesse</line>
+                        <line n="l.8"><hi rend="touched">H</hi>aue m<ex>er</ex>cy on alle / that bowe to the her kne</line>
+                    </zone>
+                    <zone n="EETS.T.9">
+                        <line n="l.1">¶<hi rend="touched">T</hi>he prynce was slayn<ex>e</ex> / þe s<ex>er</ex>uaunt went at large</line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd to delyve<ex>r</ex> his soget / from priso<ex>u</ex>n</line>
+                        <line n="l.3"><hi rend="touched">T</hi>he lord toke on hym for to bere the charge</line>
+                        <line n="l.4"><hi rend="touched">T</hi>o quyte mankynde / be oblacioun</line>
+                        <line n="l.5"><hi rend="touched">S</hi>ealed with .v. woundes he payed our raunso<ex>u</ex>n</line>
+                        <line n="l.6"><hi rend="touched">M</hi>an to restore / to Parades<note place="bottom" anchored="true" n="informational">The EETS edition renders this as "Parados," which is understandable when you look at the glyph as presented in the manuscript. However, the scribe's "o" is consistently open without the loop bisecting it as might be seen in modern handwritten "o." When compared with how the line is rendered in the other witnesses I believe it's more likely that this is a poorly-formed "e" rather than an "O."</note> hys Cite<!--capital C here is not touched but it's likely it's meant to be capitalized based on th eletter form.  Consider note?--></line>
+                        <line n="l.7"><hi rend="touched">I</hi>s not man bounde / I aske this questioun</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o blessed Ih<ex>es</ex>u for to bowe his kne .<note place="bottom" anchored="true" n="informational">The ETTS edition concludes this verse with a question mark (part of a pattern of supplied punctuation throughout), but it is worth mentioning here because the scribe concludes the line with a <hi rend="italic">punctus</hi>, which is missing elsewhere in the manuscript witness.</note></line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.54" n="folio">
+                <surface n="recto">
+                    <zone n="EETs.T.10">
+                        <line n="l.1">¶<hi rend="touched">S</hi>yx hundered<!--note that EETS drops an e?--> tyme / witħ syxty told be noumbre</line>
+                        <line n="l.2"><hi rend="touched">I</hi>n poules<!--EETS capitalizes--> pysteles / Ih<ex>es</ex>u men may rede</line>
+                        <line n="l.3"><hi rend="touched">M</hi>ultitude of fendes / to encoumbre</line>
+                        <line n="l.4"><hi rend="touched">T</hi>o paye oure raunsum / his blood he did shede</line>
+                        <line n="l.5"><hi rend="touched">N</hi>at a smałł part but alle he dede <add>out</add><note place="bottom" anchored="true" n="informational">The scribe has added "out" above the line between "dede" and "blede."</note></line>
+                        <line n="l.6"><hi rend="touched">F</hi>for adames appel / plukked from the tre</line>
+                        <line n="l.7"><hi rend="touched">I</hi>h<ex>es</ex>u deyde / for shame man take hede</line>
+                        <line n="l.8"><hi rend="touched">G</hi>yf thanke to Ih<ex>es</ex>u / <ex>and</ex> bow <del>todovn</del><add>to hym</add> thy kne</line>
+                    </zone>
+                    <zone n="EETS.T.11">
+                        <line n="l.1">¶<hi rend="touched">A</hi>lle there thynges / considered that I tolde</line>
+                        <line n="l.2"><hi rend="touched">M</hi>an where euere / thou holdist thy passage</line>
+                        <line n="l.3"><hi rend="touched">T</hi>oward ih<ex>es</ex>u / alwey that thow be holde</line>
+                        <line n="l.4"><hi rend="touched">W</hi>ith eyȝe fyx / loke on hys vysage</line>
+                        <line n="l.5"><hi rend="touched">C</hi>rovned with thorn<!--curved mark over n--> for our gret outrage</line>
+                        <line n="l.6"><hi rend="touched">H</hi>aue this in mende / <ex>and</ex> lerne othyng of me</line>
+                        <line n="l.7"><hi rend="touched">T</hi>hat day non enemye / shall don<ex>e</ex> vs no damage</line>
+                        <line n="l.8"><hi rend="touched">W</hi>ha<ex>n</ex>n we to Ih<ex>es</ex>u deuoutly bowe our kne</line>
+                    </zone>
+                    <zone n="EETs.T.12">
+                        <line n="l.1">¶<hi rend="touched">W</hi>ith Inne my closet / <ex>and</ex> my lytel couche</line>
+                        <line n="l.2"><hi rend="touched">O</hi> blyssed Ih<ex>es</ex>u / And be my beddes syde</line>
+                        <line n="l.3"><hi rend="touched">T</hi>hat none enemy / nor no fende shałł me touche</line>
+                        <line n="l.4"><hi rend="touched">T</hi>he name of Ih<ex>es</ex>u / with me shałł eu<ex>er</ex> abyde</line>
+                        <line n="l.5"><hi rend="touched">My</hi> lode sterre / and my souereyne guyde</line>
+                        <line n="l.6"><hi rend="touched">I</hi>n this world here / both on lond and se</line>
+                        <line n="l.7"><hi rend="touched">O</hi>Ih<ex>es</ex>u Ih<ex>es</ex>u / for alle tho folke provyde</line>
+                        <line n="l.8"><hi rend="touched">W</hi>hicħ to thy name / devouotly bowe here kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <zone n="EETS.T.13">
+                        <line n="l.1">¶<hi rend="touched">W</hi>ith maria called Maudeleyne<note place="bottom" anchored="true" n="informational">The EETS follows its general practice of capitalizing all proper nouns.  However, based on the initial glyphs of each line the manuscript renders the initial glyph for "maria" in miniscule and the initial glyph of "Maudeleyne" in majescule.</note></line>
+                        <line n="l.2"><hi rend="touched">E</hi>rly eche morowe / whil that my lyf may dure</line>
+                        <line n="l.3"><hi rend="touched">F</hi>fro slouthe <ex>and</ex> slombre / I shal my self restreyne</line>
+                        <line n="l.4"><hi rend="touched">T</hi>o seke <hi rend="underline_red">Ih<ex>es</ex>u</hi> at his sepulture</line>
+                        <line n="l.5"><hi rend="touched">W</hi>hom for to fynde / if þat I may recure</line>
+                        <line n="l.6"><hi rend="touched">T</hi>o haue possessio<ex>u</ex>n / of hym at liberte</line>
+                        <line n="l.7"><hi rend="touched">T</hi>here were in erthe / no ry cchere creature</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o whom ech wyght / bowe shall hys kne</line>
+                    </zone>
+                    <zone n="EETS.T.14">
+                        <line n="l.1">¶<hi rend="touched">I</hi>n m<ex>er</ex>cyfułł <hi rend="underline_red">Ih<ex>es</ex>u</hi> / to putte averay preef</line>
+                        <line n="l.2"><hi rend="touched">O</hi>f his m<ex>er</ex>cy / that no man disespeyre</line>
+                        <line n="l.3"><hi rend="touched">V</hi>pon the cros / gaf graunt onto the theef</line>
+                        <line n="l.4"><hi rend="touched">T</hi>o paradys / with hym to repayre</line>
+                        <line n="l.5"><hi rend="touched">T</hi>oke out of helle soules many a peyre</line>
+                        <line n="l.6"><hi rend="touched">M</hi>augre Cerberus and ałł his cruelle<note place="bottom" anchored="true" n="informational">The EETS edition renders this as "cruelte."</note></line>
+                        <line n="l.7"><hi rend="touched">O</hi> gracious <hi rend="underline_red">Ih<ex>es</ex>u</hi><note place="bottom" anchored="true" n="informational">This is bracketed on each side.</note></line>
+                        <line n="l.8"><hi rend="touched">H</hi>aue mercy on alle / that bowe to the her kne</line>
+                    </zone>
+                    <zone n="EETS.T.15">
+                        <line n="l.1">¶<hi rend="touched">T</hi>he name of <hi rend="underline_red">Ih<ex>es</ex>u</hi><note place="bottom" anchored="true" n="informational">This is bracketed on each side.</note> swettest of names alle</line>
+                        <line n="l.2"><hi rend="touched">G</hi>eyn gostly venymes / holsomest tryaacle</line>
+                        <line n="l.3"><hi rend="touched">F</hi>for who so eu<ex>er</ex> / to this name calle</line>
+                        <line n="l.4"><hi rend="touched">O</hi>f cankered surfetes / fynt reles be myracle</line>
+                        <line n="l.5"><hi rend="touched">T</hi>o ony<!--make note about EETS--> blynde light lanterne and spectacle</line>
+                        <line n="l.6"><hi rend="touched">A</hi>nd bryghtest merour / of alle felicite</line>
+                        <line n="l.7"><hi rend="touched">S</hi>upport and sheld / defence <ex>and</ex> chief obstacle</line>
+                        <line n="l.8"><hi rend="touched">T</hi>o alle that knele / to <hi rend="underline_red">Ih<ex>es</ex>u</hi><note place="bottom" anchored="true" n="informational">This is bracketed on the right.</note></line>
+                    </zone>
+                </surface>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

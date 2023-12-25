@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Description of the Clopton Chantry Chapel</title>
+         </titleStmt>
+         <author>Matthew Evan Davis</author>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc xml:id="Clopton_Chantry_Chapel">
+            <msDesc xml:id="Clopton">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region>Suffolk</region>
+                  <settlement>Long Melford</settlement>
+                  <institution>Holy Trinity Church</institution>
+               </msIdentifier>
+               <msContents>
+                  <msItem n="Center Beam">
+                     <p>Sections of the invocation to Christ from the Sarum litany between the
+                        litany of saints and the <emph rend="italic">te rogamus</emph>. The verses
+                        are laid out so that those on the southern side of the central beam, facing
+                        towards the high altar, contain the set of phrases describing how Christ
+                        should protect the speaker while those items that Christ should protect the
+                        speaker from appear on the northern side, facing away from the high
+                        altar.</p>
+                  </msItem>
+                  <msItem n="Crossbeams">
+                     <p>Four scrolls painted on each crossbeam on the altar-facing side of the roof,
+                        but only once (on the fourth crossbeam from the east wall) on the side
+                        facing away from the altar. The text is oriented so as to be read by someone
+                        facing the altar, and the phrase "<hi>J</hi>h<ex>es</ex>u
+                        mercy"/"<hi>A</hi>nd gramercy" repeats twice.</p>
+                  </msItem>
+                  <msItem n="South Wall">
+                     <p>Verses 29, 30, 27, 56, 57, 58, and 59 of the <emph rend="italic">Testament
+                           of John Lydgate</emph> on a carved wooden molding.</p>
+                  </msItem>
+                  <msItem n="South Wall">
+                     <p>Request for blessing by the saints, now badly damaged, along the base of the
+                        now-empty niches that most likely contained statues of the twelve
+                        apostles.</p>
+                  </msItem>
+                  <msItem n="West Wall">
+                     <p>Verses 60, 63, 65, 66, 68, and 69 of the <emph rend="italic">Testament of
+                           John Lydgate</emph> on a carved wooden molding.</p>
+                  </msItem>
+                  <msItem n="West Wall">
+                     <p>Verses 8, 4, 14, 17, 18, and 19 of the <emph rend="italic">Quis Dabit Meo
+                           Capiti Fontem Lacrimarum</emph> on the bressemer.</p>
+                  </msItem>
+                  <msItem n="West Wall">
+                     <p>Six <emph rend="italic">Ars Moriendi</emph> and <emph rend="italic"
+                           >Contemptus Mundi</emph> verses painted at the very top of the wall
+                        underneath the bressemer.</p>
+                  </msItem>
+                  <msItem n="West Wall">
+                     <p>Two scrolls above the squint, with "<hi>J</hi>h<ex>es</ex>u mercy" on the
+                        first and "<hi>A</hi>nd gramercy" on the second.</p>
+                  </msItem>
+                  <msItem n="West Wall">
+                     <p>Two badly damaged scrolls on the right side of the squint, of an
+                        indeterminate sequence, opposite a badly deteriorated image of the Virgin or
+                        St. Anne, with "<hi>J</hi>h<ex>es</ex>u mercy" on the first and
+                        "<hi>A</hi>nd gramercy" on the second. Their positioning suggests that the
+                        entire sequence repeated this phrase.</p>
+                  </msItem>
+                  <msItem n="West Wall">
+                     <p>Verse 4 of the <emph rend="italic">Ballade at the Reveranace of Our
+                           Lady</emph> below the squint.<note place="bottom" anchored="true"
+                           n="informational">As David Griffith has pointed out (“A Newly Identified
+                           Verse Item by John Lydgate at Holy Trinity Church, Long Melford,
+                           Suffolk,” Notes and Queries 58.3 (Sept. 2011): 364-367)" there are
+                           remnants of at least four other panels on the west wall, but the text is
+                           largely missing and while the position suggests additional verses from
+                           the <emph rend="italic">Ballade</emph>, it cannot be stated with
+                           certainty.</note></p>
+                  </msItem>
+                  <msItem n="North Wall">
+                     <p>Verses 70, 74, 75, 76, 77, 78, and 79 of the <emph rend="italic">Testament
+                           of John Lydgate</emph> on a carved wooden molding.</p>
+                  </msItem>
+                  <msItem n="North Wall">
+                     <p>Twentieth-Century plaque noting the financing of the chapel restoration by
+                        members of the Clopton family in the United States.</p>
+                  </msItem>
+                  <msItem n="North Wall">
+                     <p>Seventeenth-Century funerary inscription for William Clopton</p>
+                  </msItem>
+                  <msItem n="East Wall">
+                     <p>Verses 101, 114, 115, 116, 117, and 118 of the <emph rend="italic">Testament
+                           of John Lydgate</emph> on a carved wooden molding.</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material>wood</material>
+                           <material>paint</material>
+                           <p>The text is composed on carved wooden panels intended to appear like
+                              scrollwork wrapped around a typical vinework motif. Each carved panel
+                              was then painted to give the appearance of lined parchment.</p>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout>
+                           <p n="stanza_layout">In keeping with the majority of the source material,
+                              the poem is laid out in eight line ballade stanzas, with line fillers
+                              where the text is too short for the provided space. However, the panel
+                              analogous to <ref target="Testament/Clopton/EETS.T.56.html">Verse
+                                 56</ref> adds a line to the rhyme royal of Lydgate's original
+                              verse, shifting the form seen in part II of the <ex>Testament</ex> to
+                              the eight-line ballade form seen in parts I, III, and V. As the
+                              intention of the panels on which the lines were painted is to give the
+                              appearance of a single continous scroll, the left and right sides of
+                              these panels are at an angle to the orientation of the lines, but the
+                              lines themselves are presented with parallel to the ground for ease of
+                              reading.</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote scope="sole" script="textura quadrata">
+                        <p n="hand_intro">Like the other objects in the chapel, the text of the
+                              <emph rend="italic">Testament</emph> is written by what appears to be
+                           a single painter/scribe in Textura Quadrata. There is some Anglicana
+                           influence, however; it is most notable in the use of Anglicana “w” but
+                           also can be seen in the similarities between “f” and the tall “s” and the
+                           form of “r” in the “or” ligature.</p>
+                        <p n="hand_otiose">The scribe consistently splits ascenders and descenders
+                           when they are either the full height of the line (as in “b,” “h,” and
+                           “l”) or at the midpoint between full height and that of regular letters
+                           (as with “t,” “p,” and “q”). Additionally, otiose marks appear to the
+                           left or right of “f” and “t” when they are the initial or last letter in
+                           a word, at the end of “e” when it completes a word, and at the end of
+                           suspension marks.</p>
+                     </handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote>Carved wooden panels made to look like a scroll, surrounding
+                        vinework.</decoNote>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <p>From the period between 1464 and 1494 the Church of the Holy Trinity in the
+                     Parish of Long Melford, Suffolk underwent an extensive remodeling and
+                     expansion, largely under the auspices of a successful wool merchant, John
+                     Clopton. He provided funds for, or was the executor or supervisor 
+                     of bequests to a number of parish churches in his area, but Long Melford was
+                     Clopton’s own parish church. As part of the remodeling process he endowed a
+                     permanent chantry north of the high altar intended to serve as means for the
+                     salvation of his soul, the souls of his family, and the souls of those he was
+                     legally and morally obligated to pray for. As part of the process of building
+                     the chantry a number of verses from religious works in both Latin and English
+                     were included. Thus, the chapel itself served as a type of <emph rend="italic"
+                        >compilatio</emph> centered on the ideas of penance and salvation.</p>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

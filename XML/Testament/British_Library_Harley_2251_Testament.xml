@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Quis_Dabit">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">British Library Harley 2251 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="harley_2251">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library MS Harley 2251) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Harley_2251">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Harley_2251">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Harley 2251</idno>
+                    </msIdentifier>
+                    <history/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material>parchment</material>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout><p n="stanza_layout"/>
+                                   <p n="gathering" xml:id="g.16"/>
+                                   <p n="collation" xml:id="q.20"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <p/>
+                                <p/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <msContents>
+                        <msItem>
+                            <p/>
+                        </msItem>
+                    </msContents>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20221009" who="#medavis" status="draft"/>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="g.3" n="gathering">
+            <surfaceGrp xml:id="f.40" n="folio">
+                <surface n="recto">
+                    <label>Folio 40 Recto</label>
+                    <graphic url="British_Library_Harley_2251_f40r.jpg"/>
+                    <zone n="EETS.T.101">
+                        <line n="l.1"><hi rend="capital_3_blue">B</hi>eholde o man lift vp thy eye and se</line>
+                        <line n="l.2">What mortal peynes / I suffre for thy trespas</line>
+                        <line n="l.3">With pitous voyce / i crye and sey to the</line>
+                        <line n="l.4">Beholde my woundes / behold my blody face</line>
+                        <line n="l.5">Beholde the rebukes / that doth me so manace</line>
+                        <line n="l.6">Beholde my enemyes / that doth me so dispise</line>
+                        <line n="l.7">A how that I / to refourme the to grace</line>
+                        <line n="l.8">Was like a lambe / offred in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.102">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Beholde the peynemes / of whom I was take</line>
+                        <line n="l.2">Beholde the cordis / with whiche I was bounde</line>
+                        <line n="l.3">Beholde the temnres<!--this may not be correct. check against MED--> / which made myn hert quake</line>
+                        <line n="l.4">Beholde the gardeyn / in whiche I was founde</line>
+                        <line n="l.5">Beholde how Iudas / toke .xxx. penyes Rounde</line>
+                        <line n="l.6">Beholde his traison / beholde his covetise</line>
+                        <line n="l.7">Beholde how I with many a mortal wounde</line>
+                        <line n="l.8">Was like alamb offred in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.103">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Se my disciple / which that hath me solde</line>
+                        <line n="l.2">And se his feyned<note place="bottom" anchored="true" n="explanatory">While the example of "money" in the line following suggests that the second glyph of the second word is in fact "o," the fourth glyph of "assentid" in the verse following suggests that the scribe, at times, renders their "e" glyph similarly to "o." The EETS edition has "feyned."</note></line>
+                        <line n="l.3">And se the money / which he hath tolde</line>
+                        <line n="l.4">And se his kyssyng / of false decepcioun<!--flourish or suspended e?--></line>
+                        <line n="l.5">Take as a thief / with lanternys in ther guyse</line>
+                        <line n="l.6">And aftir warde / for mannys redempcioun</line>
+                        <line n="l.7">Was like alamb / offrid in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.104">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Beholde to Cayphas / how I was presented</line>
+                        <line n="l.2">Beholde how Pilat / list gyve me no respite</line>
+                        <line n="l.3">Beholde how bisshopis / were<note place="bottom" anchored="true" n="explanatory">Similarly to the note above the second glyph here appears to be an "o," but is in fact an "e."</note> to my deth assentid</line>
+                        <line n="l.4">And se how herawde / hadde me in dispite</line>
+                        <line n="l.5">And like a foole / how I was clad in white</line>
+                        <line n="l.6">Drawen as a felon / in most cruel wise</line>
+                        <line n="l.7">And last of alle / I after theyr delite</line>
+                        <line n="l.8">Was like a lamb / offrid in sacrifice</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 40 Verso</label>
+                    <graphic url="British_Library_Harley_2251_f40v.jpg"/>
+                    <zone n="EETS.T.105">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Behold the mynistres / which had me in hepyng</line>
+                        <line n="l.2">Beholde the pillo<ex>r</ex> / and the Roapis stronge</line>
+                        <line n="l.3">Where I was bounde / my sides downe bledyng</line>
+                        <line n="l.4">Most felly bete / with theyr scourgis longe</line>
+                        <line n="l.5">Beholde the bataile / that i dide vndergone</line>
+                        <line n="l.6">The wrong abidyng / of theyr mortal emprise</line>
+                        <line n="l.7">Thurgħ theyr accusyng and  sklandres wrong</line>
+                        <line n="l.8">Was like a lamb / offrid in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.106">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Behold and se / the hateful wrecchidnes</line>
+                        <line n="l.2">put ageyn me / to my confusioun</line>
+                        <line n="l.3">My eyen hydde / and blynded with derknesse</line>
+                        <line n="l.4">Beten and eke bobbed / by false Illusioun</line>
+                        <line n="l.5">Salued in skorne / by theyre false knelyng downe</line>
+                        <line n="l.6">Behold al this / and se the mortal guyse</line>
+                        <line n="l.7">how I only / for mannys saluacioun</line>
+                        <line n="l.8">Was like a lamb / offred in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.107">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Se the wintes / by whom I was deceyved</line>
+                        <line n="l.2">Beholde the Iuges / that gaf my Iugement</line>
+                        <line n="l.3">Beholde the crosse / that was for me devised</line>
+                        <line n="l.4">Beholde my body / with beyng al to Rent</line>
+                        <line n="l.5">Beholde the peple / the whiche of false entent</line>
+                        <line n="l.6">Causeles dide / ageyn me rise</line>
+                        <line n="l.7">Whiche like a lamb / of malise Innocent</line>
+                        <line n="l.8">Was for mankynde / offrid in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.108">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Beholde the wymmen / that folwed me aferre<!--note about r construction here?--></line>
+                        <line n="l.2">That sore wept / whan I thus was assailed</line>
+                        <line n="l.3">Beholde the Jewis / whiche by cruel werre</line>
+                        <line n="l.4">Han my body / to acrosse I nayled</line>
+                        <line n="l.5">Byholde my tormentis / most sharply apparayled</line>
+                        <line n="l.6">Atwene two thevis / put to my Iowise<!--check this with image when you get back - this is an odd construction--></line>
+                        <line n="l.7">Behold how mochel / my deth eke avayled</line>
+                        <line n="l.8">That was for man / offrid in sacrifice</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.41" n="folio">
+                <surface n="recto">
+                    <label>Folio 41 Recto</label>
+                    <graphic url="British_Library_Harley_2251_f41r.jpg"/>
+                    <zone n="EETS.T.109">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Beholde the spere most sharply<!--different initial s construction.  note?--> / ground and whet</line>
+                        <line n="l.2">Myn hert wounded / vpon the Right syde</line>
+                        <line n="l.3">Beholde the Reede spere / Galle and eysel set<!--EETS has "fett, but MS seems like it would be "set."  Compare against other witnesses.--></line>
+                        <line n="l.4">Behold the scornyng / which I dide abyde</line>
+                        <line n="l.5">And my fyve woundys / that were made so wyde</line>
+                        <line n="l.6">Whiche noman liste / of rewth to aduertise</line>
+                        <line n="l.7">And thus I was of mekenes ageynst pryde</line>
+                        <line n="l.8">Ffor<!-- might just render as capital "F"--> mannys offence / offrid in sacrifice</line>                        
+                    </zone>
+                    <zone n="EETS.T.110">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Se my disciples / how they han me forsake</line>
+                        <line n="l.2">And fro me fledde / almost eu<ex>er</ex>ichon</line>
+                        <line n="l.3">Se how they slept<!--different initial s.  Not positive this is the word the scribe meant, despite it being what is in the EETS--> / and list nat with me wake</line>
+                        <line n="l.4">Of mortal drede / they left me allon</line>
+                        <line n="l.5">Except my moder / and my cousyn seynt Iohn<ex>n</ex></line>
+                        <line n="l.6">My deth compleyneng / in most doolful wise</line>
+                        <line n="l.7">Se fro my crosse / they wold neu<ex>er</ex> <del>Rise </del>gon</line>
+                        <line n="l.8">Ffor mannys offence / whan I dide sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.111">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Se how I was / Iuged to the deth</line>
+                        <line n="l.2">Se Baraban gon / at his liberte</line>
+                        <line n="l.3">Se how with a spere / longnis<!-- note about initial l --> me sleth</line>
+                        <line n="l.4">Beholde two licours / distillyng downe from me</line>
+                        <line n="l.5">Se bloode and water / be merciful plente</line>
+                        <line n="l.6">Raile be my sides / whiche ought suffice</line>
+                        <line n="l.7">To man / what I vpon the Roode tre</line>
+                        <line n="l.8">Was like a lamb / offred in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.112">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Beholde the knyghtis / whiche be theyr frowarde chaunce</line>
+                        <line n="l.2">Satte for my clothis / atte dyse to pleye</line>
+                        <line n="l.3">Beholde my moder / swounyng for grevaunce</line>
+                        <line n="l.4">Vpon the crosse / whan she saugħ<!--note about why this one is barred--> me deye</line>
+                        <line n="l.5">Beholde the sepulcre / in whiche my bones leye</line>
+                        <line n="l.6">Kept with stronge waccħe / til I did a rise</line>
+                        <line n="l.7">Of helle gatis / se how I brak the key</line>
+                        <line n="l.8">And gaf for man / my bloode in sacrifice</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 41 Verso</label>
+                    <graphic url="British_Library_Harley_2251_f41v.jpg"/>
+                    <zone n="EETS.T.113">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Agayne thy pryde / beholde my mekenes</line>
+                        <line n="l.2">Agayne thyn envye / beholde my charite</line>
+                        <line n="l.3">Agayne thi lechery / beholde my chast clennes</line>
+                        <line n="l.4">Ageyne thy covetise / beholde my pou<ex>er</ex>te</line>
+                        <line n="l.5">Atwene two thevis / nayled to a tree</line>
+                        <line n="l.6">Rayled with rede bloode / they luft <!--MS has "lyst", but I don't see how "list" can be formed-->me so disguyse</line>
+                        <line n="l.7">Behold o man al this I dide for the</line>
+                        <line n="l.8">meke as a lamb / offred in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.114">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Beholde my love / and gyf me tyne ageyne</line>
+                        <line n="l.2">Behold I deyed / thy raunsoms<!--might be e suspension, in which case "raunsom"--> for to paye</line>
+                        <line n="l.3">Se how myn hert / is open brode and playne</line>
+                        <line n="l.4">Thy gostly enemyes / only to affraye</line>
+                        <line n="l.5">Anharder bataile / no man migħt assaye</line>
+                        <line n="l.6">Of al tryumphes / the grettest higħ emp<ex>ri</ex>se</line>
+                        <line n="l.7">Wherfor oman / no lengger the dismaye</line>
+                        <line n="l.8">I gaf my bloode / for the in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.115">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Turne home agayne / they synne do forsake</line>
+                        <line n="l.2">Be holde and se if ougħt be left be hynde</line>
+                        <line n="l.3">How I to mercy / am redy the to take</line>
+                        <line n="l.4">Gyve me thyn hert / and be nomore vnkynd</line>
+                        <line n="l.5">Thy love and myn / to gyder do hem bynd</line>
+                        <line n="l.6">And late hem neu<ex>er</ex> / part in no wise</line>
+                        <line n="l.7">Whan thou were lost / thi soule ayen to fynde</line>
+                        <line n="l.8">My bloode I offred / for the in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.116">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Emprynt these tynges / in thyn Inward thought</line>
+                        <line n="l.2">And grave hem deepely / in thy remembraunce</line>
+                        <line n="l.3">Thynk oon hem wele / and foogete hem nought</line>
+                        <line n="l.4">Al this I suffred / to do the allegeaunce</line>
+                        <line n="l.5">and with my seyntes / to yeve the suffisaunce</line>
+                        <line n="l.6">In the hevenly court / for the I dide devise</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.42" n="folio">
+                <surface n="recto">
+                    <label>Folio 42 Recto</label>
+                    <graphic url="British_Library_Harley_2251_f42r.jpg"/>
+                    <zone n="EETS.T.116">
+                        <line n="l.7">A place ternal / a place of al pleasaunce</line>
+                        <line n="l.8">Ffor whiche my bloode / I gaf in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.117">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>And more my mercy / to put at a pref</line>
+                        <line n="l.2">To eu<ex>er</ex>y synner / that non ne shal it mysse</line>
+                        <line n="l.3">Remembre how / I gaf mercy to the thief</line>
+                        <line n="l.4">Whiche had so longe / trespassed and done amysse</line>
+                        <line n="l.5">Went he nat frely / with me to paradise</line>
+                        <line n="l.6">Have this in mynde / how it is my guyse</line>
+                        <line n="l.7">Al repentaunt to / brynge hem to my blisse</line>
+                        <line n="l.8">Ffor whom my bloode / I gaf in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.118">
+                        <line n="l.1"><hi rend="red_pilcrow">¶</hi>Tary no lenger / to thyn owne heritage</line>
+                        <line n="l.2">hast onthy wey / and be of right goode chere</line>
+                        <line n="l.3">Go eche day onwarde / on thy pilgremage</line>
+                        <line n="l.4">Thynk how short / thow shalt abyden here</line>
+                        <line n="l.5">Thy place is bilt / a bove the sterris clere</line>
+                        <line n="l.6">No<!--making an assumption on the first glyph--> erthely paleys / wrougħt in so stately wise</line>
+                        <line n="l.7">Com on my brother / my friende most entiere</line>
+                        <line n="l.8">Ffor the I offred / my bloode in sacrifice</line>
+                    </zone>
+                    <!--     [This verse is from DIMEV 6787-2 (the uncertainty of Worldly Honour)]
+                    <zone n="EETS.T.I">
+                        <line n="l.1">Worldly worship / is Ioye transitorye</line>
+                        <line n="l.2">Vnsure assuraunce / higħnes deilynable</line>
+                        <line n="l.3">Vayneglorye gladnesse / flatery p<ex>er</ex>ditory</line>
+                        <line n="l.4">Bisteyt disteyvous / ful dyssy mulable</line>
+                        <line n="l.5">To mannys soule / most pinduiable--><!--not sure on final word--><!--</line>
+                        <line n="l.6">In whiche who hym / surely assurith</line>
+                        <line n="l.7">In most unsuete / most p<ex>er</ex>ilously endurith</line>
+                    </zone>
+                    <zone n="EETS.T.II">--> <!--work on these as they're Latin--><!--
+                        <line n="l.1">Verb ? .I. lydgate</line>
+                        <line n="l.2">? honor aynndi</line>
+                    </zone>-->
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

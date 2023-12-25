@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_London">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at London</emph>
+                    </title>
+                    <title type="sub">British Library Additional 29729 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <xi:include href="../Witness_Descriptions/British_Library_Additional_29729.xml" xpointer="publication" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/British_Library_Additional_29729.xml" xpointer="British_Library_Additional_29729" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Minor_Poems_Vol_II.xml" xpointer="MacCracken" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20221409" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.140" n="folio">
+                <surface n="recto">
+                    <label>Folio 140 Recto</label>
+                    <graphic url="Add_29729_f140r.jpg"/>
+                    <zone n="EETS.ML.I">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Lo here folowethe the deuyse of a desguysinge to fore the grete</line>
+                        <line n="l.2">estates of this land than beinge at london made by lidgate</line>
+                        <line n="l.3">daun Iohn<ex>n</ex> the munke of bury / of dame <hi rend="underline">fortune</hi> dame <hi rend="underline">prudence</hi></line>
+                        <line n="l.4">dame <hi rend="underline">rightwysnesse</hi><note place="bottom" anchored="true" n="informational">This underline is bracketed on the right.</note> and dame <hi rend="underline">ffortitudo</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note> behold it for it is</line>
+                        <line n="l.5">morall plesaunt and notabell / lo<note place="bottom" anchored="true" n="explanatory">The attributed title in the <ref target="https://www.dimev.net/record.php?recID=3149">DIMEV entry</ref> for this manuscript witness has "to," but the glyph is clearly "lo."</note> first cometh in dame <hi rend="underline">fortune</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note></line>
+                    </zone>
+                    <zone n="EETS.ML.1">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="capital_missing">L</hi>oo<note place="bottom" anchored="true" n="informational">The space between "l" and "oo" makes it clear that "l" is intended as a guide letter here.</note> here this lady that ye may see</line>
+                            <line n="l.2">lady of mutabilyte</line>
+                            <line n="l.3">whych that called is fortune</line>
+                            <line n="l.4">for selde in one she dothe continewe</line>
+                            <line n="l.5">ffor as she hathe a doubell face</line>
+                            <line n="l.6">right so euery oure and space</line>
+                            <line n="l.7">she chaungeth hur condysyones</line>
+                            <line n="l.8">ay full of transmutacyons</line>
+                            <line n="l.9">lyche as the romaynes of the rose</line>
+                            <line n="l.10">descryveth hur / with outen glose</line>
+                            <line n="l.11">and telleth pleynly / how that she</line>
+                            <line n="l.12">hath hur dwellynge in the see</line>
+                            <line n="l.13">Ioyninge<note place="bottom" anchored="true" n="informational">While elsewhere in the manuscript <!--note where?-->there is a differentiation between the "I" and "J" glyphs it is inconsistent and nonexistent in this particular item.</note> to a baryn roche</line>
+                            <line n="l.14">and on that on syde doth approche</line>
+                            <line n="l.15">alytell mountayn lyke an yle</line>
+                            <line n="l.16">vpon<ex>n</ex> whyche land som<del>me yle</del><add><ex>me</ex>why</add>le<note place="bottom" anchored="true" n="explanatory">It looks like the scribe originally wrote "somme yle" here, but realized they had copied the final word of the previous line and corrected themselves by overwriting the fourth glyph to the third glyph from the end with "why." A suspension mark is then placed over the "w."</note></line>
+                            <line n="l.17">ther growen freshe floures nowe</line>
+                            <line n="l.18">wonder lusty of ther hue</line>
+                            <line n="l.19">dyuers tres with frute elade</line>
+                            <line n="l.20">and byrdes with ther notes glade</line>
+                            <line n="l.21">than singen / and maken melodye</line>
+                            <line n="l.22">In ther heuynly hermo<del>n</del><add>y</add>e<note place="bottom" anchored="true" n="informational">It appears that the scribe originally wrote "hermone" here, then overwrote the "n" with a "y" glyph.</note></line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 140 Verso</label>
+                    <graphic url="Add_29729_f140v.jpg"/>
+                    <zone n="EETS.ML.1">
+                        <zone n="text">
+                            <line n="l.23">some singe on hye and som lowe</line>
+                            <line n="l.24">and <hi rend="underline">zepherus</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> ther doth eke blow</line>
+                            <line n="l.25">with his smoothe / attempre ayre</line>
+                            <line n="l.26">he makethe the weder / cler and fayr</line>
+                            <line n="l.27">And the sesoun full of grace</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.2">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>but sodenly in lytell space</line>
+                            <line n="l.2">vpon this place most royall</line>
+                            <line n="l.3">ther cometh awawe and for dereth all</line>
+                            <line n="l.4">ffirst the freshe floures glad</line>
+                            <line n="l.5">on ther stalkes / he dothe fade</line>
+                            <line n="l.6">to ther bewty / he doth wronge</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.3">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>and than farewell the byrdes songe</line>
+                            <line n="l.2">braunch and bougħe of euery tre</line>
+                            <line n="l.3">she robbethe them of ther beutye</line>
+                            <line n="l.4">leffe and blosomes doune they fall</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.4">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>and in that place / she hath an hall</line>
+                            <line n="l.2">departed / and wonder disgysee</line>
+                            <line n="l.3">ffrom that on syde / ye maye see</line>
+                            <line n="l.4">curyously<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "Ceryously" here.</note> wrough for the nones</line>
+                            <line n="l.5">of gold and sylluer and of stones</line>
+                            <line n="l.6">whos richesse / may not be tould</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.5">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>but that other syde / of that hold</line>
+                            <line n="l.2">Is obylte in ugly wyse</line>
+                            <line n="l.3">and ruynous / for to deuyse</line>
+                            <line n="l.4">daubed of claynes<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "clay is" here.</note> that doungeoun</line>
+                            <line n="l.5">ay in poynt to fall adoun</line>
+                            <line n="l.6">that on fayre / by apparence</line>
+                            <line n="l.7">and that other in existence</line>
+                            <line n="l.8">shaken with wyndes rayne and hayle</line>
+                            <line n="l.9">and sodenly ther doth assayle</line>
+                            <line n="l.10">a rage flud / that mancyon</line>
+                            <line n="l.11">and ouer floweth it vp and doune</line>
+                            <line n="l.12">her is no rescnes<!--use this as an example of "sc" ligature if needed--> / ner obstacle</line>
+                            <line n="l.13">of this ladyes habytacle</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.6">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>and as hur hous is aye vnstabell</line>
+                            <line n="l.2">ryght so hir sellfe is deseuabell<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has deceyuable</note></line>
+                            <line n="l.3">In no poynte she is neuer alytche</line>
+                            <line n="l.4">this daye she maketh aman all rytche</line>
+                            <line n="l.5">and thorough hi<del>s</del><add>r</add><note place="bottom" anchored="true" n="informational">The scribe originally had "his" here, but realized their mistake and replaced it with "hir."</note> mutabylite</line>
+                            <line n="l.6">casteth hym to morowe / in pouerte</line>
+                            <line n="l.7">the proudest / she can gyue afalle</line>
+                            <line n="l.8">she made alexaunder wynnen all</line>
+                            <line n="l.9">that no man him w<ex>ith</ex> stand dare</line>
+                            <line n="l.10">and caste him doun / or he was ware</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.141" n="folio">
+                <surface n="recto">
+                    <label>Folio 141 Recto</label>
+                    <graphic url="Add_29729_f141r.jpg"/>
+                    <zone n="EETS.ML.6">
+                        <zone n="text">
+                            <line n="l.11">So did she <hi rend="underline">sesar Iulius</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                            <line n="l.12">she made him first victorius</line>
+                            <line n="l.13">thoughe to doo well she be full lothe</line>
+                            <line n="l.14">of a bakers sone in sothe</line>
+                            <line n="l.15">she made him amighty emperour</line>
+                            <line n="l.16">and hool of rome was gouernoure</line>
+                            <line n="l.17">maugrey the senat / and all ther myghte</line>
+                            <line n="l.18">But whan the sonne / shone most bright</line>
+                            <line n="l.19">of his tryumphe / fer and nere</line>
+                            <line n="l.20">and he was corouned / with laurnier</line>
+                            <line n="l.21">vnworthy thorough / his mortalle lawe</line>
+                            <line n="l.22">with bodkyns / he was eslawe</line>
+                            <line n="l.23">at the capitaylle / in Consistorye</line>
+                            <line n="l.24">loo / affter all his gret victory</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.11">sesar a bakers sone</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.7">
+                        <zone n="text">                     
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>see how this lady can appalle</line>
+                            <line n="l.2">the noblesse of thos prynces all</line>
+                            <line n="l.3">she hath two tunys in her seller</line>
+                            <line n="l.4">that on is full / of pyment cler</line>
+                            <line n="l.5">confect<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "confeit."</note> with suger and spyces swete</line>
+                            <line n="l.6">and mannys delectabell roote</line>
+                            <line n="l.7">but this is yet the worste of all</line>
+                            <line n="l.8">that other time is full of gall</line>
+                            <line n="l.9">who tasteth one / ther is non other</line>
+                            <line n="l.10">he moste taste eke of that other</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.8">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>whos sodeyne chaynges ben not soffte</line>
+                            <line n="l.2">ffor now she can raysse one alofte</line>
+                            <line n="l.3">ffrom lowgħe estate / till hye degre</line>
+                            <line n="l.4">In ould storyes / ye may see</line>
+                            <line n="l.5">estates chaunge / who taketh kepe</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.9">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>ffor on <hi rend="underline">gyges</hi><note place="bottom" anchored="true" n="informational">Bracketed on each side.</note> that kept shepe</line>
+                            <line n="l.2">she mad by vertue of a rynge</line>
+                            <line n="l.3">ffor to be made / a worthy kynge</line>
+                            <line n="l.4">and by fals mourdre / I dare expresse</line>
+                            <line n="l.5">he cam<unclear>e</unclear><note place="bottom" anchored="true" n="informational">The scribe has overwritten the final minim of "m" here with an "e"</note> to all his worthynesse</line>
+                            <line n="l.6">moste odyous / of all thynges</line>
+                            <line n="l.7">and <hi rend="underline">cresis</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides</note> richest of all kynges</line>
+                            <line n="l.8">was so surgedus / in his pryde</line>
+                            <line n="l.9">that he went vppon no syde</line>
+                            <line n="l.10">non erthly thinge might hym p<ex>er</ex>turbe</line>
+                            <line n="l.11">nor hys ryall estate disturbe</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.10">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>till on a night adreme he mette</line>
+                            <line n="l.2">how Iubo<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "Iuvo."</note> in the ayre hym sette</line>
+                            <line n="l.3">and Iubiter / he vnderstondes</line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>ecclesiastic<ex>us</ex></line>
+                            <line n="l.2">xxxi<!--degree mark over i here--> cap<!--degree mark next to p--></line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 141 Verso</label>
+                    <graphic url="Add_29729_f141v.jpg"/>
+                    <zone n="EETS.ML.10">
+                        <zone n="text">
+                            <line n="l.3">gaue him<note place="bottom" anchored="true" n="explanatory">This could be "hys," but comparison with "his" beginning the fourth line on this page suggests that it's meant as "him," especially when the latter is compared with "hys" on this line.</note> water vnto hys handes</line>
+                            <line n="l.4">and <hi rend="underline">phebus</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> held him the towayle</line>
+                            <line n="l.5">but of this dreme the devynaile</line>
+                            <line n="l.6">his daughter gaue to specyfye</line>
+                            <line n="l.7">and for to forne to prophesye</line>
+                            <line n="l.8">whych called <hi rend="underline">leryopee</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                            <line n="l.9">she sayde he shuld an hanged be</line>
+                            <line n="l.6">this was hir exposicyoun<del>y</del><note place="bottom" anchored="true" n="explanatory">As with other items in this witness a "y" or "h" appears as the final glyph of words with the "oun" ending. However, unlike with other examples the "y" appears to have been struck out here.</note></line>
+                            <line n="l.7">loo how hir pryde was brought adoun</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.11">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>and all thos chaunges / yf they be sought</line>
+                            <line n="l.2">this falls lady hath them wrought</line>
+                            <line n="l.3">aualed with ther sodayne shures</line>
+                            <line n="l.4">the worthy<add>n</add>esse<note place="bottom" anchored="true" n="informational">The scribe forgot the "n", and has included it above the space between "y" and "e" in this word.</note> of conqueroures</line>
+                            <line n="l.5">rede of poetes the comedyes</line>
+                            <line n="l.6">and in dyuers tragedyes</line>
+                            <line n="l.7">ye shall by lamentacyons</line>
+                            <line n="l.8">ffynden ther distruccyons</line>
+                            <line n="l.9">athousande mo / than I can tell</line>
+                            <line n="l.10">In<ex>n</ex> to myscheffe how they fell</line>
+                            <line n="l.11">doune from hir wheell / on see and lande</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.12">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>yet for hir malys / to withstand<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "Þer-fore" rather than "yet" here.</note></line>
+                            <line n="l.2">hir pompe hir surquydye / hir pryd</line>
+                            <line n="l.3">yf she woll / a whyle abyd</line>
+                            <line n="l.4">foure ladyes shall come here anon</line>
+                            <line n="l.5">whicħ shall hir power / ouergone</line>
+                            <line n="l.6">and the malyce / eke oppresse</line>
+                            <line n="l.7">of this blynd falls goddesse</line>
+                            <line n="l.8">yff she be hardy in this place</line>
+                            <line n="l.9">onys for to show hir double face</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.II">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Now kometh here the first lady of the foure <hi rend="underline">dame prudence</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                    </zone>
+                    <zone n="EETS.ML.13">
+                        <zone n="text">
+                            <line n="l.1">Loo here this lady in your p<ex>resence</ex></line>
+                            <line n="l.2">of poetes called is dame <hi rend="underline">prudence</hi><note place="bottom" anchored="true" n="informational">Bracketed on the left.</note></line>
+                            <line n="l.3">the whych / with hir merour bright</line>
+                            <line n="l.4">and hyr myrrour called <hi rend="underline">prouydence</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                            <line n="l.5">Is stronge to make resistence</line>
+                            <line n="l.6">In hur foresight as it is right</line>
+                            <line n="l.7">agayngst fortune / and all hur myght</line>
+                            <line n="l.8">ffor <hi rend="underline">senec</hi><note place="bottom" anchored="true" n="informational">Bracketed on the left.</note> sayth who that can se</line>
+                            <line n="l.9">that <hi rend="underline">prudence</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> hath eyegħon thre</line>
+                            <line n="l.10">speciallye in hur lokynges</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.142" n="folio">
+                <surface n="recto">
+                    <label>Folio 142 Recto</label>
+                    <graphic url="Add_29729_f142r.jpg"/>
+                    <zone n="EETS.ML.13">
+                        <zone n="text">
+                            <line n="l.11">To consider thre maner thynges</line>
+                            <line n="l.12">allwyes by good auysement</line>
+                            <line n="l.13">thing<ex>es</ex> passed and eke p<ex>re</ex>sente</line>
+                            <line n="l.14">and thinges aft that shall fall</line>
+                            <line n="l.15">and she not looke / first of all</line>
+                            <line n="l.16">and done hir Inward besy peyne</line>
+                            <line n="l.17">thinges p<ex>re</ex>sente for to ordeyne</line>
+                            <line n="l.18">auysely on euery side</line>
+                            <line n="l.19">and future thing<ex>es</ex> for to provyde</line>
+                            <line n="l.20">the thing<ex>es</ex> passed in substaunce</line>
+                            <line n="l.21">ffor to haue in remembraunce</line>
+                            <line n="l.22">and who thus dothe I saye that he</line>
+                            <line n="l.23">verrayly hath eygħen thre</line>
+                            <line n="l.24">comitted vnto his deffence</line>
+                            <line n="l.25">the truue myrrour of <hi rend="underline">prouydence</hi><note place="bottom" anchored="true" n="informational">Bracketed on the left side.</note></line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.14">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>than this lady is hys gyde</line>
+                            <line n="l.2">hym to defend / on euery syde</line>
+                            <line n="l.3">agayne <hi rend="underline">fortune</hi> goode and p<ex>er</ex>uerse</line>
+                            <line n="l.4">and all hir power for to reuerse</line>
+                            <line n="l.5">ffor fraunchysed and lybertie<note place="bottom" anchored="true" n="informational">The EETS edition adds "[at]" prior to "liberte," which is missing here.</note></line>
+                            <line n="l.6">from hys power to goo free</line>
+                            <line n="l.7">stond alle folkes in sentence</line>
+                            <line n="l.8">which byn gouerned by <hi rend="underline">prudence</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.1"><hi rend="pilcrow">.i.</hi> p<ex>ro</ex>videncia</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.III">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Now sheweth hyr here the second lady dame <hi rend="underline">ryghtwysnesse</hi><note place="underline" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                    </zone>  
+                    <zone n="EETS.ML.15">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>Soth here this lady rightwyssnes</line>
+                            <line n="l.2">of all vertues she is prycesse</line>
+                            <line n="l.3">for by the scales of hur ballaunce</line>
+                            <line n="l.4">she sett them all in gouernaunce</line>
+                            <line n="l.5">she putteth asyde it is no drede</line>
+                            <line n="l.6">frenshipe fauour / and all hines<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "kyns" here. It seems likely that the scribe misinterpreted the initial letter of the exemplar.</note> nede<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "meede"</note></line>
+                            <line n="l.7"><hi rend="underline">loue</hi> and <hi rend="underline">drede</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> She setteth at noughte</line>
+                            <line n="l.8">ffor rightfull dome may not be boughte</line>
+                            <line n="l.9">and <hi rend="underline">ryghtwysnes</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note> who can esspye</line>
+                            <line n="l.10">hath neyther hand nor eyghe<note place="bottom" anchored="true" n="informational">The second glyph appears to have been written over with an "y" but it is unclear what the scribe originally wrote here.</note></line>
+                            <line n="l.11">she loste hur hand full ther agone</line>
+                            <line n="l.12">ffor she reseyueth gyftes none</line>
+                            <line n="l.13">nother of frend nother of foo</line>
+                            <line n="l.14">and she hath lost hur syght allso</line>
+                            <line n="l.15">for of ryghte she dothe provyde</line>
+                            <line n="l.16">nought for to loke on neyther syde</line>
+                            <line n="l.17">to hyghe estate no lowe degre</line>
+                            <line n="l.18">but doth to boden<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "boþen" here.</note> all equyte</line>
+                            <line n="l.19">and maketh non excepcion</line>
+                            <line n="l.20">to nayther part but of rayson</line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 142 Verso</label>
+                    <graphic url="Add_29729_f142v.jpg"/>
+                    <zone n="EETS.ML.15">
+                        <zone n="text">
+                            <line n="l.21">And for the purpos of this matter</line>
+                            <line n="l.22">of a Iuge ye shall here</line>
+                            <line n="l.23">which neuer his lyffe of entent</line>
+                            <line n="l.24">ther passed no Iudgemente</line>
+                            <line n="l.25">by his lippes of falsenesse</line>
+                            <line n="l.26">of whome the story doth expresse</line>
+                            <line n="l.27">after his dethe / by accountes cler</line>
+                            <line n="l.28">more than thre hundred yeare</line>
+                            <line n="l.29">his body as is made mencyou<del>s</del><add>y</add><note place="bottom" anchored="true" n="informational">As is seen elsewhere in the manuscript a word we might expect to terminate in an "n" instead terminates in either a "y" or "h."  Here, however, it looks like the scribe first wrote an "s" and then corrected it to "y."</note></line>
+                            <line n="l.30">was tourned vnto corrupcyouy<note place="bottom" anchored="true" n="informational">As mentioend in the previous note, the final word of this line terminates with "y."</note></line>
+                            <line n="l.31">the story telleth it is no dred</line>
+                            <line n="l.32">but lyche aroos / swet and red</line>
+                            <line n="l.33">mouth and lippes were yfounde</line>
+                            <line n="l.34">nougħte corrupte / but hole and sounde</line>
+                            <line n="l.35">ffor truth that he did expresse</line>
+                            <line n="l.36">in all his domes of ryghtwyssenes</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.16">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>ffor this lady / with that balaunce</line>
+                            <line n="l.2">was with hym of acquayntaunce</line>
+                            <line n="l.3">which him made in his ententes</line>
+                            <line n="l.4">to gyue also ryghtwyse Iugemente</line>
+                            <line n="l.5">wherfore this lady w<ex>hich</ex> ye here see</line>
+                            <line n="l.6">with hur balaunce of eq<add>u</add>yte<note place="bottom" anchored="true" n="informational">The scribe forgot the "u" after the "q" glyph here, and has added it between "q" and "u"</note></line>
+                            <line n="l.7">hath the scales hanged soo</line>
+                            <line n="l.8">that she hath nothynge to doo</line>
+                            <line n="l.9">neuer with <hi rend="underline">fortunes</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> doubellnesse</line>
+                            <line n="l.10">for euer in on state <hi rend="underline">ryghtwysenesse</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                            <line n="l.11">no wher mouinge to ne fro</line>
+                            <line n="l.12">in no thynge that she hath to do</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.IV">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Lo here kometh in now the third lady called <hi rend="underline">fortitudo</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note></line>
+                    </zone>
+                    <zone n="EETS.ML.17">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>Taketh hede this fayre lady loo / </line>
+                            <line n="l.2">I called is <hi rend="underline">fortitudo</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note></line>
+                            <line n="l.3">whan philosophers by ther sentence</line>
+                            <line n="l.4">ar wante to clepe <hi rend="underline">magnyfycence</hi><note place="bottom" anchored="true" n="informational">Bracketed on the left.</note></line>
+                            <line n="l.5">and <hi rend="underline">fortitudo</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> sothly she hyghte</line>
+                            <line n="l.6">ageyne all vyces for to fyghte</line>
+                            <line n="l.7">agaynste ałł aduersyte</line>
+                            <line n="l.8">in signe wher of she bereth aswerde<note place="bottom" anchored="true" n="informational">The scribe originally had written a different word here but corrected themselves by writing over the section after "as" with "werde."</note></line>
+                            <line n="l.9">That she of nothinge is a ferde</line>
+                            <line n="l.10">ffor common profit also she</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.143" n="folio">
+                <surface n="recto">
+                    <label>Folio 143 Recto</label>
+                    <graphic url="Add_29729_f143r.jpg"/>
+                    <zone n="EETS.ML.17">
+                        <zone n="text">
+                            <line n="l.11">off verry magnanymyte</line>
+                            <line n="l.12">thing<ex>es</ex> gret doth vnderfonge</line>
+                            <line n="l.13">takinge in pryses<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "enpryses" here, which provides a different reading.</note> / which ben stronge</line>
+                            <line n="l.14">and moste she doth hir pouer preue</line>
+                            <line n="l.15">a communalte<note place="bottom" anchored="true" n="informational">There is an otiose tittle over what should be the final glyph before the "a" in this word.</note> for to releve</line>
+                            <line n="l.16">namely vpon a grounde of truth</line>
+                            <line n="l.17">than in hir ther is no slouthe</line>
+                            <line n="l.18">ffor to mayntayn the good comune</line>
+                            <line n="l.19">and also the assaultes of fortune</line>
+                            <line n="l.20">of verrey stedfastnesse of thoughte</line>
+                            <line n="l.21">all hir chaunges / she sette at noughte</line>
+                            <line n="l.22">ffor this uertu magnyfycence</line>
+                            <line n="l.23">thorough hir mighty excellence</line>
+                            <line n="l.24">she armed thos philosophers coulde<note place="bottom" anchored="true" n="informational">Trinity R.3.20 has "oolde" here, which might fit better, but the structure of words like "comune" in line nineteen of this section and "cometh" in the incipt, when compared with "smoothe" in the third line of f.140r and "doo" in the third line from the top of f.141 indicate that this is meant to be a "co" construction.</note></line>
+                            <line n="l.25">off wordly thinge / that they nought tould</line>
+                            <line n="l.26">recorde vpon <hi rend="underline">dyogenes</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides</note></line>
+                            <line n="l.27">on <hi rend="underline">plato</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides.</note> and on <hi rend="underline">socrates</hi><note place="bottom" anchored="true" n="informational">Bracketed on both sides</note></line>
+                            <line n="l.28">she made <hi rend="underline">cypion<ex>n</ex></hi><note place="bottom" anchored="true" n="informational">Bracketed on the left.</note> of cartage</line>
+                            <line n="l.29">to vnderfonge in hys age</line>
+                            <line n="l.30">ffor comune preufyte thing<ex>es</ex> grete</line>
+                            <line n="l.31">and for no dred list not lett</line>
+                            <line n="l.32">agaynst rome that mighty toune</line>
+                            <line n="l.33">for to defende his <del>g</del> regyon</line>
+                            <line n="l.34">she made <hi rend="underline">hector</hi><note place="bottom" anchored="true" n="informational">Bracketed on the left</note> for hys cite</line>
+                            <line n="l.35">to spare for non adversyte</line>
+                            <line n="l.36">but as amyghty champyon</line>
+                            <line n="l.37">in the defence of troyes toun</line>
+                            <line n="l.38">to dye with outen fere or dred</line>
+                            <line n="l.39">and thus this lady who taketh hed</line>
+                            <line n="l.40">makith hur champyons stronge</line>
+                            <line n="l.41">parralus thinges to vunderfonge</line>
+                            <line n="l.42">till that they ther purpose fyne</line>
+                            <line n="l.43">record of the worthes nyne</line>
+                            <line n="l.44">off / other eke that were but late</line>
+                            <line n="l.45">In<note place="bottom" anchored="true" n="informational">The EETS edition corrects this to "I," in one of the few instances of correction that MacCraken noted.</note> meane prynces / of latter date</line>
+                            <line n="l.46">henry the fyfte / I dare seye soo</line>
+                            <line n="l.47">he myght be tould for on of the</line>
+                            <line n="l.48">empryses that were begonne</line>
+                            <line n="l.49">he left not til they wer wonne</line>
+                            <line n="l.50">and I supposse / and yow list see</line>
+                            <line n="l.51">that thos ladyes all thre</line>
+                            <line n="l.52">were of his counsayle doutles<!--check MED - could be 'deutles'--></line>
+                        </zone>
+                        <zone n="marginalia">
+                            <line n="l.29">.i. republica</line>
+                        </zone>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 143 Verso</label>
+                    <graphic url="Add_29729_f143v.jpg"/>
+                    <zone n="EETS.ML.17">
+                        <zone n="text">
+                            <line n="l.53"><hi rend="underline">fforce</hi> <hi rend="underline">prudence</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right</note> and <hi rend="underline">rightwysnesse</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note></line>
+                            <line n="l.54">off thos thre / he toke his roote</line>
+                            <line n="l.55">to putt <hi rend="underline">fortune</hi> vnder fott</line>
+                            <line n="l.56">and sith this ladye / in vertu stronge</line>
+                            <line n="l.57">soustayneth trouth and doth it<!--make a note - shift from "not"--> wronge</line>
+                            <line n="l.58">late hur now to more and lasse</line>
+                            <line n="l.59">be welcome to yow this cristmasse</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETs.ML.V">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>And this edone cometh in the forthe lady cleped</line>
+                        <line n="l.2">dame feyre and wyse attempraunce</line>
+                    </zone>
+                    <zone n="EETS.ML.18">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>This fayre lady that ye sene here</line>
+                            <line n="l.2">humble debonare / and sadd of chere</line>
+                            <line n="l.3">I called is attemperaunce</line>
+                            <line n="l.4">to sett all thinge in gouernaunce</line>
+                            <line n="l.5">and for hir susters to provyd</line>
+                            <line n="l.6">vyces all shall circumsyde</line>
+                            <line n="l.7">and setten them in stabulnesse</line>
+                            <line n="l.8">with hir cousin <hi rend="underline">soburnesse</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note></line>
+                            <line n="l.9">she shall from vyces them restreyne</line>
+                            <line n="l.10">and in vertue hold hur reyne</line>
+                            <line n="l.11">and ther in gyue them liberte</line>
+                            <line n="l.12">eschuynge all dishoneste</line>
+                            <line n="l.13">and them in furmen by prudence</line>
+                            <line n="l.14">ffor to haue pacyence</line>
+                            <line n="l.15">lownesse and humylite</line>
+                            <line n="l.16">and pryd specially to flee</line>
+                            <line n="l.17">contynence from glotenye</line>
+                            <line n="l.18">eschue dishonest companye</line>
+                            <line n="l.19">fflen the dyte and the tauerne</line>
+                            <line n="l.20">and in soburnesse them gouerne</line>
+                            <line n="l.21">w<ex>ith</ex> hart all<note place="bottom" n="informational">It appears that the final glyph has been stuck out, but this may simply be a smudge. Both "al" and "all" appear in this work, and so I've decided to err on the side of assuming it is a mistake.</note> euer they can</line>
+                            <line n="l.22">In vertu louen euery man</line>
+                            <line n="l.23">sey the best ay of entent</line>
+                            <line n="l.24">who that seyth well doth not repente</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.17">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>detraction and gloteny</line>
+                            <line n="l.2">voyde them from thy company</line>
+                            <line n="l.3">and all rancoure sett asyde</line>
+                            <line n="l.4">be not to hasty / but euer abyde</line>
+                            <line n="l.5">specially to done vengaunce</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.18">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>in abode it no repentaunce</line>
+                            <line n="l.2">and in vertu / who is thus sett</line>
+                            <line n="l.3">than be thos susters well Imett</line>
+                            <line n="l.4">and sothly yf it be discerned</line>
+                            <line n="l.5">who by thos foure / is thus gouerned</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.19">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>thus I meane that by <hi rend="underline">prudence</hi></line>
+                            <line n="l.2">he haue the myrrour of prouydence</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.144" n="folio">
+                <surface n="recto">
+                    <label>Folio 144 Recto</label>
+                    <graphic url="Add_29729_f144r.jpg"/>
+                    <zone n="EETS.ML.19">
+                        <zone n="text">
+                            <line n="l.1">ffor to consider thinges all</line>
+                            <line n="l.2">namely parylles / or they fall</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.20">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>and who that haue by gouernaunce</line>
+                            <line n="l.2">of ryghtwysnes the ballaunce</line>
+                            <line n="l.3">and strongly hold in his deffence</line>
+                            <line n="l.4">the swerd of hir <hi rend="underline">magnyfycence</hi></line>
+                            <line n="l.5">ye bene assured / from all myschaunce</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.21">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="pilcrow">¶</hi>namely whan that attemperaunce</line>
+                            <line n="l.2">hir<note place="bottom" anchored="true" n="informational">It is possible that this is "y" with a tittle, but as y appears elsewhere in the manuscript without any sort of indication I believe it's more likely that this is intended as "i."</note> suster gouerneth all thre</line>
+                            <line n="l.3">ffrom <hi rend="underline">fortune</hi><note place="bottom" anchored="true" n="informational">Bracketed on the right.</note> ye may than go fre</line>
+                            <line n="l.4">both allwye / in hert and thought</line>
+                            <line n="l.5">whyle ye be so / no dred hur<note place="bottom" anchored="true" n="informational">This, when compared with "hir" at lines two and six of this section, provides a particularly good example of how the two forms of the word throughout are "hir" and "hur," respectively.</note> nought</line>
+                            <line n="l.6">but avoydeth / hir acqueyntaunce</line>
+                            <line n="l.7">ffor hir double varyaunce</line>
+                            <line n="l.8">and fleeth oute of hir company</line>
+                            <line n="l.9">and all that ben of hur allye</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ML.22">
+                        <zone n="text">
+                            <line n="l.1">and ye foure susters glad of chere</line>
+                            <line n="l.2">shuld abyde here all this yeare</line>
+                            <line n="l.3">I<del>i</del><add>n</add><del>n</del><note place="bottom" anchored="true" n="informational">The scribe wrote the initial "I" here, then immediately followed it with "in." Realizing the error it appears they completed the "n," but the tittle for "i" was left.</note> this housould at liberte</line>
+                            <line n="l.4">and Ioye and all prosparyte</line>
+                            <line n="l.5">with you to housold ye shuld bring</line>
+                            <line n="l.6">and ye all foure shall now syng</line>
+                            <line n="l.7">with all your hole herte entier</line>
+                            <line n="l.8">some new songe aboute the fyre</line>
+                            <line n="l.9">suche on as you lyketh best</line>
+                            <line n="l.10">lat ffortune go playe hir wher hir liste / explicit</line>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

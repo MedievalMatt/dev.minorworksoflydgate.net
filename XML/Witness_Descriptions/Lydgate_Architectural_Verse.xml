@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Source information for <emph>Writing on the Wall: John Lydgate's Architectural Verse</emph></title>
+         </titleStmt>
+         <author>Matthew Evan Davis</author>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc xml:id="Floyd">
+            <bibl type="dissertation">
+               <author>John Lydgate </author>
+               <author>Jennifer Eileen Floyd</author>
+               <title type="full" level="u">Writing on the Wall</title>
+               <title type="sub">John Lydgate's Architectural Verse</title>
+               <date when="2008-08">August, 2008</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

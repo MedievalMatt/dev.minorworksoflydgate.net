@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Quis_Dabit">
+                <title type="full">
+                    <title type="main">
+                        <emph>Quis Dabit Meo Capiti Fontem Lacrimarum</emph>
+                        <!-- consider using Lamentation of our Lady Maria since there is no title here. -->
+                    </title>
+                    <title type="sub">St. John 56 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="free" xml:id="oxford_university">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> IMAGE INFORMATION IS NOT YET VALID. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="St_John_56">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="St_John_56">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region/>
+                        <settlement>Oxford</settlement>
+                        <institution>St. John's College</institution>
+                        <idno>56</idno>
+                    </msIdentifier>
+                    <msContents> </msContents>
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc/>
+
+
+                        <handDesc>
+                            <handNote/>
+                        </handDesc>
+
+
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+
+
+                    </physDesc>
+                    <history> </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+            <sourceDesc xml:id="Trapp">
+                <bibl type="article">
+                    <author> John Lydgate </author>
+                    <author> J.B. Trapp </author>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="a">
+                        <title type="main" level="j"> The Review of English Studies </title>
+                        <title type="sub" level="a"> "Verses By Lydgate at Long Melford" </title>
+                    </title>
+                    <date when="1955-01">Jan, 1955</date>
+                </bibl>
+            </sourceDesc>
+            <sourceDesc xml:id="Floyd">
+                <bibl type="dissertation">
+                    <author> John Lydgate </author>
+                    <author> Jennifer Eileen Floyd </author>
+                    <title type="full" level="u"> Writing on the Wall </title>
+                    <title type="sub"> John Lydgate's Architectural Verse </title>
+                    <date when="2008-08">August, 2008</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.9" n="gathering">
+            <surfaceGrp xml:id="f.73" n="folio">
+                <surface n="verso">
+                    <label>Folio 73 Verso</label>
+                    <graphic url="St_John_56_73v.jpg"/>
+                    <zone n="EETS.QD.I">
+                        <line n="l.1"> Quis dabit capiti meo fontem lacrima<ex>rum</ex> &#x61b;
+                        </line>
+                    </zone>
+                    <zone n="EETS.QD.1">
+                        <line n="l.1">
+                            <hi rend="capital_missing_3">W</hi>ho shall yeve / to myne heed a welle
+                            &#x61b; </line>
+                        <line n="l.2"> Off bytter teers / my sorowes to compleyne &#x61b; </line>
+                        <line n="l.3"> Of a grete condwyt / of trubly waters felle &#x61b; </line>
+                        <line n="l.4"> Doun to stylle / fro myne eyen tweyne &#x61b; </line>
+                        <line n="l.5"> To schewe the constreynt / of my dedly peyne &#x61b; </line>
+                        <line n="l.6"> Whan I allas / behyld and dede see &#x61b; </line>
+                        <line n="l.7"> My dere soone blede / in eu<ex>er</ex>y veyne &#x61b; </line>
+                        <line n="l.8"> A twene too þeues / nayled to a Tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.2">
+                        <line n="l.1"> Who schall of wepynge / yeve me suffysaunce &#x61b; </line>
+                        <line n="l.2"> Or to my sobbyng / who schall me teeres fynde &#x61b; </line>
+                        <line n="l.3"> To see my ioye / myne hertis hygh plesaunce &#x61b; </line>
+                        <line n="l.4"> My swete sone / that was to me so kynde &#x61b; </line>
+                        <line n="l.5"> Rayled with reed blood / as sappe þorough þe rynde &#x61b; </line>
+                        <line n="l.6"> Thorough his en enemyes / vengeable cruelte &#x61b; </line>
+                        <line n="l.7"> Derkened with dethe / his eyen nowe maad blynde &#x61b; </line>
+                        <line n="l.8"> A twen too þeuys nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.3">
+                        <line n="l.1"> My ioye / my light / my lanterne most entere &#x61b; </line>
+                        <line n="l.2"> This heuenly phebus / ys clypsed of his lyght &#x61b; </line>
+                        <line n="l.3"> This esperus / hath hyd his beemys cleere &#x61b; </line>
+                        <line n="l.4"> And ys of newe / consteyned fro my syght &#x61b; </line>
+                        <line n="l.5"> Whan schall this day sterre / schewe his beemys bryght
+                            &#x61b; </line>
+                        <line n="l.6"> To clere the troble / of myne aduersyte &#x61b; </line>
+                        <line n="l.7"> Pardee the Jewes / doon to me gret vnryght </line>
+                        <line n="l.8"> To nayle my sone / allas / vnto a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.4">
+                        <line n="l.1"> O alle the doughtren / of Jerusalem &#x61b; </line>
+                        <line n="l.2"> Havethe som compassioun / of my sighes depe &#x61b; </line>
+                        <line n="l.3"> Nat lyke the gladnesse / whiche I had in bedleem &#x61b; </line>
+                        <line n="l.4"> Com nere of rewthe / and helpe me for<ex>e</ex><ex> </ex>to
+                            wepe &#x61b; </line>
+                        <line n="l.5"> A swerd of deethe / doth þorugh my herte crete &#x61b; </line>
+                        <line n="l.6"> I feel yt wele / of moderly pytee &#x61b; </line>
+                        <line n="l.7"> Crampysshed with dethe / swownynge I do slepe &#x61b; </line>
+                        <line n="l.8"> To see my soone / þus nayled to a Tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.5">
+                        <line n="l.1"> O gentyll p<ex>ri</ex>ncesses / and ladies of estate </line>
+                        <line n="l.2"> And ye vyrgenys / in youre entent moost clene &#x61b; </line>
+                        <line n="l.3"> To yeve comfort / that stond all desolate &#x61b; </line>
+                        <line n="l.4"> Renneth the a paas / to see þe … woundes grene &#x61b; </line>
+                        <line n="l.5"> Off youre trewe spouse / of bledyng pale and lene &#x61b; </line>
+                        <line n="l.6"> And aduertysethe / and haue nowe rewthe on mee </line>
+                        <line n="l.7"> ffeynt for to stonde / for how schulde I sustene &#x61b; </line>
+                        <line n="l.8"> To see my soone / þus nayled to a Tree &#x61b; </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.74" n="folio">
+                <surface n="recto">
+                    <label>Folio 74 Recto</label>
+                    <graphic url="St_John_56_74r.jpg"/>
+                    <zone n="EETS.QD.6">
+                        <line n="l.1"> All ye women / to appese myne heuynesse &#x61b; </line>
+                        <line n="l.2"> Remenbrethe / and haue now rewthe on me &#x61b; </line>
+                        <line n="l.3"> Sethe to fore pylate / be mannes fals wytnesse &#x61b; </line>
+                        <line n="l.4"> Howe he was dampned / in þe concistorye </line>
+                        <line n="l.5"> Cled ye eu<ex>er</ex>e / or sawe in story </line>
+                        <line n="l.6"> Off ony sorwes / þat may compard bee &#x61b; </line>
+                        <line n="l.7"> Vn to the sorowes / grauen in my memorye &#x61b; </line>
+                        <line n="l.8"> To see my soone / þus nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.7">
+                        <line n="l.1"> And yeff ye lyke / of rewthe for to lere &#x61b; </line>
+                        <line n="l.2"> And atte my teerys / yiff ye nat dysdeyne &#x61b; </line>
+                        <line n="l.3"> But of Compassioun / mekly lest to here &#x61b; </line>
+                        <line n="l.4"> Howe a scharp swerd / myne herte hathe corven I tweyne
+                            &#x61b; </line>
+                        <line n="l.5"> A swerd of sorowe / þorugh percyd eu<ex>er</ex>y veyne
+                            &#x61b; </line>
+                        <line n="l.6"> And dethe hathe slayne / my sone and spared me &#x61b; </line>
+                        <line n="l.7"> Allas fro wepinge / howe schall I me restreyne &#x61b; </line>
+                        <line n="l.8"> To se my sone / thus nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.8">
+                        <line n="l.1"> O peple vnkynde / why wyll þu noon hede take &#x61b; </line>
+                        <line n="l.2"> To see the lord of helle / erthe and heuen &#x61b; </line>
+                        <line n="l.3"> Meke as a lamb / þus offrd for thy sake &#x61b; </line>
+                        <line n="l.4"> To slee the dragoun / with his hedes seuen &#x61b; </line>
+                        <line n="l.5"> Daqntyng þe power / of his infernall leuen &#x61b; </line>
+                        <line n="l.6"> Out of his thraldam / to make þe goo free </line>
+                        <line n="l.7"> With many woo woundes / þan any man can neven &#x61b; </line>
+                        <line n="l.8"> Whan he at calverye / was nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.9">
+                        <line n="l.1"> Is it am<ex>er</ex>uayle / or any maner wonder &#x61b; </line>
+                        <line n="l.2"> Though I full offte / swoune for greuaunce &#x61b; </line>
+                        <line n="l.3"> Was ther eu<ex>er</ex> moder / oþer heer or yonder &#x61b; </line>
+                        <line n="l.4"> That for her chyld / felt more penaunce &#x61b; </line>
+                        <line n="l.5"> Myne inward sorwes / can fynde noon allegeaunce &#x61b; </line>
+                        <line n="l.6"> Eache hour renewyng / yt wyll noon other be &#x61b; </line>
+                        <line n="l.7"> Whan eu<ex>er </ex>yt comethe / to myn my remenbraunce
+                            &#x61b; </line>
+                        <line n="l.8"> Howe þat my sone / was nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.10">
+                        <line n="l.1"> The lemes feble / vpon my feet to stonde &#x61b; </line>
+                        <line n="l.2"> Whan I allas / consydre and be holde &#x61b; </line>
+                        <line n="l.3"> This petous mateer / þat we haue in honde &#x61b; </line>
+                        <line n="l.4"> fful lytell meruayll / þowgh myne herte colde &#x61b; </line>
+                        <line n="l.5"> myne hondes crampyssh / I may them nat vnfold &#x61b; </line>
+                        <line n="l.6"> To goon voryght / I haue noo foot nor knee &#x61b; </line>
+                        <line n="l.7"> My paynesse passe / all tormentis new newe or olde &#x61b; </line>
+                        <line n="l.8"> To see my soone / þus nayled to a tree &#x61b; </line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 74 Verso</label>
+                    <graphic url="St_John_56_74v.jpg"/>
+                    <zone n="EETS.QD.11">
+                        <line n="l.1"> Ayen the gyse / of kynges riche crownes </line>
+                        <line n="l.2"> My dere sone weryd / a crowne of thornis &#x61b; </line>
+                        <line n="l.3"> Off gold and perle / ageyne ther statly gownes </line>
+                        <line n="l.4"> Ageyne ther rydynge / grete meyne them beforne &#x61b; </line>
+                        <line n="l.5"> My sone on fote / hathe his crosse I borne &#x61b; </line>
+                        <line n="l.6"> Ageyn your soffte pasis / sore drevyn was hee &#x61b; </line>
+                        <line n="l.7"> All for mankinde / that for synne was borne &#x61b; </line>
+                        <line n="l.8"> He poore and nakyd / was nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.12">
+                        <line n="l.1"> Ageyne the beddys / statly hygh and sofft &#x61b; </line>
+                        <line n="l.2"> Off wordly princys / with pylows for ther heed &#x61b; </line>
+                        <line n="l.3"> Vppon þe roode / my soone was lyfft on lofft &#x61b; </line>
+                        <line n="l.4"> With blody [?] / his mantell maad all reed &#x61b; </line>
+                        <line n="l.5"> Marked with a spere / and for mankynd deed &#x61b; </line>
+                        <line n="l.6"> And grow<ex>er</ex>ched no þing / thorough his humylte
+                            &#x61b; </line>
+                        <line n="l.7"> To me noone eese / what þat I took hede &#x61b; </line>
+                        <line n="l.8"> And saugh my sone / þus nayled to atree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.13">
+                        <line n="l.1"> ffor Adam ys synne / þus was .. my sone slayne &#x61b; </line>
+                        <line n="l.2"> Thorough þe olde serpent / be thassent of eue &#x61b; </line>
+                        <line n="l.3"> Whanne þorough my meknesse / mankynde was mad
+                                fayn<ex>e</ex><ex> </ex>&#x61b; </line>
+                        <line n="l.4"> Hyr name turned / ther thraldam to releue </line>
+                        <line n="l.5"> And gabrell cam / my meknesse . for to preue &#x61b; </line>
+                        <line n="l.6"> Sent be oon accord / of all the Trynyte &#x61b; </line>
+                        <line n="l.7"> But full soore afftyr / he dede myn herte greue &#x61b; </line>
+                        <line n="l.8"> Whan I my soone saugh / nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.14">
+                        <line n="l.1"> ffor manys loue / he faught a grete batalye &#x61b; </line>
+                        <line n="l.2"> With his seuene hedis / he outrayed þe
+                                dragoun<ex>n</ex><ex> </ex>&#x61b; </line>
+                        <line n="l.3"> Lyk myghty sampsoun / with out on plate or mayle &#x61b; </line>
+                        <line n="l.4"> In hys stronge fyght / he stranglyd þe lyoun &#x61b; </line>
+                        <line n="l.5"> That was my sone / mankyndys campioun &#x61b; </line>
+                        <line n="l.6"> Thorough this moost myghty / magnanymyte &#x61b; </line>
+                        <line n="l.7"> As kyng and bysshop / made his oblacioun<ex>n</ex> &#x61b; </line>
+                        <line n="l.8"> Vppon the hygh auter / of þe roode tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.15">
+                        <line n="l.1"> My sones suffraunce / to Sathan was grete wrake &#x61b; </line>
+                        <line n="l.2"> Whos gret meknesse / dede I nowgh suffyse &#x61b; </line>
+                        <line n="l.3"> Clerly fygured / whann þat Isaac &#x61b; </line>
+                        <line n="l.4"> Was be his ffadyr / offryd in sacryfyce &#x61b; </line>
+                        <line n="l.5"> Nat dys obeying / in no manere wyse &#x61b; </line>
+                        <line n="l.6"> But lyke an vmble lamb / þat tyme dyde agryse &#x61b; </line>
+                        <line n="l.7"> But moost myn herte / þat tyme dyde agryse &#x61b; </line>
+                        <line n="l.8"> Whan I fyrst saugh / hym . nayled to a tree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.C">
+                        <line n="l.1"> He myght be called </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+        <surfaceGrp xml:id="g.10" n="gathering">
+            <surfaceGrp xml:id="f.75" n="folio">
+                <surface n="recto">
+                    <label>Folio 75 Recto</label>
+                    <graphic url="St_John_56_75r.jpg"/>
+                    <zone n="EETS.QD.16">
+                        <line n="l.1"> He myght be called / eleazar the secunde &#x61b; </line>
+                        <line n="l.2"> The chamnpyoun / moost myghty and notable &#x61b; </line>
+                        <line n="l.3"> That yaff the olyfaunt / hy laste his laste mortall wounde
+                            &#x61b; </line>
+                        <line n="l.4"> Machabeo<ex>rum</ex> / this story ys no fablee &#x61b; </line>
+                        <line n="l.5"> And hercules / in his conquest stable &#x61b; </line>
+                        <line n="l.6"> Bar vp the heuenys / in his humanytee &#x61b; </line>
+                        <line n="l.7"> Ffor whom ony sorowes / wer maad moost lamentable &#x61b; </line>
+                        <line n="l.8"> Whan I be hylde hym / þus nayled to atree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.17">
+                        <line n="l.1"> Thus dethe with dethe / outrayed and brought lowe &#x61b; </line>
+                        <line n="l.2"> Mankyndys quarell / made victorious &#x61b; </line>
+                        <line n="l.3"> ffor than leuiathan / was boundon and ou<ex>er </ex>throwe
+                            &#x61b; </line>
+                        <line n="l.4"> Whan with his Tryumphes / moost singular glori<ex>o</ex>us </line>
+                        <line n="l.5"> My sone had fought / w<ex>ith</ex> his blood
+                            p<ex>re</ex>cious &#x61b; </line>
+                        <line n="l.6"> Conquerd the dragoun / for all his feste fell pouste &#x61b; </line>
+                        <line n="l.7"> And dreue hym hom / to his in fernall house &#x61b; </line>
+                        <line n="l.8"> Whanne fyrst my soone / was nayled to atree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.18">
+                        <line n="l.1"> Lete eu<ex>er</ex>y man / in this mateer take hede &#x61b; </line>
+                        <line n="l.2"> And euery woman / in this world a lyue &#x61b; </line>
+                        <line n="l.3"> Com nere to me / see his sydes blede &#x61b; </line>
+                        <line n="l.4"> His loue / his deethe / his kindnesse to dyscryue &#x61b; </line>
+                        <line n="l.5"> To see mysteres / of his woundes fyue &#x61b; </line>
+                        <line n="l.6"> As bawme and tracle / of moost souereynte &#x61b; </line>
+                        <line n="l.7"> Clerly dystyllynge / to fynde socour blyue &#x61b; </line>
+                        <line n="l.8"> Doun fro my soone / nayled to atree &#x61b; </line>
+                    </zone>
+                    <zone n="EETS.QD.19">
+                        <line n="l.1"> Trust in his mercy / and I wyll goo betwene &#x61b; </line>
+                        <line n="l.2"> And humbly knele / be fore his fface &#x61b; </line>
+                        <line n="l.3"> Ffor all mankynde / be medyatryce / and mene &#x61b; </line>
+                        <line n="l.4"> Off synfull folk<ex>is</ex> / to releue the trespace &#x61b; </line>
+                        <line n="l.5"> That he with vengeaunce / schall hem nat manace </line>
+                        <line n="l.6"> Lyk hed her dysmerytes / to schewe ther cruelte &#x61b; </line>
+                        <line n="l.7"> But schewe to hem / his mercy and his grace &#x61b; </line>
+                        <line n="l.8"> That for ther loue / was nayled to a tree . Amen &#x61b;
+                        </line>
+                    </zone>
+                    <zone n="EETS.QD.E">
+                        <line n="l.1"> Explicit </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

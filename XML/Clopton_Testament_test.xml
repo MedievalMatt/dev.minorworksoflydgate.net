@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">Long Melford Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="free" xml:id="clopton">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> All rights to the images, however, are reserved as a
+                            courtesy to the Church of the Holy Trinity, Long Melford, which
+                            partially relies on donations for its upkeep. Please contact the editor
+                            with any requests. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <xi:include href="../Witness_Descriptions/Clopton_Chantry_Chapel.xml" xpointer="Clopton_Chantry_Chapel" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Minor_Poems_Vol_I.xml" xpointer="MacCracken" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Verses_By_Lydgate.xml" xpointer="Trapp" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Lydgate_Architectural_Verse.xml" xpointer="Floyd" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20172611" who="#medavis" status="revision">removed "orig" tags throughout to bring it into compliance with spot change to TEI P5</change>
+                <change when="20140627" who="#medavis" status="draft">Change transcription to
+                    match the final version completed on north wall</change>
+                <change when="20140922" who="#medavis" status="draft">Transcriptions completed on
+                    all four walls, including notes</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="w.3" n="South Wall">
+            <surface xml:id="p.1" n="panel">
+                <label>First Panel</label>
+                <graphic url="sw_test_1.jpg"/>
+                <zone n="EETS.T.29" points="796,176 1184,738 456,712 64,140">
+                    <line n="l.1" points="64,142 800,178 820,232 112,208">
+                        <hi>N</hi>ow in the name of oure lord ihesus </line>
+                    <line n="l.2" points="112,210 824,234 858,296 158,280"> of right hool herte
+                            <ex>&amp;</ex> in our<ex>e</ex><note anchored="true" place="bottom" n="explanatory">Although “r” on the
+                            painted panels of the chapel is consistently written with an otiose mark
+                            when it concludes a word, the mark here is rendered more heavily and
+                            with a dot indicating suspension above the r. This rendering as
+                                “our<ex>e</ex>” is a linguistic outlier for the area based on the
+                            electronic <emph rend="italic">Linguistic Atlas of Late Medieval
+                                English</emph>’s linguistic profiles for “oure,” “our,” and
+                                “our<ex>e</ex>.” See eLALME's <ref
+                                target="http://archive.ling.ed.ac.uk/ihd/elalme_scripts/mapping/user-defined_maps.html"
+                                >User Defined Maps</ref> for more information. Unfortunately the
+                            current online version (as of 6 December 2022) does not allow direct
+                            linking between static dotmaps and linguistic profiles.</note> best
+                        entent </line>
+                    <line n="l.3" points="210,348 902,352 860,296 166,284"> our<ex>e</ex> lyf
+                            reme<ex>m</ex>bryng froward and vicious </line>
+                    <line n="l.4" points="206,348 902,354 948,420 253,416"> ay contrarye to the
+                        comaundement </line>
+                    <line n="l.5" points="256,417 950,420 990,476 302,480"> of crist ih<ex>es</ex>u
+                        now wyth avisement </line>
+                    <line n="l.6" points="301,481 992,480 1036,545 345,545"> the lord besechi<damage
+                            n="illegible">ng</damage>
+                        <gap quantity="2" reason="illegible" unit="chars"/><note anchored="true" place="bottom" n="informational">Trapp suggests "of"
+                            here, which fits the space in a way that MacCracken's "in thyn" will
+                            not, but it does not seem to fit the admittedly paltry remnants of the
+                            text. "In" seems the likely word here, but the text is too damaged to
+                            definitively state that this is the case.</note>
+                        <damage n="legible">mercy and pete</damage>
+                    </line>
+                    <line n="l.7" points="345,545 1037,543 1084,617 397,617"> our<ex>e</ex> youthe
+                            <ex>&amp;</ex> age that we have <damage n="legible"
+                            >mysp</damage>e<damage n="legible">n</damage><damage n="illegible">t</damage>
+                    </line>
+                    <line n="l.8" points="1087,619 1138,682 444,685 398,615"> wyt<damage n="legible"
+                            >h t</damage>h<damage n="legible">is woor</damage>d <damage n="legible"
+                            >mercy knelyng</damage> on our<ex>e</ex> kne<note anchored="true"
+                            place="bottom" n="informational">This change occurs only in the Clopton
+                            verses.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.2" n="panel">
+                <label>Second Panel</label>
+                <graphic url="sw_test_2.jpg"/>
+                <zone n="EETS.T.30" points="3,135 745,121 1192,705 426,724">
+                    <line n="l.1">
+                        <damage n="legible"><hi>O</hi> ih<ex>es</ex>u</damage>
+                        <damage n="illegible">m</damage>ercy wyth <damage n="legible"
+                        >sup</damage>port of thy<ex>n</ex> gr<damage n="legible">ace</damage>
+                    </line>
+                    <line n="l.2"> f<damage n="legible">or th</damage>y<ex>n</ex> me<damage n="illegible"
+                            >ke</damage><note anchored="true" place="bottom" n="explanatory">The
+                            remnant of the “e” can be seen in the final letter of the word. When
+                            compared with the “k” in “meekly” in the panel for verse 59, it is clear
+                            “meke,” rather than “meek,” is the scribe’s intent here.</note>
+                            passio<ex>u</ex>n reme<ex>m</ex>b<damage n="legible">r</damage>e
+                            our<ex>e</ex> co<ex>m</ex>pleynt </line>
+                    <line n="l.3"> duryng our<ex>e</ex> lyf w<ex>ith</ex> m<damage n="illegible"
+                        >an</damage>y gret trespace </line>
+                    <line n="l.4"> by many wrong <damage n="legible">pa</damage>th wher<ex>e</ex> we haue
+                        myswent </line>
+                    <line n="l.5"> we now purpose by grace influent </line>
+                    <line n="l.6"> calle to reme<ex>m</ex>braunce of surfetis don to the<note
+                            anchored="true" place="bottom" n="informational">This reading is unique
+                            to Long Melford.</note>
+                    </line>
+                    <line n="l.7">
+                        <gap quantity="3" reason="illegible" unit="chars"/>
+                        <gap quantity="6" reason="illegible" unit="chars"/>
+                        <gap quantity="2" reason="illegible" unit="chars"/>
+                        <damage n="illegible">our<ex>e</ex> laste testament</damage><note
+                            anchored="true" place="bottom" n="explanatory">The bottom of the “o” and
+                            “u” of “our” are clear in the fourth word on the line. Likewise, the
+                            number of minims and the lack of an otiose mark for the final letter
+                            make it clear it is “laste” rather than “last,” and the otiose marks
+                            beginning and ending the word and the number of minims make it clear it
+                            is “testament.” The bottom as well as the top of the words at the
+                            beginning of the line is sometimes missing, making any judgments
+                            regarding spelling more speculative there. The abbreviation for the
+                            final “e” in “oure” is based on how the word is formed elsewhere on the
+                            panel.</note>
+                    </line>
+                    <line n="l.8"> wyth ih<ex>es</ex>u mercy knelyng on our<ex>e</ex> kne </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.3" n="panel">
+                <label>Third Panel</label>
+                <graphic url="sw_test_3.jpg"/>
+                <zone n="EETS.T.30">
+                    <line n="l.1">
+                        <hi>A</hi>nd vnder support ih<ex>es</ex><damage n="legible">u o</damage>f
+                        thyn favour<ex>e</ex>
+                    </line>
+                    <line n="l.2"> or we passe hens this is hooly our<ex>e</ex> entent </line>
+                    <line n="l.3"> to make the ih<ex>es</ex>u to be chef surviour<ex>e</ex>
+                    </line>
+                    <line n="l.4"> of our<ex>e</ex> laste wyll set in our<ex>e</ex> testament </line>
+                    <line n="l.5"> weche of our<ex>e</ex> self be insufficient </line>
+                    <line n="l.6">
+                        <damage n="illegible">to</damage><damage n="legible"> rekene or
+                            coun</damage>te but mercy and <damage n="illegible">pite</damage><note
+                            place="bottom" anchored="true" n="explanatory">The crossbar of the “t”
+                            in “to” is visible at the beginning of the sentence, as are the tops of
+                            the letters in “rekene” following. The top of the “o” is visible, and
+                            the “r” following can be assumed based on the “or” in the line
+                            following. The top of the “c” and “o in “counte” are visible as well.
+                            The lack of a tittle on the terminal letter in “pite,” as well as the
+                            remnant of the finishing stroke up and to the left clarify the final
+                            letter.</note>
+                    </line>
+                    <line n="l.7"> be p<ex>re</ex>ferred or thou do iugeme<damage n="legible">nt</damage>
+                    </line>
+                    <line n="l.8"> to vs that calle to the ih<ex>es</ex>u on our<ex>e</ex> kne </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.4" n="panel">
+                <label>Fourth Panel</label>
+                <graphic url="sw_test_4.jpg"/>
+                <zone n="EETS.T.56">
+                    <line n="l.1">
+                        <hi>O</hi><gap quantity="2" unit="chars" reason="illegible"/> wrecchid lif
+                        to amende an<damage n="illegible">d</damage> correcte </line>
+                    <line n="l.2"> we vs p<ex>ro</ex>pose w<ex>ith</ex> support of th<damage n="illegible"
+                            >y</damage> grace </line>
+                    <line n="l.3"> thy deth thy passio<ex>u</ex>n thy<note place="bottom" anchored="true"
+                            n="informational">The manuscript witnesses all have a cross glyph
+                            between "thy" and "cross." Pynson's print edition omits this cross,
+                            likely because of the cost of producing the specific character, and the
+                            Clopton chapel omits it most likely because it would be seen as
+                            redundant.</note> cros shall vs directe </line>
+                    <line n="l.4"> which suffredist deth ih<ex>es</ex><damage n="illegible">u</damage> for
+                            our<ex>e</ex> trespace </line>
+                    <line n="l.5">
+                        <damage n="legible">w</damage>
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <damage n="legible">wrecchis vnw</damage>
+                        <damage n="illegible">orthy to</damage>
+                        <damage n="legible">loke</damage>
+                        <damage n="illegible">on</damage>
+                        <damage n="legible">thy face</damage>
+                    </line>
+                    <line n="l.6">
+                        <damage n="legible">thy f</damage>eet enbr<damage n="illegible">asyng
+                            fro</damage> which we shal<damage n="legible">no</damage><damage
+                            n="illegible">t t</damage>wynne<note place="bottom" anchored="true"
+                            n="explanatory">While it appears that the damage at the end of “shalnot”
+                            is another letter after the largely missing “t,” this is actually a
+                            result of the otiose mark finishing “t” here and the mark beginning the
+                            also largely missing “t” in “twynne.” Thus, the line is “shalnot twynne”
+                            as I have rendered it here.</note>
+                    </line>
+                    <line n="l.7"> wyll we have her<ex>e</ex> leiser<ex>e</ex> tyme and sp<damage
+                            n="legible">ace</damage><note place="bottom" anchored="true"
+                            n="informational">This line is absent from any of the existing
+                            manuscript witnesses. It was likely added in order for this verse to
+                            match the rhyme scheme of the other stanzas.</note>
+                    </line>
+                    <line n="l.8"> m<ex>er</ex>cy requyreng thus wole begynne </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.5" n="panel">
+                <label>Fifth Panel</label>
+                <graphic url="sw_test_5.jpg"/>
+                <zone n="EETS.T.57">
+                    <line n="l.1">
+                        <hi>O</hi> my<damage n="legible">gh</damage>ty lord<note place="bottom"
+                            anchored="true" n="informational">The “r” in “lord” is a closed form
+                            that the scribe only uses after “o.”</note> of power<ex>e</ex> m<damage
+                            n="legible">y</damage>ghtyest </line>
+                    <line n="l.2"> wyth oute whom al force is febylnesse </line>
+                    <line n="l.3"> bounteuous ih<ex>es</ex>u of goode goodlyest </line>
+                    <line n="l.4"> mercy to g<ex>ra</ex>unte <damage n="illegible">er</damage> thou thy
+                        domys dresse<note place="bottom" anchored="true" n="both">While the fourth
+                            word here is largely damaged, it is clear from what remains that the
+                            first letter is an “e” rather than an “o.” Also note that the first
+                            portion of the line differs from the EETS edition, in a reading that
+                            appears unique to Long Melford.</note>
+                    </line>
+                    <line n="l.5"> delayest ri<damage n="illegible">g<ex>ou</ex>r</damage>
+                        <damage n="legible">to</damage>
+                        <damage n="illegible">p</damage><damage n="legible">unysshe</damage>
+                        <damage n="illegible">o</damage>ur<ex>e</ex> wikkednesse<note place="bottom"
+                            anchored="true" n="explanatory">The remnant of a suspension mark above
+                            the terminal letter in the second word makes it clear that there is
+                            abbreviation, but since that terminal letter is damaged it’s less clear
+                            what exactly is being abbreviated. The rendering here is based on
+                            scribal practice elsewhere in the chapel, such as in the word “graunte”
+                            in the final line. The first letter of the fourth word is hard to
+                            determine, but based on the number of minims of the next three letters,
+                            combined with scribal practice in the chapel, indicates that the fourth
+                            letter id “y” rather than “i.”</note>
+                    </line>
+                    <line n="l.6">
+                        <gap quantity="3" unit="chars"/>ge<gap quantity="2" unit="chars"/>
+                        <gap quantity="6" unit="chars"/>g <gap quantity="3" unit="chars"/>h<gap
+                            quantity="3" unit="chars"/> to <gap quantity="2" unit="chars"/>
+                            vengeance<note place="bottom" anchored="true" n="explanatory">While
+                            enough of the word remains here to make it clear that the intended final
+                            word is “vengeance,” the initial letter too damaged to make out. It is
+                            rendered “vengeance” rather than “uengeance” here based on practice
+                            elsewhere in the chapel.</note>
+                    </line>
+                    <line n="l.7"> o blissed ih<ex>es</ex>u of thy hygh goodne<damage n="legible"
+                            >ss</damage>e </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosyl and repentance </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.6" n="panel">
+                <label>Sixth Panel</label>
+                <graphic url="sw_test_6.jpg"/>
+                <zone n="EETS.T.58">
+                    <line n="l.1">
+                        <hi>T</hi>hough thou be myghty þ<ex>ou</ex> art eke m<ex>er</ex>cyable </line>
+                    <line n="l.2"> to alle folkis that mekely theym repente </line>
+                    <line n="l.3"> we wrecchis cont<ex>ra</ex>rious<note place="bottom" anchored="true"
+                            n="informational">This reading is unique to Long Melford.</note> and
+                        culpale </line>
+                    <line n="l.4"> to alle outragis redy to assent </line>
+                    <line n="l.5">
+                        <damage n="legible">but of h</damage>ool herte a<damage n="legible">nd
+                            will</damage> in our<ex>e</ex> entent </line>
+                    <line n="l.6">
+                        <damage n="illegible">of ol</damage><damage n="legible">de</damage> a<damage
+                            n="illegible">nd ne</damage>we <damage n="legible">al</damage><damage
+                            n="illegible">l</damage>
+                        <damage n="illegible">vic</damage>ious gou<damage n="illegible"
+                            >er</damage><damage n="legible">a</damage><damage n="illegible"
+                            >nce</damage><note place="bottom" anchored="true" n="explanatory">While
+                            this line is damaged across the top, enough of the letters (in some
+                            cases, only the finishing strokes of the minims) remain to make out the
+                            scribal intent, including the pointed bottom of the v in “vicious.”
+                            There is also a a “de” ligature here—a form that can be seen more
+                            clearly in the “de” of “deye” in the final line.</note>
+                    </line>
+                    <line n="l.7"> of youthe <ex>o</ex>r<note place="bottom" anchored="true"
+                            n="informational">This abbreviation is especially interesting because
+                            the scribe places the suspension mark above the “r”, but retains the
+                            form of the r that is only found in the “or” ligature.</note> age and of
+                        tyme mys spent </line>
+                    <line n="l.8"> g<ex>ra</ex>unte orwe deye shrifte hosill and repentance </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.7" n="panel">
+                <label>Seventh Panel</label>
+                <graphic url="sw_test_7.jpg"/>
+                <zone n="EETS.T.59">
+                    <line n="l.1">
+                        <hi>O</hi>f ou<damage n="illegible">r</damage><ex>e</ex>
+                        confessio<ex>u</ex>n receive the sacrifice </line>
+                    <line n="l.2"> by our<ex>e</ex> tonge offerid vnto the </line>
+                    <line n="l.3"> that we may seyn in all our<ex>e</ex> best guyse </line>
+                    <line n="l.4"> meekly w<ex>ith</ex> dauyd have on us m<ex>er</ex>ce </line>
+                    <line n="l.5"> saue alle our<ex>e</ex> sores that they not cankered be </line>
+                    <line n="l.6"> with non olde rust of disesperance </line>
+                    <line n="l.7"> whiche of hool herte knelyng on our<ex>e</ex> kne </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosell and repentance </line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="w.4" n="West Wall">
+            <surface xml:id="p.1" n="panel">
+                <label>First Panel</label>
+                <graphic url="ww_test_1.jpg"/>
+                <zone n="EETS.T.60">
+                    <line n="l.1">
+                        <hi>O</hi>
+                        <damage>ih<ex>es</ex>u</damage>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.2">
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.3">
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.4"> to fol<gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.5"> lete thy <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> vs<note place="bottom"
+                            anchored="true" n="explanatory">Although the first letter is missing the
+                            finishing strokes, the connecting stroke from the “s” is still present,
+                            and appears to run into the rightmost minim, indicating that this is a
+                            “v.”</note> right as alyne </line>
+                    <line n="l.6"> w<ex>ith</ex> vmbill herte toleve to thyn plesance </line>
+                    <line n="l.7"> and blissed ih<ex>es</ex>u or we this lyf shalfyne </line>
+                    <line n="l.8"> g<ex>ra</ex>unte orwe deye shrifte hosell and repentance </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.2" n="panel">
+                <label>Second Panel</label>
+                <graphic url="ww_test_2.jpg"/>
+                <zone n="EETS.T.63">
+                    <line n="l.1">
+                        <hi>W</hi>e be <gap quantity="4" unit="chars" reason="illegible"/>ed and
+                        moeued of <gap quantity="6" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.2">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>souereynly to preyse<note
+                            place="bottom" anchored="true" n="explanatory">Although the first
+                            portion of this line is entirely missing, enough remains of the line to
+                            discern the final three words. The “er” is “souereynly” is marked as an
+                            expansion because of the suspension mark over the u and “preyse” can be
+                            determined by the number of minims along the bottom line, although the
+                            descender that lays below the line in the “y” has been erased by the
+                            damage to the next line.</note>
+                    </line>
+                    <line n="l.3">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.4"> which<note place="bottom" anchored="true" n="explanatory">The initial
+                            letter is obviously a “w” and the remains of the tittle over the “i” can
+                            be seen. Thus, the word is “which.”</note>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.5">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.6"> ageyn oure synnys<note place="bottom" anchored="true" n="explanatory">The
+                            terminal “s,” part of the last “y,” and part of the first “n” prior can
+                            be seen on the wall.</note> weyed in <gap quantity="7" unit="chars"
+                            reason="illegible"/>
+                    </line>
+                    <line n="l.7">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/> shal <gap quantity="2"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="12" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> shrifte hosyll
+                            <ex>&amp;</ex> repentance> </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.3" n="panel">
+                <label>Third Panel</label>
+                <graphic url="ww_test_3.jpg"/>
+                <zone n="EETS.T.65">
+                    <line n="l.1">
+                        <hi>O</hi>ur f<gap quantity="3" unit="chars" reason="illegible"/>h oure hope
+                            t<gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">The otiose mark beginning the “f” in the
+                            second word is visible, as are the remnants of the downstroke on the
+                            terminal “h.” The letters between the two are not visible, however. In
+                            the fourth word, an extremely damaged “p” and the following “e” suggests
+                            that the full word is “hope,” as would be expected. The initial “t” in
+                            the expected following word, “to,” is also visible.</note>
+                    </line>
+                    <line n="l.2">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.3">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> happe that eu<ex>er</ex>
+                            b<gap quantity="6" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">It is “euer” instead of “ever” based on
+                            the minim on the right of the second letter of the word. Above the “u”
+                            is a suspension mark, indicating that the “er” is abbreviated. The
+                            initial letter of the final word is either “b” or “h” based on what
+                            remains, and based on the other editions it’s likely “b.”</note>
+                    </line>
+                    <line n="l.4"> b<gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/> the fynde </line>
+                    <line n="l.5">
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> vnkynde </line>
+                    <line n="l.6"> whiche for our<ex>e</ex> sake <gap quantity="4" unit="chars"
+                            reason="illegible"/> perced w<ex>ith</ex> alaunce </line>
+                    <line n="l.7"> vnto the herte lefte not be hynde<note place="bottom" anchored="true"
+                            n="both">Although it is damaged, the flourish to the left and lack of a
+                            bottom minim on the right indicates that it’s a “v” rather than a “u” or
+                            “o.” The word after “herte” is damaged, but the number of minims that
+                            can be seen and the lack of a descender below the line indicates that
+                            this is “lefte” rather than the abbreviated “ihesu. “Ihesu” is missing,
+                            an omission that is unique to Long Melford.</note>
+                    </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosell <ex>&amp;</ex> repentance
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.4" n="panel">
+                <label>Fourth Panel</label>
+                <graphic url="ww_test_4.jpg"/>
+                <zone n="EETS.T.66">
+                    <line n="l.1">
+                        <hi>T</hi>her<ex>e</ex> is no <gap quantity="3" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/> bo<gap quantity="4"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>ne<note place="bottom"
+                            anchored="true" n="explanatory">The “i” in “is” and both letters in “no”
+                            are damaged, but the remaining minims and spacing indicates they follow
+                            the EETS edition. The “b” in “but” remains with damage only at the
+                            bottom, but the letter following appears to be an “o” rather than a “u”
+                            and the letter following that does not appear to be a “t.” The remnant
+                            of the final “n” and much of the “e” remain at the end of the line, but
+                            the remainder cannot determine spelling.</note>
+                    </line>
+                    <line n="l.2">
+                        <gap quantity="10" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.3">
+                        <gap quantity="7" unit="chars" reason="illegible"/> of fayr<ex>e</ex> erly
+                        late and sone<note place="bottom" anchored="true" n="explanatory">The minims
+                            that are visible in the Clopton Chapel indicate that the final two
+                            letters are “ne.” This makes “sone” the likely spelling.</note>
+                    </line>
+                    <line n="l.4"> stable <gap quantity="3" unit="chars" reason="illegible"/> most strong
+                        pytous <gap quantity="3" unit="chars" reason="illegible"/> rightfull </line>
+                    <line n="l.5">
+                        <gap quantity="9" unit="chars" reason="illegible"/> sinnerys that be in
+                        vertu dull </line>
+                    <line n="l.6">
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/> proude meknesse to
+                            enha<ex>u</ex>nce </line>
+                    <line n="l.7"> thy tonne of mercy euere ye <gap quantity="4" unit="chars"
+                            reason="illegible"/> full </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosell and repentaunce </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.5" n="panel">
+                <label>Fifth Panel<note place="bottom" anchored="true" n="informational">In Bodleian
+                        Laud 683, BL Harley 218, and BL Harley 2255, where this is verse 68, the is
+                        prefaced with the Latin "dic anime mee salus tua ego sum" [“Say to my soul,
+                        you are my salvation”], from Psalm 34:3. It is part of a five-stanza
+                        sequence treated in this manner in those texts, but only three of the verses
+                        appear at Long Melford.</note>
+                </label>
+                <graphic url="ww_test_5.jpg"/>
+                <zone n="EETS.T.68">
+                    <line n="l.1">
+                        <hi>S</hi>ey to our<ex>e</ex> soules <gap quantity="3" unit="chars"
+                            reason="illegible"/> thou art <gap quantity="3" unit="chars"
+                            reason="illegible"/> helthe </line>
+                    <line n="l.2"> heryng this voys aft<ex>er</ex> we shal <gap quantity="3" unit="chars"
+                            reason="illegible"/>sue </line>
+                    <line n="l.3"> scoure that place from al gostly felthe<note place="bottom"
+                            anchored="true" n="explanatory">The “re” in “scoure” is visible, as are
+                            the remnants of the initial “s.” Remnants of the second glyph indicate
+                            “c” rather than “k,” making “scoure” the reading. Remnants of the top
+                            stroke of he long “s” can be seen in the third glyph of the word
+                            “gostly,” making that the intended spelling. Likewise, the second glyph
+                            in the final word is an “e,” making the spelling “felthe.”</note>
+                    </line>
+                    <line n="l.4"> and vices all from thens doremewe<note place="bottom" anchored="true"
+                            n="explanatory">While the manuscript witnesses place a space between
+                            “do” and “remewe,” the version of “r” following the “o” at Long Melford
+                            indicates that the scribe rendered this as a single word.</note>
+                    </line>
+                    <line n="l.5"> thyn holy gost close in that little mewe<note place="bottom"
+                            anchored="true" n="explanatory">While the manuscript witnesses place a
+                            space between “do” and “remewe,” the version of “r” following the “o” at
+                            Long Melford indicates that the scribe rendered this as a single word.
+                            The final glyph and the top portion of the second to last word are
+                            missing, but the rhyme scheme and bottom portion of the minims indicate
+                            this is “little mewe.”</note>
+                    </line>
+                    <line n="l.6"> parte not lyghtly make suche cheuesaunce </line>
+                    <line n="l.7"> to encrese in v<ex>er</ex>tu<note place="bottom" anchored="true"
+                            n="explanatory">The remnants of the text indicate an initial “v”
+                            followed by a “t.” The “er” is indicated via the abbreviation mark above
+                            the initial glyph.</note> and vices to eschewe </line>
+                    <line n="l.8"> and or we deye <gap quantity="3" unit="chars" reason="illegible"/>e
+                        shrift hosell &amp; <gap quantity="10" unit="chars" reason="illegible"/>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.6" n="panel">
+                <label>Sixth Panel<note place="bottom" anchored="true" n="informational">This is the
+                        second of the five-stanza sequence of verses found in Bodleian Laud 683, BL
+                        Harley 218, and BL Harley 2255 that is also at Long Melford. In those
+                        witnesses, where it is verse 69, it reads "Illustra faciem tuam super seruum
+                        tuum" [“Make clear your presence upon your servant”]. The verse is from
+                        Psalms 30:17.</note></label>
+                <graphic url="ww_test_6.jpg"/>
+                <zone n="EETS.T.69">
+                    <line n="l.1">
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.2"> t<gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.3"> o<gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>he nede </line>
+                    <line n="l.4"> for our synnys to we<gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>eyne<note place="bottom"
+                            anchored="true" n="explanatory">The line, like many of the others on
+                            this panel, is badly damaged but the number of minims suggests “y”
+                            rather than “i” for the second glyph. Likewise, the final letters
+                            suggest the last word of the line is “compleyne,” but the beginning is
+                            entirely missing and thus completing the word would be
+                            speculation.</note>
+                    </line>
+                    <line n="l.5"> and blyssed ih<ex>es</ex>u of thyn m<ex>er</ex>cy not disdeyne<note
+                            place="bottom" anchored="true" n="explanatory">The remnant of the
+                            suspension mark is visible above the “m” in mercy. The final letters of
+                            the line are easily discernable: a “de” ligature, the remnant of a “y”
+                            and “n,” and then the terminal “e.” The minim before the “de” ligature
+                            appears to be the upword stroke of the “s” prior, and the appearance of
+                            the rest of the word indicates that this is “disdeyne.”</note>
+                    </line>
+                    <line n="l.6"> thyn gracious shoures lete re<gap quantity="2" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">The line here is badly damaged and the
+                            remaining lines are entirely missing, but the number of minims in
+                            “reyne” combined with the flourish terminating the “e” indicates the
+                            spelling here. Likewise, the glyph after the badly damaged “r” in
+                            “shoures” is seen elsewhere as the –es abbreviation. The ascender for
+                            either the “b” or “d” in “abundaunce” is also visible, but the word is
+                            too damaged to determine spelling.</note>
+                    </line>
+                    <line n="l.7">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.8">
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/>
+                    </line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="w.1" n="North Wall">
+            <surface xml:id="p.1" n="panel">
+                <label>First Panel<note place="bottom" anchored="true" n="informational">This is the
+                        third of the five-stanza sequence of verses found in Bodleian Laud 683, BL
+                        Harley 218, and BL Harley 2255 that is also at Long Melford. In those
+                        witnesses, where it is verse 70, it reads "Saluum me fac in misercordia tua
+                        domine" [“Save me in your mercy, Lord”]. The verse is from Psalm
+                        30:17.</note></label>
+                <graphic url="nw_test_1.jpg"/>
+                <zone n="EETS.T.70">
+                    <line n="l.1">
+                        <hi>S</hi>aue vs thyn seruant<ex>es</ex> olord in thyn mercy<note
+                            place="bottom" anchored="true" n="explanatory">The number of minims in
+                            “seruants,” the lack of a any indication of a suspension mark, and the
+                            lack of the finishing stroke on the leftmost minim on the remnant of the
+                            fourth letter indicates that this is the intended spelling. Likewise,
+                            the rightmost minim of the third letter of the second word indicates
+                            that this should be “saue” rather than “save,” which is consistent with
+                            scribe’s decisions between the two in the rest of the chapel.
+                            Additionally, slight remnants of the terminal “d” and the unique
+                            descender of the “r” in the “or” ligature in the word “lord” can be
+                            seen, making it likely “olord” rather than the two words separately. See
+                            “hosell” at the bottom of the panel for an example of how the scribe
+                            connects “o” to letters with tall ascenders.</note>
+                    </line>
+                    <line n="l.2"> for lak of whiche late vs not be confundid </line>
+                    <line n="l.3"> for <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/> our<ex>e</ex> hope stant
+                            fynally<note place="bottom" anchored="true" n="explanatory">While the
+                            “or” in “for” is largely missing, enough of the ligature remains to make
+                            it clear this is the intended word. Likewise, the initial “o” in “oure”
+                            is missing, but the remaining partial minims indicate that is the
+                            intended word. Unfortunately, a portion of the panel has been cut out
+                            and what remains is insufficient to determine spelling or placement of
+                            words in the missing section. </note>
+                    </line>
+                    <line n="l.4">
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/> the ih<ex>es</ex>u is
+                        groundid </line>
+                    <line n="l.5"> for oure <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/> ih<ex>es</ex>u thou
+                            wer<ex>e</ex> woundid<note place="bottom" anchored="true"
+                            n="explanatory">The final word in this line is significantly damaged,
+                            but enough remains – the top portion of the initial “w,” the “o”, the
+                            tops of both “d’s”, and the tittle for the “i” between them – to
+                            determine that “woundid” is the intended word here.</note>
+                    </line>
+                    <line n="l.6"> naked on the roode by mortall gret penauannce </line>
+                    <line n="l.7"> by whiche the power of satan was confundid </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosell and repenta<ex>u</ex>nce
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.2" n="panel">
+                <label>Second Panel</label>
+                <graphic url="nw_test_2.jpg"/>
+                <zone n="EETS.T.74">
+                    <line n="l.1">
+                        <hi>W</hi>ith wepyng eyen and contrite chier<ex>e</ex>
+                    </line>
+                    <line n="l.2">
+                        <gap quantity="5" unit="chars" reason="illegible"/>te vs ih<ex>es</ex>u and
+                            our<ex>e</ex> compleyn conceyue </line>
+                    <line n="l.3">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> vnworthy tofor th<gap
+                            quantity="1" unit="chars" reason="illegible"/> t<gap quantity="4"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="both">While the first letter of the third word is
+                            quite damaged, based on the lack of a bottom finishing stroke on the
+                            rightmost minim and the practice elsewhere of rendering initial “u” as a
+                            “v,” the word here is “vnworthy.” Additionally, most other manuscript
+                            witnesses as well as Pynson’s 1520 print edition have “tappeare” and
+                            variations thereof in this line. However, Trinity R.3.19 has “to apere
+                            tofore.” The Clopton verses omit “apere” unless it is in the missing
+                            text of the panel.</note>
+                    </line>
+                    <line n="l.4"> whiche in our<ex>e</ex> self<gap quantity="1" unit="chars"
+                            reason="illegible"/> no v<ex>er</ex>tu aperceyue<note place="bottom"
+                            anchored="true" n="explanatory">The initial “o” and “u” of “oure” can be
+                            determined from the panel and context. The final letter of the fourth
+                            word cannot be determined – the remnant of a minim at the bottom is too
+                            thick to be the “-es” abbreviation. The remnant of the second “e” and
+                            the descender of the “y” in “aperceyue” can be seen, indicating that
+                            this is the final word in the line.</note>
+                    </line>
+                    <line n="l.5"> but of thyn m<ex>er</ex>cy <gap quantity="2" unit="chars"
+                            reason="illegible"/> grace vs receyue<note place="bottom"
+                            anchored="true" n="explanatory">While the word is damaged, enough
+                            remains of the top of the minims to indicate that the end is
+                            “-yue.”</note>
+                    </line>
+                    <line n="l.6"> by synfull leuynge brought <gap quantity="1" unit="chars"
+                            reason="illegible"/>nto owtraunce<note place="bottom" anchored="true"
+                            n="explanatory">Both the fourth and fifth words are significantly
+                            damaged, but enough remains of the fourth to determine all the letters
+                            but the final, which has been supplied. The terminal “o” of the fifth
+                            word is visible on the panel, as is part of the “t.” Based on the
+                            example of the manuscript witnesses the second letter is “n,” making the
+                            word “unto.” Whether it would be spelled “vnto” or “onto,” however,
+                            cannot be determined as the remains of the initial letter match both the
+                            scribe’s “v” and his “o.”</note>
+                    </line>
+                    <line n="l.7"> praye we w<ex>ith</ex> good hope which may vs not deceyue<note
+                            place="bottom" anchored="true" n="explanatory">The eighth and ninth
+                            words on the line are badly damaged on the panel, but enough of both
+                            letters are visible on the eighth to determine it is “vs” and on the
+                            initial and terminal letters of the ninth to determine it is
+                            “not.”</note>
+                    </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosell and repentaunce </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.3" n="panel">
+                <label>Third Panel</label>
+                <graphic url="nw_test_3.jpg"/>
+                <zone n="EETS.T.75">
+                    <line n="l.1">
+                        <hi>C</hi>ryenge to the t<gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/> the <gap quantity="5"
+                            unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.2"> which w<ex>ith</ex> thyn blood wer<ex>e</ex> s<gap quantity="6"
+                            unit="chars" reason="illegible"/> and made <gap quantity="3"
+                            unit="chars" reason="illegible"/><note place="bottom" anchored="true"
+                            n="explanatory">The second letter of the fifth word is missing, but the
+                            context and manuscript witnesses suggest it should be “were” The initial
+                            “s” in the sixth word is partially visible, but nothing remains of the
+                            rest of the word to indicate proper spelling.</note>
+                    </line>
+                    <line n="l.3"> and on sherthursday gaf vs to <gap quantity="3" unit="chars"
+                            reason="illegible"/> foode<note place="bottom" anchored="true"
+                            n="explanatory">While the initial letter of the final word in this line
+                            is missing, enough remains of the rest of the word to indicate it was
+                            rendered “oode.” From the other manuscript witnesses, the initial letter
+                            must have been an “f.” This also suggests that the spelling of the
+                            missing terminal word in the first line was likely “roode.”</note>
+                    </line>
+                    <line n="l.4"> thyn blissed body ih<ex>es</ex>u in fo<ex>r</ex>me of breed </line>
+                    <line n="l.5"> to vs most synfull graunte or we be ded </line>
+                    <line n="l.6"> to <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>y f<gap quantity="2"
+                            unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>er<gap quantity="7"
+                            unit="chars" reason="illegible"/><note place="bottom" anchored="true"
+                            n="explanatory">Too much of this line is missing to accurately determine
+                            spelling, and thus I have only attempted to provide those letters whose
+                            features were unique enough to identify without question.</note>
+                    </line>
+                    <line n="l.7"> that wyth sharp thorne wer<ex>e</ex> crowne on t<gap quantity="2"
+                            unit="chars" reason="illegible"/> hed<note place="bottom"
+                            anchored="true" n="explanatory">Enough remains of the letter forms in
+                            the fourth word to indicate that the second letter is “h,” the third is
+                            “o,” and the terminal letter of the word is “e.” Thus the word is likely
+                            “thorne.” Likewise, the initial letter of the terminal word in the line
+                            can be determined to be “h” based on the unique descender of that
+                            letter, thus identifying that word as “hed.” The penultimate word in the
+                            line is more difficult, as there is not enough remaining to indicate
+                            spelling definitively.</note>
+                    </line>
+                    <line n="l.8"> or we passe hens shrifte hosell and repentaunce </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.4" n="panel">
+                <label>Fourth Panel</label>
+                <graphic url="nw_test_4.jpg"/>
+                <zone n="EETS.T.76">
+                    <line n="l.1">
+                        <hi>A</hi>nd yit on request in especiall </line>
+                    <line n="l.2"> g<ex>ra</ex>unte vs ih<ex>es</ex>u whill we be her<ex>e</ex><note
+                            place="bottom" anchored="true" n="explanatory">The remnant of the
+                            abbreviation indicating the terminal “e” can be seen just above the “r”
+                            in the panel.</note> alyue </line>
+                    <line n="l.3"> euyr<ex>e</ex> to haue enprynted in our<ex>e</ex> memoriall<note
+                            place="bottom" anchored="true" n="explanatory">The top of the “or”
+                            ligature is visible just to the right of the third letter, which is a
+                            partially damaged “m.” The top of the asenders for the two “l’s” at the
+                            end of the word are visible as well. The remainder of the spelling is
+                            speculative based on the space and “especiall” on the first line.</note>
+                    </line>
+                    <line n="l.4"> the rememberaunce of thyn wound<ex>es</ex> fyue </line>
+                    <line n="l.5"> nayles<note place="bottom" anchored="true" n="explanatory">The first
+                            three letters in the initial word are missing, although there is a
+                            slight remnant of a minim for the third letter visible. Since there is
+                            no indication of a tittle above that minim, the word is likely
+                            “nayles.”</note> w<ex>ith</ex> the spere that dyd thyn herte ryue </line>
+                    <line n="l.6"> t<gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/> of thorn which was no
+                        smal penaunce<note place="bottom" anchored="true" n="explanatory">Although
+                            badly damaged, the initial “t” of the line is visible, as are remnants
+                            of the third word, “of.”</note>
+                    </line>
+                    <line n="l.7"> lang<gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>s duely to shriue<note
+                            place="bottom" anchored="true" n="explanatory">The initial letters
+                            indicate that the first word is likely “language,” but the remainder of
+                            the word and the two following are so damaged that anything further
+                            would be too speculative. The leftmost minim and the bottom of the
+                            terminal “s” in the fourth word suggest “us,” but it is impossible to
+                            know if the initial letter of that word is “u” or “v.”</note>
+                    </line>
+                    <line n="l.8"> the holy vncio<ex>u</ex>n shrifte hosell and repentaunce </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.5" n="panel">
+                <label>Fifth Panel</label>
+                <graphic url="nw_test_5.jpg"/>
+                <zone n="EETS.T.77">
+                    <line n="l.1">
+                        <hi>A</hi>lle the tok<gap quantity="3" unit="chars" reason="illegible"/>s of
+                        thyn passio<ex>u</ex>n<note place="bottom" anchored="true" n="explanatory"
+                            >The third word is “tokens” based on the other manuscript witnesses and
+                            the remnants left in the chapel, but not enough remains to be sure of
+                            the spelling. The hooked top of the second letter of the fourth word is
+                            visible, as is the very top of the first letter of the fifth, indicating
+                            a break between the two. This, when combined with the other witnesses,
+                            suggests the terminal letter of the fifth word is “f” rather than “s,”
+                            making the word here “of.”</note>
+                    </line>
+                    <line n="l.2"> we praye<note place="bottom" anchored="true" n="explanatory">While the
+                            third letter of the second word is damaged, the straight rather than
+                            diagonal bow indicates an “a” rather than an “e” here.</note> the
+                            ih<ex>es</ex>u grave hem in our<ex>e</ex> memorie </line>
+                    <line n="l.3"> onely marked myd centre of our<ex>e</ex> reso<ex>u</ex>n<note
+                            place="bottom" anchored="true" n="explanatory">The last three words of
+                            this line are badly damaged, but enough of the unique features of the
+                            letter forms remain to determine spelling.</note>
+                    </line>
+                    <line n="l.4"> on calverie thyn tryumphal <gap quantity="8" unit="chars"
+                            reason="illegible"/>
+                    </line>
+                    <line n="l.5"> man to restor<ex>e</ex> to thyn eternall g<gap quantity="5" unit="chars"
+                            reason="illegible"/><note place="bottom" anchored="true" n="both"
+                            >Although it is damaged, here the third word appears to combine both the
+                            “or” ligature and the suspension mark used for terminal “e” throughout
+                            the chapel. Additionally, while the fifth word is badly damaged the
+                            upper portion of the ascender on the second letter can be seen, and when
+                            combined with the final letter and the remnant of the crossbar on the
+                            initial letter the word may be determined.</note>
+                    </line>
+                    <line n="l.6"> by mediaco<ex>u</ex>n of thyn meke sufferauns<note place="bottom"
+                            anchored="true" n="informational">The artist here deviates from his
+                            practice elsewhere in the chapel of pairing the spellings of rhyming
+                            words.</note>
+                    </line>
+                    <line n="l.7"> out of the exile vnsur<ex>e</ex> and transitorie </line>
+                    <line n="l.8"> whan we hens passe shrift hosell and repentaunce </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.6" n="panel">
+                <label>Sixth Panel</label>
+                <graphic url="nw_test_6.jpg"/>
+                <zone n="EETS.T.78">
+                    <line n="l.1">
+                        <hi>O</hi>f m<ex>er</ex>cy requyreng now in tyme </line>
+                    <line n="l.2"> of our<ex>e</ex> myende the myd poynte most p<ex>ro</ex>founde </line>
+                    <line n="l.3"> this woord ih<ex>es</ex>u our fyue witt<ex>es</ex> to enlumyne </line>
+                    <line n="l.4"> in lenghte and brede lyk alarge wounde </line>
+                    <line n="l.5"> alle idill thoughtis a voyde and confounde<note place="bottom"
+                            anchored="true" n="explanatory">The bottom of the “c” and “o” in the
+                            terminal word can be seen, as can the top of the “c.”</note>
+                    </line>
+                    <line n="l.6"> thyn cros thyn scorges thyn garnemet<ex>es</ex> cast at chaunce<note
+                            place="bottom" anchored="true" n="explanatory">There is significant
+                            damage to this line. However, the words can still largely be determined
+                            by the unique shape of the descenders that remain. The “s” in “cros,”
+                            the “n” in the second “thyn, and the “a” in “garnemetes” have, however,
+                            been supplied from context.</note>
+                    </line>
+                    <line n="l.7"> the roop the peler to wheche thou wer<ex>e</ex> bounde </line>
+                    <line n="l.8"> g<ex>ra</ex>unte or we deye shrifte hosell and repentaunce </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.7" n="panel">
+                <label>Seventh Panel</label>
+                <graphic url="nw_test_7.jpg"/>
+                <zone n="EETS.T.79">
+                    <line n="l.1">
+                        <hi>O</hi>f this prayer<ex>e</ex> mekely we make an ende<note place="bottom"
+                            anchored="true" n="explanatory">The remnant of the “y” descender can be
+                            seen at the end of the fourth word, making this “mekely.” Additionally,
+                            “we” can be taken from initial “w” in the fifth word, although it is
+                            badly damaged.” Likewise, “make” can be determined from the bottom of
+                            the minims of the initial “m” in the sixth word.</note>
+                    </line>
+                    <line n="l.2"> vnder thyn mercyfull supportacio<ex>u</ex>n<note place="bottom"
+                            anchored="true" n="explanatory">Although the suspension mark is missing
+                            due to damage, the still extant mark in “passioun” below and the context
+                            of the other panels supports its existence here.</note>
+                    </line>
+                    <line n="l.3"> o g<ex>ra</ex>cious ih<ex>es</ex>u g<ex>ra</ex>unte wher<ex>e</ex>
+                            eu<ex>er</ex> we wende </line>
+                    <line n="l.4"> to haue memorie vp on thyn passio<ex>u</ex>n<note place="bottom"
+                            anchored="true" n="explanatory">This line is badly damaged, but enough
+                            of the unique features of the letter forms – the otiose mark in “t” on
+                            the initial word; the ascender of “h” and the “ue” at the end of the
+                            second; the descender of the “or” ligature, the tittle and bottom of the
+                            minim of the “i” following, and the unique otiose mark and the bottom of
+                            the minim on “e” following that – to indicate the intended spelling of
+                            each. The initial two letters of the final word are determined from the
+                            manuscript witnesses and what remains in the panel.</note>
+                    </line>
+                    <line n="l.5"> testymonyall of our<ex>e</ex> redemcio<ex>u</ex>n<note place="bottom"
+                            anchored="true" n="explanatory">The crossbar of the “st” ligature in the
+                            first word is damaged, but the intention is clear from context.
+                            Likewise, the initial “o” in the third word can be determined, as can
+                            the lack of descender, making “oure” the intended word based on context
+                            and other practice in the chapel.</note>
+                    </line>
+                    <line n="l.6">
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="9" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="10" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">The remaining lines are missing,
+                            although there is some indication on the sixth line that there was text
+                            there at one point.</note>
+                    </line>
+                    <line n="l.7">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.8">
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="11" unit="chars" reason="illegible"/>
+                    </line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="w.2" n="East Wall">
+            <surface xml:id="p.1" n="panel">
+                <label>First Panel</label>
+                <graphic url="ew_test_1.jpg"/>
+                <zone n="EETS.T.101">
+                    <line n="l.1"> Behold o man lefte up thyn eye an see </line>
+                    <line n="l.2"> what mortall peyne i suffred for your<ex>e</ex> trespace </line>
+                    <line n="l.3"> with pitous voys i crye and seye to the </line>
+                    <line n="l.4"> behold my<ex>n</ex> wound<ex>es</ex> behold myn blody face </line>
+                    <line n="l.5"> behold therebukes þ<ex>at</ex> doth me so manace<note place="bottom"
+                            anchored="true" n="explanatory">Although the fifth word is damaged,
+                            comparison of the form of the terminal letter and the “me” in line six
+                            indicates that this is “me.” Likewise, the ascender with hook of the
+                            initial letter of the sixth word, when compared with the manuscript
+                            witnesses and line six indicates “so.”</note>
+                    </line>
+                    <line n="l.6"> behold myn <gap quantity="5" unit="chars" reason="illegible"/>es that don
+                        me so despice<note place="bottom" anchored="true" n="explanatory">The
+                            initial portion of the line is badly damaged, but enough unique features
+                            remain of the individual letter forms to determine all the letters of
+                            the initial word except for “o” when compared against the other lines in
+                            the panel. Likewise, enough of the first and third letters of the second
+                            word exist to clarify that it is “myn.” The manuscript witnesses suggest
+                            that the third word is “enemies,” but only the final two letters can be
+                            determined definitively.</note>
+                    </line>
+                    <line n="l.7"> and how that i to reforme <gap quantity="3" unit="chars"
+                            reason="illegible"/> to grace<note place="bottom" anchored="true"
+                            n="explanatory">Like the line above it, this line is badly damaged – so
+                            much so that the attempted repair has shifted the initial portion of the
+                            line down significantly. Nevertheless, the bottom portion of the last
+                            two letters of the first word are likely “nd,” making the word “and”
+                            based on the manuscript witnesses. The third word can be definitvely
+                            determined to be “that” based on the descender of the second letter, the
+                            otiose marks the scribe always places on “t” when at the initial or
+                            terminal portions of a word, and the minims indicating the bottom of the
+                            “a.” The fourth word can be determined by the tittle above the break.
+                            The fifth can be determined by the otiose mark for initial “t,” and the
+                            “o” following can be determined from context. The “me” at the end of the
+                            sixth word can be determined from the existing minims and the otiose
+                            mark the scribe places at the end of e. The second letter of the word
+                            can also be determined to be e, and the remains around it makes the
+                            letters on either side likely to be “r” and “f” based on the manuscript
+                            witnesses. The seventh cannot be determined definitively by the evidence
+                            as the remnants fit neither “you” nor “the” sufficently, but the eighth
+                            can based on the last four letters of the word, the initial letter “g”
+                            based on context, and the remnants of the top of the letter.</note>
+                    </line>
+                    <line n="l.8"> was like alambe offerid <gap quantity="2" unit="chars" reason="illegible"
+                        /> sacrifice<note place="bottom" anchored="true" n="explanatory">Like the
+                            two lines above it, this line is badly damaged. The third word, however,
+                            still has its ascenders and enough of the minims to determine it is
+                            “alambe.” Likewise, the bottom of the initial letter, the high ascender
+                            with cross-stroke, the bow of the “e,” the damaged “r” form and the
+                            minim of the “i”, and the tittle of that “i” indicate that the fourth
+                            word is “offerid.” Unfortunately, the only thing that remains of the
+                            fifth word is the bottom of the terminal letter, which appears to be “o”
+                            but may be a badly damaged “n.” The slightly remnant of the minim of the
+                            initial letter could likewise be part of either “i” or “t.” Thus, the
+                            word is too ambiguous to determine definitively.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.2" n="panel">
+                <label>Second Panel</label>
+                <graphic url="ew_test_2.jpg"/>
+                <zone n="EETS.T.114">
+                    <line n="l.1">
+                        <hi>B</hi>ehold my<ex>n</ex> loue <ex>&amp;</ex> yeue me your<ex>e</ex>
+                        ageyn </line>
+                    <line n="l.2"> be hold i deied your<ex>e</ex> ranssum<note place="bottom"
+                            anchored="true" n="explanatory">While this word is damaged, the initial
+                            two letters can easily be made out. The third letter is “n” or “u, but
+                            as ”the scribe always renders the “un” combination with four minims and
+                            there are only three present the letter must be “n.” The fourth letter
+                            is “s” with the top portion of the ascender and hook removed (compare
+                            with “passe” in verse 27 and “passioun” in verse 56). The sixth is “u”
+                            or “n” due to the finishing stroke at the bottom of the right minim,
+                            which “o” lacks, and the terminal letter is “m.”</note> for to paye </line>
+                    <line n="l.3"> se how my<ex>n</ex> herte open b<gap quantity="4" unit="chars"
+                            reason="illegible"/> and pleyn<note place="bottom" anchored="true"
+                            n="explanatory">The remnants of the initial “h,” second letter “e,” and
+                            the top of the finishing strokes for the fourth letter “t” can be
+                            determined for the fourth word. The missing letter is supplied from
+                            context. The slight remnants of the third and fourth letters of the
+                            fifth word can be seen, suggesting “open” by their position. There are
+                            not enough unique elements from the sixth word to determine spelling.
+                            The initial “a” of the seventh word is largely missing but the minims of
+                            the letter are partially visible and the word can be determined from
+                            context and the manuscript witnesses.</note>
+                    </line>
+                    <line n="l.4"> your<ex>e</ex> gostly enmyes only to affraye<note place="bottom"
+                            anchored="true" n="explanatory">Like the line above, this line is
+                            heavily damaged. The unique descender of “y” can be seen at the end of
+                            the second word, the spacing only provides enough room for “n” in the
+                            fourth word, and the crossbar of the initial “a,” the tall ascenders of
+                            the two “f’s” following, and the terminal “ye” of the sixth word can
+                            easily be seen. The rest of the sixth word can be determined from
+                            context. The bow of the initial “e” can be seen in the third word and
+                            based on the space provided and the minims still visible must be
+                            “enmyes.”</note>
+                    </line>
+                    <line n="l.5"> a hardere batayle no man myght <gap quantity="5" unit="chars"
+                            reason="illegible"/>
+                    </line>
+                    <line n="l.6"> of alle tryumphes the grettest high <gap quantity="7" unit="chars"
+                            reason="illegible"/><note place="bottom" anchored="true" n="explanatory"
+                            >The “p” in the third word can be determined from context and the
+                            remaining letters. The terminal “es” of that word, while largely gone,
+                            remains as a remnant at the bottom of the line. Likewise, the sixth word
+                            can be determined from the unique elements from those letters that
+                            remain, including the top of the initial “h,” the tittle of the “i,” and
+                            the bow of the “g.” Enough of the unique descender remains in the first
+                            letter of the fifth word to determine that it is “g” and the rest of the
+                            word can be determined from the unique elements of the letters that
+                            remain.</note>
+                    </line>
+                    <line n="l.7"> wherfor<ex>e</ex> ye men no lenger <gap quantity="2" unit="chars"
+                            reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>e<note place="bottom"
+                            anchored="true" n="explanatory">The remnant of the “e” abbreviation in
+                            the first word can be seen to the right of the damaged “or” ligature.
+                            The closed bow of the “e” in the third word can be discerned barely, and
+                            the terminal letter of the line is visible. Unfortunately, the remaining
+                            letters cannot be determined from context.</note>
+                    </line>
+                    <line n="l.8"> i gaf my<ex>n</ex> blood for you in sacrifice<note place="bottom"
+                            anchored="true" n="explanatory">While damaged, enough of the features
+                            remain of the word to make the spelling clear.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.3" n="panel">
+                <label>Third Panel</label>
+                <graphic url="ew_test_3.jpg"/>
+                <zone n="EETS.T.115">
+                    <line n="l.1">
+                        <hi>T</hi>urne hom a geyn your<ex>e</ex> synnys ye for sake </line>
+                    <line n="l.2"> be hold and se if ought beleft behynde<note place="bottom"
+                            anchored="true" n="explanatory">While the fourth letter of the final
+                            word in the line is missing, the remaining letter forms and the example
+                            of “unkynde” two lines below indicates the spelling here.</note>
+                    </line>
+                    <line n="l.3"> how i to m<ex>er</ex>cy am redy you to take </line>
+                    <line n="l.4"> gyue <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/> hert<ex>es</ex> and beth
+                        no mor<ex>e</ex> vnkynde<note place="bottom" anchored="true" n="explanatory"
+                            >The lack of an extended finishing stroke on the leftmost minim
+                            indicates “gyue” rather than “gyve” in the first word. Likewise, the
+                            remnant of the rightmost minim in the initial letter of the fourth word
+                            suggests that the expected “h” was what was intended. Unfortunately, the
+                            second and third words are almost entirely missing save for what appears
+                            to be part of the bottom finishing stroke of a minim on the third word.
+                            This is not enough to determine spelling of these two words,
+                            however.</note>
+                    </line>
+                    <line n="l.5"> your<ex>e</ex> loue <ex>&amp;</ex> my<ex>n</ex> to gedir doth hem
+                            bynde<note place="bottom" anchored="true" n="explanatory">The terminal
+                            “r” with abbreviation mark can be seen in the first word. Based on the
+                            manuscript witnesses and the shift between formal and informal elsewhere
+                            on the east wall the initial word is “your.” The eighth word is largely
+                            missing, but the top of the initial “h” and the rightmost finishing
+                            stroke of the “m” is visible. The ninth word is also damaged, but the
+                            “de” ligature and the top portion of the letter “y” can be seen (compare
+                            with “vnkynde” in the line above). The remainder of the word can be
+                            determined from the letter forms that remain.</note>
+                    </line>
+                    <line n="l.6"> and lete hem neuer<ex>e</ex> parte in no wyse<note place="bottom"
+                            anchored="true" n="explanatory">This line is badly damaged, but the
+                            remnant of the abbreviation mark can be seen attached to the “r” in the
+                            fourth word. The “p” and “a” from the fifth word can be seen and the
+                            spacing suggests three rather than two letters following. The minims for
+                            all letters of the sixth and seventh words are badly damaged, but the
+                            remnant of the tittle above the “i” in the sixth can be seen and the
+                            four minims and lack of any remnants of a finishing stroke on the
+                            rightmost minim of the seventh indicate that it is the expected “no.”
+                            Likewise, the number of minims of the eighth word and the clear initial
+                            and terminal letters indicate that this is “wyse” with the ascender and
+                            descenders removed due to damage.</note>
+                    </line>
+                    <line n="l.7"> whan ye wer<ex>e</ex> lost yo<gap quantity="2" unit="chars"
+                            reason="illegible"/> s<gap quantity="4" unit="chars" reason="illegible"
+                        />s a <gap quantity="3" unit="chars" reason="illegible"/> tofynde<note
+                            place="bottom" anchored="true" n="explanatory">Like the others on this
+                            panel this line is damaged, but much of the line can be made out from
+                            the unique attributes of the partial letter forms that remain.</note>
+                    </line>
+                    <line n="l.8"> my<ex>n</ex> blod i offerid for you <gap quantity="2" unit="chars"
+                            reason="illegible"/> sacrifice<note place="bottom" anchored="true"
+                            n="explanatory">Parts of the line are missing but the initial “s” of the
+                            final word, the hook of the “f,” and the tittle indicating “i” rather
+                            than “y” clarifies the intended spelling.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.4" n="panel">
+                <label>Fourth Panel</label>
+                <graphic url="ew_test_4.jpg"/>
+                <zone n="EETS.T.116">
+                    <line n="l.1">
+                        <hi>E</hi>nprynte theise thyng in your<ex>e</ex> inward thought </line>
+                    <line n="l.2"> and graue hem depe i<ex>n</ex> your<ex>e</ex> remembraunce </line>
+                    <line n="l.3"> thynke on theym wel <ex>&amp;</ex> forgete theym nought </line>
+                    <line n="l.4"> al this i suffred to don you allegeaunce </line>
+                    <line n="l.5"> and with my<ex>n</ex><note place="bottom" anchored="true" n="explanatory"
+                            >The remnant of the suspension mark can be seen above the “y.”</note>
+                        seyntis toyeve you sufficiaunce </line>
+                    <line n="l.6">
+                        <gap quantity="2" unit="chars" reason="illegible"/> the hevenly courte for
+                        you i did deuyse<note place="bottom" anchored="true" n="explanatory">The
+                            line is damaged, but enough remains of the letter forms to determine the
+                            intended spelling in most cases. The “u” in both “heuenly” and “deuyse”
+                            are determined based on the remains of the minims and the general
+                            practice of the scribe in only using “v” as the initial letter of
+                            words.</note>
+                    </line>
+                    <line n="l.7"> a place eternal a place of all pleasuance<note place="bottom"
+                            anchored="true" n="explanatory">This line is badly damaged, but the top
+                            portion as well as the terminal “e” of the second word remains, the
+                            bottom portion of the final two letters of the third word remains, the
+                            bottom chamber of the “a” in the fourth word remains, and the bottom of
+                            the minims of the fifth word remains. The sixth can be determined from
+                            the minims of the initial “o” and the otiose mark that terminates both
+                            “f” and “t.” The seventh word can be determined by remnants of the
+                            minims and crossbar of the two-chambered “a” and the manuscript
+                            witnesses, which indicate that the remainder of the word is two “l’s”
+                            rather than two minims of a single letter. The remnants of the bow for
+                            the initial “p,” the top of the “l,” the diagonal for the chamber of the
+                            “e”, and the bottom chamber of the “a” can all be determined in the
+                            eighth word, which indicates the intended spelling.</note>
+                    </line>
+                    <line n="l.8"> for which my<ex>n</ex> blood i offerid gaffid in sacrifice<note
+                            place="both" anchored="true" n="explanatory">The double “f’s” in both
+                            the sixth can seventh words can be determined based on comparison
+                            between the connected crossbars of each and the scribe’s consistent
+                            rendering of “u” and “n” with two distinct finishing strokes (see “and”
+                            in line four of this panel for an example). The addition of the past
+                            participle “gaffid” at this line is unique to Long Melford.</note>
+                    </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.5" n="panel">
+                <label>Fifth Panel</label>
+                <graphic url="ew_test_5.jpg"/>
+                <zone n="EETS.T.117">
+                    <line n="l.1">
+                        <hi>A</hi>nd <gap quantity="4" unit="chars" reason="illegible"/>
+                            my<ex>n</ex>
+                        <gap quantity="3" unit="chars" reason="illegible"/> to put at a preff </line>
+                    <line n="l.2"> t<gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">This line and the line following are
+                            almost entirely missing from the panel. Enough remains to indicate that
+                            the initial letter of the second line is “t” and there are some slight
+                            remnants of the letter forms, but not enough to determine the intended
+                            spellings.</note>
+                    </line>
+                    <line n="l.3">
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="1" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                    </line>
+                    <line n="l.4"> w<gap quantity="4" unit="chars" reason="illegible"/> had so <gap
+                            quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="8" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">As with the two lines above, this line
+                            is largely too damaged to discern the spelling. The unique diagonal
+                            minims of the scribe’s “w” can be seen in the remnants of the initial
+                            letter, as can the form of the initial “h” of the second word, the
+                            minims of the following “a,” and a slight portion of the left-leaning
+                            ascender of the final “d.” The minim and hooked ascender for the “s” in
+                            the third word, and its following “o,” complete what can be made out
+                            from the remnants on the panel.</note>
+                    </line>
+                    <line n="l.5"> w<gap quantity="3" unit="chars" reason="illegible"/> he not frely wyth me
+                        to paradys<note place="bottom" anchored="true" n="explanatory">The line is
+                            damaged, but except for the initial and final two words is still largely
+                            legible. The otiose mark and bottom finishing stroke of the “t” in the
+                            seventh word, a slight bit of the descender in the initial position of
+                            the eighth, the lower portion of the final three letters (including the
+                            descender of the “y”), and the manuscript witnesses all aid in
+                            determining spelling here.</note>
+                    </line>
+                    <line n="l.6"> haue this i<ex>n</ex> mynde this is myn guyse<note place="bottom"
+                            anchored="true" n="explanatory">While damaged, the second word can be
+                            determined via the finishing strokes of the initial “t,” the slight
+                            portion of the descender of the “h” that remains, and the terminal “s.”
+                            Compare it with the fifth word, also “this.” The third word has the
+                            remains of the single minim for “i” with the remnant of an abbreviation
+                            mark above it.</note>
+                    </line>
+                    <line n="l.7"> all repentaunt to bryng theym toblys </line>
+                    <line n="l.8"> for whom my blood i gaf in sacrifice </line>
+                </zone>
+            </surface>
+            <surface xml:id="p.6" n="panel">
+                <label>Sixth Panel</label>
+                <graphic url="ew_test_6.jpg"/>
+                <zone n="EETS.T.118">
+                    <line n="l.1">
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/>d your<ex>e</ex>
+                            heritage<note place="bottom" anchored="true" n="explanatory">This panel
+                            is badly damaged, but enough of the right portion of this line can be
+                            seen to make out the intended spellings.</note>
+                    </line>
+                    <line n="l.2"> haste on your<ex>e</ex> weye and beth of right <gap quantity="5"
+                            unit="chars" reason="illegible"/> cheer<ex>e</ex><note place="bottom"
+                            anchored="true" n="explanatory">This line is largely legible. The
+                            descender of the initial letter can be seen, indicating “h.” The bottom
+                            of the letter forms of the seventh word and the initial letters of the
+                            eighth can still be seen. The ninth word does not match any of the
+                            manuscript witnesses’ “good” due to what appears to be an “l” as the
+                            third letter.</note>
+                    </line>
+                    <line n="l.3">
+                        <gap quantity="2" unit="chars" reason="illegible"/> eche day onward on
+                            your<ex>e</ex> pylgrymage </line>
+                    <line n="l.4">
+                        <gap quantity="8" unit="chars" reason="illegible"/> how short tyme ye shal
+                            a<gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">Much of the line is damaged. There also
+                            appears to be two illegible words at the beginning of the line based on
+                            the length of illegible letters before “how,” which is the second word
+                            of the line in the manuscript witnesses.</note>
+                    </line>
+                    <line n="l.5">
+                        <gap quantity="4" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/>
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                        <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="5" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">This line is entirely missing due to
+                            damage.</note>
+                    </line>
+                    <line n="l.6"> non erthely paleys <gap quantity="7" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="2" unit="chars" reason="illegible"/>
+                        <gap quantity="6" unit="chars" reason="illegible"/>
+                        <gap quantity="4" unit="chars" reason="illegible"/><note place="bottom"
+                            anchored="true" n="explanatory">The second half of this line is entirely
+                            missing due to damage. Remnants of the first three letters of the fourth
+                            word can be seen, but they lack any features that would allow them to be
+                            definitely determined.</note>
+                    </line>
+                    <line n="l.7"> cometh on my<ex>n</ex> frendes myn <gap quantity="7" unit="chars"
+                            reason="illegible"/> most entyer<ex>e</ex><note place="bottom"
+                            anchored="true" n="both">The suspension mark for the third word can be
+                            seen above the second letter. Likewise, the abbreviation for “-es” can
+                            be seen to the right of the terminal “d” in the fourth word, which can
+                            be determined due to the remnant of the left-leaning ascender. The words
+                            between the fifth word and the final two in the line cannot be made out,
+                            which is unfortunate as the shift between the singular and plural would
+                            force a different form of “brother” or an entirely different word here.
+                            It appears that the initial letter of the fifth word is likely “b” but
+                            the damage is too great to determine spelling.</note>
+                    </line>
+                    <line n="l.8"> for you i offerd myn blood in sacryfice<note place="bottom"
+                            anchored="true" n="explanatory">Although the right portion of the line
+                            is badly damaged, all but the penultimate and antepenultimate letters
+                            can be determined from the remnants visible on the panel. Those letters
+                            are supplied via the scribe’s general practice elsewhere in the
+                            chapel.</note>
+                    </line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

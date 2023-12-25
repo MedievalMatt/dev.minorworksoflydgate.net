@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">British Library Additional 34193 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Add_34193">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library Additional MS 29729) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Additional_34193">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Additional_34193">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Additional 34193</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc/>
+                        
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20221008" who="#medavis" status="initial">Initial encoding began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.X" n="gathering">
+            <surfaceGrp xml:id="f.223" n="folio">
+                <surface n="verso">
+                    <label>Folio 223 Verso</label>
+                    <graphic url="add_34193_223v.jpg"/>
+                    <zone n="EETS.T.1">
+                        <line n="l.1"><hi rend="capital_4_missing">H</hi>owe<note place="bottom" anchored="true" n="informational">A space for the initial is provided, but the letter was never completed. The guide letter is visible, however.</note> holsum and glade is the memory</line>
+                        <line n="l.2">off Criste Ih<ex>es</ex>u surmountynge ałł swetnesse</line>
+                        <line n="l.3">Name of conquest of Griumphe and victorie</line>
+                        <line n="l.4">The assaunte of Satan to venquissh <ex>and</ex> app<ex>er</ex>esse</line>
+                        <line n="l.5">To wich name Seint Paule Berieth wittenesse</line>
+                        <line n="l.6">Off hevyn and erthe and infarnałł pouste</line>
+                        <line n="l.7">Ałł creaturis of Right<!--scribal note initial r is capitalized inconsistently. render all lower case when inconsistent.--> and of due humblenesse</line>
+                        <line n="l.8">And of olde hert bowe shałł there knee</line>
+                    </zone>
+                    <zone n="EETS.T.2">
+                        <line n="l.1">No s<!-- consider if long s is considered capital-->onge to swette vnto the audience</line>
+                        <line n="l.2">As is Ih<ex>es</ex>u nor so fułł of plesaunce</line>
+                        <line n="l.3">A gayne ałł enmys sholde pavyse and defence</line>
+                        <line n="l.4">To hevy hert<ex>is</ex> chese comfort in Substaunce</line>
+                        <line n="l.5">Of gostely gladnesse most Sou<ex>er</ex>ayne suffisaunce</line>
+                        <line n="l.6">Chefe dicare<!--note how it is elsewhere--> to heven warde the Cete</line>
+                        <line n="l.7">Gladnesse resorte<note place="bottom" anchored="true" n="informational">The initial gylph here is a form of r that is seen more often in ligatures.</note> of sp<ex>irit</ex>uałł Remembraunce</line>
+                        <line n="l.8">To Whome ałł creaturs bow shall þ<ex>er</ex> knee</line>
+                    </zone>
+                    <zone n="EETs.T.3">
+                        <line n="l.1">To ałł folke that stonde in Repentaunce</line>
+                        <line n="l.2">With hert contrite made there confession</line>
+                        <line n="l.3">Of will of thorgħ accomplisshed þe pen<add>a</add>nce</line>
+                        <line n="l.4">and there pouer don satysfaccion</line>
+                        <line n="l.5">That cleyene be mene of cristes passion</line>
+                        <line n="l.6">marked with <hi rend="red">✠</hi> and for more Surte</line>
+                        <line n="l.7">To them Ih<ex>es</ex>u shałł graunt full pardon</line>
+                        <line n="l.8">To aske hym mercy wha<ex>n</ex>ne þey knele on þer knee</line>
+                    </zone>
+                    <zone n="EETS.T.4">
+                        <line n="l.1">In this name most sou<ex>er</ex>ayne of vertu</line>
+                        <line n="l.2">O tim<!-- this may not be right - hard to tell what is meant--> holde owre hope and oure assuraunce</line>
+                        <line n="l.3">ffor where that names is Ih<ex>es</ex>u</line>
+                        <line n="l.4">Gyffyn<!--this is a counterpoint to the hooked n being a suspension--> gostely truble men fynde allegavaunce</line>
+                        <line n="l.4a"><del><!--figure out how to strikethrough red. also dotted underneath-->with for all thrall and brought vs to lib<ex>er</ex>te</del><note place="bottom" anchored="true" n="explanatory">Here the scribe has accidentally written line six of the poem, then caught themselves and marked a deletion through dots under the line. This was then followed by a red line struck through the line.</note></line>
+                        <line n="l.5">who trusting in Ih<ex>es</ex>u may fele no grevaunce</line>
+                        <line n="l.6">wiche from ałł thraldom<!--second point that this is otiose mark--> brought vs to lyb<ex>er</ex>te</line>
+                        <line n="l.7">oute of ałł s<ex>er</ex>vage made acquitaunce</line>
+                        <line n="l.8">To ałł þ<ex>at</ex> knelithe to Ih<ex>es</ex>u on ther knee</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.224" n="folio">
+                <surface n="recto">
+                    <label>Folio 224 Recto</label>
+                    <graphic url="add_34193_224r.jpg"/>
+                    <zone n="EETS.T.5">
+                        <line n="l.1">In A<!--initial A capitalized?-->meros hert<ex>is</ex> brynnynge of kyndnesse</line>
+                        <line n="l.2">This name of Ih<ex>es</ex>u most p<ex>er</ex>fundely dothe myne</line>
+                        <line n="l.3">Martyr Ignasius cane bere of this witnesse</line>
+                        <line n="l.4">A mynde whose hert be grace whiche is devidid</line>
+                        <line n="l.5">withe laureat lettis as golde thay dide shyne</line>
+                        <line n="l.6">his hert<note place="bottom" anchored="true" n="informational">The scribe appears to have chosen an "er" ligature rather than "er" as rendered elsewhere in the manuscript.</note> was gravo<ex>u</ex>n<note place="bottom" anchored="true" n="informational">While it is possible the curved mark over the n, which appears fairly consistantly in the "on" construction, is either a scribal affectation or meant to indicate an "oun" suspension there is a dot over the "n" here, as well. That suggests that in this case we're to understand there is a suspension present.</note> men may his legent se</line>
+                        <line n="l.7">To teche ałł Crystyn ther hed<ex>is</ex> to Encline</line>
+                        <line n="l.8">To blessied Ih<ex>es</ex>u and bowe a downe ther knee</line>
+                    </zone>
+                    <zone n="EETS.T.6">
+                        <line n="l.1">This is the Name that Chasietħ<note place="bottom" anchored="true" n="explanatory">The fifth glyph here is an i based on the way "s" and the "ie" combination is rendered elsewhere in the manuscript.</note> a waye the schippis<note place="bottom" anchored="true" n="informational">The EETS manuscript (and Harley 218 as its exemplar) has "clips" here, but I think "schippis," or ships, actually makes better sense with the rest of the stanza. That said Additional 29729 has "clips" as well.</note></line>
+                        <line n="l.2">Of foryen derkenesse as clerkis det<ex>er</ex>myn</line>
+                        <line n="l.3">Be joħ<ex>n</ex>n<note place="bottom" anchored="true" n="informational">The manuscript has a large bar through the 'h' and over the n.  This could be seen as either a barred h or an 'n' suspension. Considering how "h" is rendered in places like "thougħ" in line three of verse three as well the suspension marks over "ih<ex>es</ex>u" throughout and "sp<ex>irt</ex>uałł" in line seven of verse two suggests it should be considered a suspension. A counterargument can be made based on the barred "h" in "Chasietħ" in line one of this stanza, however, so I have decided to split the difference and render it as "Ioħ<ex>n</ex>n"</note> remembr<ex>ed</ex> In the apocalipse</line>
+                        <line n="l.4">how lyke a lambe is hede he dede inclyne</line>
+                        <line n="l.5">whoo blode downe Rane rigħt asse a lyne</line>
+                        <line n="l.6">To wasshe the orders of oure iniquite</line>
+                        <line n="l.7">Melde with wat<ex>er</ex> clere as crestallyn</line>
+                        <line n="l.8">Wiche from his hert downe raylied be þ<ex>e</ex> knee</line>
+                    </zone>
+                    <zone n="EETS.T.7">
+                        <line n="l.1">Be holde ih<ex>es</ex>u made our Redempcion</line>
+                        <line n="l.2">with wat<ex>er</ex> of kaptyne<note place="bottom" anchored="true" n="informational">The EETS edition (and Harley 218) has "baptem" here. This is likely correct, but the initial glyph simply can't be "b" based on the example of capital "B" at line one of this verse and the form of "b" in "blode" at line five of verse six. When compared with "kene" at line five, it is clear that this meant to be a "k."</note> from filthe wassħe vs clene</line>
+                        <line n="l.3">And from his hert two licoursse þ<ex>e</ex> rane downe</line>
+                        <line n="l.4">On Calu<ex>e</ex>rey trouth war welle sene</line>
+                        <line n="l.5">Where longous w<ex>ith</ex> a sharrp spere kene</line>
+                        <line n="l.6">Persied his hert vpon the Rode tree</line>
+                        <line n="l.7">O man kynde thynk what this dothe mene</line>
+                        <line n="l.8">And vnto ih<ex>es</ex>u a bow dnow thy knee</line>
+                    </zone>
+                    <zone n="EETS.T.8">
+                        <line n="l.1">There is no speche nor no langage channe<!-- check ginst "wiche" - c or o - not sure what is going on with this word.  It appears to be simply  misunderstanding. It does not appear like it fits the way "cane" looks in the line following.--> Remembr<ex>e</ex></line>
+                        <line n="l.2">lett<ex>re</ex> sylabułł nor worde that cane expresse</line>
+                        <line n="l.3">Thought in two tunges turned werre eu<ex>er</ex>y memb<ex>re</ex></line>
+                        <line n="l.4">Of man to tełł the <hi rend="red"><del>nobylle</del></hi><note place="bottom" anchored="true" n="informational">Here the scribe skipped over "excellent" and began to write "nobylnesse" but corrected themselves after completing "nobylle." Much like other deletions they did so by dotting underneath the word to be deleted, and then at a later point it has been struck through in red.</note> excellent nobylnesse</line>
+                        <line n="l.5">Of blessied Ih<ex>es</ex>u wiche of his gret mekenesse</line>
+                        <line n="l.6">lyst to suffur dethe to make his s<ex>er</ex>vaunt fre</line>
+                        <line n="l.7">now mercyfułł Ih<ex>es</ex>u for thy gret gudnesse</line>
+                        <line n="l.8">Have m<ex>er</ex>cy on<!-- possibly otiose mark?--> ałł þ<ex>at</ex> bowe to the thy knee</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 224 Verso</label>
+                    <graphic url="add_34193_224v.jpg"/>
+                    <zone n="EETS.T.9">
+                        <line n="l.1">The prince was slayne the s<ex>er</ex>vaunt went at large</line>
+                        <line n="l.2">and to deliu<ex>er</ex> his sogett from p<ex>ri</ex>son</line>
+                        <line n="l.3">The lorde tak<note place="bottom" anchored="true" n="informational">When compared with "k" in "bulwarke" at verse eighteen it's apparent that there is no terminal "e" as we might expect.</note> on hym for to bere charge</line>
+                        <line n="l.4">To quite mankynde by obligacion</line>
+                        <line n="l.5">Selid with v wondis he paid oure raunson</line>
+                        <line n="l.6">Man to restore to p<ex>ar</ex>adice his cite</line>
+                        <line n="l.7">Þis man not bounde I axe this question</line>
+                        <line n="l.8">To blessied Ih<ex>es</ex>u to bowe his knee</line>
+                    </zone>
+                    <zone n="EETS.T.10">
+                        <line n="l.1">Sixx hundirtħ<note place="bottom" anchored="true" n="informational">The upper curved ascender of the "h" here is difficult to see from the microfilm facsimile available, but it is visible in the manuscript.  It also appears that this "h" is intended to be barred.</note> tyme with Sixti tolde be numbr<ex>e</ex></line>
+                        <line n="l.2">In paulis pistiłł Ih<ex>es</ex>u man may Rede</line>
+                        <line n="l.3">multitude of ffynd<ex>is</ex> to encombr<ex>e</ex></line>
+                        <line n="l.4">To pay oure raunson his blode he did shede</line>
+                        <line n="l.5">Not a Smale part but ałł he did out blede</line>
+                        <line n="l.6">ffor adam appul pulcked from the tree</line>
+                        <line n="l.7">Ih<ex>es</ex>u died for shame mane t<ex>a</ex>ake<note place="bottom" anchored="true" n="informational">there is a curved line between the first and second glyphs here that suggests a suspension.</note> hede</line>
+                        <line n="l.8">Gyf thanke to Ih<ex>es</ex>u and blow a downe thy knee</line>
+                    </zone>
+                    <zone n="EETS.T.11">
+                        <line n="l.1">Ałł þis thynges considerd that I tolde</line>
+                        <line n="l.2">mane where eu<ex>er</ex> thow holde thi passage</line>
+                        <line n="l.3">Towarde Ih<ex>es</ex>u ałł wey that thow holde</line>
+                        <line n="l.4">Wtih the<note place="bottom" anchored="true" n="informational">The EETS edition and (Harley 218 as its exemplar) has "eyȝe" here, but here it appears to be "the."</note> fix loke one is ve sayge</line>
+                        <line n="l.5">Crouned w<ex>ith</ex> thourne for oure gret out <unclear reason="illegible">k</unclear><note place="bottom" anchored="true" n="informational">This appears to be a misreading on the part of the scribe. Based on the hand in other places in the manuscript it looks like it would be k (or possibly l), but here's enough oddness to the lower bow that I cannot be sure.</note> rage</line>
+                        <line n="l.6">haue this in mynde and lerne on<!--could be "onn"--> thynge of me</line>
+                        <line n="l.7">That day no<ex>n</ex> ennie shałł do vs no damage</line>
+                        <line n="l.8">Whan to Ih<ex>es</ex>u devoutely bowe oure knee</line>
+                    </zone>
+                    <zone n="EETS.T.12">
+                        <line n="l.1">Withe in my Closet and my litełł couche</line>
+                        <line n="l.2">O blesfułł Ih<ex>es</ex>u and by my beddys syde</line>
+                        <line n="l.3">That non<ex>e</ex> enmy neu<ex>er</ex> no fer shall me touche</line>
+                        <line n="l.4">The name of Ih<ex>es</ex>u w<ex>ith</ex> me shall eu<ex>er</ex> a bydde</line>
+                        <line n="l.5">My lodestere and my Sou<ex>er</ex>ain gide</line>
+                        <line n="l.6">In this worlde here bothe on<note place="bottom" anchored="true" n="informational">Unlike with other terminal "n" in the work here the scribe does not include the curved mark terminating the glyph.  This supports the idea that the curved "n" is intended as a suspended letter with in the terminal position.</note> londe and see</line>
+                        <line n="l.7">O Ihu Ih<ex>es</ex>u for ałł thy folk p<ex>ro</ex>vyde</line>
+                        <line n="l.8">Wiche to thy name deuoutly bowe ther knee</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.225" n="folio">
+                <surface n="recto">
+                    <label>Folio 225 Recto</label>
+                    <graphic url="add_34193_225r.jpg"/>
+                    <zone n="EETS.T.13">
+                        <line n="l.1">With maria called magdaleyne</line>
+                        <line n="l.2">Erly eche morowe while my lyfe may dur<ex>e</ex></line>
+                        <line n="l.3">ffrom slouthe and slommbr<ex>e</ex> my selfe I shałł restreyne</line>
+                        <line n="l.4">To Seke Ih<ex>es</ex>u at his sepulture</line>
+                        <line n="l.5">Whom for to fynde yf I may recovre</line>
+                        <line n="l.6">To haue possession of hym at liberte</line>
+                        <line n="l.7">There were in hert<ex>is</ex> no richer creature<note place="bottom" anchored="true" n="informational">The initial glyph seems odd for "c" based on elsewhere in the manuscript, but I am not sure what esle it could be.</note></line>
+                        <line n="l.8">To whome ałł creaturis bowe shałł there kne</line>
+                    </zone>
+                    <zone n="EETS.T.14"> 
+                        <line n="l.1">In m<ex>er</ex>cyfułł Ih<ex>es</ex>u to put a very p<ex>re</ex>fe</line>
+                        <line n="l.2">of his m<ex>er</ex>cy that no man dispeyre</line>
+                        <line n="l.3">Vpon the crosse gaffe graunte to þe thevffe</line>
+                        <line n="l.4">To paradise with hym to repayre</line>
+                        <line n="l.5">maugre Cerberus and ałłe his crewelte<note place="bottom" anchored="true" n="informational">there is what appears to be a suspension mark over the e, but there is no glyph that is obviously missing from the word. As this is line seven of the verse in the EETS edition it could be related to that, but it would be an odd way to do so.</note></line>
+                        <line n="l.6">O gracius Ih<ex>es</ex>u benynge and debonayre</line>
+                        <line n="l.7">Take out of helle Soulis many payre<note place="bottom" anchored="true" n="informational">This is line five in the EETS edition.</note></line>
+                        <line n="l.8">haue m<ex>er</ex>cy on ałł þat bowe to þer knee</line>
+                    </zone>
+                    <zone n="EETS.T.15">
+                        <line n="l.1">The name of Ih<ex>es</ex>u Swetteste of names ałł</line>
+                        <line n="l.2">Gevyn gostely emnis holsumist t<ex>re</ex>acle</line>
+                        <line n="l.3">ffor wo so eu<ex>er</ex> vnto this name calle</line>
+                        <line n="l.4">Of cankered Surfet<ex>is</ex> fynt reles by meracle</line>
+                        <line n="l.5">To yeffe blende light lant<ex>er</ex>ne and spectakle</line>
+                        <line n="l.6">And brightest myroure of ałł felicite</line>
+                        <line n="l.7">Support and Shelde dyffence <ex>and</ex> chaste obstacle</line>
+                        <line n="l.8">To ałł þ<ex>at</ex> knelle to Ih<ex>es</ex>u on ther knee</line>
+                    </zone>
+                    <zone n="EETS.T.17">
+                        <line n="l.1">Pat<ex>ri</ex>arkis and p<ex>ro</ex>phet<ex>is</ex> on<!--This seems to be an exception to the overhanging n--> be on</line>
+                        <line n="l.2">The <del>rechasis</del><note place="bottom" anchored="true" n="informational">Here unlike in other places the deletion has been dotted underneath but not struck through in red.</note> rearchis and all þe orderis ix</line>
+                        <line n="l.3">xii apostleis and marteris eu<ex>er</ex>ychoun</line>
+                        <line n="l.4">holy confessouris and eu<ex>er</ex>y pure virgyn</line>
+                        <line n="l.5">To blessied Ih<ex>es</ex>u most mekely shałł enclyne</line>
+                        <line n="l.6">ffoules fysshen and best<ex>is</ex> of the See</line>
+                        <line n="l.7">kynde thought þem by natureyl disciplyne</line>
+                        <line n="l.8">mekelly to Ih<ex>es</ex>u to bowe a downe your knee</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 225 Verso</label>
+                    <graphic url="add_34193_225v.jpg"/>
+                    <zone n="EETS.T.18">
+                        <line n="l.1">There is no loue p<ex>er</ex>fitly grounded</line>
+                        <line n="l.2">But it of Ih<ex>es</ex>u toke his oregynałł</line>
+                        <line n="l.3">ffor vpon Ih<ex>es</ex>u ałł p<ex>er</ex>fitenesse fundon</line>
+                        <line n="l.4">Oure toure oure castełł gevyn powers Infernałł</line>
+                        <line n="l.5">Oure porte coles oure bulwerke<note place="bottom">While the mark after "k" on this word looks like an otiose mark when compared to "Oure" and "porte" in the same line, it is more likely that it is an "e." See the rendering of "aske" on the final line of verse three and "sholde" in the line following this one for a similar construction.</note> and oure walles<!--note that initial looks large enough to be a capital but seems unlikely when compared to "whereby" in verse 21 and "when" in verses two and three of folio 226.--></line>
+                        <line n="l.6">Oure shelde oure paueys agayne ałł adu<ex>er</ex>site</line>
+                        <line n="l.7">Oure heritage oure gwerdon et<ex>er</ex>nałł</line>
+                        <line n="l.8">To ałł creature I bowe shałł the knee</line>
+                    </zone>
+                    <zone n="EETS.T.19">
+                        <line n="l.1">Condy<del>gg<ex>n</ex></del><note place="bottom" anchored="true" n="informational">It appears here that the scribe rendered what they considered the wrong form of "g" here, attempted to correct themselves, and then decided to strike the entire second portion of the word out.</note> ne lande nor commendacion</line>
+                        <line n="l.2">yese to this name cane no tunge tełł</line>
+                        <line n="l.3">Of gostely fode richesse refeccion</line>
+                        <line n="l.4">Hede sprynge of grace of lyfe condite <ex>and</ex> welle</line>
+                        <line n="l.5">Ih<ex>es</ex>u named there dare no dragon dewelle</line>
+                        <line n="l.6">Blessiddest bavme of our<ex>e</ex> felicite</line>
+                        <line n="l.7">Ałł kankered sores and poysons to repelle</line>
+                        <line n="l.8">ffrom þem to Ih<ex>es</ex>u þ<ex>at</ex> knelen vpon þ<ex>er</ex> knee</line>
+                    </zone>
+                    <zone n="EETS.T.21">
+                        <line n="l.1">At wellis v lycour<ex>is</ex> I shall drawe</line>
+                        <line n="l.2">To washe the ruste of my Synnes blive</line>
+                        <line n="l.3">Were ałł the misteres of the olde <ex>and</ex> new lawe</line>
+                        <line n="l.4">Toke orrigenałł<note place="bottom" anchored="true" n="informational">It appears that here the scribe wrote an "or" ligature (compare, for example, to "morally" following) and then followed it by a stand-alone "r."</note> morally to disc<ex>ri</ex>ve</line>
+                        <line n="l.5">I mene the wellis of Cristes woundis v</line>
+                        <line n="l.6">Whereby we clayme oure m<ex>er</ex>cyfułł piete</line>
+                        <line n="l.7">Thurgħ help of Ih<ex>es</ex>u þ<ex>at</ex> gracius porte to arryve</line>
+                        <line n="l.8">Therto haue m<ex>er</ex>cy knelynge on oure knee</line>
+                    </zone>
+                    <zone n="EETS.T.20">
+                        <line n="l.1">This name Ih<ex>es</ex>u by int<ex>er</ex>petacion</line>
+                        <line n="l.2">his for to say oure blessed sauiore</line>
+                        <line n="l.3">Oure stronge sampson þat strangeld þe lyon</line>
+                        <line n="l.4">Oure lorde oure maker<ex>e</ex> and oure creature</line>
+                        <line n="l.5">And by his passion frome dethe oure redempture</line>
+                        <line n="l.6">Oure orpheus that fro<ex>m</ex>m Captiuite</line>
+                        <line n="l.7">ffette ooudite to his celestiałł toure</line>
+                        <line n="l.8">To whome ałł creatures bow shałł þ<ex>er</ex> knee</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>  
+            <surfaceGrp xml:id="f.226" n="folio">
+                <surface n="recto">
+                    <label>Folio 226 Recto</label>
+                    <graphic url="add_34193_226r.jpg"/>
+                    <zone n="EETS.T.22"><!--note about how the scribe does not follow the intended acrostic-->
+                        <line n="l.1">Condygne laude<note place="bottom" anchored="true" n="informational">Here the scribe has started the line with the initial two words of verse nineteen (although without the confusion regarding "g" seen on the page for f.225 verso.) beore correcting themselves and continuing with the rest of verse twenty-two. There is a mark next to the initial "C" that may be meant to indicate the error, but it was never corrected.</note> for iocunditas</line>
+                        <line n="l.2">Gynnynge and graunted of ałł gostely gladnesse</line>
+                        <line n="l.3">Evon next in odur his Et<ex>er</ex>nytas</line>
+                        <line n="1.4">Tokyne and Sygne of eternałł brightnesse</line>
+                        <line n="l.5">S set for sanitas Socurre agayne ałł Sykenesse</line>
+                        <line n="l.6">V for vbertas of sp<ex>irit</ex>uałł plente</line>
+                        <line n="l.7">S for suavitas from whom<!--possible suspension or otiose mark--> comith ałł suettenesse</line>
+                        <line n="l,8">To þem that knelen to Ih<ex>es</ex>u on þ<ex>er</ex> knee</line>
+                    </zone>
+                    <zone n="EETS.T.23">
+                        <line n="l.1">In Ih<ex>es</ex>u is Ioye that non<ex>e</ex> shałł ende</line>
+                        <line n="l.2">E signifiethe eu<ex>er</ex>lastynge Suffisaunce</line>
+                        <line n="l.3">S oure Sauacion<!--note the cursive extends over the previous letter - that may be the marker for suspension--> wenne we shałł haue wende</line>
+                        <line n="l.4">V his fyve wound<ex>is</ex> that made vs aquitavnce</line>
+                        <line n="l.5">ffor Satanas myght thurgh his meke suff<unclear>e</unclear>ance<note place="bottom" anchored="true" n="informational">The fifth glyph is either an e or an o, but the face it appears there is a line through it leading to the following "a" suggests that it should be "e."  This suggests that the gylph in the exemplar had a suspended "r."</note></line>
+                        <line n="l.6">S for the Sacrement wiche eche day we see</line>
+                        <line n="l.7">In forme of brede to Saffe vs from michaunce</line>
+                        <line n="l.8">When we deuoutely receyve it on oure knee</line>
+                    </zone>
+                    <zone n="EETS.T.24">
+                        <line n="l.1">I for Iacob H for Abreh<ex>a</ex>m</line>
+                        <line n="l.2">The lyfe desendynge be gen<ex>er</ex>acion</line>
+                        <line n="l.3">C stont for cryst that fro hevyn cam<ex>e</ex></line>
+                        <line n="l.4">Borne of a maydon for oure redempcion</line>
+                        <line n="l.5">Therpe title tocon of his passion</line>
+                        <line n="l.6">When he whas naylied vpon the rode tre</line>
+                        <line n="l.7">O blessied Ih<ex>es</ex>u do remyssion</line>
+                        <line n="l.8">To ałł þ<ex>at</ex> axe m<ex>er</ex>cy on ther knee</line>
+                    </zone>
+                    <zone n="EETS.T.25">
+                        <line n="l.1">Do m<ex>er</ex>cy Ih<ex>es</ex>u or we hens passe</line>
+                        <line n="l.2">Owth of þis drefułł pilgremage</line>
+                        <line n="l.3">Beset withe brigaunt<ex>is</ex> laide in waite in<!--maybe m with suspension, but should be "In" with odd suspension--> eu<ex>ery</ex> place</line>
+                        <line n="l.4">Withe mortałł saute to let oure passage</line>
+                        <line n="l.5">amonge othr I am fułł in age</line>
+                        <line n="l.6">Grately feblisshette of olde infirmite<!--scribe follows vowels with a ligature form of the i --></line>
+                        <line n="l.7">Cry on to Ih<ex>es</ex>u for my Synfułł oute rage</line>
+                        <line n="l.8">Rigħt of olde hert knelynge vpon my knee</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 226 Verso</label>
+                    <graphic url="add_34193_226v.jpg"/>
+                    <zone n="EETS.T.26">
+                        <line n="l.1">Let not be lost that thow hast bought So dere</line>
+                        <line n="l.2">With golde nore with Silvyr but w<ex>ith</ex> p<ex>re</ex>cius blode</line>
+                        <line n="l.3">Oure flessh is freełł but shorte abydinge here</line>
+                        <line n="l.4">The olde sarpent malisious <ex>and</ex> wode</line>
+                        <line n="l.5">The worlde vnstabułł now Ebbe now flode</line>
+                        <line n="l.6">Eche thynge concludynge on A mutabilite</line>
+                        <line n="l.7">A gayne whose dang<ex>er</ex>is I holde this consełł gode</line>
+                        <line n="l.8">To pray for m<ex>er</ex>cy to Ih<ex>es</ex>u on oure knee</line>
+                    </zone>
+                    <zone n="EETS.T.27">
+                        <line n="l.1">And vndir Support Ih<ex>es</ex>u of thy fauoure</line>
+                        <line n="l.2">Or passe hens this holy myn entent</line>
+                        <line n="l.3">To make Ih<ex>es</ex>u cheffe Surveoure</line>
+                        <line n="l.4">Of my last wyłłe Sette my testament</line>
+                        <line n="l.5">Wiche of my Selfe am In Sufficiaunt</line>
+                        <line n="l.6">To Recon and compt<ex>er</ex> but m<ex>er</ex>cy and pyte</line>
+                        <line n="l.7">Be p<ex>re</ex>ferred or thou doo Iugement</line>
+                        <line n="l.8">To ałł to Ih<ex>es</ex>u ther on knee</line>
+                    </zone>
+                    <zone n="EETS.T.28">
+                        <line n="l.1">Age is crop<ex>e</ex> in And callith me to my g<ex>re</ex>ve</line>
+                        <line n="l.2">To ma kenynge how I haue my spent</line>
+                        <line n="l.3">Baren of vertu alas who shałł me save</line>
+                        <line n="l.4">ffrom frendis dang<ex>er</ex> to A count my talent</line>
+                        <line n="l.5">But Ih<ex>es</ex>u be my staffe and my potent</line>
+                        <line n="l.6">Over streth audite is like to encombr<ex>e</ex></line>
+                        <line n="l.7">Or done be yeffe be yeve<note place="bottom" anchored="true" n="informational">It appears the scribe may have written two versions of the same phrase.</note>let<ex>e</ex> m<ex>er</ex>cy by p<ex>re</ex>sent</line>
+                        <line n="l.8">To ałł þ<ex>at</ex> knelyn to Ih<ex>es</ex>u on ther <del>kee</del>knee</line>
+                    </zone>
+                    <zone n="EETS.T.29">
+                        <line n="l.1">Now in the name of my lord Ih<ex>es</ex>u</line>
+                        <line n="l.2">Of right hole herte in ałł my best entente</line>
+                        <line n="l.3">My childe remembrynge froward <ex>and</ex> vicious</line>
+                        <line n="l.4">Aye contrary to þe commaundement</line>
+                        <line n="l.5">of crist ih<ex>es</ex>u now withe advysement</line>
+                        <line n="l.6">The lord besheching<ex>e</ex> to have m<ex>er</ex>cy and pyte</line>
+                        <line n="l.7">My ȝouthe my age how I have myswent</line>
+                        <line n="l.8">With this worde saide knelynge vpon my knee</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.227" n="folio">
+                <surface n="recto">
+                    <label>Folio 227 Recto</label>
+                    <graphic url="add_34193_227r.jpg"/>
+                    <zone n="EETS.T.30">
+                        <line n="l.1"><hi rend="capital_2">O</hi> Ih<ex>es</ex>u m<ex>er</ex>cy Support of thy grace</line>
+                        <line n="l.2">ffor thy meke passion remembraunce of my compleynt</line>
+                        <line n="l.3">Duryng<ex>e</ex> my lyf with many gret trespase</line>
+                        <line n="l.4">Be my wrongs passith <del>wer</del> where I haue myswent</line>
+                        <line n="l.5">I now purpose be the grace Influent</line>
+                        <line n="l.6">To wright a tretise of Surfetis done to þe</line>
+                        <line n="l.7">And całł it my last testament</line>
+                        <line n="l.8">With Ih<ex>es</ex>u m<ex>er</ex>cy knelynge on my knee</line>
+                    </zone>
+                    <zone n="EETS.T.31">
+                        <line n="l.1">The yers passied of my grene yougħ</line>
+                        <line n="l.2">Of my fressħ age sered þe grenesse</line>
+                        <line n="l.3">Lust appallitħ the exp<ex>eri</ex>ens is couth</line>
+                        <line n="l.4">The vnwyldy Ioyntes sterkyd w<ex>ith</ex> rudenesse</line>
+                        <line n="l.5">The cloudy sigħt mysted w<ex>ith</ex> derkenesse</line>
+                        <line n="l.6">With oute redresse recoure or<ex>e</ex> amendes</line>
+                        <line n="l.7">To me of deth hathe brougħt in the kalendis</line>
+                    </zone>
+                    <zone n="EETS.T.32">
+                        <line n="l.1">Of my spent tyme A fole may wełł compleyne</line>
+                        <line n="l.2">Thynge impossible a gayne for to recou<ex>er</ex></line>
+                        <line n="l.3">dayes lost in ydyłł no man may recou<ex>er</ex><note place="bottom" anchored="true" n="informational">The scribe appears to have accidentally repeated the last word of the final line of the prior line.</note></line>
+                        <line n="l.4">Them to Refome be non aventure</line>
+                        <line n="l.5">Eche mortałłe man is <del>la</del> callid þe lure</line>
+                        <line n="l.6">Of dethe als vncłayne þe passage</line>
+                        <line n="l.7">Whos chefe marno<note place="bottom" anchored="true" n="informational">There is what appears to be a "oo" above the space between this word and "is", but as the word rendered here is significantly different than the EETS edition's "marynere" I have left it unclear in the following word.</note> <unclear>oo</unclear> is callide crokid age</line>
+                    </zone>
+                    <zone n="EETS.T.33">
+                        <line n="l.1">On of this bediłł named febulnes</line>
+                        <line n="l.2">Cam with his potent in stede of A m<unclear>a</unclear>ce<note place="bottom" anchored="true" n="informational">The EETS edition has "mace," but the glyph is unclear. It may be "merce" with an "er" construction.</note></line>
+                        <line n="l.3">Sumpned me and aftyre cam sekenesse</line>
+                        <line n="l.4">Malyncolik ertħly and pale of face</line>
+                        <line n="l.5">Withe there waraunt these ii gan <del>ma<ex>n</ex>ce</del><note place="bottom" anchored="true" n="informational">The scribe appears to have written the word "manace" with a suspension mark over the "ac" grouping, but then decided to write the word out instaead.  For some reason, however, the a they use is the form typically seen elsewhere as capital "a" in the manuscript. This form seen in non-capital places elsewhere.</note> mance</line>
+                        <line n="l.6">How dothe <del>d</del> on me his due dette Sought</line>
+                        <line n="l.7">And to a bede of langoure þey me brougħ</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 227 Verso</label>
+                    <graphic url="add_34193_227v.jpg"/>
+                    <zone n="EETS.T.34">
+                        <line n="l.1">Where vnto me anon there did appere</line>
+                        <line n="l.2">where that I lay compleyinge in a traunce</line>
+                        <line n="l.3">Clade in a mantełł A woman sad of chere</line>
+                        <line n="l.4">Black whas here abyte Sobure of contenaunce</line>
+                        <line n="l.5">Straunge whas here porte froward of daliaunce</line>
+                        <line n="l.6">Castynge here loke to meward in certayne</line>
+                        <line n="l.7">leke as of me she had disdeyne</line>
+                    </zone>
+                    <zone n="EETS.T.35">
+                        <line n="l.1">This said woman callied remembir<ex>aunce</ex></line>
+                        <line n="l.2">Of my myspent tyme in youthis lustynesse</line>
+                        <line n="l.3">Which to recorde did me gret grevance</line>
+                        <line n="l.4">Then came here suster namyd pensyfenesse</line>
+                        <line n="l.5">ffro olde surfetis and to me dresse</line>
+                        <line n="l.6">A wofułł biłł wicħ brought vnto me my mynde</line>
+                        <line n="l.7">My gret outerage of longe tyme left be hynde</line>
+                    </zone>
+                    <zone n="EETS.T.36">
+                        <line n="l.1">Lyggynge a lone I gane to ymagyn<ex>e</ex></line>
+                        <line n="l.2">how with iiii tymes dep<ex>ar</ex>ted þis þe yere</line>
+                        <line n="l.3">Furst how In my soule to Illumyn</line>
+                        <line n="l.4">Buddes hyn opon agayne the sonne clere</line>
+                        <line n="l.5">The bame vppe reysed most sou<ex>e</ex>reyne <ex>and</ex> entre</line>
+                        <line n="l.6">Out of þe Rote most naturally doth assende</line>
+                        <line n="l.7">With newe lyf<!--don't know about the bit immediately after the f--> the bareyn sole to a mende</line>
+                    </zone>
+                    <zone n="EETS.T.37">
+                        <line n="l.1">The honysokiłł the fressħ p<ex>ri</ex>meroll<ex>es</ex></line>
+                        <line n="l.2">There <del>rolles</del> levys splaye at febus vprisinge</line>
+                        <line n="l.3">The amorus foules w<ex>ith</ex> morthis and carołł</line>
+                        <line n="l.4">Salve that seasoun eu<ex>er</ex>y mornynge</line>
+                        <line n="l.5">Whane Aurora hyr lycoure distyllynge</line>
+                        <line n="l.6">Sent on erbis the p<ex>er</ex>ly droppis shenne</line>
+                        <line n="l.7">With Siluyr dropis to enlumyn w<ex>ith</ex> þ<ex>e</ex> grene </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.228" n="folio"><!--make a note that this leaf is parchment whereas the others for this particular item are paper-->
+                <surface n="recto">
+                    <label>Folio 228 Recto</label>
+                    <graphic url="add_34193_228r.jpg"/>
+                    <zone n="EETS.T.38">
+                        <line n="l.1">Thys tyme were named of grenesse</line>
+                        <line n="l.2">Tyme of Ioye of gladenesse and disporte</line>
+                        <line n="l.3">Tyme of growynge chefe moder of ffresshenesse</line>
+                        <line n="l.4">Tyme of Reioysnige ordynied for comfort</line>
+                        <line n="l.5">Tyme whane tyme makieth his resorte</line>
+                        <line n="l.6">In gresse marche toward ariete</line>
+                        <line n="l.7">Oure Emyspery to gladen w<ex>ith</ex> his hette</line>
+                    </zone>
+                    <zone n="EETS.T.39">
+                        <line n="l.1">With seasoun prikitħ fresshe corage</line>
+                        <line n="l.2">Reioysieth bestis walkynge in þ<ex>er</ex> pasture</line>
+                        <line n="l.3">Causieth Birddys to synge in here cage</line>
+                        <line n="l.4">Whene bkide renewithe in eu<ex>er</ex>y creature</line>
+                        <line n="l.5">Some obs<ex>er</ex>vaunce doynge to nature</line>
+                        <line n="l.6">Withe of verry trouthe is callied cheefe princes</line>
+                        <line n="l.7">And vndir gode ther wordely emp<ex>re</ex>sse</line>
+                    </zone>
+                    <zone n="EETS.T.40">
+                        <line n="l.1">And for this lusty Sesoune agreable</line>
+                        <line n="l.2">Of gladnesse hathe So gret avayntage</line>
+                        <line n="l.3">Be convenient Resone fułł notable</line>
+                        <line n="l.4">There to fułł welle resembled childis age<!--make a note in scribal hand about fluid capital letter forms--></line>
+                        <line n="l.5">Quyk grene fressh <ex>and</ex> delyu<ex>er</ex>ed of corage</line>
+                        <line n="l.6">ffor as verry age <del>northe</del> nvrrissieth in grenesse</line>
+                        <line n="l.7">So dothe childirhode In amerus lustynesse</line>
+                    </zone>
+                    <zone n="EETS.T.41">
+                        <line n="l.1">This quickynge Seasouns mut<ex>ri</ex>fied and gude</line>
+                        <line n="l.2">To his nature hathe . ii<note place="bottom" anchored="true" n="informational">The scribe appears to have placed the punctus to indicate a numeral as opposed to letters, but neglected to place the punctus to conclude the numeral.</note> qualitees</line>
+                        <line n="l.3">Of hote and moste wiche longe also to blode</line>
+                        <line n="l.4">In ther ascencion vpwarde by degreys</line>
+                        <line n="l.5">Of kyndely thyng<ex>is</ex> the wiche prop<ex>er</ex>tees</line>
+                        <line n="l.6">Of naturałł hette and temp<ex>er</ex>ałł mosture</line>
+                        <line n="l.7">Rekened in Childehode xiiii<note place="bottom" anchored="true" n="informational">The EETS edition has xiii, but the manuscript here renders it as "xiiii."</note> yere doth endure</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 228 Verso</label>
+                    <graphic url="add_34193_228v.jpg"/>
+                    <zone n="EETS.T.42">
+                        <line n="l.1">Thus in vi thyngis by orders men may sene</line>
+                        <line n="l.2">Notabułł a corde and Iustyce<note place="bottom" anchored="true" n="Informational">The EETS edition has "lust" here.</note> conneuience</line>
+                        <line n="l.3">Blod Eyre and veren south and Meredeen</line>
+                        <line n="l.4">And age of Childehode by naturałł assistence</line>
+                        <line n="l.5">Withe wiche they stonde p<ex>re</ex>mynyence</line>
+                        <line n="l.6">hete and moster directyd the passage</line>
+                        <line n="l.7">With grene fervence to force yonge corage</line>
+                    </zone>
+                    <zone n="EETS.T.43">
+                        <line n="l.1">ffyrst Sepherus w<ex>ith</ex> his blastes sote</line>
+                        <line n="l.2">Enspireth veere with newe buddes grene</line>
+                        <line n="l.3">The bame ascendith out of eu<ex>er</ex>y Rote</line>
+                        <line n="l.4">Chaugynge the flouris agayne the sonne shene</line>
+                        <line n="l.5">Maye of a month Monether sittith as a quene</line>
+                        <line n="l.6">Here systyr apryłł wat<ex>er</ex>ynge here gardeynis</line>
+                        <line n="l.7">With holsum shoures shedd in tender vynes<note place="bottom" anchored="true" n="informational">"George Goodman" is written in pencil to the left of the final four lines in a later hand.</note></line>
+                    </zone>
+                    <zone n="EETS.T.44">
+                        <line n="l.1">This tyme of verray flora doth his cure</line>
+                        <line n="l.2">With soleyn<ex>e</ex> mottelyis passynge fressh and gay</line>
+                        <line n="l.3">Purpułł colours wrogħt by dame nature</line>
+                        <line n="l.4">Mountayns vales and medewis to arraye</line>
+                        <line n="l.5">here warderops opon lyst not to delayne</line>
+                        <line n="l.6">large mesure shewe out and to shedde</line>
+                        <line n="l.7">Tre sue  of fayre wiche she doth possede</line>
+                    </zone>
+                    <zone n="EETs.T.45">
+                        <line n="l.1">This seasone verray most plesauntly to childirhode</line>
+                        <line n="l.2">with here chapelet<ex>is</ex> grene white and Rede</line>
+                        <line n="l.3">In wiche tyme þe newe yonge blode</line>
+                        <line n="l.4">hotte and moste ascendynge vp in dede</line>
+                        <line n="l.5">Reioysinge hert<ex>is</ex> as it aboougħt doth sp<ex>er</ex>eede</line>
+                        <line n="l.6">wenynge this season amonge there merthes ałł</line>
+                        <line n="l.7">shuld neu<ex>er</ex> discresson nor appałł<note place="bottom" anchored="true" n="informational">"The v<ex>e</ex>reaunt," the catchwords for the next gathering, appears in a decorated  scroll at the bottom right. This indicates that there was more of the poem available originally, unlike with other witnesses where it appears either the first or last sections of the poem are circulating without the rest of the text.</note></line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

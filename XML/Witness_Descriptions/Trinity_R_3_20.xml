@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Description of Trinity College R.3.20</title>
+            <respStmt>
+               <resp>composed by</resp>
+               <name>Matthew Evan Davis</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt xml:id="publication">
+            <publisher/>
+            <pubPlace/>
+            <availability status="restricted" xml:id="R.3.20">
+               <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/" n="license">
+                     <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+                        style="border-width:0" n="Creative Commons License BY-NC-SA"/>
+                  </ref>
+               </licence>
+               <licence target="http://creativecommons.org/licenses/by-nc/4.0/">
+                  <ref target="http://creativecommons.org/licenses/by-nc/4.0/"
+                     n="license">
+                     <graphic url="http://i.creativecommons.org/l/by-nc/4.0/88x31.png"
+                        style="border-width:0" n="Creative Commons License BY-NC"/>
+                  </ref>
+               </licence>
+               <p n="statement"> The transcription of this work is owned by the editor and
+                  licensed under a <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                     n="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+                     International License</ref>. The images are owned by the <ref
+                     target="https://www.trin.cam.ac.uk/library/wren-library/">Wren Library</ref> at
+                     <ref target="https://www.trin.cam.ac.uk/">Trinity College</ref>, <ref
+                     target="https://www.cam.ac.uk/">Cambridge</ref> and are provided under a <ref
+                     target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons
+                     Attribution-NonCommercial 4.0 International License</ref>. </p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc xml:id="Trinity_R_3_20">
+            <!-- use LIDO here to build out space? -->
+            <msDesc xml:id="Trinity_College_R_3_20">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region>Cambridgeshire</region>
+                  <settlement>Cambridge</settlement>
+                  <institution>Trinity College</institution>
+                  <idno>R.3.20</idno>
+               </msIdentifier>
+               <msContents>
+                  <p>The descriptions of items where a title is not stated are taken from the
+                     Digital Index of Middle English Verse <ref
+                        target="https://www.dimev.net/Records.php?MSS=CamTCC600">entry</ref>. The
+                        <ref target="https://mss-cat.trin.cam.ac.uk/Manuscript/R.3.20">James
+                        Catalogue of Western Manuscripts has a slightly different set of names for
+                        some items, but for consistency across witnesses the DIMEV names have been
+                        used throughout.</ref> It should be noted that both the DIMEV and James
+                     Catalogue reference items by page numbers, so I have done so here. Since my
+                     internal method for marking items relies on folios for consistency both
+                     the folio and page numbers have been included on the individual witnesses.</p>
+                  <msItem n="p.1-8">
+                     <p>John Lydgate, "Gloriosa Dicta sunt de Te." Twenty-nine eight-line
+                        stanzas.</p>
+                  </msItem>
+                  <msItem n="p.8">
+                     <p>Four things that make a man a fool. One stanza rhyme royal.</p>
+                  </msItem>
+                  <msItem n="p.9">
+                     <p>Four things that make man a fool. One stanza rhyme royal.</p>
+                  </msItem>
+                  <msItem n="p.9">
+                     <p>Italicis Olilant Lombards waymenten. Four macaronic monorhyming lines."</p>
+                  </msItem>
+                  <msItem n="p.10-15">
+                     <p>John Lydgate, "Bycorne and Chychevache." Nineteen stanzas rhyme royal with
+                        introductory prose for speakers.</p>
+                  </msItem>
+                  <msItem n="p.15-19">
+                     <p>John Lydgate (attr.), "A wikked tong wol alway deme amis." nineteen rhyme
+                        royal stanzas.</p>
+                  </msItem>
+                  <msItem n="p.19-25">
+                     <p>John Lydgate, English paraphrase of Psalm 102. Twenty-two eight-line stanzas
+                        with Latin text preceding each.</p>
+                  </msItem>
+                  <msItem n="p.26-32">
+                     <p>John Lydgate, "Thoroughfare of Woe." Twenty-four eight-line stanzas.</p>
+                  </msItem>
+                  <msItem n="p.34-35">
+                     <p>John Lydgate, "A Balade of her that hath all virtues. Seven rhyme royal
+                        stanzas.</p>
+                  </msItem>
+                  <msItem n="p.38-40">
+                     <p><ref
+                           target="http://www.minorworksoflydgate.net/Mumming_Eltham/Trinity_R_3_20/Trinity_R_3_20_f19r.html"
+                           >A Mumming at Eltham</ref></p>
+                  </msItem>
+               </msContents>
+
+               <physDesc>
+                  <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material/>
+                           <p/>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><p n="stanza_layout"/>
+                           <p n="gathering" xml:id="g.24"/>
+                           <p n="collation" xml:id="q.8"/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote scope="sole" script="secretary">
+                        <p n="hand_intro"/>
+                        <p n="hand_otiose"/>
+                     </handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote/>
+                  </decoDesc>
+               </physDesc>
+               <history>
+                  <p/>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

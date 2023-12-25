@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Windsor">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at Windsor</emph>
+                    </title>
+                    <title type="sub">Trinity R.3.20 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Trinity_R_3_20">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> NEED TO INCLUDE COPYRIGHT BLOCK FOR TRINITY
+                            R.3.20</p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Mumming_Windsor">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="Trinity_R_3_20">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>Cambridgeshire</region>
+                        <settlement>Cambridge</settlement>
+                        <institution>Trinity College</institution>
+                        <idno>R.3.20</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+                                <p n="hand_intro"/>
+                                <p n="hand_otiose"/>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220802" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.36" n="folio">
+                <surface n="recto">
+                    <label>Folio 36 Recto (Page 71)</label>
+                    <graphic url="Trinity_R_3_20_f36r.jpg"/>
+                    <zone n="EETS.MW.I">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi><note place="bottom" anchored="true" n="informational">The "n" for nota is erased slightly, but this does not appear to be a deliberate erasure as the initial of the first verse of the mumming proper is. There is also a "d" to the left of the nota mark, suggesting an order to items that may not be being followed in the manuscript.<!--check to see if there are letters to the left of any of the other items--></note>Nowe foloweþe nexst þe devyse of a momyng to fore þe</line>
+                        <line n="l.2">kyng henry þe siz for being in his Castełł of Wyndesore þe</line>
+                        <line n="l.3">fest of his crystmasse holding þer made by lidegate daun</line>
+                        <line n="l.4">Ioħn þe munk of Bury howe þampułł and þe floure delys</line>
+                        <line n="l.5">came first to þe kynges of ffraunce by myrakle at Reynes</line>
+                    </zone>
+                    <zone n="EETS.MW.1">
+                        <line n="l.1"><hi rend="capital_3">M</hi>ooste<note place="bottom" anchored="true" n="informational">This initial is rendered later, with a plus to its left. The original initial letter and the nota mark to its left have been inexpertly erased.</note> noble prynce / of Cristen prynces alle</line>
+                        <line n="l.2">To Youre hyegħnesse / lat hit beo pleasaunce</line>
+                        <line n="l.3">In youre presence / men may to mynde calle</line>
+                        <line n="l.4">Howe þat whylom /<note place="bottom" anchored="true" n="informational">The Virgule here has been marked over in a darker color, but this seems to have no informational meaning.</note> oure worthy Realme of ffraunce</line>
+                        <line n="l.5">Conuerted was / frome þeyre mescreaunce<!--oddly formed first c.  Comment on it?--></line>
+                        <line n="l.6">Whane þe lord of lordes / caste a sigħt</line>
+                        <line n="l.7">vpo<ex>n</ex>n youre lande / and made his grace aligħt</line>
+                    </zone>
+                    <zone n="EETS.MW.2">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>ffor in þe hegħe / hevenly consistorye</line>
+                        <line n="l.2">Be ful acorde / of þe Trynitee</line>
+                        <line n="l.3">As in cronycles / maked as memorye</line>
+                        <line n="l.4">þe lord whicħ is / called oon twoo and thre</line>
+                        <line n="l.5">His eyegħe of mercy / caste on Cloudovee<!-- no reason not to think this is correct, but check and see if it could be n --></line>
+                        <line n="l.6">shadde his grace / of goostely influence</line>
+                        <line n="l.7">Towardes þat kyng / having his aduertence</line>
+                    </zone>
+                    <zone n="EETS.MW.3">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Þat he shoulde passe / frome paganymes lawe</line>
+                        <line n="l.2">By prescyence / whicħ þat is devyne</line>
+                        <line n="l.3">His hert al hoolly / and him self witħ drawe</line>
+                        <line n="l.4">ffrome his ydooles / and alle hees Rytes fyne</line>
+                        <line n="l.5">Whane hevenly grace / did vpo<ex>n</ex>n him shyne</line>
+                        <line n="l.6">By meene oonly / and by devoute preyer</line>
+                        <line n="l.7">Of saint <hi rend="underline">Cloote</hi> moost / goodly and entier</line>
+                    </zone>
+                    <zone n="EETS.MW.4">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Hir hertely loue / his meditacyouns</line>
+                        <line n="l.2">Hir wacche hir fasting / and hir parfyt lyf</line>
+                        <line n="l.3">Hir stedfast hoope / hir hooly orysouns</line>
+                        <line n="l.4">Hir conuersacyoun moost contemplatyff</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 36 Verso (Page 72)</label>
+                    <graphic url="Trinity_R_3_20_f36v.jpg"/>
+                    <zone n="EETS.MW.4">
+                        <line n="l.5">Stynt in ffraunce of Mawmetrye þe stryff</line>
+                        <line n="l.6">Causing þe lawe / moost souereign of vertue</line>
+                        <line n="l.7">To sprede a broode / of oure lord Ihesu</line>
+                    </zone>
+                    <zone n="EETS.MW.5">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Hir meryte caused / and hir parfit entent<!--otiose mark and the end - check?--></line>
+                        <line n="l.2">Þat Crystes feyth / aboute þer did sprede</line>
+                        <line n="l.3">Whane þat an Aungel / was frome heven sent</line>
+                        <line n="l.4">vn to an hermyte / of parfyt lyf in deed</line>
+                        <line n="l.5">Presented it / whoo so can take heed</line>
+                        <line n="l.6">A shelde of Azure / moost souerein by devys</line>
+                        <line n="l.7">And in þe feelde of golde three floure delys</line>
+                    </zone>
+                    <zone n="EETS.MW.6">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>At <hi rend="underline">Ioye en Vale</hi> / witħ oute more obstacle</line>
+                        <line n="l.2">ffol al þis cas / where þaungel doune aligħt</line>
+                        <line n="l.3">A place notable / chosen by myracle</line>
+                        <line n="l.4">Whicħ thorugħe / al ffraunce shadde his bemys ligħt</line>
+                        <line n="l.5">God of his grace / caste on þat place a sigħt</line>
+                        <line n="l.6">ffor to þat Realme<note place="bottom" anchored="true" n="explanatory">The EETS edition has "reavme" here, but other words in the witness <!-- give examples --> suggest that it is likely to be "realme," here capitalized. The mistake on MacCraken's part is understandable, however, as the bow of the "l" is larger than in most other examples and it is very similar to the v in "avauntage" in the same line as well as "vale" in the line following. Additional 29729 has "realme," which provides another example of how both witnesses are likely taken from a now-missing exemplar.</note> / is passing avauntage</line>
+                        <line n="l.7">In þilke vale was sette þat hermytage</line>
+                    </zone>
+                    <zone n="EETS.MW.7">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Al þis came In / whoo so list to seen</line>
+                        <line n="l.2">I dare afferme it / witħ oute any dreed</line>
+                        <line n="l.3">By parfytnesse / of þe hooly qweene</line>
+                        <line n="l.4">Saynte Cloote / floure of wommanheed<!--otiose mark - could be an e?--></line>
+                        <line n="l.5">What euer she spake / acordant was þe deed</line>
+                        <line n="l.6">I mene it þud / þat worde and worke was oon</line>
+                        <line n="l.7">It is no wonder / for wymen soo beon echoon</line>
+                    </zone>
+                    <zone n="EETS.MW.N.7">
+                        <line n="l.1"/>
+                        <line n="l.2"/>
+                        <line n="l.3"/>
+                        <line n="l.4"/>
+                        <line n="l.5"/>
+                        <line n="l.6"/>
+                        <line n="l.7">A daun Iohan est yvray<!--include note explaining this--></line>
+                    </zone>
+                    <zone n="EETS.MW.8">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Hir hoolynesse / ffraunce did enlumyne</line>
+                        <line n="l.2">And Crystes fayth / gretly magnefye</line>
+                        <line n="l.3">Loo what grace / dooþe in wymmen shyne</line>
+                        <line n="l.4">Whas assuraunce / noman may denye</line>
+                        <line n="l.5">To seye pleyne troutħ / nys no flaterye</line>
+                        <line n="l.6">But stabulnesse / In wym<ex>m</ex>en for to fynde</line>
+                        <line n="l.7">Deemeþe youre selff<!--otiose mark at the end - maybe e?--> wher it komeþe hem of kynde</line>
+                    </zone>
+                    <zone n="EETS.MW.9">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>ffor thorugħe meeknesse / yif it beo<note place="bottom" anchored="true" n="informational">The EETS edition has "be" here, which may be a decision on MacCraken's part that the "o" terminating this word is in fact part of the "e" prior. However, it is similar enough to "beo" elsewhere in the poem -- see <!--find example of beo --> -- that it is more likely to be "beo."</note> adverted</line>
+                        <line n="l.2">Of saynte Cloote / and thorugħ hir hyegħe prudence</line>
+                        <line n="l.3">Kyng Cloudovee was to oure feytħ converted</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.37" n="folio">
+                <surface n="recto">
+                    <label>Folio 37 Recto (Page 73)</label>
+                    <graphic url="Trinity_R_3_20_f37r.jpg"/>
+                    <zone n="EETS.MW.9">
+                        <line n="l.4">In hir þer was / so entier diligence</line>
+                        <line n="l.5">ffully devoyde / of slouthe and necglygence<!--use this L as an example for the note about realme--></line>
+                        <line n="l.6">Ne stynt nougħt / til þat hir lord haþe take</line>
+                        <line n="l.7">Þe feyth of Cryst / and his errour forsake</line>
+                    </zone>
+                    <zone n="EETS.MW.10">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Þis made þe kyng / þat crystes feytħ tooke</line>
+                        <line n="l.2">ffor he was booþe manly and Rigħt wys</line>
+                        <line n="l.3">Þe three Crepaudes / þis noble kyng forsooke</line>
+                        <line n="l.4">And in his sheelde he bare thre floure delys</line>
+                        <line n="l.5">Sent frome heven / a tresore of gret prys</line>
+                        <line n="l.6">Affter at Reynes / þe story telleþe þus</line>
+                        <line n="l.7">Baptysed lowly / of saint <hi rend="underline">Remigius</hi></line>
+                    </zone>
+                    <zone n="EETS.MW.11">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Þaumpolle of gold / a coller brougħt adovne</line>
+                        <line n="l.2">witħ Whicħ he Was / þis hooly kyng ennoynt</line>
+                        <line n="l.3">Gret prees þer was / stonding envyroun <!--otiose mark - could be terminal e suspension --></line>
+                        <line n="l.4">ffor to beholde þe kyng / frome poynt to poynt</line>
+                        <line n="l.5">ffor where as he / stoode in gret desioynt</line>
+                        <line n="l.6">ffirst a paynyme / by baptyme anoon rigħt</line>
+                        <line n="l.7">Was so conuerted / and bekame Crystes knigħt</line>
+                    </zone>
+                    <zone n="EETS.MW.12">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>At Reynes yit / þat hooly vnccyoun</line>
+                        <line n="l.2">Conserued is for a Remembraunce</line>
+                        <line n="l.3">And of coustume / by Reuolucyoun</line>
+                        <line n="l.4">Of god p<ex>ro</ex>vyded / witħ due observaunce</line>
+                        <line n="l.5">Tannoynte of coustume / kynges Wheeche in ffraunce</line>
+                        <line n="l.6">Ioustely succeede / þe story dooþe vs leere</line>
+                        <line n="l.7">Of whicħ / sixst henry / þ<ex>at</ex> nowe sitteþe here</line>
+                    </zone>
+                    <zone n="EETS.MW.13">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Rigħt soone shal / witħ goodes hooly grace</line>
+                        <line n="l.2">As he is borne / by successyoun</line>
+                        <line n="l.3">Be weel resceyyed<!--could it be a "t"?  Consider--> / in þe same place</line>
+                        <line n="l.4">And by vertu / of þat vnccyoun</line>
+                        <line n="l.5">Atteyne in knigħthoode / vn to ful hye Renoun</line>
+                        <line n="l.6">Resceyve his coroune / he and his successours</line>
+                        <line n="L.7">By tytle of rigħt / lyche hees p<ex>ro</ex>genytours</line>
+                    </zone>
+                    <zone n="EETS.MW.14">
+                        <line n="l.1"><hi rend="pilcrow">¶</hi>Nowe Royal braunche / O blood of saint <hi rend="underline">lowys</hi></line>
+                        <line n="l.2">So lyke it nowe / to þy magnyfycence</line>
+                        <line n="l.3">Þat þe story of þe flour delys</line>
+                        <line n="l.4">May here be showed / in þyne hegħe presence</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 37 Verso (Page 74)</label>
+                    <graphic url="Trinity_R_3_20_f37v.jpg"/>
+                    <zone n="EETS.MW.14">
+                        <line n="l.5">And þat þy noble / royal excellence</line>
+                        <line n="l.6">Lyst to supporte / here sitting<!--possible suspension after g?--> in þy see</line>
+                        <line n="l.7">Rigħt as it fełł þis myracle to see</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

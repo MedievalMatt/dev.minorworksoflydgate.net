@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Description of British Library Harley 2255</title>
+         </titleStmt>
+         <author>Matthew Evan Davis</author>
+         <publicationStmt>
+            <publisher/>
+            <pubPlace/>
+            <availability status="restricted" xml:id="harley_2255">
+               <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <p>
+                     <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                     The transcription of this work is licensed under a <ref
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                        Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                        License.</ref> The images are (c) British Library Board (British
+                     Library MS Harley 2255) and rights are reserved. </p>
+               </licence>
+            </availability>
+            <date/>
+         </publicationStmt>
+         <sourceDesc xml:id="British_Library_Harley_2255">
+            <!-- use LIDO here to build out space? -->
+            <msDesc xml:id="British_Library_Harley_2255">
+               <msIdentifier>
+                  <country>United Kingdom</country>
+                  <region>London</region>
+                  <settlement>London</settlement>
+                  <institution>British Library</institution>
+                  <idno>Harley 2255</idno>
+               </msIdentifier>
+               <history/>
+               <physDesc>
+                  <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material>parchment</material>
+                           <p/>
+                        </support>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout><p n="stanza_layout"/>
+                           <p n="gathering" xml:id="g.20"/><!--actually 21 gatherings based on catchwords and guide letters. See Harley 2255 notes.txt-->
+                           <p n="collation" xml:id="q.8"/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote>
+                        <p>A special note should be made about the forms of the letter "a"
+                           throughout. The scribe renders "a," when not in the initial position of a
+                           line, in three forms: a two-bow form that is indented slightly, which can
+                           be seen in "and" in line seven of the first stanza, a closed-bow form
+                           without indenting, as can be seen in "and" at line two of the same
+                           stanza, and a slightly more indented vesion where the lower bow is larger
+                           than the upper, which can be seen in "amerous" in the first line of
+                           stanza five. Whether this is majuscule or miniscule seems dependant on
+                           line height, but the scribe is inconsistent regarding their line heights
+                           so it's not easy to determine which is intended at particular locations.
+                           For this reason I've chosen to render tham all as miniscule.</p>
+                        <p>Majuscule "a" is also rendered in one of three forms if we assume the
+                           initial glyph of each line is intended to be majuscule -- which I am not
+                           sure can accurately determined. There is a form that is similar to the
+                           variable line-height form mentioned above, a form that is similar to this
+                           form but with a much deeper bow (as can be seen in "as" in the second
+                           line of the second stanza of folio 47), a form with a flattened upper bow
+                           and angular lower bow (as can be seen in "A geyn" at line three of that
+                           same stanza), a form that is similar to an "A" compressed on both sides
+                           (as can be seen in the initial line of the first stanza of folio 50
+                           verso) and a form that is similar to the variable line-height form but
+                           with a much more pronounced lower bow and deeper indentation (as can been
+                           in "and" at line two of the first stanza of folio 48 verso). </p>
+                     </handNote>
+                  </handDesc>
+                  <decoDesc>
+                     <decoNote/>
+                  </decoDesc>
+               </physDesc>
+               <msContents>
+                  <p>The descriptions of items where a title is not stated are taken from the
+                     Digital Index of Middle English Verse <ref
+                        target="https://www.dimev.net/Records.php?MSS=CamTCC600">entry</ref></p>
+                  <msItem n="ff. 1-3">
+                     <p>John Lydgate, ‘Consulo quisque eris.’ Fifteen eight-line stanzas</p>
+                  </msItem>
+                  <msItem n="ff. 3v-5v">
+                     <p>John Lydgate, ‘Midsomer Rose.’ Fifteen 8-line stanza</p>
+                  </msItem>
+                  <msItem n="f. 6">
+                     <p>John Lydgate, ‘A dyte of womenhis hornys.’ Ten eight-line stanzas</p>
+                  </msItem>
+                  <msItem n="ff. 7v-11v">
+                     <p>John Lydgate, ‘Look in thy merour and deeme noon othir wiht’ Twenty-seven eight-line stanzas</p>
+                  </msItem>
+                  <msItem n="ff. 12-14">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 14-17">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 17-21">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 21-24">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 24-32v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 32v-39v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 40-43v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 43v-45v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 45v-47">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 47-66v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 66v-70v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 70-71v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 72-88">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 88-93v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 94v-95v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 95v-103">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 104-105">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 111v-113v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 113v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 114-115">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 115">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 116">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 116v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 117">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 118v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 120-126">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 126v-128v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 128v-131">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 131v-135">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 135-139v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 140-141v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 142-143">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 143v-146v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 146v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 148">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 150v-153">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 152-153 ">
+                     <p></p>
+                  </msItem>
+                  <msItem n="ff. 153v-156v">
+                     <p></p>
+                  </msItem>
+                  <msItem n="f. 157">
+                     <p></p>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>

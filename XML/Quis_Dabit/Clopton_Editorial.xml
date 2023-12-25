@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_ms.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title>Editorial Apparatus</title>
+                <author> 
+                    <persName xml:id="medavis"> 
+                        <surname>Davis</surname> 
+                        <forename sort="1">Matthew</forename> 
+                        <forename sort="2">Evan</forename> 
+                    </persName> 
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="unknown">
+                    <p>No part of this publication may be reproduced, stored in a retrieval system,
+                        or transmitted in any form or by any means, electronic, mechanical, or
+                        otherwise, without the written permission of the publisher.</p>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Clopton_apparatus.html" n="Clopton">
+                <bibl>Editorial apparatus describing the transcription methodology for the Clopton Chantry Chapel.</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="2014-06-28" who="#medavis" status="draft">Added xml:id block to sourceDesc.</change>
+                <change when="2014-06-27" who="#medavis" status="draft">Modified editorial to remove references to supplied text.</change>
+                <change when="2014-09-22" who="#medavis" status="draft">Modified xml:id block to sourceDesc in order to connect apparati to specific texts</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body xml:id="include">
+            <p>These notes are loosely based on the system described by Michelle P. Brown in her
+                <emph rend="italic">Guide to Western Historical Scripts from Antiquity to 1600</emph> (Toronto,
+                1993), but modified for the purposes of presentation of a painted inscription on the web. This is especially
+                evident in the case of damage. Since the text
+                is paint on wooden panels, rather than ink on a parchment or paper support, it makes
+                it more likely that parts of letters can be lost through flaking, but the letter
+                itself is still legible. Indicating damage is this way differs from the standard
+                practice in Brown. For this reason, the editor has provided the following guide to
+                his practice:</p>
+            <div xml:id="EditNotes">
+                <list type="bulleted">
+                    <item>Expanded abbreviations in the text are indicated thusly:
+                        ex<ex>am</ex>ple.</item>
+                    <item>Damaged material is indicated thusly: <damage>example</damage>.</item>
+                    <!--<item>Supplied material is indicated via the use of brackets surrounding the
+                        supplied item. Where there are multiple types of supplied material, the
+                        following is used: <list type="bulleted">
+                        <item>Material where the text is damaged, but visible enough that the text
+                            can be understood with the aid of other witnesses: <supplied
+                            reason="illegible">example</supplied>.</item>
+                        <item>Material where the text is completely missing and must be supplied
+                            entirely from other witnesses: <supplied reason="damage"
+                            >example</supplied>.</item>
+                        </list> In both cases, the source of the supplied material is given in the
+                        attributes of the underlying TEI-encoding for the text. It should be
+                        understood that where the item can be understood via the aid of other
+                        witnesses, but the text appears to differ in form from those other versions
+                        the provided transcription will be modified accordingly.</item>-->
+                    <item>A gap in the text through damage is indicated thusly:<gap
+                            quantity="7" unit="chars" reason="illegible"/>, where the number of dots indicate the likely number of missing letters based on the other witnesses.</item>
+                    <item>Specific issues regarding the text will be indicated via a
+                        footnote either immediately after the item referenced or at the end of the line. They have been color-coded to indicate the type of note they are: <list type="bulleted">
+                            <item>Explanatory notes provide the reasoning for the editorial choices made, with reference to the image provided.  They are indicated thusly:<note xml:id="explanatory"/>.</item>
+                            <item>Informational notes provide non-editorial contextual information such as particular scribal renderings or relationships between the witnesses.  They are indicated thusly:<note xml:id="informational"/>.</item>
+                            <item>Notes unrelated either to the specifics of the text or containing both explanatory and informational elements it is indicated thusly:<note xml:id="both"/>.</item>
+                        </list>
+                    </item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

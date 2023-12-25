@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../Desktop/minorworksoflydgate.net/XML/tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph rend="italic">The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">Huntington Hm140 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="free" xml:id="huntington">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref>
+                        </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="Huntington_Hm_140">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="Hm140">
+                    <msIdentifier> 
+                        <country>United States</country>
+                        <region/>
+                        <settlement>San Marino</settlement>
+                        <institution>Huntington Library</institution>
+                        <idno>Hm140</idno>
+                    </msIdentifier>
+                    <msContents> </msContents>
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support> </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout> </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote> </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history> </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change/>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="g.11" n="gathering"> <!--need to confirm construction of item.  Guessing it's gathered in eights -->
+            <surfaceGrp xml:id="f.91" n="folio">
+                <surface n="recto">
+                    <label>Folio 91 Recto</label>
+                    <graphic url="Hm140_91r.jpg"/>
+                    <zone n="EETS.T.I">
+                        <line n="l.1"><hi rend="capital_4">T</hi>estamentu<ex>m</ex></line>
+                    </zone>
+                    <zone n="EETS.T.1">
+                        <line n="l.1"><hi rend="capital_2">O</hi><note place="bottom"
+                                anchored="true" n="explanatory">This initial is in black, but the
+                                illuminator has used either a darker ink or a different formulation.
+                                The guide letter can be seen in the center of the "O."</note> howe
+                            holsom and glad is the memory</line>
+                        <line n="l.2">Of crist Ih<ex>es</ex>u surmountyng a&#322;&#322;
+                            swentes</line>
+                        <line n="l.3">Name of conquest of triu<ex>m</ex>phe and victory</line>
+                        <line n="l.4">Thaussaut of Sathan to venquyse and oprese</line>
+                        <line n="l.5">To which name seint paule berith witnesse</line>
+                        <line n="l.6">Of heven<ex>e</ex> and erthe and infernall pouste</line>
+                        <line n="l.7">All creatures of right and due humblesse</line>
+                        <line n="l.8">And hole hert bowe shall their<ex>e</ex> kne</line>
+                    </zone>
+                    <zone n="EETS.T.2">
+                        <line n="l.1">No sange so swete to the audiens</line>
+                        <line n="l.2">As is Ih<ex>es</ex>u so fu&#322;&#322; of plesaunce</line>
+                        <line n="l.3">Ageyne a&#322;&#322; enmyes sheld pavne and defende</line>
+                        <line n="l.4">To hevy herte chief comforte and substaunce</line>
+                        <line n="l.5">Of gostely gladnesse moost souerayn<ex>e</ex>
+                            suffisaunce</line>
+                        <line n="l.6">Chief directory to heven<ex>e</ex> werd the Cite</line>
+                        <line n="l.7">Gladdist resorte of sp<ex>irit</ex>ua&#322;&#322;
+                            remembraunce</line>
+                        <line n="l.8">To whom a&#322;&#322; creatures bowe sha&#322;&#322;
+                                their<ex>e</ex> kne</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 91 Verso</label>
+                    <graphic url="Hm140_91v.jpg"/>
+                    <zone n="EETS.T.3">
+                        <line n="l.1">To all folk<ex>is</ex> that stondis in repentaunce</line>
+                        <line n="l.2">With hert contryte made their confessiou<ex>n</ex></line>
+                        <line n="l.3">Of will and thought accomplisshid þe penaunce</line>
+                        <line n="l.4">And there doon<ex>e</ex> satisfacciou<ex>n</ex></line>
+                        <line n="l.5">That clayme by mean<ex>e</ex> of crystis
+                            passiou<ex>n</ex></line>
+                        <line n="l.6">markid w<ex>ith</ex> tave for more surte</line>
+                        <line n="l.7">To theym Ih<ex>es</ex>u sha&#322;&#322; graunte fu&#322;&#322;
+                                p<ex>ar</ex>don</line>
+                        <line n="l.8">To aske hym mercy whan they knelle on her kne.</line>
+                    </zone>
+                    <zone n="EETS.T.4">
+                        <line n="l.1">In this name most sou<ex>er</ex>nyne of vertue</line>
+                        <line n="l.2">Stondeth hole our<ex>e</ex> hope and all o<ex>ur</ex>
+                            assureance</line>
+                        <line n="l.3">ffor when that eu<ex>er</ex> named is Ih<ex>es</ex>u</line>
+                        <line n="l.4">Ageyne goostly trouble men<ex>n</ex> bere allegeaunce</line>
+                        <line n="l.5">Who trustith jh<ex>es</ex>u may fele no grevaunce</line>
+                        <line n="l.6">Which from a&#322;&#322; thraldom brought vs to liberte</line>
+                        <line n="l.7">Oute of all servage he made oon acquytaunce</line>
+                        <line n="l.8">To all that knele to Ih<ex>es</ex>u on ther kne</line>
+                    </zone>
+                    <zone n="EETS.T.5">
+                        <line n="l.1">In amerous hart<ex>is</ex> brennyng of kyndenesse</line>
+                        <line n="l.2">This name of Ih<ex>es</ex>u moost p<ex>ro</ex>fundly doth
+                            myne</line>
+                        <line n="l.3">Martir Ignacius can bere þ<ex>er</ex>of witnesse</line>
+                        <line n="l.4">A myd whos hert by grace which is diviene</line>
+                        <line n="l.5">With auriet letters as golde that did schyne</line>
+                        <line n="l.6">His hert was grave men may this legand se</line>
+                        <line n="l.7">To teche all christen ther<ex>e</ex> hed<ex>is</ex> to
+                            enclyne</line>
+                        <line n="l.8">To blessed Ih<ex>es</ex>u and bow adown her<ex>e</ex>
+                            kne</line>
+                    </zone>
+                    <zone n="EETS.T.7">
+                        <line n="l.1">By bolde Ih<ex>es</ex>u made ower redempciou<ex>n</ex><note
+                                place="bottom" anchored="true" n="informational">This stanza appears
+                                as number six here, but is number seven in the order provided by
+                                MacCracken in EETS 107.</note></line>
+                        <line n="l.2">With water of Baptym from fylth wessh vs clene</line>
+                        <line n="l.3">And from his hert two licours ther ran downe</line>
+                        <line n="l.4">On calu<ex>er</ex>y, the truthe was wele sene</line>
+                        <line n="l.5">Whan longyns with a spere can</line>
+                        <line n="l.6">percyed his hert a pon the rode tree</line>
+                        <line n="l.7">O man kynde thynke what this doth mene</line>
+                        <line n="l.8">And vnto hym bowe a downe thy knee</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.92" n="folio">
+                <surface n="recto">
+                    <label>Folio 92 Recto</label>
+                    <graphic url="Hm140_92r.jpg"/>
+                    <zone n="EETS.T.6">
+                        <line n="l.1">This is the name that chasith a way the clipse<note
+                                place="bottom" anchored="true" n="informational">This stanza appears
+                                as number seen here, but is number six in the order provided by
+                                MacCracken in EETS 107.</note></line>
+                        <line n="l.2">Of foreyn dyvknes as clerkys det<ex>er</ex>mayne</line>
+                        <line n="l.3">Oy Jh<ex>es</ex>u remembred in tha pocalippas</line>
+                        <line n="l.4">Howe liche a lambe his hed he did enclyne</line>
+                        <line n="l.5">Whose blode downe ran as right as any lyne</line>
+                        <line n="l.6">To wassh the ordures of oure iniquite</line>
+                        <line n="l.7">Medlyd with water clere crystallins</line>
+                        <line n="l.8">Which from his hert downe ran by his knee</line>
+                    </zone>
+                    <zone n="EETS.T.8">
+                        <line n="l.1">Ther is no speech nor langage can rememb<ex>er</ex></line>
+                        <line n="l.2">Lett<ex>er</ex> sillabe nor word that may expresse</line>
+                        <line n="l.3">Thrugh in to tungis were turnyd eu<ex>er</ex>y membre</line>
+                        <line n="l.4">Of man to tell the xcellent noblese</line>
+                        <line n="l.5">Of blessid jhesu which of his grete mekenesse</line>
+                        <line n="l.6">Lyst suffer dethe to make his s<ex>er</ex>v<ex>a</ex>nt
+                            free</line>
+                        <line n="l.7">Now m<ex>er</ex>cyfull Ih<ex>es</ex>u for thyn high
+                            godenesse</line>
+                        <line n="l.8">Haue m<ex>er</ex>cy on all that bowe to the ther<ex>e</ex>
+                            knee</line>
+                    </zone>
+                    <zone n="EETS.T.9">
+                        <line n="l.1">The prince was slayne the s<ex>er</ex>v<ex>a</ex>nt went at
+                            large</line>
+                        <line n="l.2">And to delyv<ex>er</ex> his subget from
+                            prisou<ex>n</ex></line>
+                        <line n="l.3">The lord toke on hym for to bere the charge</line>
+                        <line n="l.4">To quyte man kynde by obligaciou<ex>n</ex></line>
+                        <line n="l.5">Sealled with v woundes to pay our<ex>e</ex> raunsomme</line>
+                        <line n="l.6">Man to restore to paradise his Cite</line>
+                        <line n="l.7">Is manne not bounde I aske the question</line>
+                        <line n="l.8">To blessid Ih<ex>es</ex>u for to bowe his knee</line>
+                    </zone>
+                    <zone n="EETS.T.10" xml:id="a">
+                        <line n="l.1">Syx hundreth tymes with sexty tolde in number</line>
+                        <line n="l.2">I powles pystels Ih<ex>es</ex>u men may rede</line>
+                        <line n="l.3">Multitude of fendes to enco<ex>u</ex>mber</line>
+                        <line n="l.4">To pay our<ex>e</ex> raunsome his blode he dud shed</line>
+                        <line n="l.5">Not a scmale partie bot he did blede</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 92 Verso</label>
+                    <graphic url="Hm140_92v.jpg"/>
+                    <zone n="EETS.T.10" xml:id="b">
+                        <line n="l.6">ffor adam his appy&#322;&#322; plukkyd from the tree</line>
+                        <line n="l.7">Ih<ex>es</ex>u died for shame man take hede</line>
+                        <line n="l.8">Gyue thanke to Ih<ex>es</ex>u and bowe to hym thy knee</line>
+                    </zone>
+                    <zone n="EETS.T.11">
+                        <line n="l.1">A&#322;&#322; these thynges considered that I tolde</line>
+                        <line n="l.2">Man where eu<ex>er</ex> thowe holdist thy passage</line>
+                        <line n="l.3">Toward Ih<ex>es</ex>u a&#322;&#322; way that thow be
+                            holde</line>
+                        <line n="l.4">With exe fyx looke on his visage</line>
+                        <line n="l.5">crowned w<ex>ith</ex> thorn for owr grete owtrage</line>
+                        <line n="l.6">haue þis in mynde and lern þing of me</line>
+                        <line n="l.7">That day noon enmys shall doon vs no Armage </line>
+                        <line n="l.8">Whan we to Jhesu devoutly bowe our<ex>e</ex> kne</line>
+                    </zone>
+                    <zone n="EETS.T.12">
+                        <line n="l.1">Within my closet and in my lita&#322;&#322; cowch</line>
+                        <line n="l.2">O blessid Ih<ex>es</ex>u and by my beddis side</line>
+                        <line n="l.3">That noon enemy nor fende sha&#322;&#322; me towche</line>
+                        <line n="l.4">The name of Ih<ex>es</ex>u w<ex>ith</ex> me sha&#322;&#322;
+                                eu<ex>er</ex> abide</line>
+                        <line n="l.5">My loode sterre Ir my sou<ex>er</ex>and guyde</line>
+                        <line n="l.6">In this world here both to londe and see</line>
+                        <line n="l.7">O Ih<ex>es</ex>u Ih<ex>es</ex>u for all thy folk
+                            p<ex>ro</ex>vide</line>
+                        <line n="l.8">Which to thy name devoutly bowe þer<ex>e</ex> kne</line>
+                    </zone>
+                    <zone n="EETS.T.13">
+                        <line n="l.1">With Maria callyd Magdaleyn</line>
+                        <line n="l.2">Erly ich morowe while þ<ex>at</ex> my lif may dure</line>
+                        <line n="l.3">ffrom slouth and slombre my self I sha&#322;&#322;
+                            refreyn</line>
+                        <line n="l.4">To seke jh<ex>es</ex>u at his sepulture</line>
+                        <line n="l.5">Whom for to fynde if þ<ex>at</ex> I may recure</line>
+                        <line n="l.6">To have possessiou<ex>n</ex> of hym at lib<ex>er</ex>te</line>
+                        <line n="l.7">There where myeth no richer creature</line>
+                        <line n="l.8">To whom a&#322;&#322; creatures shall bowe ther<ex>e</ex>
+                            knee</line>
+                    </zone>
+                    <zone n="EETS.T.14">
+                        <line n="l.1">In m<ex>er</ex>cyfull Ih<ex>es</ex>u to put a very
+                            preef</line>
+                        <line n="l.2">Of his m<ex>er</ex>cy þ<ex>at</ex> no man dispaire</line>
+                        <line n="l.3">Vpon þe cros gave graunte vnto þe thefe</line>
+                        <line n="l.4">To paradise w<ex>ith</ex> hym for to repaire</line>
+                        <line n="l.5">Toke oute of he&#322;&#322; soules many a paire</line>
+                        <line n="l.6">Maugre Cerberus and his cruelte</line>
+                        <line n="l.7">O Ih<ex>es</ex>u gracious benigne and debonaire</line>
+                        <line n="l.8">Have m<ex>er</ex>cy on all þ<ex>at</ex> bow to þe
+                                þer<ex>e</ex> knee</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

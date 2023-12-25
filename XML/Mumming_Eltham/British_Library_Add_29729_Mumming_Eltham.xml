@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Mumming_Eltham">
+                <title type="full">
+                    <title type="main">
+                        <emph>A Mumming at Eltham</emph>
+                    </title>
+                    <title type="sub">British Library Additional 29729 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <xi:include href="../Witness_Descriptions/British_Library_Additional_29729.xml" xpointer="publication" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/British_Library_Additional_29729.xml" xpointer="British_Library_Additional_29729" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="../Witness_Descriptions/Minor_Poems_Vol_II.xml" xpointer="MacCracken" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20220203" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.x" n="gathering">
+            <surfaceGrp xml:id="f.135" n="folio">
+                <surface n="verso">
+                    <label>Folio 135 Verso</label>
+                    <graphic url="Add_29729_f135v.jpg"/>
+                    <zone n="EETS.ME.I">
+                        <line n="l.1">Loo here begenneth abalade made by daun Iohn<ex>n</ex></line>
+                        <line n="l.2">Lidgate at elltham in cristmasse ffor amomyng</line>
+                        <line n="l.3">to fore the kynge and the Quene<note place="bottom" anchored="true" n="informational">The "Q" is struck through, but it appears to be an otiose mark rather than an actual deletion. There is also a diagonal mark after the word "Quene" here, so it could be that this was meant to be bracketing without the underlined word that appears in other instances.</note></line>
+                    </zone>
+                    <zone n="EETS.ME.1">
+                        <zone n="text">
+                            <line n="l.1"><hi rend="underline">Bachus</hi> which is god of the glade
+                                vyne</line>
+                            <line n="l.2"><hi rend="underline">Iuno</hi> and <hi rend="underline"
+                                    >Ceres</hi><note place="bottom" anchored="true" n="informational">bracketed on the left.</note> accorded all thos thre</line>
+                            <line n="l.3">through ther pouer / which þ<ex>at</ex> is devyne</line>
+                            <line n="l.4">send now ther gyftes vnto yo<ex>ur</ex> magestye</line>
+                            <line n="l.5">wyne whete and oyle by
+                                marchaund<ex>es</ex>
+                                    þ<ex>at</ex> here be</line>
+                            <line n="l.6">whych rep<ex>re</ex>sent vnto your hyghe nobellnes</line>
+                            <line n="l.7">pees with your leges plente and gladnes</line></zone>
+                    </zone>
+                    <zone n="EETS.ME.2">
+                        <zone n="text"><line n="l.1">ffor thes gyfftes / pleynly to
+                                descryve<note place="bottom" anchored="true" n="informational">While this looks like it should be an "st" ligature the glyph for "c" often has a crossbar that makes it appear to be "t." When it's not part of a ligature the "t" hooks more sharply to the right than "c." </note></line>
+                            <line n="l.2">whyche in them self designe all souffisaunce</line>
+                            <line n="l.3">peas is betokened by the grene olyve</line>
+                            <line n="l.4">in
+                                whett<!--this looks more like two 't's than 'te'. Compare with above-->
+                                and oylle is foulsom haboundaunce</line>
+                            <line n="l.5">which to yo<ex>ur</ex> hyghnes for to do plesaunce</line><!-- mention it's one minim short -->
+                            <line n="l.6">they represente now to your hye nobellnesse</line>
+                            <line n="l.7">pees with you<ex>r</ex> leges plente and<note
+                                    place="bottom" anchored="true" n="informational">The EETS
+                                    edition has "with" here, which is what is in the other witness,
+                                    Trinity R.3.20</note> gladnes</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.3">
+                        <zone n="text"><line n="l.1">Isacke the patryarke ful ould</line>
+                            <line n="l.2"><del>G</del> of his blessynge
+                                witħ<!--bar over 'th.' This also appears at EETS.ME.4--> his gyfftes
+                                thre</line>
+                            <line n="l.3">vnto Iacob in scripture it is tolde</line>
+                            <line n="l.4">genesis ye maye it rede <ex>and</ex> see</line>
+                            <line n="l.5">and semblabuly the holy trynite</line>
+                            <line n="l.6">your state / blessynge sent to your hye noblenesse</line>
+                            <line n="l.7">peas with your leges plente w<ex>ith</ex> gladnes</line>
+                        </zone></zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.136" n="folio">
+                <surface n="recto">
+                    <label>Folio 136 Recto</label>
+                    <graphic url="Add_29729_f136r.jpg"/>
+                    <zone n="EETS.ME.4">
+                        <zone n="text"><line n="l.1">In the olyue he sendeth to you peace</line>
+                            <line n="l.2">the lord or lordes that lorshipe euery sterne</line>
+                            <line n="l.3">and in yo<ex>ur</ex> rebelles which be now reklesse</line>
+                            <line n="l.4">he stinte shall of <hi rend="underline">mars</hi> the
+                                cruell werre</line>
+                            <line n="l.5">and than your renoun shall shin in land<ex>es</ex>
+                                fare</line>
+                            <line n="l.6">of your two realmes grauntynge to your noblenesse</line>
+                            <line n="l.7">peace witħ<!--bar over 'th', similarly to EETS.ME.3 l.2-->
+                                your leges plente with<note place="bottom" anchored="true"
+                                    n="informational">The EETS edition has "and" here, which is
+                                    taken from Trinity R.3.20 or their possible shared
+                                    exemplar.</note> gladnesse</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.5">
+                        <zone n="text"><line n="l.1">ffor marce that is most furyous and wood</line>
+                            <line n="l.2">causer of stryffe and dissobesaunce</line>
+                            <line n="l.3">shall cesse his / malyse and god that ys so good</line>
+                            <line n="l.4">of vnytie shall send all soufysaunce</line>
+                            <line n="l.5">he Ioyne þe hart<ex>es</ex> of engelond and of
+                                fraunce</line>
+                            <line n="l.6">bassent of beothe / sent to yo<ex>ur</ex> hye
+                                noblenes</line>
+                            <line n="l.7">pees
+                                witħ<!--noted barred h here. Check with other items you've made notes for -->
+                                your leges plente with gladnesse</line></zone>
+                    </zone>
+                    <zone n="EETS.ME.6">
+                        <zone n="text"><line n="l.1">Iuno that is goddesse of all tresore</line>
+                            <line n="l.2">sende eke hys gyftes to your estate royall</line>
+                            <line n="l.3">laude of knyghthod / victory and honour</line>
+                            <line n="l.4">ageynst mescruant<ex>es</ex><note place="bottom"
+                                    anchored="true" n="informational">Trinity R.3.20 has
+                                    "mescreauntes." the "sc" ligature here resembles
+                                    strongly the "ft" in "gyftes" in line two as well as the "st" in
+                                    "sterne" in line two of verse
+                                four. When compared with the "st" ligature in the second full stanza on the previous page it seems clear that "sc" and "st" must be determined from context rather than through orthographic features.</note><!-- check this with the earlier 'st' ligature you made a comment for  Yes it is st - compare construction of c where it is not part of sc combination.-->
+                                in acts marcyall</line>
+                            <line n="l.5">ffor crystes fayth / yea enhaunce shall</line>
+                            <line n="l.6">repayre agayne and reygne in your nobellness</line>
+                            <line n="l.7">peas with your leges plente and gladnes</line>
+                        </zone></zone>
+                    <zone n="EETS.ME.7">
+                        <zone n="text"><line n="l.1">And all this whyle <hi rend="underline"
+                                    >ceres</hi> goddesse of
+                                    corne<note place="bottom" anchored="true" n="informational">The
+                                    scribe seems to have had some difficulty with this verse and has
+                                    resorted to lettering each of the lines to indicate a reading
+                                    order. In this case, the letter "a" is to the left of "And" in
+                                    this line.</note></line>
+                            <line n="l.2">shall wher you ride / mynister you vitayle<note
+                                    place="bottom" anchored="true" n="informational">A "b" is to the
+                                    left of "shall" here.</note></line>
+                            <line n="l.3"><hi rend="underline">prouydence</hi> his syster / go be forne<note place="bottom"
+                                    anchored="true" n="informational">A "c" is to the left of
+                                    "prouydence" here.</note></line><!--compare with 'c' in 'st' ligatures you've noted in comments above-->
+                            <line n="l.s"><del>and of accorde / presente to yo<ex>ur</ex>
+                                    noblenesse</del><note place="bottom" anchored="true"
+                                    n="informational">Here the scribe has written what is line six
+                                    in the EETS edition, with an additional mistake in writing "all"
+                                    for "and" and correcting it. I believe this error and the
+                                    necessity of correcting it in the right-hand margin after the
+                                    verse was completed is the event that necessitated the lettering
+                                    scheme to the left of the lines in this verse, but interestingly
+                                    there is a second attempt at a series of corrective notes,
+                                    struck through, to the left of the originals. These consist of a
+                                    "b" to the left of this line and an "a or "c" in the two
+                                    below.</note></line>
+                            <line n="l.4">and provyd so / that no thynge
+                                    ne fayll<note place="bottom" anchored="true" n="informational">A
+                                    "d" is to the left of "and" here. To the left of that "d" is an
+                                    "a," struck through with a line continuing from
+                                above.</note></line>
+                            <line n="l.5">Bachus also that may so mutch avaylle<note place="bottom"
+                                    anchored="true" n="informational">An "e" is to the left of
+                                    "Bacus" here. To the left of that "e" is an "a," struck through
+                                    with a line continuing from above.</note></line>
+                            <line n="l.6"><add>All of accord present to your nobleness</add><note
+                                    place="bottom" anchored="true" n="informational">The scribe has
+                                    inserted the line struck through above in the margin to the
+                                    right of the final verse, then drawn a line to an "f" to the
+                                    left of the verses to indicate it should be considered as
+                                    such</note></line>
+                            <line n="l.7">pees w<ex>ith</ex> yo<ex>ur</ex> leges / plente
+                                    w<ex>ith</ex> gladnesse<note place="bottom" anchored="true"
+                                    n="informational">A "g" is to the left of "pees"
+                                here.</note></line>
+                        </zone></zone>
+                    <zone n="EETS.ME.8"><zone n="text">
+                            <line n="l.1">thes god this goddesse / <del>in goodly wyse</del> of
+                                entente full good<note place="bottom" anchored="true"
+                                    n="informational">Here the scribe has corrected an error where
+                                    the beginning of the second line of the verse was included as
+                                    the end of the first line. There is a similar error in Trinity
+                                    R.3.20, suggesting either that this source is taken from R.3.20
+                                    (where the error is corrected by means of letter notes above the
+                                    line and so might be missed in copying) or that both manuscripts
+                                    are taken from the same exemplar.</note></line>
+                            <line n="l.2">in goodly wise allso ther gyftes dress <del>of entent full
+                                    good</del><note place="bottom" anchored="true" n="informational"
+                                    >Here the scribe has corrected an error where the second half of
+                                    the line has been rendered as the first, with the second portion
+                                    of the first line rendered as the ending. As stated in the note
+                                    above this is similar to an error in Trinity R.3.20, but here
+                                    the scribe has inserted the correction to the left of the line.
+                                    This correction suggests that the two manuscripts are taken from
+                                    a shared exemplar as unthinking copying of either would not
+                                    result in the error seen in the other manuscript, yet the same
+                                    error at the same two lines appears in both.</note></line>
+                            <line n="l.3"><del>in goodly wi</del><note place="bottom" anchored="true" n="informational">The scribe wrote "in goodly wi" here, then struck it through and wrote it again above to better indicate which line it was to be considered the beginning of.</note> to you pryncesse / borne of saint lowys blood</line>
+                            <line n="l.4">ffrom yow<note place="bottom" anchored="true"
+                                    n="explanatory">While the 'u' glyph looks to modern eyes much
+                                    like a 'w', the addition of a curved line from the bottom of the
+                                    rightmost piece of the glyph here is not seen there. Similarly,
+                                    the final glyph is markedly different from 'you' in the line
+                                    above and in line six below. All of this indicates that this is
+                                    'yow.'</note> a voydinge / all sorow / all heuyness</line>
+                            <line n="l.5">ffrom yeare to yeare in very sikrenesse</line>
+                            <line n="l.6">to you p<ex>re</ex>sentynge yf you list aduerte</line>
+                            <line n="l.7">Ay by encresse Ioye and gladneff<note place="bottom"
+                                    anchored="true" n="explanatory">The two "s"'s at the end of
+                                    "gladness" here are struck through, making them appear as a
+                                    double "f" in what is likely a scribal error. Elsewhere, such as
+                                    in 'nobellness' in line six of verse six above, there is no
+                                    crossbar so I have rendered it as 'gladneff.'</note> of
+                                hert</line>
+                        </zone>
+                        <zone n="notes">
+                            <line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3">.i. ad regina<ex>m</ex><note place="bottom"
+                                    anchored="true" n="explanatory">The suspension mark is
+                                    particularly long here, moving from the completion of the bow of
+                                    the "a" and serving as a tittle over the i as well</note>
+                                    kat<ex>er</ex>ina<note place="bottom" anchored="true"
+                                    n="explanatory">The note is cut off here.</note></line>
+                        </zone></zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 136 Verso</label>
+                    <graphic url="Add_29729_f136v.jpg"/>
+                    <zone n="EETS.ME.9">
+                        <zone n="text"><line n="l.1">they well gyue gyfftes / with you and
+                                    yours dwell</line>
+                            <line n="l.2"><hi rend="underline">pees vnyte</hi> / <hi
+                                    rend="underline">plente</hi> and <hi rend="underline"
+                                    >habundaunce</hi><note place="bottom" anchored="true"
+                                    n="informational">Both here and the word 'vnyte' earlier in the
+                                    line are boxed on the right.</note></line>
+                            <line n="l.3">so that fortune maye them not repell</line>
+                            <line n="l.4">not them renewe / thorow ther variaunce</line>
+                            <line n="l.5">grauntynge also / p<ex>er</ex>seueraunce constaunce</line>
+                            <line n="l.6">to you presentynge / yff yow list aduerte</line>
+                            <line n="l.7">aye by encresse Ioye and gladnesse of hert</line>
+                        </zone>
+                    </zone>
+                    <zone n="EETS.ME.10">
+                        <zone n="text"><line n="l.1">To your hyghnes / they giue the freshe
+                                olyue</line>
+                            <line n="l.2">by pees toxyle / awaye all heuynesse</line>
+                            <line n="l.3">prosperytie during all your lyue</line>
+                            <line n="l.4">and <hi rend="underline">Iuno</hi> sent you most Excellent
+                                richesse</line>
+                            <line n="l.5">Loue of all people grounded in stabellnes</line>
+                            <line n="l.6">with <del>that</del> this reffete / yff you list
+                                aduert</line>
+                            <line n="l.7">Ay by Encresse Ioye and gladnese of hart</line></zone>
+                    </zone>
+                    <zone n="EETS.ME.11">
+                        <zone n="text"><line n="l.1"><hi rend="underline"
+                                >Ceres</hi><!--compare with 'ceres' where we think it might be 'keres'-->
+                                also sent / foulsumnes</line>
+                            <line n="l.2">ffrom yere to yeare in yo<ex>ur</ex> court tabyde</line>
+                            <line n="l.3">aduersyte shall ther / noon manase</line>
+                            <line n="l.4">but care and sorowe / for eu<ex>er</ex> sett asyd</line>
+                            <line n="l.5"><hi rend="underline">happ</hi>
+                                <hi rend="underline">helth</hi> and <hi rend="underline">grace</hi>
+                                chosen to be your gyde</line>
+                            <line n="l.6">and with all this present giue aduerte</line>
+                            <line n="l.7">Ay by
+                                Encresse<!--note odd initial construction of 'encresse' --> Ioye
+                                gladness of harte</line>
+                        </zone>
+                        <zone n="notes"><line n="l.1"/>
+                            <line n="l.2"/>
+                            <line n="l.3"/>
+                            <line n="l.4"/>
+                            <line n="l.5"/>
+                            <line n="l.6"/>
+                            <line n="l.7"/><del><hi rend="underline">lenvoye</hi></del>
+                        </zone>
+                        <zone n="EETS.ME.N.II">
+                            <line n="l.1">Lenyoye</line>
+                        </zone>
+                        <zone n="EETS.ME.12">
+                            <zone n="text"><line n="l.1">prynce excellent of yo<ex>ur</ex>
+                                    benignyte</line>
+                                <line n="l.2">taketh thees gyfftes / sent to yo<ex>ur</ex> hygh
+                                    noblenesse</line>
+                                <line n="l.3">Ius<note place="bottom" anchored="true" n="informational">This appears to be a scribal error, perhaps from a poorly-formed exemplar.  The E.E.T.S. edition has "Þis," suggesting that the scribe misread the exemplar.</note> hygh
+                                    feest from thes yche three</line>
+                                <line n="l.4">pees with your leges / plente with gladnesse</line>
+                                <line n="l.5">at <hi rend="underline">bacus</hi>
+                                    <hi rend="underline">Iuno</hi> and <hi rend="underline"
+                                        >ceres</hi> bere wytnesse</line>
+                                <line n="l.6">to you pryncesse also yff ye aduerte</line>
+                                <line n="l.7">Ay by encresse Ioye gladnesse of harte <hi
+                                        rend="underline">fynis</hi><note place="bottom" anchored="true" n="informational">"fynis" is written here in a different color of ink, and is also bracketed on the right side.</note></line>
+                            </zone>
+                        </zone>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>

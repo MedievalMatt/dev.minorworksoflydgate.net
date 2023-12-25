@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../tei_lydgate.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="5.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="HeaderInfo">
+        <fileDesc>
+            <titleStmt xml:id="Testament">
+                <title type="full">
+                    <title type="main">
+                        <emph>The Testament of John Lydgate</emph>
+                    </title>
+                    <title type="sub">British Library Arundel 285 Verses</title>
+                </title>
+                <author>John Lydgate</author>
+                <editor>
+                    <persName xml:id="medavis">
+                        <surname>Davis</surname>
+                        <forename sort="1">Matthew</forename>
+                        <forename sort="2">Evan</forename>
+                    </persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <availability status="restricted" xml:id="Arundel_285">
+                    <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <p>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
+                            The transcription of this work is licensed under a <ref
+                                target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+                                Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                                License.</ref> The images are (c) British Library Board (British
+                            Library MS Arundel 285) and rights are reserved. </p>
+                    </licence>
+                </availability>
+                <date/>
+            </publicationStmt>
+            <sourceDesc xml:id="British_Library_Arundel_285">
+                <!-- use LIDO here to build out space? -->
+                <msDesc xml:id="British_Library_Arundel_285">
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <region>London</region>
+                        <settlement>London</settlement>
+                        <institution>British Library</institution>
+                        <idno>Arundel 285</idno>
+                    </msIdentifier>
+                    <msContents/>
+
+                    <physDesc>
+                        <!--this whole section needs to be better written.  The sections will be used to make up the appropriate bits of html -->
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material/>
+                                    <p/>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p n="stanza_layout"/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote scope="sole" script="secretary">
+
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote/>
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <p/>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+            <sourceDesc xml:id="MacCracken">
+                <bibl type="book">
+                    <author> John Lydgate </author>
+                    <editor>Henry Noble MacCracken</editor>
+                    <publisher>The Early English Text Society</publisher>
+                    <publisher>Oxford University Press</publisher>
+                    <pubPlace>London</pubPlace>
+                    <pubPlace>New York</pubPlace>
+                    <pubPlace>Toronto</pubPlace>
+                    <title type="full" level="m">
+                        <title type="main"> The Minor Poems of John Lydgate </title>
+                        <title type="sub"> Edited from all Available MSS., with an Attempt to
+                            Establish the Lydgate Canon </title>
+                    </title>
+                    <date when="1911">1911</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="enm">Middle English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="20201910" who="#medavis" status="initial">Initial encoding
+                    began.</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc xml:id="TextContent">
+        <surfaceGrp xml:id="g.X" n="gathering">
+            <surfaceGrp xml:id="f.170" n="folio">
+                <surface n="verso">
+                    <label>Folio 170 Verso</label>
+                    <zone n="EETS.T.101">
+                        <line n="l.1"><hi rend="capital_3_red">B</hi><hi rend="touched">E</hi>hald<note place="bottom" anchored="true" n="informational">The lower bow of the b is two lines high, while the upper limb is above the initial line.</note> man lift vp thy ene <ex>and</ex> see</ex></line>
+                        <line n="l.2"><hi rend="touched">Q</hi>uhat mortall pains I sufferit for thy trespace</line>
+                        <line n="l.3"><hi rend="touched">W</hi>ith pietuouß woce I cry and say to the</line>
+                        <line n="l.4"><hi rend="touched">B</hi>ehald my woundis behald my paile<note place="bottom" anchored="true" n="informational">the EETS edition has "blody" here</note>face</line>
+                        <line n="l.5"><hi rend="touched">B</hi>ehald the rebukkis þat dois me so manance</line>
+                        <line n="l.6"><hi rend="touched">B</hi>ehald my enemes þat dois me so dissagis<note place="bottom" anchored="true" n="informational">The EETS edition has "despice." Based on the letter form of "grace" in the line following line and "p" in "appaelde" in verse 108 (folio 172v), "paradice" in verse 117 (folio 174v) and "pilgramage" in verse 118 (folio 174v) it seems more likely that the letter form is "g" here.</note></line>
+                        <line n="l.7"><hi rend="touched">A</hi>nd how þat I ȝow to reformit to grace</line>
+                        <line n="l.8"><hi rend="touched">W</hi>es lik ane lamb affeort in Sacrafice</line>
+                    </zone>
+                    <zone n="EETS.T.102">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi><hi rend="touched">E</hi>hald þe Iowis<note place="bottom" anchored="true" n="informational">The EETS edition has "peynemes" here.</note> of quhom I wes tak</line>
+                        <line n="l.2"><hi rend="touched">B</hi>ehald þe cordis with quhilk I was bund</line>
+                        <line n-"l.3"><hi rend="touched">B</hi>ehald the harmes quhilk gart<!--could be p for initial glyph--> my hart quaik</line>
+                        <line n="l.4"><hi rend="touched">B</hi>ehald þe garding in quilk I was fund</line>
+                        <line n="l.5"><hi rend="touched">B</hi>ehalde hou Iudas<!-- could it be initial J?  curved initial letter. If yes, then I in line prior--> tuke xxx d<note place="bottom" anchored="true" n="informational">The EETS edition has "pens," which is what "d" abbreviates to here.</note> rounde</line>
+                        <line n="l.6"><hi rend="touched">B</hi>ehalde his tresoun behald his couatice</line>
+                        <line n="l.7"><hi rend="touched">B</hi>ehalde how I w<ex>ith</ex> mony a mortall wound</line>
+                        <line n="l.8"><hi rend="touched">W</hi>es Lik ane lambe offerit in sacrifice</line>
+                    </zone>
+                    <!--make a note that EETS.T.103 is missing?-->
+                    <zone n="EETS.T.104">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>Ehalde<note place="bottom" anchored="true" n="informational">While the capital letter here is two lines high the lower bow, rather than the upper, is in line with the initial line.</note> and se to Cayphas how I was p<ex>re</ex>sintit</line>
+                        <line n="l.2"><hi rend="touched">B</hi>ehalde how pylot left me no respyte</line>
+                        <line n="l.3"><hi rend="touched">B</hi>ehalde hou bischopis war to my deid assentit</line>
+                        <line n="l.4"><hi rend="touched">A</hi>nd hou þat herode had me at dispyte</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <!--f.171 is a leaf placed in the wrong location when the volume was rebound. A note at the top states "This leaf is misplaced - it should be transferred before the two preceding ones". The foliation has also been corrected-->
+            <surfaceGrp xml:id="f.172" n="folio">
+                <surface n="recto">
+                    <label>folio 172 Recto</label>
+                    <zone n="EETS.T.104">
+                        <line n="l.5"><hi rend="capital_2_touched">A</hi><note place="bottom" anchored="true" n="informational">Similarly to the beginning of this section on f.170 verso the initial letter is two lines, but carries over the top of the line rather than below.</note>Lik ane fule how I was cled in quhyte</line>
+                        <line n="l.6"><hi rend="touched">D</hi>rawn as ane felloun in maist dulf wyß</line>
+                        <line n="l.8"><hi rend="touched">W</hi>es lik ane Lambe offerit in sacrifice<note place="bottom" anchored="true" n="informational">Line seven of this verse is missing here.</note></line>
+                    </zone>
+                    <!--the info I put at the note above seems to be the standard throughout. They also left T.105 out-->
+                    <zone n="EETS.T.106">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehald and se þe haitfull wraichitneß</line>
+                        <line n="l.2"><hi rend="touched">A</hi>gane me put to my confucio<ex>u</ex>n</line>
+                        <line n="l.3"><hi rend="touched">M</hi>y ene blindit and hid w<ex>ith</ex> dirknes</line>
+                        <line n="l.4"><hi rend="touched">B</hi>eft and eke buft be fals Illucio<ex>u</ex>n</line>
+                        <line n="l.5"><hi rend="touched">S</hi>aluft in scorne be þair fals kneling do<ex>u</ex>n</line>
+                        <line n="l.6"><hi rend="touched">B</hi>ehald all þis and sit mortall gyß</line>
+                        <line n="l.7"><hi rend="touched">H</hi>ow I onlit for mannes redempcioun</line>
+                        <line n="l.8"><hi rend="touched">W</hi>es like ane Lambe offerit in sacrifice<note place="bottom" anchored="true" n="informational">There is a line underneath the last four glyphs of this line, but that line does not appear to be a suspension. This may be meant to indicate to the reader that the following versee is meant to be elsewhere, as the following verse is 105. There is no indication between verses 104 and 105 on this page noting the shift.</note></line>
+                    </zone>
+                    <zone n="EETS.T.105">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehalde þe ministeres q<ex>uhilk</ex> hadme i<ex>n</ex> kepyng</line>
+                        <line n="l.2"><hi rend="touched">B</hi>ehalde þe pyller and þe rapis strang</line>
+                        <line n="l.3"><hi rend="touched">Q</hi>uhaur I was bunde my sydis fast bleding</line>
+                        <line n="l.4"><hi rend="touched">M</hi>ost felly bet w<ex>ith</ex> þair scurges Lang</line>
+                        <line n="l.5"><hi rend="touched">B</hi>ehalde þe battell þat I did wnderfang</line>
+                        <line n="l.6"><hi rend="touched">T</hi>he wrang<note place="bottom" anchored="true" n="informational">The EETS edition has "bront" here.</note> abyding of<note place="bottom" anchored="true" n="informational">While the initial glyph is unclear at first "offerit" in the first verse on the verso side of this page suggests this initial glyph is meant as "o."</note> þe mortall emp<ex>ri</ex>ß</line>
+                        <line n="l.7"><hi rend="touched">T</hi>hrou þair accusing and þair scland<ex>ers</ex> wrang</line>
+                        <line n="l.8"><hi rend="touched">W</hi>as like ane lambe offerit in sacrifice</line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 172 Verso</label>
+                    <zone n="EETS.T.107">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehald þe witneß be quhome I was dispisit<note place="bottom" anchored="true" n="informational">The EETS edition has "deceyved" here.</note></line>
+                        <line n="l.2">Behald þe Iowes þ<ex>at</ex> gaif me Iugeme<ex>n</ex>t</line>
+                        <line n="l.3">Behald þe croce<note place="bottom" anchored="true" n="informational">The scribe's "c" and "e" are bloth split by a stroke, which makes this iappear to be "crocc" (or to our modern eyes, "trott") at first glance.  However, the terminal glyph has a light stroke at the top that, when compared with "be" and "quhome" in the first line, make is clear the terminal letter is "e."</note> þat was for me devysit</line>
+                        <line n="l.4">Behald my body w<ex>ith</ex>betting all to rent</line>
+                        <line n="l.5">Behalde þe pepill quhilk of fals inte<ex>n</ex>t</line>
+                        <line n="l.8">Was offerit into sacryfice<note place="bottom" anchored="true" n="informational">Lines six and seven of the verse in other witnesses have been omitted here. Additionally, the construction of the final line earlier in the section, "was like a lambe offered in sacrifce," is different here.</note></line>
+                    </zone>
+                    <zone n="EETS.T.108">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehald þe wema<ex>n</ex> þ<ex>at</ex> followit me on far</line>
+                        <line n="l.2"><hi rend="touched">T</hi>hat for me<note place="bottom" anchroed="true" n="informational">The EETS edition has "sore" here.</note> wepit quhe<ex>n</ex> I was þus assalde</line>
+                        <line n="l.3"><hi rend="touched">B</hi>ehald þe Iowes quilkes my Innomes wair</line>
+                        <line n="l.4"><hi rend="touched">H</hi>ang my body wp till ane croce fast naylde</line>
+                        <line n="l.5"><hi rend="touched">B</hi>ehald my turme<ex>n</ex>tis most scharplie apparelde</hi></line>
+                        <line n="l.6"><hi rend="touched">B</hi>etwyx two thevis put be þair Iustice</line>
+                        <line n="l.7"><hi rend="touched">B</hi>ehalde how mekelit my dedis eik awalde</line>
+                        <line n="l.8"><hi rend="touched">T</hi>hat was for man offerit in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.109">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehalde þe speir was scharplie grond <ex>and</ex> <unclear>quhet</unclear><note place="bottom" anchored="true" n="informational">The EETS edition has "whett" here.  It's obvious the scribe intended to include the word here based on the rest of the line, the rhyme scheme, and the inclusion of the tironian et before it but the actual form of the word here is unclear.</note></line>
+                        <line n="l.2"><hi rend="touched">M</hi>y hert woundit apo<ex>n</ex> þe ry<ex>ght</ex> syde</line>
+                        <line n="l.3"><hi rend="touched">B</hi>ehalde þe reid speir gall and asell set</line>
+                        <line n="l.4"><hi rend="touched">B</hi>ehald þe scurgis quhilk I did abyde</line>
+                        <line n="l.5"><hi rend="touched">A</hi>nd my fyve woundes quhilk was mad so wyde</line>
+                        <line n="l.6"><hi rend="touched">T</hi>hat no ma<ex>n</ex> list of reu<ex>th</ex> till aduertyß</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.173" n="folio">
+                <surface n="recto">
+                    <label>Folio 173 Recto</label>
+                    <zone n="EETS.T.109">
+                        <line n="l.7"><hi rend="capital_2_touched">A</hi>nd þis I was of mekenes againes pryde</line>
+                        <line n="l.8">Ffor ma<ex>n</ex>nes offence offerit in sacryfice</line>
+                    </zone>
+                    <zone n="EETS.T.110">
+                        <line n="l.1"><hi rend="capital_2_touched">S</hi>e my disciples hou þai haue me forsaik</line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd fro me fled almost eu<ex>er</ex>y one</line>
+                        <line n="l.3"><hi rend="touched">S</hi>e hou þai slept and list not w<ex>ith</ex> me waik</line>
+                        <line n="l.4"><hi rend="touched">F</hi>for mortall dreid þai left me all alone</line>
+                        <line n="l.5"><hi rend="touched">E</hi>xcept my moder <ex>and</ex> my cousing Ihone</line>
+                        <line n="l.6"><hi rend="touched">M</hi>y deid conpleit in most dulfull wyß</line>
+                        <line n="l.7"><hi rend="touched">S</hi>e fra my corps<note place="bottom anchored="true" n="informational">The EETS edition has "cross" here.</note> þai list neuer gone</line>
+                        <line n="l.8"><hi rend="touched">F</hi>for ma<ex>n</ex>nis offence quhe<ex>n</ex>I baid<!--check initial letter with v and b elsewhere--> assyß<note place="bottom" anchored="true" n="informational">The EETS edition has "did sacryfice" here.</note></line>
+                    </zone>
+                    <zone n="EETS.T.111">
+                        <line n="l.1"><hi rend="capital_2_touched">S</hi>e hou I was Iugit to þe deith</line>
+                        <line n="l.2"><hi rend="touched">S</hi>e barrabas gois to his liberte</line>
+                        <line n="l.3"><hi rend="touched">Se</hi> w<ex>ith</ex> a speir hou longious me slaith</line>
+                        <line n="l.4"><hi rend="touched">B</hi>ehalde tua cullores<note place="bottom" anchored="true" n="informational">The EETS edition has "lycours" here. </note> distelling don fra me</line>
+                        <line n="l.5"><hi rend="touched">S</hi>e blude and water be mercifull plente</line>
+                        <line n="l.6"><hi rend="touched">R</hi>an<note place="bottom" anchored="true" n="informational">The EETS edition has "Rayle" here.</note> be my sydes quhilkis war ane w<ex>ith</ex> to suffice</ith></line>
+                        <line n="l.7"><hi rend="touched">T</hi>o man quhen I apon þe rude tre</line>
+                        <line n="l.8"><hi rend="touched">W</hi>as like ane lambe offerit in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.112">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehald þe kny<ex>ghtis</ex> quhilk throu þair thrawert cha<ex>n</ex><gap>ce</gap><!--Missing two letters--><note place="bottom" anchored="true" n="informational">The final two letters of this line were lost when the manuscript was trimmed.</note></line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 173 Verso</label>
+                    <zone n="EETS.T.112">
+                        <line n="l.3"><hi rend="capital_2_touched">B</hi>ehald my mothir swonyng for grevance<note place="bottom" anchored="true" n="informational">The second line of verse 112, referring to how the soldiers diced for Jesus' robes, has been left out here due to scribal error.</note></line>
+                        <line n="l.4"><hi rend="touched">A</hi>ponn þe croce quhen scho sawe me dey</line>
+                        <line n="l.5"><hi rend="touched">B</hi>ehald þe sepultur in quhilk my banis lay<note place="bottom" anchored="true" n="informational">the final word of this line is set off from the rest of the words, most likely due to interference from the long descender in "dey" above.</note></hi></line>
+                        <line n="l.6"><hi rend="touched">K</hi>erpit w<ex>ith</ex> strang<note place="bottom" anchored="true" n="informational">The first two letters here are unclear, but likely are "st" as a ligiture based on the most common letter forms and what is present in the other witnesses.</note> wachis till I raiß</line>
+                        <line n="l.7"><hi rend="touched">O</hi>ff hell ȝettis se how I brak þe key</line>
+                        <line n="l.8"><hi rend="touched">A</hi>nd gaif my blud in Sacrafice<note place="bottom" anchored="true" n="informational">Unlike earlier in this witness the initial glyph of "sacrifice" here appearls to be the capitalized form based on the touched letters throughout.  It will be treated as such when it appears.</note></line>
+                    </zone>
+                    <zone n="EETS.T.113">
+                        <line n="l.1"><hi rend="capital_2_touched">A</hi>gane thair prid behald my meiknes</line>
+                        <line n="l.2"><hi rend="touched">A</hi>gains thair inwy behald my cherite</line>
+                        <line n="l.3"><hi rend="touched">A</hi>gains thair <del>th</del> lichory behald my chaist clennes</line>
+                        <line n="l.4"><hi rend="touched">A</hi>gane þair cowatice behald my powerte</line>
+                        <line n="l.5"><hi rend="touched">B</hi>etiux twa thevis nalit till a tre</line>
+                        <line n="l.6"><hi rend="touched">R</hi>aillit w<ex>ith</ex> Reid bluid þai list me so disgiß</line>
+                        <line n="l.7"><hi rend="touched">B</hi>ehald o man all this I did for the</line>
+                        <line n="l.8"><hi rend="touched">M</hi>eik like ane lambe efferit in Sacrafice</line>
+                    </zone>
+                    <zone n="EETS.T.114">
+                        <line n="l.1"><hi rend="capital_2_touched">B</hi>ehald my lufe and gif me þin agane</line>
+                        <line n="l.2"><hi rend="touched">B</hi>ehald I deit thy ransoun for to pay</line><!-- check "foo" and "far" throughout"-->
+                        <line n="l.3"><hi rend="touched">S</hi>e how my hart Is opp<ex>en</ex>int braid <ex>and</ex> plane</line>
+                        <line n="l.4"><hi rend="touched">T</hi>hy gaistlie enemies only till affray</line>
+                        <line n="l.5"><hi rend="touched">A</hi>ne harddar battall na ma<ex>n</ex> my<ex>ght</ex> assay</line>
+                        <line n="l.6"><hi rend="touched">O</hi>ff all trivmphis þe gretest hie empriß</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp xml:id="f.174" n="folio">
+                <surface n="recto">
+                    <label>Folio 174 Recto</label>
+                    <zone n="EETS.T.114">
+                        <line n="l.7"><hi rend="capital_2_touched">Q</hi>uhanfor O ma<ex>n</ex> no langar þe dismay</line>
+                        <line n="l.8">I gaiff my blud for<!--for or foo?--> the in Sacrafice</line>
+                    </zone>
+                    <zone n="EETS.T.115">
+                        <line n="l.1"><hi rend="capital_2_touched">T</hi>wrne hame agane þi synnis do forsake</line>
+                        <line n="l.2"><hi rend="touched">B</hi>ehald and se gif outht be levit behind</line>
+                        <line n="l.3"><hi rend="touched">H</hi>ow I to marcy art reddy the to tak</line>
+                        <line n="l.4"><hi rend="touched">G</hi>iff me thy hert and be no more vnkind</line>
+                        <line n="l.5"><add>þi lufe <ex>and</ex> myn togade<ex>r</ex> do þa<ex>m</ex> bind</add><note place="bottom" anchored="true" n="informational">The scribe skipped this line, and has corrected the mistake by placing it to the right of the following line.</note></line>
+                        <line n="l.6"><hi rend="touched">A</hi>nd Let þa<ex>m</ex> neu<ex>er</ex> dep<ex>ar</ex>t in no wiß</line>
+                        <line n="l.7"><hi rend="touched">Q</hi>uh<ex>en</ex> þow Is lowsit againe þi saule to fynde</line>
+                        <line n="l.8"><hi rend="touched">M</hi>y blud for þe I offerit in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.116">
+                        <line n="l.1"><hi rend="touched">E</hi>mprent thir thingis in þi Inwart tho<ex>ught</ex></line>
+                        <line n="l.2"><hi rend="touched">A</hi>nd graif deiply in þi remembrance</line>
+                        <line n="l.3">Think on me weill and forȝet me no<ex>ught</ex></line>
+                        <line n="l.4"><hi rend="touched">A</hi>ll þis I offerit to do thy deligence<note place="bottom" anchored="true" n="informational">The EETS edition has "And with my seyntes to yeve the suffisaunce" here <!-- look at other editions to see which others pick-->. </note></line>
+                        <line n="l.5"><hi rend="touched">I</hi>n hevin a hom I do for þe deviß<note place="bottom" anchored="true" n="informational">There's a slight variation between this line and the EETS edition. Where this edition has "In hevin a hom" the EETS edition has "In the hevenly court."</note></line>
+                        <line n="l.6"><hi rend="touched">A</hi> place et<ex>er</ex>nall a place of all plesance</line>
+                        <line n="l.7">Ffor quhilk my blud I gaif in sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.117">
+                        <line n="l.1"><hi rend="touched">A</hi>nd more my m<ex>er</ex>cy to put to preife</line>
+                        <line n="l.2"><hi rend="touched">T</hi>ill eu<ex>er</ex>y synnar þat none sall It <del>amß</del><add>amyß</add></line>
+                    </zone>
+                </surface>
+                <surface n="verso">
+                    <label>Folio 174 Verso</label>
+                    <zone n="EETS.T.117">
+                        <line n="l.3">Remember how I gaif m<ex>er</ex>cy to ane theif</line>
+                        <line n="l.4">The quhilk so lang had trespassit <ex>and</ex> done myß</line>
+                        <line n="l.5">Went he notht frely w<ex>ith</ex> me to paradice</line>
+                        <line n="l.6">Haue It in mynd how it is my gyß</line>
+                        <line n="l.7">That repenttis to bring þa<ex>m</ex> to my bliß</line>
+                        <line n="l.8">Ffor quhome my blude gaif in Sacrifice</line>
+                    </zone>
+                    <zone n="EETS.T.118">
+                        <line n="l.1"><hi rend="touched_capital_2">T</hi>Ary no langer fro þin heritage</line>
+                        <line n="l.2"><hi rend="touched">H</hi>aist in þe way and be ritht gude off scheir</line>
+                        <line n="l.3"><hi rend="touched">G</hi>o Ick day on warld to þi pilgramage</line>
+                        <line n="l.4"><hi rend="touched">T</hi>hink hou schort a quhile þow sall abyde heir</line>
+                        <line n="l.5"><hi rend="touched">T</hi>hy place Is beld about þ<ex>at</ex> sternis cleir</line>
+                        <line n="l.6">None erdly place wrotht in sit a wise</line>
+                        <line n="l.7"><hi rend="touched">C</hi>um on my freind my broþ<ex>er</ex> moist enteir</line>
+                        <line n="l.8"><hi rend="touched">F</hi>for þe I offerit my blud in sacrifice</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>
