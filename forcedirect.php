@@ -44,7 +44,8 @@ function isCommaSeparatedIds($string, $allowEmpty = false) {
     	{
     	//  $selection = "json_1.php";
     	//$selection = "json_2.php";
-    	$selection = "json.php";
+    	//$selection = "json.php";
+	$selection = "data.php";
         $conflate_select= implode(",",$_GET['select']);
         
      /*     foreach($conflate_select as $check) {
@@ -234,7 +235,15 @@ width: 16.66%;
   	<input type ="submit" value="Clear Limits">
   </form>
   <form action="3d_graph/3d_graph.php" style="display:inline;">
-  	 <input type= "hidden" name ="select[]" value ="<?php echo $conflate_select;?>">
+  	 <?php 
+		if (!empty($_GET['select'])) {
+			echo"<input type= 'hidden' name ='select[]' value ='$conflate_select'>";
+		}
+		else {
+
+		}
+	 ?>
+ <!-- 	 <input type= "hidden" name ="select[]" value ="<?php echo $conflate_select;?>">-->
   	<input type="submit" value="View in 3D">
   </form>
   <form action="<?php echo $selection;?>" style="display:inline;">
@@ -441,7 +450,7 @@ d3.json(<?php echo "\"" . $url_string . "\""?>, function(error, json) {
  console.log(json_copy);
   if (error) throw error;
 
-//console.log(json);
+console.log(json);
 
   force
       .nodes(json.nodes)
